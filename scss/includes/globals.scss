@@ -1,0 +1,18 @@
+.section-padding {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+button {
+    cursor: pointer !important;
+}
+
+.bg-yellow {
+    background-color: $yellow !important;
+}

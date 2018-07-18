@@ -1,0 +1,48 @@
+@import 'layouts/main';
+
+.section {
+    &-hero {
+        color: $white;
+
+        & > .jumbotron {
+            height: 500px;
+            background: url('/static/img/home/hero.jpg');
+            background-repeat: no-repeat;
+            background-position: center 75%;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-companies {
+        .logo {
+            height: 3em;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    &-courses {
+        .card {
+            border: none;
+
+            & > .card-header {
+                background-color: $navy;
+                color: $white;
+
+                & > i {
+                    color: $yellow;
+                }
+            }
+
+            &:hover {
+                transition: box-shadow;
+                box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    }
+}
