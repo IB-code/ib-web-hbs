@@ -6,7 +6,8 @@ import * as blogList from './bloglist';
 import * as blog from './blog';
 import * as about from './about';
 import * as courses from './courses';
-import * as iambham from './iambham';
+import * as software from './software';
+import * as hardware from './hardware';
 
 const router = express.Router();
 
@@ -14,7 +15,8 @@ router
     .get('/', index.context, meta, index.render)
     .get('/about', about.context, meta, about.render)
     .get('/courses', courses.context, meta, courses.render)
-    .get('/courses/iambham', iambham.context, meta, iambham.render)
+    .get('/courses/software', software.context, meta, software.render)
+    .get('/courses/hardware', hardware.context, meta, hardware.render)
     .get('/blog', blogList.context, meta, blogList.render)
     .get('/blog/page/:page', blogList.context, meta, blogList.render)
     .get('/blog/:title', blog.context, meta, blog.render)

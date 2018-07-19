@@ -13,6 +13,18 @@ button {
     cursor: pointer !important;
 }
 
+.pointer {
+    cursor: pointer !important;
+}
+
 .bg-yellow {
     background-color: $yellow !important;
+}
+
+.text-yellow {
+    color: $yellow !important;
+}
+
+.text-grey {
+    color: $gray;
 }

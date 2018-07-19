@@ -8,9 +8,9 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Courses | IamBham Software Development',
+            title: 'Courses | Generation IT Hardware Bootcamp',
             meta: {
-                description: 'Learn to Code. For Free. Seriously.',
+                description: 'Learn to build a computer.',
             },
         },
     };
@@ -23,7 +23,7 @@ export function render(
     res: express.Response,
     next: express.NextFunction,
 ) {
-    res.render('iambham', req.context, (err, html) => {
+    res.render('hardware', req.context, (err, html) => {
         parse(req, req.url, html).then(
             (html) => {
                 res.send(html);

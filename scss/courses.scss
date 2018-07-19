@@ -1,11 +1,54 @@
 @import 'layouts/main';
 
 header {
+    color: $white;
+
+    & > .jumbotron {
+        height: 500px;
+        background: linear-gradient(
+                rgba(11, 26, 66, 0.35),
+                rgba(11, 26, 66, 0.35)
+            ),
+            url('/static/img/courses/hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center 75%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .courses {
     .iambham-logo {
         height: 4em;
         width: 4em;
+    }
+
+    .card {
+        border: none;
+        min-height: 500px;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+        .card-body {
+            .btn {
+                bottom: 2em;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+            }
+        }
+
+        &:hover {
+            transition: box-shadow;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .card-title {
+                color: $yellow;
+            }
+        }
     }
 }

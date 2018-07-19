@@ -19,7 +19,7 @@ $gray-dark: #373f47;
 $gray: #6d6e71;
 $gray-light: #87888b;
 $gray-lighter: #8f9aa8;
-$gray-lightest: #f7fafc;
+$gray-lightest: #e6eff5;
 
 $colors: (
     blue: $blue,
@@ -44,7 +44,7 @@ $theme-colors: (
     info: $cyan,
     warning: $orange,
     danger: $red,
-    light: $gray-lighter,
+    light: $gray-lightest,
     dark: $gray-dark,
 );
 
