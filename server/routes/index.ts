@@ -8,6 +8,7 @@ import * as about from './about';
 import * as courses from './courses';
 import * as software from './software';
 import * as hardware from './hardware';
+import * as partners from './partners';
 
 const router = express.Router();
 
@@ -17,6 +18,7 @@ router
     .get('/courses', courses.context, meta, courses.render)
     .get('/courses/software', software.context, meta, software.render)
     .get('/courses/hardware', hardware.context, meta, hardware.render)
+    .get('/partners', partners.context, meta, partners.render)
     .get('/blog', blogList.context, meta, blogList.render)
     .get('/blog/page/:page', blogList.context, meta, blogList.render)
     .get('/blog/:title', blog.context, meta, blog.render)

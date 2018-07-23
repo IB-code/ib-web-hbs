@@ -1,0 +1,35 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold text-white">Work With Us</h1>
+            <h3 class="lead text-white">Become a Partner of the Innovate Birmingham Movement</h3>
+            <button type="button" class="btn btn-primary">CONTACT US</button>
+        </div>
+    </div>
+</header>
+<section class="section-about section-padding text-center bg-light">
+    <div class="container">
+        <h2>What Does it Mean to Be a Partner?</h2>
+        <p>The short answer is: Anything! Partnering with Innovate Birmingham is only bound by your imagination. We are open
+            to all ideas and will work as a thought partner with you to figure out what sort of relationship works best for
+            all of us. Whether that be hiring our graduates, providing internships, mentoring, mock interviewing, or just
+            coming to say hey to our students, we're looking for any way we can connect new tech talent with you!</p>
+    </div>
+</section>
+<section class="section-current section-padding">
+    <div class="container">
+        <h2 class="text-center">Our Partners</h2>
+        <div class="row">
+            {{#each main.companies}}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="logo p-2" style="background-image: url('/static/img/partners/logos/{{this}}')">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/partners.css">
+<!-- /Remove Style -->

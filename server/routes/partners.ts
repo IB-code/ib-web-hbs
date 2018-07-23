@@ -1,4 +1,7 @@
 import * as express from 'express';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as utils from '../utils';
 import parse from '../middleware/parse';
 
 export function context(
@@ -8,14 +11,23 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'About Us | Innovate Birmingham',
+            title: 'Partners | Innovate Birmingham',
             meta: {
-                description: 'Want to know what we do? Look no further.',
+                description: '',
             },
         },
+        main: {},
     };
 
-    next();
+    utils
+        .readDir(path.join(__dirname, '../../public/img/partners/logos'))
+        .then((files: Array<string>) => {
+            req.context.main.companies = files;
+            next();
+        })
+        .catch((err: Error) => {
+            next();
+        });
 }
 
 export function render(
@@ -23,7 +35,7 @@ export function render(
     res: express.Response,
     next: express.NextFunction,
 ) {
-    res.render('about', req.context, (err, html) => {
+    res.render('partners', req.context, (err, html) => {
         parse(req, req.url, html).then(
             (html) => {
                 res.send(html);

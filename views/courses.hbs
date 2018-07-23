@@ -9,45 +9,22 @@
 <section class="courses section-padding bg-light">
     <div class="container">
         <div class="row">
+            {{#each main.courses}}
             <div class="col-lg-4 col-md-6 my-2 text-center">
-                <div class="card pointer px-2">
+                <div class="card px-2">
                     <div class="card-body position-relative">
-                        <img class="iambham-logo mr-2 mb-4" src="/static/img/logos/iambham_logo.png" alt="IamBham">
-                        <h4 class="card-title">Software Engineering Bootcamp</h4>
-                        <p class="text-grey">14 Weeks / 9am - 5pm</p>
-                        <p class="card-text">We partner with
-                            <a href="https://covalence.io" target="_blank" rel="noopener noreferrer">Covalence</a>, a local Software Bootcamp company, and through their curriculum, facilitated through
-                            their online portal, we teach you the skills you need to become a junior level developer.</p>
-                        <a class="btn btn-primary text-white position-absolute" href="/courses/software/">LEARN MORE</a>
+                        <img class="iambham-logo mr-2 mb-4" src="{{this.logo}}" alt="{{this.headline}}">
+                        <h4 class="card-title">{{this.headline}}</h4>
+                        <div class="time d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa fa-{{this.subline.icon}} mr-2"></i>
+                            <p class="text-grey mb-0">{{this.subline.text}}</p>
+                        </div>
+                        <p class="card-text">{{this.description}}</p>
+                        <a class="btn btn-primary text-white position-absolute" href="{{this.action.href}}">{{this.action.text}}</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 my-2 text-center">
-                <div class="card pointer px-2">
-                    <div class="card-body position-relative">
-                        <img class="iambham-logo mr-2 mb-4" src="/static/img/logos/generation_logo.png" alt="Generation IT">
-                        <h4 class="card-title">IT Hardware Bootcamp</h4>
-                        <p class="text-grey">12 Weeks / 9am - 3pm</p>
-                        <p class="card-text">We partner with
-                            <a href="https://covalence.io" target="_blank" rel="noopener noreferrer">Covalence</a>, a local Software Bootcamp company, and through their curriculum, facilitated through
-                            their online portal, we teach you the skills you need to become a junior level developer.</p>
-                        <a class="btn btn-primary text-white position-absolute" href="/courses/hardware/">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 my-2 text-center">
-                <div class="card pointer px-2">
-                    <div class="card-body position-relative">
-                        <img class="iambham-logo mr-2 mb-4" src="/static/img/logos/logo_small.png" alt="Innovate Birmingham">
-                        <h4 class="card-title">College Scholarships</h4>
-                        <p class="text-grey">Up to $4,000</p>
-                        <p class="card-text">We partner with
-                            <a href="https://covalence.io" target="_blank" rel="noopener noreferrer">Covalence</a>, a local Software Bootcamp company, and through their curriculum, facilitated through
-                            their online portal, we teach you the skills you need to become a junior level developer.</p>
-                        <a class="btn btn-primary text-white position-absolute" href="/scholarships/">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
+            {{/each}}
         </div>
     </div>
 </section>

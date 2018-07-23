@@ -18,3 +18,28 @@ header {
         align-items: center;
     }
 }
+
+.section {
+    &-javascript {
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    &-curriculum {
+        .accordion {
+            .card {
+                border: none;
+            }
+        }
+
+        .accordion-nested {
+            .card {
+                .card-header {
+                    padding-left: 4em;
+                }
+            }
+        }
+    }
+}
