@@ -1,7 +1,8 @@
 import * as express from 'express';
-import * as fs from 'fs';
 import * as path from 'path';
 import * as utils from '../utils';
+import * as _ from 'lodash';
+import config from '../config';
 import parse from '../middleware/parse';
 
 export function context(
@@ -19,15 +20,13 @@ export function context(
         main: {},
     };
 
-    utils
-        .readDir(path.join(__dirname, '../../public/img/partners/logos'))
-        .then((files: Array<string>) => {
-            req.context.main.companies = files;
-            next();
-        })
-        .catch((err: Error) => {
-            next();
+    req.context.main.companies = utils
+        .getEmployerPartners(true)
+        .map((company) => {
+            return `/static/img/logos/company-logos/${company.logo}`;
         });
+
+    next();
 }
 
 export function render(

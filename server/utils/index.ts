@@ -4,7 +4,52 @@ import * as express from 'express';
 import * as moment from 'moment-timezone';
 import * as Promise from 'promise';
 import * as _ from 'lodash';
-import config from '../config';
+import { PARTNER_STATUS, PARTNERS } from '../references';
+
+export function getPartners(randomize: boolean = false) {
+    if (randomize) {
+        return PARTNERS.sort(() => {
+            return 0.5 - Math.random();
+        });
+    }
+
+    return PARTNERS;
+}
+
+export function getNetworkAndEmployerPartners(randomize: boolean = false) {
+    return getPartners(randomize).filter(
+        (partner: { name: string; logo: string; status: Array<number> }) => {
+            return (
+                partner.status.includes(PARTNER_STATUS.EMPLOYER) &&
+                partner.status.includes(PARTNER_STATUS.NETWORK)
+            );
+        },
+    );
+}
+
+export function getPartnersWhoHired(randomize: boolean = false) {
+    return getPartners(randomize).filter(
+        (partner: { name: string; logo: string; status: Array<number> }) => {
+            return partner.status.includes(PARTNER_STATUS.HIRED);
+        },
+    );
+}
+
+export function getEmployerPartners(randomize: boolean = false) {
+    return getPartners(randomize).filter(
+        (partner: { name: string; logo: string; status: Array<number> }) => {
+            return partner.status.includes(PARTNER_STATUS.EMPLOYER);
+        },
+    );
+}
+
+export function getNetworkParnters(randomize: boolean = false) {
+    return getPartners(randomize).filter(
+        (partner: { name: string; logo: string; status: Array<number> }) => {
+            return partner.status.includes(PARTNER_STATUS.NETWORK);
+        },
+    );
+}
 
 export function readTime(str: string = '') {
     let wordCount = str.trim().split(' ');
@@ -17,12 +62,16 @@ export function readTime(str: string = '') {
 }
 
 export function isEmptyString(value: any) {
-    return _.isNull(value) || _.isUndefined(value) || (_.isString(value) && _.isEmpty(value));
+    return (
+        _.isNull(value) ||
+        _.isUndefined(value) ||
+        (_.isString(value) && _.isEmpty(value))
+    );
 }
 
-export function isExpired(date: string): boolean
-export function isExpired(date: Date): boolean
-export function isExpired(date: moment.Moment): boolean
+export function isExpired(date: string): boolean;
+export function isExpired(date: Date): boolean;
+export function isExpired(date: moment.Moment): boolean;
 export function isExpired(date: any): boolean {
     if (!_.isDate(date) && _.isEmpty(date)) {
         return true;
@@ -111,6 +160,9 @@ export function wait(ms: number = 0, value?: any): Promise<void> {
     });
 }
 
-export function mapAsync<T, R>(collection: ArrayLike<T>, iterator: (value: T, key: any, obj: any) => Promise<R>): Promise<Array<R>> {
+export function mapAsync<T, R>(
+    collection: ArrayLike<T>,
+    iterator: (value: T, key: any, obj: any) => Promise<R>,
+): Promise<Array<R>> {
     return Promise.all<R>(<any>_.map(collection, iterator));
 }

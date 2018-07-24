@@ -4,12 +4,9 @@
         "noImplicitAny": false,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": false
+        "sourceMap": false,
+        "lib": ["esnext", "dom"]
     },
-    "include": [
-        "server/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    "include": ["server/**/*"],
+    "exclude": ["node_modules"]
 }

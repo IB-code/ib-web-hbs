@@ -33,33 +33,17 @@
             <h3 class="text-center text-white pb-5">Courses</h3>
         </a>
         <div class="row">
+            {{#each main.courses}}
             <div class="col-lg-4 my-2">
-                <a class="card text-center" href="/courses/software/">
+                <a class="card text-center" href="{{href}}">
                     <div class="card-header">
-                        <i class="fa fa-code mr-2"></i>Software Engineering Bootcamp</div>
+                        <i class="{{icon}} mr-2"></i>{{headline}}</div>
                     <div class="card-body">
-                        <p class="card-text">Learn to build websites & mobile apps!</p>
+                        <p class="card-text">{{description}}</p>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 my-2">
-                <a class="card text-center" href="/courses/hardware/">
-                    <div class="card-header">
-                        <i class="fa fa-desktop mr-2"></i>IT Hardware Bootcamp</div>
-                    <div class="card-body">
-                        <p class="card-text">Do you like to build things with your hands? Come here to build the hardware of tomorrow!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 my-2">
-                <a class="card text-center" href="/scholarships">
-                    <div class="card-header">
-                        <i class="fa fa-school mr-2"></i>College Scholarships</div>
-                    <div class="card-body">
-                        <p class="card-text">$4,000 Scholarships for technology majors!</p>
-                    </div>
-                </a>
-            </div>
+            {{/each}}
         </div>
     </div>
 </section>
@@ -103,72 +87,19 @@
     <div class="container">
         <h3 class="text-center pb-5">Why Choose Innovate Bham?</h3>
         <div class="row">
+            {{#each main.benefits}}
             <div class="col-md-6">
                 <div class="row mb-2">
                     <div class="text-center col-2">
-                        <i class="fas text-yellow fa-list-ul fa-2x"></i>
+                        <i class="{{icon}}"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Curriculum Designed By Industry Experts</h5>
-                        <p>Our Software Development and Computer Hardware Bootcamps use time-tested curriculums from Covalence
-                            and McKinsey Social Initiative, both have helped hundreds of students start new careers.</p>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="text-center col-2">
-                        <i class="fas text-yellow fa-2x fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Experienced Instructors</h5>
-                        <p>Our instructors have track records as successful software engineers and IT specialists and have worked
-                            for some of the best companies in Birmingham.</p>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="text-center col-2">
-                        <i class="fas text-yellow fa-2x fa-hands-helping"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Professonal Services</h5>
-                        <p>We know taking ~3 months to learn a new skill isn't an easy ask. So we make sure we help you with
-                            any needs that may arise during the course. Childcare? Doctor's appointment? Power bill? Put
-                            it on our tab.</p>
+                        <h5 class="font-weight-bold text-primary">{{headline}}</h5>
+                        <p>{{description}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row mb-2">
-                    <div class="text-center col-2">
-                        <i class="fa text-yellow fa-2x fa-briefcase"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Professional Development Training</h5>
-                        <p>We put you in front of real employers! But before that we make sure you're ready by providing training
-                            and counseling on resumes, cover letters, interview preparation, and more!</p>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="text-center col-2">
-                        <i class="fas text-yellow fa-2x fa-building"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Access to a Wide Employer Network</h5>
-                        <p>Innovate Bham partners with 30+ employers around the Magic City. We're doing our homework to find
-                            companies that are ready to hire new up and coming tech talent. Who knows? You may meet your
-                            next boss during the class!</p>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="text-center col-2">
-                        <i class="fas text-yellow fa-2x fa-dollar-sign"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h5 class="font-weight-bold text-primary">Completely Free</h5>
-                        <p>We are a grant funded nonprofit program that received ~$6 million to train students. We're giving
-                            it away, so come get it. Thanks, Obama!</p>
-                    </div>
-                </div>
-            </div>
+            {{/each}}
         </div>
     </div>
 </section>

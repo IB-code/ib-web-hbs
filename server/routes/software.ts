@@ -13,6 +13,14 @@ export function context(
                 description: 'Learn to Code. For Free. Seriously.',
             },
         },
+        main: {
+            curriculum: [
+                {
+                    icon: '',
+                    headline: '',
+                },
+            ],
+        },
     };
 
     next();
@@ -23,12 +31,12 @@ export function render(
     res: express.Response,
     next: express.NextFunction,
 ) {
-    res.render('software', req.context, (err, html) => {
+    res.render('software', req.context, (err: Error, html: string) => {
         parse(req, req.url, html).then(
-            (html) => {
+            (html: string) => {
                 res.send(html);
             },
-            (err) => {
+            (err: Error) => {
                 next(err);
             },
         );
