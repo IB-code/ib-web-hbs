@@ -3,6 +3,7 @@ import * as path from 'path';
 import * as utils from '../utils';
 import * as _ from 'lodash';
 import config from '../config';
+import { PARTNER_STATUS } from '../references';
 import parse from '../middleware/parse';
 
 export function context(
@@ -14,19 +15,40 @@ export function context(
         head: {
             title: 'Partners | Innovate Birmingham',
             meta: {
-                description: '',
+                description:
+                    'Innovate Birmingham is a city-wide initiative. And we want to thank all the companies that make it possible.',
             },
         },
         main: {},
     };
 
-    req.context.main.companies = utils
-        .getEmployerPartners(true)
-        .map((company) => {
-            return `/static/img/logos/company-logos/${company.logo}`;
-        });
+    utils.getNetworkorEmployerPartners(true).then((partners) => {
+        req.context.main = Object.assign(
+            {},
+            req.context.main,
+            partners.reduce(
+                (acc, curr) => {
+                    curr.logo = `/static/img/logos/company-logos/${curr.logo}`;
 
-    next();
+                    if (curr.status.includes(PARTNER_STATUS.NETWORK)) {
+                        acc.networkPartners.push(curr);
+                    }
+
+                    if (curr.status.includes(PARTNER_STATUS.EMPLOYER)) {
+                        acc.employerPartners.push(curr);
+                    }
+
+                    return acc;
+                },
+                {
+                    employerPartners: [],
+                    networkPartners: [],
+                },
+            ),
+        );
+
+        next();
+    });
 }
 
 export function render(

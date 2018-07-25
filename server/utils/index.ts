@@ -7,48 +7,76 @@ import * as _ from 'lodash';
 import { PARTNER_STATUS, PARTNERS } from '../references';
 
 export function getPartners(randomize: boolean = false) {
+    let partners = _.cloneDeep(PARTNERS);
+
     if (randomize) {
-        return PARTNERS.sort(() => {
-            return 0.5 - Math.random();
-        });
+        return Promise.resolve(
+            partners.sort(() => {
+                return 0.5 - Math.random();
+            }),
+        );
     }
 
-    return PARTNERS;
+    return Promise.resolve(partners);
 }
 
-export function getNetworkAndEmployerPartners(randomize: boolean = false) {
-    return getPartners(randomize).filter(
-        (partner: { name: string; logo: string; status: Array<number> }) => {
-            return (
-                partner.status.includes(PARTNER_STATUS.EMPLOYER) &&
-                partner.status.includes(PARTNER_STATUS.NETWORK)
-            );
-        },
-    );
+export function getNetworkorEmployerPartners(randomize: boolean = false) {
+    return getPartners(randomize).then((partners) => {
+        return partners.filter(
+            (partner: {
+                name: string;
+                logo: string;
+                status: Array<number>;
+            }) => {
+                return (
+                    partner.status.includes(PARTNER_STATUS.EMPLOYER) ||
+                    partner.status.includes(PARTNER_STATUS.NETWORK)
+                );
+            },
+        );
+    });
 }
 
 export function getPartnersWhoHired(randomize: boolean = false) {
-    return getPartners(randomize).filter(
-        (partner: { name: string; logo: string; status: Array<number> }) => {
-            return partner.status.includes(PARTNER_STATUS.HIRED);
-        },
-    );
+    return getPartners(randomize).then((partners) => {
+        return partners.filter(
+            (partner: {
+                name: string;
+                logo: string;
+                status: Array<number>;
+            }) => {
+                return partner.status.includes(PARTNER_STATUS.HIRED);
+            },
+        );
+    });
 }
 
 export function getEmployerPartners(randomize: boolean = false) {
-    return getPartners(randomize).filter(
-        (partner: { name: string; logo: string; status: Array<number> }) => {
-            return partner.status.includes(PARTNER_STATUS.EMPLOYER);
-        },
-    );
+    return getPartners(randomize).then((partners) => {
+        return partners.filter(
+            (partner: {
+                name: string;
+                logo: string;
+                status: Array<number>;
+            }) => {
+                return partner.status.includes(PARTNER_STATUS.EMPLOYER);
+            },
+        );
+    });
 }
 
 export function getNetworkParnters(randomize: boolean = false) {
-    return getPartners(randomize).filter(
-        (partner: { name: string; logo: string; status: Array<number> }) => {
-            return partner.status.includes(PARTNER_STATUS.NETWORK);
-        },
-    );
+    return getPartners(randomize).then((partners) => {
+        return partners.filter(
+            (partner: {
+                name: string;
+                logo: string;
+                status: Array<number>;
+            }) => {
+                return partner.status.includes(PARTNER_STATUS.NETWORK);
+            },
+        );
+    });
 }
 
 export function readTime(str: string = '') {

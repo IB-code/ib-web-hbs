@@ -248,7 +248,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Innovation Depot',
-        logo: 'innovation-depot.jpg',
+        logo: 'innovation-depot.jpeg',
         url: 'https://innovationdepot.org/',
         status: [PARTNER_STATUS.NETWORK],
     },

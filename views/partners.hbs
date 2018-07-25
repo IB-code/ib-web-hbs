@@ -16,14 +16,15 @@
             coming to say hey to our students, we're looking for any way we can connect new tech talent with you!</p>
     </div>
 </section>
-<section class="section-network partners section-padding">
+<section class="section-network-partners section-padding">
     <div class="container">
-        <h2 class="text-center">Our Network Partners</h2>
+        <h2 class="text-center mb-3">Our Network Partners</h2>
         <div class="row">
-            {{#each main.companies}}
+            {{#each main.networkPartners}}
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="logo p-2" style="background-image: url('{{this}}')">
-                </div>
+                <a href="{{url}}" target="_blank" rel="noreferrer noopener">
+                    <div class="logo p-2" style="background-image: url('{{logo}}')"></div>
+                </a>
             </div>
             {{/each}}
         </div>
@@ -31,12 +32,13 @@
 </section>
 <section class="section-employer-partners section-padding">
     <div class="container">
-        <h2 class="text-center">Our Employer Partners</h2>
+        <h2 class="text-center mb-3">Our Employer Partners</h2>
         <div class="row">
-            {{#each main.companies}}
+            {{#each main.employerPartners}}
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="logo p-2" style="background-image: url('{{this}}')">
-                </div>
+                <a href="{{url}}" target="_blank" rel="noreferrer noopener">
+                    <div class="logo p-3" style="background-image: url('{{logo}}')"></div>
+                </a>
             </div>
             {{/each}}
         </div>

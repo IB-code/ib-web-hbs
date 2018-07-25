@@ -18,7 +18,18 @@ header {
 }
 
 .section {
-    &-current {
+    &-network-partners {
+        .logo {
+            margin: 0 auto;
+            height: 8em;
+            width: 8em;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    &-employer-partners {
         .logo {
             margin: 0 auto;
             height: 8em;
