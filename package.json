@@ -66,6 +66,7 @@
         "tether": "^1.4.0",
         "typescript": "^2.5.2",
         "uglify-js": "^3.1.1",
+        "uuid": "^3.3.2",
         "vary": "^1.1.1"
     },
     "devDependencies": {

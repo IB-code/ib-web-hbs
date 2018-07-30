@@ -25,34 +25,32 @@
         <div id="accordion" class="accordion">
             {{#each main.curriculum}}
             <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{@index}}">
+                <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{@index}}" aria-expanded="true" aria-controls="collapse-{{@index}}">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
                             <i class="{{icon}} mr-2"></i>
                             {{headline}}
                         </button>
                     </h5>
                     <h6>{{ timeline }}</h6>
                 </div>
-                <div id="collapse-{{@index}}" class="collapse" aria-labelledby="heading-{{@index}}" data-parent="#accordion">
+                <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion">
                     {{#if children}}
-                    <div id="accordion-nested" class="accordion">
+                    <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
                         {{#each children}}
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between align-items-center" id="heading-nested-{{headline}}-{{@index}}">
+                            <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-nested-{{headline}}-{{@index}}" aria-expanded="true"
-                                        aria-controls="#collapse-nested-{{headline}}-{{@index}}">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="#collapse-{{id}}">
                                         <i class="{{icon}} mr-2"></i>
                                         {{headline}}
                                     </button>
                                 </h5>
                             </div>
-                        </div>
-                        <div id="#collapse-nested-{{headline}}-{{@index}}" class="collapse" aria-labelledby="heading-nested-{{headline}}-{{@index}}"
-                            data-parent="#accordion-nested">
-                            <div class="card-body">
-                                {{description}}
+                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion-nested-{{../id}}">
+                                <div class="card-body">
+                                    {{description}}
+                                </div>
                             </div>
                         </div>
                         {{/each}}
@@ -68,7 +66,7 @@
         </div>
     </div>
 </section>
-<section class="section-padding section-faq bg-secondary">
+<section class="section-padding section-faq bg-primary">
     <div class="container">
 
     </div>
