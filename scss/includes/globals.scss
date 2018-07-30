@@ -6,7 +6,7 @@
 a {
     cursor: pointer;
     text-decoration: none !important;
-    color: inherit !important;
+    color: inherit;
 }
 
 button {
@@ -43,4 +43,8 @@ button {
 
 .text-large {
     font-size: 1.25em !important;
+}
+
+.border-none {
+    border: none !important;
 }

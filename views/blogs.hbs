@@ -12,13 +12,17 @@
 
 <section class="blogs py-5">
     <div class="container py-2">
-        <div class="card-columns">
+        <div class="card-columns row">
             {{#each main.blogs}}
-            <article class="card mb-3 index-{{@index}}">
-                <a href="/blog/{{attributes.slug}}/"><img class="card-img-top img-fluid" src="{{attributes.image}}" alt="{{attributes.title}} hero"></a>
+            <article class="card mb-3 col-md-4 col-sm-6 index-{{@index}}">
+                <a href="/blog/{{attributes.slug}}/">
+                    <img class="card-img-top img-fluid" src="{{attributes.image}}" alt="{{attributes.title}} hero">
+                </a>
                 <div class="card-body">
                     <header class="text-info">
-                        <h4 class="card-title"><a href="/blog/{{attributes.slug}}/">{{attributes.title}}</a></h4>
+                        <h4 class="card-title">
+                            <a href="/blog/{{attributes.slug}}/">{{attributes.title}}</a>
+                        </h4>
                         <span class="card-subtitle">{{attributes.author}} - </span>
                         <time class="card-subtitle nowrap font-weight-bold" datetime="{{attributes.readTime}}m">{{attributes.readTime}} minute read</time>
                     </header>

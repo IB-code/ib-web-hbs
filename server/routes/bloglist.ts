@@ -1,94 +1,7 @@
-import * as Promise from 'promise';
 import * as express from 'express';
-import * as path from 'path';
-import * as url from 'url';
 import * as _ from 'lodash';
-import config from '../config';
-import * as cache from '../utils/cache';
 import * as utils from '../utils';
 import parse from '../middleware/parse';
-
-const fm = require('front-matter');
-const sort = require('stable');
-
-let blogPath = path.resolve(config.root, 'server/blogs');
-
-function findFiles(
-    req: express.Request,
-): Promise<Array<{ file: string; attributes: any }>> {
-    let files: Array<{ file: string; attributes: any }> = cache.fetch(
-        'blog-files',
-    );
-    let promise = Promise.resolve(files);
-
-    if (!!files) {
-        return promise;
-    }
-
-    let host = req.hostname;
-    let protocol = req.protocol;
-
-    if (config.ENV.prod) {
-        host = 'innovatebham.com';
-        protocol = 'https';
-    }
-
-    const baseUrl = url.format({
-        protocol,
-        host,
-    });
-
-    return utils
-        .readDir(blogPath)
-        .then((files) => {
-            return utils
-                .mapAsync(files, (file, index) => {
-                    if (file.indexOf('.md') === -1) {
-                        return;
-                    }
-
-                    let filePath = path.resolve(blogPath, file);
-
-                    return utils.readFile(filePath).then((contents) => {
-                        const frontMatter = fm(contents);
-                        const attributes = frontMatter.attributes;
-                        const body = frontMatter.body;
-                        const slug = file.replace('.md', '');
-
-                        attributes.body = body;
-                        attributes.url = baseUrl + '/blog/' + slug + '/';
-                        attributes.fullImage = baseUrl + attributes.image;
-                        attributes.slug = slug;
-                        attributes.created = new Date(attributes.created);
-                        attributes.readTime = utils.readTime(body);
-
-                        return { file: filePath, attributes };
-                    });
-                })
-                .then((newFiles) => {
-                    return _.map(
-                        sort(_.filter(newFiles, _.isObject), (a, b) => {
-                            return a.attributes.created <= b.attributes.created;
-                        }),
-                    );
-                });
-        })
-        .then((files: Array<{ file: string; attributes: any }>) => {
-            files = _.filter(files, (file) => {
-                return file.attributes.published !== false;
-            });
-
-            if (config.ENV.prod) {
-                cache.store('blog-files', files);
-            }
-
-            return <any>files;
-        })
-        .catch((err) => {
-            console.log(err);
-            return [];
-        });
-}
 
 export function context(
     req: express.Request,
@@ -108,7 +21,8 @@ export function context(
         },
     };
 
-    findFiles(req)
+    utils
+        .findBlogFiles(req)
         .then((files) => {
             let page = !!req.params.page
                 ? Number(req.params.page)

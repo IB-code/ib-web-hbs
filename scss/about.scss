@@ -14,4 +14,11 @@ header {
 }
 
 .section {
+    &-plan {
+        .list-group {
+            .active {
+                color: $white;
+            }
+        }
+    }
 }

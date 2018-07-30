@@ -9,12 +9,14 @@ import * as courses from './courses';
 import * as software from './software';
 import * as hardware from './hardware';
 import * as partners from './partners';
+import * as contact from './contact';
 
 const router = express.Router();
 
 router
     .get('/', index.context, meta, index.render)
     .get('/about', about.context, meta, about.render)
+    .get('/contact', contact.context, meta, contact.render)
     .get('/courses', courses.context, meta, courses.render)
     .get('/courses/software', software.context, meta, software.render)
     .get('/courses/hardware', hardware.context, meta, hardware.render)
