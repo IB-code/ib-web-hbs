@@ -23,7 +23,7 @@ export function context(
 
     let curriculum: Array<ICurriculumSection> = [
         {
-            icon: 'fa fa-cloud',
+            icon: 'fas fa-play',
             headline: 'Class Orientation and Introduction',
             timeline: 'Week 1',
             description: [
@@ -34,7 +34,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-laptop',
+            icon: 'fas fa-memory',
             headline: 'Motherboard, RAM, and CPU',
             timeline: 'Week 2',
             description: [
@@ -46,7 +46,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-code',
+            icon: 'fas fa-plug',
             headline:
                 'Drives, Power Supplies, Peripherals, Connectors and Custom Configurations',
             timeline: 'Week 3',
@@ -61,7 +61,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-database',
+            icon: 'fas fa-mobile-alt',
             headline: 'Networking and Mobile Devices',
             timeline: 'Week 4',
             description: [
@@ -74,7 +74,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fas fa-laptop',
             headline: 'Laptop and Mobile Devices',
             timeline: 'Week 5',
             description: [
@@ -84,14 +84,14 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fa fa-file',
             headline: '901 Exam',
             timeline: 'Weeks 6 - 7',
             description:
                 'Students will prepare for to take the CompTIA+ 901 exam.',
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fab fa-windows',
             headline: 'Windows',
             timeline: 'Week 8',
             description: [
@@ -105,7 +105,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fab fa-linux',
             headline: 'Other Operating Systems and Intro to Security',
             timeline: 'Week 9',
             description: [
@@ -122,7 +122,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fas fa-user-secret',
             headline: 'Security',
             timeline: 'Week 10',
             description: [
@@ -135,7 +135,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-project-diagram',
+            icon: 'fa fa-file',
             headline: '902 Exam & Career Prep and Interviewing',
             timeline: 'Weeks 11 - 12',
             description:

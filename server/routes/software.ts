@@ -44,7 +44,7 @@ export function context(
             ],
         },
         {
-            icon: 'fa fa-laptop',
+            icon: 'fas fa-laptop-code',
             headline: 'Front End Development',
             timeline: 'Weeks 1 - 5',
             children: [
