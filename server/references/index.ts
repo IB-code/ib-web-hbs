@@ -1,3 +1,15 @@
+export interface ICurriculumSection {
+    icon: string;
+    headline: string;
+    timeline: string;
+    description?: string | Array<string>;
+    children?: Array<{
+        icon: string;
+        headline: string;
+        description: string;
+    }>;
+}
+
 export const enum PARTNER_STATUS {
     EMPLOYER,
     NETWORK,

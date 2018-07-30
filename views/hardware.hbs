@@ -7,6 +7,70 @@
         </div>
     </div>
 </header>
+<section class="section-padding section-about">
+    <div class="container text-center">
+        <h3>IamBham Powered By Covalence</h3>
+        <p>I am Bham is a 14-week coding bootcamp designed to teach Full Stack and Front End Web Development through short-term,
+            fast-track, intensive training. Classes are held at Innovation Depot, home to more than 100 companies, allowing
+            students the ability to interact daily with potential employers.</p>
+    </div>
+</section>
+<section class="section-padding section-curriculum bg-light">
+    <div class="container">
+        <h3 class="text-navy text-center mb-4">What Will You Learn?</h3>
+        <h6 class="text-center mb-5">These are just some of the technologies you will learn in the course. Don't let it intimidate you!
+            <strong>No experience is required.</strong> This course was specifically designed to take someone with zero coding experience
+            and teach them what they need to know to
+            <strong>Actually Work</strong> as a junior-level developer. We are here for you every step of the way!</h6>
+        <div id="accordion" class="accordion">
+            {{#each main.curriculum}}
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
+                            <i class="{{icon}} mr-2"></i>
+                            {{headline}}
+                        </button>
+                    </h5>
+                    <h6>{{ timeline }}</h6>
+                </div>
+                <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion">
+                    {{#if children}}
+                    <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
+                        {{#each children}}
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="#collapse-{{id}}">
+                                        <i class="{{icon}} mr-2"></i>
+                                        {{headline}}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion-nested-{{../id}}">
+                                <div class="card-body">
+                                    {{description}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{else}}
+                    <div>
+                        <p>{{{ description }}}</p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+<section class="section-padding section-faq bg-primary">
+    <div class="container">
+
+    </div>
+</section>
 
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/hardware.css">
