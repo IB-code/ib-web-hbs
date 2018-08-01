@@ -10,6 +10,7 @@ import * as software from './software';
 import * as hardware from './hardware';
 import * as partners from './partners';
 import * as contact from './contact';
+import * as scholarships from './scholarships';
 
 const router = express.Router();
 
@@ -18,6 +19,7 @@ router
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
     .get('/courses', courses.context, meta, courses.render)
+    .get('/scholarships', scholarships.context, meta, scholarships.render)
     .get('/courses/software', software.context, meta, software.render)
     .get('/courses/hardware', hardware.context, meta, hardware.render)
     .get('/partners', partners.context, meta, partners.render)

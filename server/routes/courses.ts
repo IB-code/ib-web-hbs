@@ -58,7 +58,7 @@ export function context(
                     description:
                         'We partner with Covalence, a local Software Bootcamp company, and through their curriculum, facilitated through their online portal, we teach you the skills you need to become a junior level developer.',
                     action: {
-                        href: '/courses/software/',
+                        href: '/scholarships/',
                         text: 'LEARN MORE',
                     },
                 },

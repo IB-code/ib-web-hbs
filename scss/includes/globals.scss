@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .section-padding {
     padding-top: 3em;
     padding-bottom: 3em;
@@ -47,4 +53,17 @@ button {
 
 .border-none {
     border: none !important;
+}
+
+.modal-backdrop {
+    z-index: 0;
+
+    &.show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
 }

@@ -44,7 +44,18 @@ header {
                 transition: box-shadow;
                 box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
                     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                animation: slideUp 500ms forwards;
             }
         }
+    }
+}
+
+// ANIMATIONS
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-7px);
     }
 }

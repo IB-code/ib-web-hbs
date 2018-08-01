@@ -1,0 +1,20 @@
+@import 'layouts/main';
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        height: 500px;
+        background: linear-gradient(
+                rgba(11, 26, 66, 0.25),
+                rgba(11, 26, 66, 0.25)
+            ),
+            url('/static/img/scholarships/hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center 75%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
