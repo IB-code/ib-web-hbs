@@ -21,4 +21,13 @@ header {
             }
         }
     }
+
+    &-big-innovate {
+        .card-bg {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 10em;
+        }
+    }
 }

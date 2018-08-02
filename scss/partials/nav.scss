@@ -1,5 +1,5 @@
 .navbar {
-    box-shadow: 0 2px 2px 1px rgba(25,25,25,.2);
+    box-shadow: 0 2px 2px 1px rgba(25, 25, 25, 0.2);
 
     @include media-breakpoint-down(md) {
         .dropdown-menu {
@@ -12,6 +12,15 @@
 
 .navbar-nav {
     line-height: 2em;
+
+    .nav-link {
+        padding-bottom: 0;
+
+        &:hover,
+        &.active {
+            color: inherit !important;
+        }
+    }
 }
 
 .navbar-collapse {
@@ -28,7 +37,8 @@
         }
     }
 
-    &.show, &.collapsing {
+    &.show,
+    &.collapsing {
         .nav-item {
             padding-left: 1em;
         }
