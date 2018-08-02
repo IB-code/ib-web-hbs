@@ -67,3 +67,12 @@ button {
         background-color: rgba(0, 0, 0, 0.75);
     }
 }
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-7px);
+    }
+}

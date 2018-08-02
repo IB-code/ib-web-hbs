@@ -41,18 +41,18 @@
 <section class="section-big-innovate section-padding">
     <div class="container">
         <h2 class="text-center">Evaluating the Tech Ecosystem</h2>
-        <p>Along with Innovate Birmingham Workforce there was another branch of Innovate Birmingham, or as a we loving referred to it "Big Innovate", that was responsible for evaluating and researching the tech ecosystem in Birmingham. Throughout their year and a half long tenure, Big Innovate produced a number of reports.</p>
+        <p class="text-center">Along with Innovate Birmingham Workforce there was another branch of Innovate Birmingham, or as a we loving referred to it "Big Innovate", that was responsible for evaluating and researching the tech ecosystem in Birmingham. Throughout their year and a half long tenure, Big Innovate produced a number of reports, which reveal the gaps and issues found in the Birmingham tech scene. These reports can be found here.</p>
         <div class="card-columns mt-4">
             {{#each main.reports}}
             <div>
                 <div class="card index-{{@index}}">
                     <div class="card-bg" style="background-image: url('/static/img/about/{{img}}');"></div>
                     <div class="card-body">
-                        {{!-- <header class="text-info">
-                            <h4 class="card-title">
+                        <header class="text-info">
+                            <p class="card-text mb-2">
                                 <a href="{{link}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
-                            </h4>
-                        </header> --}}
+                            </p>
+                        </header>
                         <a href="{{link}}" target="_blank" rel="noopener noreferrer">
                             <button class="btn btn-primary">READ MORE</button>
                         </a>

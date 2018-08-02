@@ -23,8 +23,20 @@ export const PARTNERS: Array<{
     status: Array<number>;
 }> = [
     {
+        name: 'Shipt',
+        logo: 'shipt.png',
+        url: 'https://shipt.com',
+        status: [PARTNER_STATUS.HIRED],
+    },
+    {
+        name: 'Apple',
+        logo: 'apple.png',
+        url: 'https://apple.com',
+        status: [PARTNER_STATUS.HIRED],
+    },
+    {
         name: 'Forty Five Inc',
-        logo: '45inc.png',
+        logo: '45inc.jpeg',
         url: 'https://45incbirmingham.com/',
         status: [PARTNER_STATUS.HIRED],
     },
@@ -60,7 +72,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Burr Forman',
-        logo: 'burr-forman.png',
+        logo: 'burr-forman.jpeg',
         url: 'http://www.burr.com/',
         status: [PARTNER_STATUS.HIRED],
     },
@@ -72,7 +84,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Cadence Bank',
-        logo: 'cadence.png',
+        logo: 'cadence.jpg',
         url: 'https://cadencebank.com/',
         status: [PARTNER_STATUS.HIRED],
     },
@@ -84,7 +96,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Southern Company',
-        logo: 'southern-company.jpg',
+        logo: 'southern-company.png',
         url: 'https://www.southerncompany.com/',
         status: [PARTNER_STATUS.HIRED],
     },
