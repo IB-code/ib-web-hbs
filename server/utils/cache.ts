@@ -4,7 +4,12 @@ import * as _ from 'lodash';
 const put = cache.put.bind(cache);
 let caches: Array<string> = [];
 
-(<any>cache).put = (key: any, value: any, time?: number, timeoutCallback?: (key: any) => void) => {
+(<any>cache).put = (
+    key: any,
+    value: any,
+    time?: number,
+    timeoutCallback?: (key: any) => void,
+) => {
     if (!isFinite(time)) {
         // 7 days
         time = 604800000;
@@ -57,10 +62,9 @@ export function storeItemById(value: any, prefix = ''): void {
 }
 
 export function clearCaches(prefix: string): void {
-    let cacheId: string,
-        tempCaches = caches.filter((c) => {
-            return c.indexOf(prefix) === 0;
-        });
+    let tempCaches = caches.filter((c) => {
+        return c.indexOf(prefix) === 0;
+    });
 
     caches = caches.filter((c) => {
         return c.indexOf(prefix) === -1;

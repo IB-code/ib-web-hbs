@@ -64,13 +64,18 @@ export function context(
                     description: 'this is the js description',
                 },
                 {
+                    icon: 'fa fa-lock',
+                    headline: 'TypeScript',
+                    description: 'this is the js description',
+                },
+                {
                     icon: 'fa fa-file-code',
                     headline: 'jQuery',
                     description: 'this is jquery description',
                 },
                 {
-                    icon: 'fab fa-react',
-                    headline: 'React',
+                    icon: 'fab fa-angular',
+                    headline: 'Angular',
                     description: 'this is the react description',
                 },
             ],
@@ -113,6 +118,8 @@ export function context(
             icon: 'fa fa-project-diagram',
             headline: 'Projects',
             timeline: 'Weeks 12 - 14',
+            description:
+                "Students spend the final three weeks of the course working on a group project that will showcase and enforce the skills they've learned the past eleven weeks.",
         },
     ];
 

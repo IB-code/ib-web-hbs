@@ -3,7 +3,9 @@
         <div class="container text-center">
             <h1 class="display-4 font-weight-bold text-white">Work With Us</h1>
             <h3 class="lead text-white">Become a Partner of the Innovate Birmingham Movement</h3>
-            <button type="button" class="btn btn-primary">CONTACT US</button>
+            <a href="/contact">
+                <button type="button" class="btn btn-primary">CONTACT US</button>
+            </a>
         </div>
     </div>
 </header>
@@ -23,7 +25,7 @@
             {{#each main.networkPartners}}
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <a href="{{url}}" target="_blank" rel="noreferrer noopener">
-                    <div class="logo p-2" style="background-image: url('{{logo}}')"></div>
+                    <div class="logo p-3 m-3" style="background-image: url('{{logo}}')"></div>
                 </a>
             </div>
             {{/each}}
@@ -37,7 +39,7 @@
             {{#each main.employerPartners}}
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <a href="{{url}}" target="_blank" rel="noreferrer noopener">
-                    <div class="logo p-3" style="background-image: url('{{logo}}')"></div>
+                    <div class="logo p-3 m-3" style="background-image: url('{{logo}}')"></div>
                 </a>
             </div>
             {{/each}}

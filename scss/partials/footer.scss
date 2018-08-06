@@ -1,4 +1,8 @@
 footer {
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
     .btn-navy {
         background-color: $navy !important;
     }

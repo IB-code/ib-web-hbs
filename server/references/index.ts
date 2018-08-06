@@ -53,12 +53,6 @@ export const PARTNERS: Array<{
         status: [PARTNER_STATUS.HIRED],
     },
     {
-        name: 'Birmingham Education Foundation',
-        logo: 'ed-foundation.jpg',
-        url: 'https://edbirmingham.org/',
-        status: [PARTNER_STATUS.HIRED],
-    },
-    {
         name: 'SLK Group',
         logo: 'slk.png',
         url: 'http://www.slkgroup.com/',
@@ -152,17 +146,13 @@ export const PARTNERS: Array<{
         name: 'Alabama Power',
         logo: 'alabama-power.jpg',
         url: 'http://alabamapower.com',
-        status: [
-            PARTNER_STATUS.HIRED,
-            PARTNER_STATUS.EMPLOYER,
-            PARTNER_STATUS.NETWORK,
-        ],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Alabama Capital Network',
         logo: 'acn.jpg',
         url: 'https://alabamacapitalnetwork.com',
-        status: [PARTNER_STATUS.NETWORK],
+        status: [],
     },
     {
         name: 'Autotec',
@@ -180,17 +170,13 @@ export const PARTNERS: Array<{
         name: 'Birmingham Civil Rights Institute',
         logo: 'bcri.jpg',
         url: 'https://www.bcri.org/',
-        status: [PARTNER_STATUS.NETWORK],
+        status: [],
     },
     {
         name: 'BBVA Compass',
         url: 'https://www.bbvacompass.com/',
         logo: 'bbva.jpg',
-        status: [
-            PARTNER_STATUS.HIRED,
-            PARTNER_STATUS.EMPLOYER,
-            PARTNER_STATUS.NETWORK,
-        ],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Blue Cross Blue Shield of Alabama',
@@ -199,8 +185,8 @@ export const PARTNERS: Array<{
         status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
-        name: 'Birmingham Forward',
-        logo: 'birmingham-forward.jpg',
+        name: 'City of Birmingham',
+        logo: 'birmingham-seal.jpg',
         url: 'https://www.birminghamal.gov/',
         status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.NETWORK],
     },
@@ -208,7 +194,7 @@ export const PARTNERS: Array<{
         name: 'Birmingham Venture Club',
         url: 'http://birminghamventure.com/',
         logo: 'bvc.png',
-        status: [PARTNER_STATUS.NETWORK],
+        status: [],
     },
     {
         name: 'Brasefield Gorrie',
@@ -232,7 +218,7 @@ export const PARTNERS: Array<{
         name: 'Community Foundation of Greater Birmingham',
         logo: 'cfgb.jpg',
         url: 'https://www.cfbham.org/',
-        status: [PARTNER_STATUS.NETWORK],
+        status: [],
     },
     {
         name: 'Daxko',
@@ -250,7 +236,7 @@ export const PARTNERS: Array<{
         name: 'Economic Partnership Development of Alabama',
         logo: 'edpa.jpg',
         url: 'https://www.edpa.org/',
-        status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.NETWORK],
+        status: [PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Fetch',
@@ -286,7 +272,7 @@ export const PARTNERS: Array<{
         name: 'Mayer Electric Supply',
         logo: 'mayer.jpg',
         url: 'https://www.mayerelectric.com/',
-        status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.NETWORK],
+        status: [PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'McWane',
@@ -309,7 +295,7 @@ export const PARTNERS: Array<{
     {
         name: 'Motion Mobs',
         logo: 'motion-mobs.jpg',
-        url: 'www.motionmobs.com',
+        url: 'http://www.motionmobs.com',
         status: [PARTNER_STATUS.EMPLOYER],
     },
     {
@@ -340,33 +326,25 @@ export const PARTNERS: Array<{
         name: 'Protective Life',
         logo: 'protective.png',
         url: 'https://www.protective.com/',
-        status: [
-            PARTNER_STATUS.HIRED,
-            PARTNER_STATUS.EMPLOYER,
-            PARTNER_STATUS.NETWORK,
-        ],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Regions',
         logo: 'regions.jpg',
         url: 'https://www.regions.com/personal-banking/',
-        status: [
-            PARTNER_STATUS.HIRED,
-            PARTNER_STATUS.EMPLOYER,
-            PARTNER_STATUS.NETWORK,
-        ],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Rev Birmingham',
         logo: 'rev.jpg',
         url: 'http://revbirmingham.org/',
-        status: [PARTNER_STATUS.NETWORK],
+        status: [],
     },
     {
         name: 'Southern Research',
         logo: 'southern-research.jpg',
         url: 'https://southernresearch.org/',
-        status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.NETWORK],
+        status: [PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Steris IMS',
@@ -376,7 +354,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Tech Birmingham',
-        logo: 'tech-birmingham.jpg',
+        logo: 'tech-birmingham.jpeg',
         url: 'https://www.techbirmingham.com/',
         status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.NETWORK],
     },
@@ -395,5 +373,47 @@ export const PARTNERS: Array<{
         logo: 'viperline.jpg',
         url: 'https://www.viperline.com/',
         status: [PARTNER_STATUS.EMPLOYER],
+    },
+    {
+        name: 'Covalence',
+        logo: 'covalence.png',
+        url: 'https://covalence.io/',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'Jefferson State Community College',
+        logo: 'jeff-state.jpg',
+        url: 'http://www.jeffersonstate.edu/',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'Lawson State Community College',
+        logo: 'lawson-state.jpg',
+        url: 'http://www.lawsonstate.edu/',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'The Dannon Project',
+        logo: 'dannon.jpeg',
+        url: 'http://www.dannonproject.org/',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'Birmingham Education Foundation',
+        logo: 'ed-foundation.jpeg',
+        url: 'https://edbirmingham.org/',
+        status: [PARTNER_STATUS.NETWORK, PARTNER_STATUS.HIRED],
+    },
+    {
+        name: 'I Am Bham',
+        logo: 'iambham.jpg',
+        url: 'https://innovatebham.com/',
+        status: [PARTNER_STATUS.NETWORK, PARTNER_STATUS.HIRED],
+    },
+    {
+        name: "Alabama Possible's Cash For College Program",
+        logo: 'cash-for-college.jpg',
+        url: 'alabamapossible.org/programs/cash-for-college/',
+        status: [PARTNER_STATUS.NETWORK],
     },
 ];
