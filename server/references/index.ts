@@ -126,7 +126,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'XpertDox',
-        logo: 'xpertdox.png',
+        logo: 'xpertdox.jpeg',
         url: 'https://www.xpertdox.com/',
         status: [PARTNER_STATUS.HIRED],
     },
