@@ -1,13 +1,13 @@
 {
-    "name": "my-simple-site",
+    "name": "ib-hbs",
     "version": "1.0.0",
-    "description": "mysite.com",
+    "description": "innovatebham.com",
     "author": "",
     "license": "MIT",
     "main": "server/index.js",
     "private": true,
     "engines": {
-        "node": ">=6.11.1",
+        "node": "8.9.1",
         "npm": ">=5.3.0"
     },
     "dependencies": {
@@ -54,7 +54,7 @@
         "moment": "^2.18.1",
         "moment-timezone": "^0.5.13",
         "morgan": "^1.8.2",
-        "node-sass": "^4.5.3",
+        "node-sass": "latest",
         "npm": "^6.2.0",
         "popper.js": "^1.12.5",
         "postcss": "^6.0.11",
