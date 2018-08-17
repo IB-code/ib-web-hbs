@@ -26,6 +26,11 @@
 .navbar-collapse {
     font-size: 85%;
     font-weight: 700;
+    text-align: center;
+
+    li {
+        margin-bottom: 1em;
+    }
 
     a {
         letter-spacing: 0.12em;

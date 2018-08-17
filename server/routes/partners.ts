@@ -28,7 +28,14 @@ export function context(
             req.context.main,
             partners.reduce(
                 (acc, curr) => {
-                    curr.logo = `/static/img/logos/company-logos/${curr.logo}`;
+                    console.log(curr.name.toLowerCase());
+                    if (curr.name.toLowerCase() === 'generation') {
+                        curr.logo = `/static/img/logos/${curr.logo}`;
+                    } else {
+                        curr.logo = `/static/img/logos/company-logos/${
+                            curr.logo
+                        }`;
+                    }
 
                     if (curr.status.includes(PARTNER_STATUS.NETWORK)) {
                         acc.networkPartners.push(curr);

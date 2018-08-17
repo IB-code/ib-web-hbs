@@ -7,7 +7,9 @@
         <div class="container text-center">
             <h1 class="display-4 font-weight-bold text-white">Every Career Needs a Beginning</h1>
             <p class="lead">Free Premier Tech Training in the Heart of the Magic City</p>
-            <button type="button" class="btn btn-primary">APPLY NOW</button>
+            <a href="https://innovatebham.formstack.com/forms/application" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-primary">APPLY NOW</button>
+            </a>
         </div>
     </div>
 </header>
@@ -30,7 +32,7 @@
 <section class="section-courses section-padding bg-primary">
     <div class="container">
         <a href="/courses/">
-            <h3 class="text-center text-white pb-5">Courses</h3>
+            <h3 class="text-center text-white pb-5">Our Courses</h3>
         </a>
         <div class="row">
             {{#each main.courses}}
@@ -48,14 +50,14 @@
     </div>
 </section>
 <section class="section-companies section-padding">
-    <h4 class="text-center pb-5">Our graduates are being hired at the best companies in Birmingham</h4>
+    <h3 class="text-center pb-5">See Where Our Graduates Are Being Hired</h3>
     <div class="carousel slide" data-interval="4000" data-ride="carousel">
         <div class="carousel-inner">
             {{#each main.hired}}
             <div class="carousel-item {{ternary @index 'active' ''}}">
                 <div class="row mt-4">
                     {{#each this}}
-                    <div class="col-md-3 logo" style="background-image: url('{{logo}}');"></div>
+                    <div class="col-md-3 logo mb-4" style="background-image: url('{{logo}}');"></div>
                     {{/each}}
                 </div>
             </div>

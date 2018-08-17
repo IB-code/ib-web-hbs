@@ -197,6 +197,18 @@ export const PARTNERS: Array<{
         status: [],
     },
     {
+        name: 'Generation',
+        url: 'https://www.generation.org/',
+        logo: 'generation_logo.png',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'Central Six',
+        url: 'https://alabamaworks.com/centralsix/',
+        logo: 'central-six.jpg',
+        status: [PARTNER_STATUS.NETWORK],
+    },
+    {
         name: 'Brasefield Gorrie',
         logo: 'brasfield-gorrie.jpg',
         url: 'https://www.brasfieldgorrie.com/',
@@ -348,7 +360,7 @@ export const PARTNERS: Array<{
     },
     {
         name: 'Steris IMS',
-        logo: 'steris.jpeg',
+        logo: 'steris.jpg',
         url: 'http://www.imsready.com/',
         status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },

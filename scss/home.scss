@@ -48,16 +48,4 @@ header {
             }
         }
     }
-
-    &-details {
-        .item {
-            &:hover {
-                i,
-                p,
-                h5 {
-                    animation: slideUp 500ms forwards;
-                }
-            }
-        }
-    }
 }

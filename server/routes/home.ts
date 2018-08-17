@@ -1,7 +1,7 @@
 import * as express from 'express';
 import parse from '../middleware/parse';
 import * as utils from '../utils';
-import * as _ from 'lodash';
+import { noop } from 'lodash';
 
 export function context(
     req: express.Request,
@@ -10,12 +10,14 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Home | Innovate Birmingham',
+            title:
+                'Begin your career in tech. Come learn with us! | Innovate Birmingham',
             meta: {
-                description: 'This is a meta description.',
+                description:
+                    "We are a grant funded tech training program. We're dedicated to creating a sustainable pipeline of tech talent for Birmingham, AL.",
                 images: [
                     {
-                        url: '/static/img/home/hero.png',
+                        url: '/static/img/logos/logo.png',
                     },
                 ],
             },
@@ -28,20 +30,22 @@ export function context(
                     href: '/courses/software/',
                     icon: 'fa fa-code',
                     headline: 'Software Engineering Bootcamp',
-                    description: 'Learn to build websites & mobile apps!',
+                    description:
+                        'Do you want to learn to code? Come here to learn to build mobile apps, servers, and databases.',
                 },
                 {
                     href: '/courses/hardware/',
                     icon: 'fa fa-desktop',
                     headline: 'IT Hardware Bootcamp',
                     description:
-                        'Do you like to build things with your hands? Come here to build the hardware of tomorrow!',
+                        'Do you want to learn how to troubleshoot printers, servers, operating systems, build PCS, and also become CompTIA certified? This is the course for you!',
                 },
                 {
                     href: '/scholarships/',
                     icon: 'fa fa-school',
                     headline: 'College Scholarships',
-                    description: '$4,000 Scholarships for technology majors!',
+                    description:
+                        'Do you go to Jefferson State, Lawson State, or UAB? And are you a technology major? If so, you could be eligible for up to $4,000 in scholarship in money!',
                 },
             ],
             benefits: [
@@ -61,7 +65,7 @@ export function context(
                     icon: 'fas text-yellow fa-2x fa-hands-helping',
                     headline: 'Professonal Services',
                     description:
-                        "We know taking ~3 months to learn a new skill isn't an easy ask. So we make sure we help you with any needs that may arise during the course. Childcare? Doctor's appointment? Power bill? Put it on our tab.",
+                        "We know taking ~3 months to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course.",
                 },
                 {
                     icon: 'fa text-yellow fa-2x fa-briefcase',
@@ -79,7 +83,7 @@ export function context(
                     icon: 'fas text-yellow fa-2x fa-dollar-sign',
                     headline: 'Completely Free',
                     description:
-                        "We are a grant funded nonprofit program that received ~$6 million to train students. We're giving it away, so come get it. Thanks, Obama!",
+                        "We are a grant funded nonprofit program that received ~$6 million to train students. We're giving it away, so come get it.",
                 },
             ],
         },
@@ -111,7 +115,7 @@ export function context(
                 [[]],
             );
         })
-        .catch(_.noop)
+        .catch(noop)
         .then(() => {
             next();
         });

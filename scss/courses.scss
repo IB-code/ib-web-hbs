@@ -28,7 +28,6 @@ header {
     .card {
         border: none;
         min-height: 500px;
-
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
@@ -38,6 +37,18 @@ header {
                 left: 50%;
                 transform: translateX(-50%);
                 width: 50%;
+            }
+
+            .card-top {
+                height: 200px;
+                position: relative;
+
+                .time {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    right: 0;
+                }
             }
         }
 
