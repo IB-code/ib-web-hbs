@@ -16,32 +16,37 @@ export function context(
         main: {
             reports: [
                 {
-                    title: 'Report #1',
-                    img: 'report-one.png',
+                    title: 'What is a Startup and Why Should We Care?',
+                    description: 'Tech Ecosystem Gaps: Report #1',
+                    img: 'report-bg.png',
                     link:
                         'https://drive.google.com/file/d/14bq9UpLtk7zlAswe0bkhJI5BX6s7ihWy/view',
                 },
                 {
-                    title: 'Report #2',
-                    img: 'report-two.png',
+                    title: "The Entrepreneur's Point of View",
+                    description: 'Tech Ecosystem Gaps: Report #2',
+                    img: 'report-bg.png',
                     link:
                         'https://drive.google.com/open?id=11IKoWgyxo8k-XLRylOi9JMeA4Rc8KRvJ',
                 },
                 {
-                    title: 'Report #3',
-                    img: 'report-three.png',
+                    title: "The Corporation's Point of View",
+                    description: 'Tech Ecosystem Gaps: Report #3',
+                    img: 'report-bg.png',
                     link:
                         'https://drive.google.com/file/d/0Bzq5RPc55vlbYW9qZmFHbUFfck0weUVVUDV4VkJ2Ry1NQVo4/view?usp=sharing',
                 },
                 {
-                    title: 'Report #4',
-                    img: 'report-four.png',
+                    title: "The Investor's Point of View",
+                    description: 'Tech Ecosystem Gaps: Report #4',
+                    img: 'report-bg.png',
                     link:
                         'https://drive.google.com/open?id=1NNTnqBIJ3BEpkYgs8FRFOx6zXKjRdygj',
                 },
                 {
-                    title: 'Report #5',
-                    img: 'report-five.png',
+                    title: 'Recommendations: The Final Report',
+                    description: 'Tech Ecosystem Gaps: Report #5',
+                    img: 'report-bg.png',
                     link:
                         'https://drive.google.com/file/d/1zba6gHmkWRR_kfMTueRLsRl_XD6eFh71/view?usp=sharing',
                 },

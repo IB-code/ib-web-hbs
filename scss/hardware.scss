@@ -18,3 +18,14 @@ header {
         align-items: center;
     }
 }
+
+.section {
+    &-about {
+        .icon-container {
+            i {
+                color: $navy;
+                font-size: 3.5em;
+            }
+        }
+    }
+}

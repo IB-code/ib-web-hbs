@@ -28,6 +28,16 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             height: 10em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            text-align: center;
+
+            .bg-text {
+                color: $yellow;
+                font-size: 1.5em;
+            }
         }
     }
 }

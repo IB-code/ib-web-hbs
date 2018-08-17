@@ -80,7 +80,7 @@ export const PARTNERS: Array<{
         name: 'Cadence Bank',
         logo: 'cadence.jpg',
         url: 'https://cadencebank.com/',
-        status: [PARTNER_STATUS.HIRED],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'RGIS',

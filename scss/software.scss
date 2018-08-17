@@ -27,6 +27,15 @@ header {
         }
     }
 
+    &-about {
+        .icon-container {
+            i {
+                color: $navy;
+                font-size: 3.5em;
+            }
+        }
+    }
+
     &-curriculum {
         .accordion {
             .card {

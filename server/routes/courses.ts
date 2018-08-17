@@ -28,7 +28,7 @@ export function context(
                         text: '14 Weeks / 9am - 5pm',
                     },
                     description:
-                        'We partner with Covalence, a local Software Bootcamp company, and through their curriculum, facilitated through their online portal, we teach you the skills you need to become a junior level developer.',
+                        'We partner with Covalence, a local Software Bootcamp company, and using their curriculum, facilitated through their online portal, we teach you the skills you need to work as a junior level developer.',
                     action: {
                         href: '/courses/software/',
                         text: 'LEARN MORE',
@@ -42,7 +42,7 @@ export function context(
                         text: '12 Weeks / 9am - 3pm',
                     },
                     description:
-                        'We partner with Covalence, a local Software Bootcamp company, and through their curriculum, facilitated through their online portal, we teach you the skills you need to become a junior level developer.',
+                        "We partner with McKinsey Social Initiative's Generation IT program and through their curriculum we teach you the technical and nontechnical skills you need to get a job as an IT professional.",
                     action: {
                         href: '/courses/hardware/',
                         text: 'LEARN MORE',
@@ -56,7 +56,7 @@ export function context(
                         text: 'Up to $4,000',
                     },
                     description:
-                        'We partner with Covalence, a local Software Bootcamp company, and through their curriculum, facilitated through their online portal, we teach you the skills you need to become a junior level developer.',
+                        'Through a partnership with the University of Alabama at Birmingham, Jefferson State Community College, and Lawson State Community College, Innovate Birmingham is offering up to $4000 in scholarship funds for technology majors.',
                     action: {
                         href: '/scholarships/',
                         text: 'LEARN MORE',

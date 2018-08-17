@@ -28,7 +28,6 @@ export function context(
             req.context.main,
             partners.reduce(
                 (acc, curr) => {
-                    console.log(curr.name.toLowerCase());
                     if (curr.name.toLowerCase() === 'generation') {
                         curr.logo = `/static/img/logos/${curr.logo}`;
                     } else {

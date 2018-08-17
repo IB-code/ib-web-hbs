@@ -2,19 +2,39 @@
     <div class="jumbotron mb-0 jumbotron-fluid">
         <div class="container text-center">
             <h1 class="display-4 font-weight-bold">Full Stack Software Engineering</h1>
-            <h3 class="lead">Learn to Build Apps</h3>
+            <h3 class="lead">Powered by I Am Bham</h3>
             <a href="https://innovatebham.formstack.com/forms/application" target="_blank" rel="noopener noreferrer">
                 <button class="btn btn-primary text-white">APPLY NOW</button>
             </a>
         </div>
     </div>
 </header>
+<section class="section-padding bg-yellow text-center">
+    <h3 class="text-navy">Next Class Starts Sept 4, 2018</h3>
+    <h4 class="text-white">Applications due August 25th</h4>
+</section>
 <section class="section-padding section-about">
-    <div class="container text-center">
-        <h3>IamBham Powered By Covalence</h3>
-        <p>I am Bham is a 14-week coding bootcamp designed to teach Full Stack and Front End Web Development through short-term,
-            fast-track, intensive training. Classes are held at Innovation Depot, home to more than 100 companies, allowing
-            students the ability to interact daily with potential employers.</p>
+    <div class="container row justify-content-between mx-auto">
+        <div class="col-md-4 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-question-circle"></i>
+            </div>
+             <p>I am Bham is a 14-week coding bootcamp designed to teach Full Stack Software Engineering through short-term, fast-track, intensive training.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <a href="https://goo.gl/maps/cxhEG3Z12vs" target="_blank" rel="noopener noreferrer">
+                <p>Innovation Depot</p>
+            </a>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-clock"></i>
+            </div>
+            <p>9am - 5pm, M - F</p>
+        </div>
     </div>
 </section>
 <section class="section-padding section-curriculum bg-primary">
@@ -38,11 +58,11 @@
                 </div>
                 <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion">
                     {{#if children}}
-                    <div id="accordion-nested-{{id}}" class="accordion accordion-nested accordion-nested-{{id}}">
+                    <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
                         {{#each children}}
                         <div class="card">
                             <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
-                                <h5 class="mb-0 pl-3">
+                                <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="#collapse-{{id}}">
                                         <i class="{{icon}} mr-2"></i>
                                         {{headline}}
@@ -59,7 +79,7 @@
                     </div>
                     {{else}}
                     <div>
-                        <p class="my-4 px-4">{{ description }}</p>
+                        <p class="my-4 px-4">{{{ description }}}</p>
                     </div>
                     {{/if}}
                 </div>
