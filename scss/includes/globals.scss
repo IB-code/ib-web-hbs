@@ -68,6 +68,38 @@ button {
     }
 }
 
+.accordion {
+    .accordion-title {
+        font-size: 1em;
+    }
+
+    .card-header {
+        justify-content: center;
+    }
+
+    &.hardware-accordion {
+        h6 {
+            flex-basis: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-header {
+            justify-content: space-between;
+        }
+
+        &.hardware-accordion {
+            h6 {
+                flex-basis: auto;
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+    }
+}
+
 @keyframes slideUp {
     0% {
         transform: translateY(0);

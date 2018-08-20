@@ -44,15 +44,14 @@
             <strong>No experience is required.</strong> This course was specifically designed to take someone with zero coding experience
             and teach them what they need to know to
             <strong>Actually Work</strong> as a junior-level developer. We are here for you every step of the way!</h6>
-        <div id="accordion" class="accordion">
+        <div id="accordion" class="accordion hardware-accordion">
             {{#each main.curriculum}}
             <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
-                            <i class="{{icon}} mr-2"></i>
-                            {{headline}}
-                        </button>
+                <div class="card-header d-flex flex-wrap align-items-center" id="heading-{{id}}">
+                    <h5 class="mb-0 accordion-title font-weight-400 text-primary" data-toggle="collapse" data-target="#collapse-{{id}}" aria-expanded="true"
+                        aria-controls="collapse-{{id}}">
+                        <i class="{{icon}} mr-2"></i>
+                        {{headline}}
                     </h5>
                     <h6>{{ timeline }}</h6>
                 </div>
