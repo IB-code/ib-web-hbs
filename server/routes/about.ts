@@ -11,6 +11,11 @@ export function context(
             title: 'About Us | Innovate Birmingham',
             meta: {
                 description: 'Want to know what we do? Look no further.',
+                images: [
+                    {
+                        url: '/static/img/logos/logo.png',
+                    },
+                ],
             },
         },
         main: {
