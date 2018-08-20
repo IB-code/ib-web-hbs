@@ -8,9 +8,9 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Courses | Innovate Birmingham',
+            title: 'Our Courses | Innovate Birmingham',
             meta: {
-                description: 'This is a meta description.',
+                description: 'Choose your path to a career in technology.',
                 images: [
                     {
                         url: '/static/img/home/hero.png',

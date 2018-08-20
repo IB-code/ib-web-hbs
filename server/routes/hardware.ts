@@ -11,9 +11,16 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Courses | Generation IT Hardware Bootcamp',
+            title:
+                'Become an IT Professional | Generation IT Hardware Bootcamp',
             meta: {
-                description: 'Learn to build a computer.',
+                description:
+                    'Learn the technical and nontechnical skills you need to get a job as an IT professional.',
+                images: [
+                    {
+                        url: '/static/img/home/hero.png',
+                    },
+                ],
             },
         },
         main: {

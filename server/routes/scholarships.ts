@@ -10,7 +10,8 @@ export function context(
         head: {
             title: 'Scholarships | Innovate Birmingham',
             meta: {
-                description: 'This is a meta description.',
+                description:
+                    'Offering scholarships to UAB, Jefferson State, and Lawson State.',
                 images: [
                     {
                         url: '/static/img/home/hero.png',

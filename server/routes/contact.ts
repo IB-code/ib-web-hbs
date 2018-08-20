@@ -10,7 +10,7 @@ export function context(
         head: {
             title: 'Contact Us | Innovate Birmingham',
             meta: {
-                description: 'This is a meta description.',
+                description: 'Got questions? We got answers!',
                 images: [
                     {
                         url: '/static/img/home/hero.png',

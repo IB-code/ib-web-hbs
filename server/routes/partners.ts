@@ -17,6 +17,11 @@ export function context(
             meta: {
                 description:
                     'Innovate Birmingham is a city-wide initiative. And we want to thank all the companies that make it possible.',
+                images: [
+                    {
+                        url: '/static/img/home/hero.png',
+                    },
+                ],
             },
         },
         main: {},

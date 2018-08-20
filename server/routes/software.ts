@@ -11,9 +11,15 @@ export function context(
 ) {
     req.context = {
         head: {
-            headline: 'Courses | IamBham Software Development',
+            headline:
+                'Full Stack Software Engineering | IamBham Software Development',
             meta: {
                 description: 'Learn to Code. For Free. Seriously.',
+                images: [
+                    {
+                        url: '/static/img/home/hero.png',
+                    },
+                ],
             },
         },
         main: {
