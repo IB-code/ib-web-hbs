@@ -16,5 +16,11 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .lead {
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
     }
 }
