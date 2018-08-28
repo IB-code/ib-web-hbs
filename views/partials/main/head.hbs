@@ -40,3 +40,20 @@
 {{!-- Organization ld+json --}}
 <script type="application/ld+json" data-sd-snippet="sd">{"@context":"http://schema.org/","@type":"Organization","name":"My Company","url":"https://mysite.com/","logo":{"@type": "ImageObject","url": "{{head.meta.baseUrl}}public/img/logos/company-text-logo-sd.png","width": 326,"height": 60},"sameAs":["https://www.facebook.com/company","https://www.instagram.com/company","https://www.linkedin.com/company","https://www.twitter.com/company"]}</script> {{!-- /Organization ld+json --}} {{!-- Breadcrumb ld+json --}}
 <script type="application/ld+json" data-sd-snippet="sd">{"@context": "http://schema.org","@type": "BreadcrumbList","itemListElement": [{{#each head.meta.breadcrumbs}}{"@type": "ListItem","position": {{index}},"item": {"@id": "{{url}}","name": "{{name}}"}}{{#unless @last}},{{/unless}}{{/each}}]}</script> {{!-- /Breadcrumb ld+json --}}
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '637559423309310');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=637559423309310&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
