@@ -36,7 +36,7 @@ export default function meta(
     let protocol = req.protocol;
 
     if (config.ENV.prod) {
-        host = 'mysite.com';
+        host = 'innovatebham.com';
         protocol = 'https';
     }
 

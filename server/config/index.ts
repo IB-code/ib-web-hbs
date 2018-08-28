@@ -43,7 +43,7 @@ const configDefaults = {
     production: {
         ENV,
         PORT: process.env['PORT'],
-        IP: 'mysite.com',
+        IP: 'innovatebham.com',
         logLevel: log.LOG_LEVEL.WARN,
         root: path.resolve(__dirname + '/../..'),
     },
