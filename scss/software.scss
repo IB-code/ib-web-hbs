@@ -6,8 +6,8 @@ header {
     & > .jumbotron {
         height: 500px;
         background: linear-gradient(
-                rgba(11, 26, 66, 0.25),
-                rgba(11, 26, 66, 0.25)
+                rgba(11, 26, 66, 0.4),
+                rgba(11, 26, 66, 0.4)
             ),
             url('/static/img/software/hero.jpg');
         background-repeat: no-repeat;
@@ -39,6 +39,12 @@ header {
                 color: $navy;
                 font-size: 3.5em;
             }
+        }
+    }
+
+    &-covalence {
+        img {
+            height: 4em;
         }
     }
 
