@@ -30,6 +30,11 @@ export const redirects = [
         to: '/',
         status: HTTP_CODES.HTTP_PERMANENT_REDIRECT,
     },
+    {
+        pattern: 'https://innovatebham.com',
+        to: 'https://www.innovatebham.com',
+        status: HTTP_CODES.HTTP_PERMANENT_REDIRECT,
+    },
 ];
 
 const configDefaults = {
