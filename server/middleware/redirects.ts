@@ -4,7 +4,11 @@ import * as _ from 'lodash';
 import log from '../log';
 import { redirects } from '../config';
 
-export default (req: express.Request, res: express.Response, next: express.NextFunction) => {
+export default (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction,
+) => {
     let url = req.url;
 
     let queryIndex = url.indexOf('?'),
@@ -22,6 +26,7 @@ export default (req: express.Request, res: express.Response, next: express.NextF
         match.shift();
 
         let to = util.format.apply(util, [redirect.to].concat(match));
+
         res.redirect(redirect.status, (to + query).trim());
 
         return true;
