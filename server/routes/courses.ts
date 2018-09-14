@@ -48,20 +48,20 @@ export function context(
                         text: 'LEARN MORE',
                     },
                 },
-                {
-                    logo: '/static/img/logos/logo_small.png',
-                    headline: 'College Scholarships',
-                    subline: {
-                        icon: 'dollar-sign',
-                        text: 'Up to $4,000',
-                    },
-                    description:
-                        'Through a partnership with the University of Alabama at Birmingham, Jefferson State Community College, and Lawson State Community College, Innovate Birmingham is offering up to $4000 in scholarship funds for technology majors.',
-                    action: {
-                        href: '/scholarships/',
-                        text: 'LEARN MORE',
-                    },
-                },
+                // {
+                //     logo: '/static/img/logos/logo_small.png',
+                //     headline: 'College Scholarships',
+                //     subline: {
+                //         icon: 'dollar-sign',
+                //         text: 'Up to $4,000',
+                //     },
+                //     description:
+                //         'Through a partnership with the University of Alabama at Birmingham, Jefferson State Community College, and Lawson State Community College, Innovate Birmingham is offering up to $4000 in scholarship funds for technology majors.',
+                //     action: {
+                //         href: '/scholarships/',
+                //         text: 'LEARN MORE',
+                //     },
+                // },
             ],
         },
     };
