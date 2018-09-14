@@ -32,7 +32,7 @@
 <section class="section-courses section-padding bg-primary">
     <div class="container">
         <a href="/courses/">
-            <h3 class="text-center text-white pb-5">Our Courses</h3>
+            <h3 class="text-center text-white pb-5">Our Programs</h3>
         </a>
         <div class="row">
             {{#each main.courses}}
@@ -80,7 +80,8 @@
                             <a href="/blog/{{attributes.slug}}/">{{attributes.title}}</a>
                         </h4>
                         <span class="card-subtitle">{{attributes.author}} - </span>
-                        <time class="card-subtitle nowrap font-weight-bold" datetime="{{attributes.readTime}}m">{{attributes.readTime}} minute read</time>
+                        <time class="card-subtitle nowrap font-weight-bold" datetime="{{attributes.readTime}}m">{{attributes.readTime}}
+                            minute read</time>
                     </header>
                     <p class="card-text mt-3">{{attributes.description}}</p>
                     <footer class="text-center">
