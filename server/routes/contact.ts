@@ -104,10 +104,10 @@ export function handleFormSubmission(
             },
         )
         .then((response) => {
-            res.redirect('http://localhost:3000/contact?response=thanks');
+            res.redirect('http://innovatebham.com/contact?response=thanks');
         })
         .catch((err) => {
-            res.redirect('http://localhost:3000/contact?response=whoops');
+            res.redirect('http://innovatebham.com/contact?response=whoops');
         });
 }
 
