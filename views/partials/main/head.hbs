@@ -34,6 +34,7 @@
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/base.css">
 <!-- /Remove Style -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 {{!-- Organization ld+json --}}
 <script type="application/ld+json" data-sd-snippet="sd">{"@context":"http://schema.org/","@type":"Organization","name":"Innovate Birmingham","url":"https://innovatebham.com/","logo":{"@type": "ImageObject","url": "{{head.meta.baseUrl}}public/img/logos/logo.png","width": 326,"height": 60},"sameAs":["https://www.facebook.com/InnovateBirmingham/","https://www.instagram.com/innovatebhamworks/","https://www.linkedin.com/company/innovatebirmingham/"]}</script>
@@ -45,7 +46,7 @@
   !function (f, b, e, v, n, t, s) {
     if (f.fbq) return; n = f.fbq = function () {
       n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
     };
     if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
     n.queue = []; t = b.createElement(e); t.async = !0;

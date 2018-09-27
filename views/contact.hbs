@@ -1,22 +1,46 @@
 <header class="section-hero">
     <div class="container mt-5 mb-3">
         <h1 class="font-weight-bold">Want More Info?</h1>
-        <p>Thanks for your interest in Innovate Birmingham! For general inquries please email <a href="mailto:apply@innovatebham.com">apply@innovatebham.com</a>. If you have specific questions please find the appropriate email below. We'd love to hear from you!</p>
+        <p>Thanks for your interest in Innovate Birmingham! For general inquries please email <a href="mailto:apply@innovatebham.com">apply@innovatebham.com</a>.
+            If you have specific questions please find the appropriate email below. We'd love to hear from you!</p>
     </div>
 </header>
 <section class="section-padding section-contact">
-    <div class="container">
-        <h3 class="font-weight-bold">Bootcamps</h3>
-        <p>Please email <a href="mailto:kayla@innovatebham.com">kayla@innovatebham.com</a></p>
-        <h3 class="font-weight-bold">Scholarships</h3>
-        <p>Please email <a href="mailto:alexandria@innovatebham.com">alexandria@innovatebham.com</a></p>
-        <h3 class="font-weight-bold">Employers or Partnerships</h3>
-        <p>Please email <a href="mailto:haleyb@innovatebham.com">haleyb@innovatebham.com</a></p>
-        <h3 class="font-weight-bold">For general inquries or anything else</h3>
-        <p>Please email <a href="mailto:apply@innovatebham.com">apply@innovatebham.com</a></p>
+    <div class="container" id="formContainer">
+        <h5 class="mb-4">Fill out this form and we'll get back to you ASAP.</h5>
+        <form action="/contact/submit/" method="POST">
+            <div class="form-group">
+                <input class="form-control" name="firstName" type="text" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="lastName" type="text" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" aria-describedby="Email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="topic">Select What You're Asking About</label>
+                <select name="topic" id="">
+                    <option value="bootcamps">Bootcamps</option>
+                    <option value="scholarships">Scholarships</option>
+                    <option value="employers">Employers or Partnerships</option>
+                    <option value="general">General</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LfYRXIUAAAAANmPK3YgTl5mnK5LzDgiuBqEU75N"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </section>
-
+<!-- Remove Script -->
+<script src="/public/js/contact.js"></script>
+<!-- /Remove Script -->
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/contact.css">
 <!-- /Remove Style -->

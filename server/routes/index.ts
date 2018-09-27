@@ -15,6 +15,7 @@ router
     .get('/', index.context, meta, index.render)
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
+    .post('/contact/submit', contact.handleFormSubmission)
     .get('/courses', courses.context, meta, courses.render)
     .get('/scholarships', scholarships.context, meta, scholarships.render)
     .get('/courses/software', software.context, meta, software.render)

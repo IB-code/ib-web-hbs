@@ -20,5 +20,12 @@ header {
                 color: $navy;
             }
         }
+
+        .form-group {
+            textarea,
+            select {
+                display: block;
+            }
+        }
     }
 }
