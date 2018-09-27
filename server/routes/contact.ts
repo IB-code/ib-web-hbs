@@ -61,7 +61,7 @@ export function handleFormSubmission(
 
     let secret = process.env.G_RECAPTCHA_SECRET;
 
-    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe&response=${secret}&remoteip=${
+    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${gCaptcha}&remoteip=${
         req.connection.remoteAddress
     }`;
 
