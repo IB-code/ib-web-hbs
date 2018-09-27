@@ -70,13 +70,8 @@ export function handleFormSubmission(
             (response): any => {
                 let { data } = response;
 
-                console.log('data', data);
-
                 if (!data.success) {
-                    return {
-                        responseCode: 1,
-                        responseDesc: 'Failed captcha verification',
-                    };
+                    throw new Error();
                 }
 
                 let email = ['@innovatebham.com'];
