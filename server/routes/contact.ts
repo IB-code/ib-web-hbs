@@ -87,10 +87,10 @@ export function handleFormSubmission(
                         email.unshift('haleyb');
                         break;
                     case 'general':
-                        email.unshift('apply');
+                        email.unshift('kellie');
                         break;
                     default:
-                        email.unshift('apply');
+                        email.unshift('kellie');
                 }
 
                 return send(
