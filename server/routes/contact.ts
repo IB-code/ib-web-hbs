@@ -70,6 +70,8 @@ export function handleFormSubmission(
             (response): any => {
                 let { data } = response;
 
+                console.log('data', data);
+
                 if (!data.success) {
                     return {
                         responseCode: 1,
