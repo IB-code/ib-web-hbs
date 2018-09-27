@@ -106,6 +106,7 @@ export function handleFormSubmission(
             res.redirect('http://innovatebham.com/contact?response=thanks');
         })
         .catch((err) => {
+            console.log('err', err);
             res.redirect('http://innovatebham.com/contact?response=whoops');
         });
 }
