@@ -70,8 +70,6 @@ export function handleFormSubmission(
             (response): any => {
                 let { data } = response;
 
-                console.log('data', data);
-
                 if (!data.success) {
                     throw new Error();
                 }
