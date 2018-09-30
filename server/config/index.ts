@@ -30,6 +30,11 @@ export const redirects = [
         to: '/',
         status: HTTP_CODES.HTTP_PERMANENT_REDIRECT,
     },
+    {
+        pattern: '^/meet-the-students',
+        to: '/',
+        status: HTTP_CODES.HTTP_PERMANENT_REDIRECT,
+    },
 ];
 
 const configDefaults = {
