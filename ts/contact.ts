@@ -1,21 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     let params: any = getParams(window.location.href);
     let el = document.getElementById('formContainer');
+    el.classList.add('d-flex');
+    el.classList.add('align-items-center');
+    el.classList.add('justify-content-center');
 
-    if (params.response && params.response === 'thanks') {
-        el.classList.add('d-flex');
-        el.classList.add('align-items-center');
-        el.classList.add('justify-content-center');
-        el.innerHTML = '<h1>Thanks! Someone will be in touch, shortly</h1>';
-    }
+    let errorText = 'Whoops! Something went wrong, please try again later.';
+    let successText = 'Thanks! Someone will be in touch, shortly.';
 
-    if (params.response && params.response === 'whoops') {
-        el.classList.add('d-flex');
-        el.classList.add('align-items-center');
-        el.classList.add('justify-content-center');
-        el.innerHTML =
-            '<h1>Whoops! Something went wrong, please try again later.</h1>';
-    }
+    el.innerHTML =
+        params.response && params.response === 'thanks'
+            ? `<h1>${successText}</h1>`
+            : `<h1>${errorText}</h1>`;
 });
 
 let getParams = (url) => {
