@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     let params: any = getParams(window.location.href);
+    let el = document.getElementById('formContainer');
 
     if (params.response && params.response === 'thanks') {
-        let el = document.getElementById('formContainer');
-
+        el.classList.add('d-flex align-items-center justify-content-center');
         el.innerHTML = '<h1>Thanks! Someone will be in touch, shortly</h1>';
     }
 
     if (params.response && params.response === 'whoops') {
-        let el = document.getElementById('formContainer');
-        el.classList.add('d-flex');
-        el.classList.add('justify-content-center');
-        el.classList.add('align-items-center');
-
+        el.classList.add('d-flex align-items-center justify-content-center');
         el.innerHTML =
             '<h1>Whoops! Something went wrong, please try again later.</h1>';
     }
