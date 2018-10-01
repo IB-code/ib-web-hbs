@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (params.response && params.response === 'whoops') {
         let el = document.getElementById('formContainer');
+        el.classList.add('d-flex align-items-center justify-content-center');
 
         el.innerHTML =
             '<h1>Whoops! Something went wrong, please try again later.</h1>';

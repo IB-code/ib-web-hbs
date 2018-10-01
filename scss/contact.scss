@@ -8,6 +8,10 @@ header {
 
 .section {
     &-contact {
+        & > .container {
+            min-height: 29vh;
+        }
+
         p {
             font-size: 1.25em;
         }
