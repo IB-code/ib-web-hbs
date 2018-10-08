@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     let params: any = getParams(window.location.href);
+
+    if (params.response === undefined) {
+        return;
+    }
+
     let el = document.getElementById('formContainer');
     el.classList.add('d-flex');
     el.classList.add('align-items-center');
