@@ -81,7 +81,7 @@ export function handleFormSubmission(
                         email.unshift('kayla');
                         break;
                     case 'scholarships':
-                        email.unshift('alexandria');
+                        email.unshift('kayla');
                         break;
                     case 'employers':
                         email.unshift('haleyb');
