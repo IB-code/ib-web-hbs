@@ -42,7 +42,7 @@ export function context(
             icon: 'fas fa-plug',
             headline: 'Microsoft Power BI',
             description:
-                'All that data is sitting on a server as 1s and 0s, and even when we can see them as numbers and words, rows and tables, we need a better way to visualize all that so we can make educated decisions. So how do we get all that data in a model that is both beautiful and informative. That\'s where Power BI comes in. As one of the leaders in Business Intelligence software, Power BI gives you the "power" (sorry) to turn all those 1s and 0s into graphs and charts that you\'ll acctually be able to use to draw  insights and make decisions.',
+                'All that data is sitting on a server as 1s and 0s, and even when we can see them as numbers and words, rows and tables, we need a better way to visualize all that so we can make educated decisions. So how do we get all that data in a model that is both beautiful and informative. That\'s where Power BI comes in. As one of the leaders in Business Intelligence software, Power BI gives you the "power" (sorry) to turn all those 1s and 0s into graphs and charts that you\'ll actually be able to use to draw  insights and make decisions.',
         },
         {
             icon: 'fas fa-database',
