@@ -54,7 +54,7 @@ export function context(
             icon: 'fas fa-table',
             headline: 'Tableau',
             description:
-                "Tableau is considered by many to be the gold standard in data visualization. Having been around since 2003, Tableu Software has taken years and years to perfect how we as end users and data analysts make use of all the data. Sound similar to Power BI? That's because they are both leaders in Business Intelligence software. So why learn both? Because knowing the ins and outs and strengths and weaknesses of both will give you a leg up when working as a data analyst.",
+                "Tableau is considered by many to be the gold standard in data visualization. Having been around since 2003, Tableu Software has taken years and years to perfect how we as end users and data analysts make sense of all the data. Sound similar to Power BI? That's because they are both leaders in Business Intelligence software. So why learn both? Because knowing the ins and outs and strengths and weaknesses of both will give you a leg up when working as a data analyst.",
         },
     ];
 
