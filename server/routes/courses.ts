@@ -21,7 +21,7 @@ export function context(
         main: {
             courses: [
                 {
-                    logo: '/static/img/logos/iambham_logo.png',
+                    icon: 'fas fa-code',
                     headline: 'Software Engineering Bootcamp',
                     subline: {
                         icon: 'clock',
@@ -35,16 +35,16 @@ export function context(
                     },
                 },
                 {
-                    logo: '/static/img/logos/generation_logo.png',
-                    headline: 'IT Hardware Bootcamp',
+                    icon: 'fas fa-cogs',
+                    headline: 'Data Analytics Bootcamp',
                     subline: {
                         icon: 'clock',
                         text: '12 Weeks / 9am - 3pm',
                     },
                     description:
-                        "We partner with McKinsey Social Initiative's Generation IT program and through their curriculum we teach you the technical and nontechnical skills you need to get a job as an IT professional.",
+                        'Using the leading tools on the market we teach you the fundamentals you need to know to become an entry level Data Analyst and help businesses translate data into informed decisions and valuable knowledge.',
                     action: {
-                        href: '/courses/hardware/',
+                        href: '/courses/data-analytics/',
                         text: 'LEARN MORE',
                     },
                 },

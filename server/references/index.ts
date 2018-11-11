@@ -1,7 +1,7 @@
 export interface ICurriculumSection {
-    icon: string;
+    icon?: string;
     headline: string;
-    timeline: string;
+    timeline?: string;
     description?: string | Array<string>;
     children?: Array<{
         icon: string;

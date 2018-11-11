@@ -34,18 +34,18 @@ export function context(
                         'Do you want to learn to code? Come here to learn to build mobile apps, servers, and databases.',
                 },
                 {
-                    href: '/courses/hardware/',
-                    icon: 'fa fa-desktop',
-                    headline: 'IT Hardware Bootcamp',
+                    href: '/courses/data-analytics/',
+                    icon: 'fas fa-cogs',
+                    headline: 'Data Analytics Bootcamp',
                     description:
-                        'Do you want to learn how to troubleshoot printers, servers, operating systems, build PCS, and also become CompTIA certified? This is the course for you!',
+                        'Do you want to learn how to glean valuable insights and knowledge from data to help you make informed business decisions?',
                 },
                 {
                     href: '/scholarships/',
                     icon: 'fa fa-school',
                     headline: 'College Scholarships',
                     description:
-                        'Do you go to Jefferson State, Lawson State, or UAB? And are you a technology major? If so, you could be eligible for up to $4,000 in scholarship in money!',
+                        'Are you a technology major at Jefferson State, Lawson State, or UAB? If so, you could be eligible for up to $4,000 in scholarship in money!',
                 },
             ],
             benefits: [
@@ -53,7 +53,7 @@ export function context(
                     icon: 'fas text-yellow fa-list-ul fa-2x',
                     headline: 'Curriculum Designed By Industry Experts',
                     description:
-                        'Our Software Development and Computer Hardware Bootcamps use time-tested curriculums from Covalence and McKinsey Social Initiative, both have helped hundreds of students start new careers.',
+                        'Our Software Development and Data Analytics Bootcamps use time-tested curriculums and have helped hundreds of students start new careers.',
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-chalkboard-teacher',
