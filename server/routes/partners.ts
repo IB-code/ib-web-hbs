@@ -60,7 +60,6 @@ export function context(
                 ),
             );
 
-            req.context.main = {};
             next();
         })
         .catch(() => {
