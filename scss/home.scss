@@ -4,14 +4,8 @@ header {
     color: $white;
 
     & > .jumbotron {
-        height: 500px;
         background: url('/static/img/home/hero.jpg');
-        background-repeat: no-repeat;
         background-position: center 65%;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         .lead {
             @include media-breakpoint-down(md) {
