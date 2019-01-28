@@ -54,7 +54,7 @@
     <div class="carousel slide" data-interval="3000" data-ride="carousel">
         <div class="carousel-inner">
             {{#each main.hired}}
-            <div class="carousel-item {{ternary @index 'active' ''}}">
+            <div class="carousel-item {{isFirstItem @index 'active'}}">
                 <div class="row mt-4">
                     {{#each this}}
                     <div class="col-md-3 logo mb-4" style="background-image: url('{{logo}}');"></div>
