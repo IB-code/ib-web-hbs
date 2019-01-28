@@ -71,7 +71,7 @@ export function getEmployerPartners(randomize: boolean = false) {
     });
 }
 
-export function getNetworkParnters(randomize: boolean = false) {
+export function getNetworkPartners(randomize: boolean = false) {
     return getPartners(randomize).then((partners) => {
         return partners.filter(
             (partner: {
