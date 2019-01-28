@@ -37,7 +37,6 @@ export function context(
                 'Git',
                 'Terminal',
                 'Heroku',
-                'AWS',
                 'Github',
                 'VS Code',
                 'npm',
@@ -51,12 +50,11 @@ export function context(
             description: [
                 'HTML',
                 'CSS',
-                'SCSS',
                 'Bootstrap',
                 'Modern JavaScript',
-                'TypeScript',
                 'jQuery',
-                'Angular',
+                'React',
+                'React Native',
             ],
         },
         {
