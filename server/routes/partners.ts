@@ -27,39 +27,45 @@ export function context(
         main: {},
     };
 
-    utils.getNetworkorEmployerPartners(true).then((partners) => {
-        req.context.main = Object.assign(
-            {},
-            req.context.main,
-            partners.reduce(
-                (acc, curr) => {
-                    if (curr.name.toLowerCase() === 'generation') {
-                        curr.logo = `/static/img/logos/${curr.logo}`;
-                    } else {
-                        curr.logo = `/static/img/logos/company-logos/${
-                            curr.logo
-                        }`;
-                    }
+    utils
+        .getNetworkorEmployerPartners(true)
+        .then((partners) => {
+            req.context.main = Object.assign(
+                {},
+                req.context.main,
+                partners.reduce(
+                    (acc, curr) => {
+                        if (curr.name.toLowerCase() === 'generation') {
+                            curr.logo = `/static/img/logos/${curr.logo}`;
+                        } else {
+                            curr.logo = `/static/img/logos/company-logos/${
+                                curr.logo
+                            }`;
+                        }
 
-                    if (curr.status.includes(PARTNER_STATUS.NETWORK)) {
-                        acc.networkPartners.push(curr);
-                    }
+                        if (curr.status.includes(PARTNER_STATUS.NETWORK)) {
+                            acc.networkPartners.push(curr);
+                        }
 
-                    if (curr.status.includes(PARTNER_STATUS.EMPLOYER)) {
-                        acc.employerPartners.push(curr);
-                    }
+                        if (curr.status.includes(PARTNER_STATUS.EMPLOYER)) {
+                            acc.employerPartners.push(curr);
+                        }
 
-                    return acc;
-                },
-                {
-                    employerPartners: [],
-                    networkPartners: [],
-                },
-            ),
-        );
+                        return acc;
+                    },
+                    {
+                        employerPartners: [],
+                        networkPartners: [],
+                    },
+                ),
+            );
 
-        next();
-    });
+            req.context.main = {};
+            next();
+        })
+        .catch(() => {
+            next();
+        });
 }
 
 export function render(
