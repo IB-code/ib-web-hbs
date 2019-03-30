@@ -4,13 +4,34 @@ import * as express from 'express';
 import * as moment from 'moment-timezone';
 import * as Promise from 'promise';
 import * as _ from 'lodash';
-import { PARTNER_STATUS, PARTNERS } from '../references';
+import { PARTNER_STATUS, PARTNERS, IPartner } from '../references';
 import * as cache from '../utils/cache';
 import config from '../config';
 import * as url from 'url';
 
 const fm = require('front-matter');
 const sort = require('stable');
+
+export function getPartnersOfType(
+    types: Array<number> = [],
+    randomize: boolean = false,
+): Promise<Array<IPartner>> {
+    return getPartners(randomize).then((partners) => {
+        if (types.length == 0) {
+            return partners;
+        }
+
+        return partners.reduce((ret: Array<IPartner>, partner: IPartner) => {
+            types.forEach((type: number) => {
+                if (partner.status.includes(type)) {
+                    ret.push(partner);
+                }
+            });
+
+            return ret;
+        }, []);
+    });
+}
 
 export function getPartners(randomize: boolean = false) {
     let partners = _.cloneDeep(PARTNERS);
@@ -24,65 +45,6 @@ export function getPartners(randomize: boolean = false) {
     }
 
     return Promise.resolve(partners);
-}
-
-export function getNetworkorEmployerPartners(randomize: boolean = false) {
-    return getPartners(randomize).then((partners) => {
-        return partners.filter(
-            (partner: {
-                name: string;
-                logo: string;
-                status: Array<number>;
-            }) => {
-                return (
-                    partner.status.includes(PARTNER_STATUS.EMPLOYER) ||
-                    partner.status.includes(PARTNER_STATUS.NETWORK)
-                );
-            },
-        );
-    });
-}
-
-export function getPartnersWhoHired(randomize: boolean = false) {
-    return getPartners(randomize).then((partners) => {
-        return partners.filter(
-            (partner: {
-                name: string;
-                logo: string;
-                status: Array<number>;
-            }) => {
-                return partner.status.includes(PARTNER_STATUS.HIRED);
-            },
-        );
-    });
-}
-
-export function getEmployerPartners(randomize: boolean = false) {
-    return getPartners(randomize).then((partners) => {
-        return partners.filter(
-            (partner: {
-                name: string;
-                logo: string;
-                status: Array<number>;
-            }) => {
-                return partner.status.includes(PARTNER_STATUS.EMPLOYER);
-            },
-        );
-    });
-}
-
-export function getNetworkPartners(randomize: boolean = false) {
-    return getPartners(randomize).then((partners) => {
-        return partners.filter(
-            (partner: {
-                name: string;
-                logo: string;
-                status: Array<number>;
-            }) => {
-                return partner.status.includes(PARTNER_STATUS.NETWORK);
-            },
-        );
-    });
 }
 
 export function readTime(str: string = '') {

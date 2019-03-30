@@ -10,18 +10,21 @@ export interface ICurriculumSection {
     }>;
 }
 
+export interface IPartner {
+    name: string;
+    logo: string;
+    url: string;
+    status: Array<number>;
+    __logoPath?: string;
+}
+
 export const enum PARTNER_STATUS {
     EMPLOYER,
     NETWORK,
     HIRED,
 }
 
-export const PARTNERS: Array<{
-    name: string;
-    logo: string;
-    url: string;
-    status: Array<number>;
-}> = [
+export const PARTNERS: Array<IPartner> = [
     {
         name: 'Shipt',
         logo: 'shipt.png',

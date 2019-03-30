@@ -2,6 +2,7 @@ import * as express from 'express';
 import parse from '../middleware/parse';
 import * as utils from '../utils';
 import { noop } from 'lodash';
+import { PARTNER_STATUS, IPartner } from '../references';
 
 export function context(
     req: express.Request,
@@ -90,30 +91,27 @@ export function context(
     };
 
     utils
-        .findBlogFiles(req)
-        .then((files) => {
-            req.context.main.blogs = files.slice(0, 3);
+        .getPartnersOfType([PARTNER_STATUS.HIRED], true)
+        .then((partners: Array<IPartner>) => {
+            const accumulated: Array<Array<IPartner>> = [];
+            let packet: Array<IPartner> = [];
 
-            return utils.getPartnersWhoHired(true);
-        })
-        .then((partners) => {
-            req.context.main.hired = partners.reduce(
-                (acc, curr) => {
-                    let currentSet: Array<any> = acc.splice(-1)[0];
+            partners.forEach((partner: IPartner) => {
+                partner.__logoPath = `/static/img/logos/${partner.logo}`;
 
-                    curr.logo = `/static/img/logos/company-logos/${curr.logo}`;
+                if (packet.length === 4) {
+                    accumulated.push(packet);
+                    packet = [];
+                }
 
-                    if (currentSet.length === 4) {
-                        acc.push(currentSet, [curr]);
-                    } else {
-                        currentSet.push(curr);
-                        acc.push(currentSet);
-                    }
+                packet.push(partner);
+            });
 
-                    return acc;
-                },
-                [[]],
-            );
+            if (packet.length !== 0) {
+                accumulated.push(packet);
+            }
+
+            req.context.main.hired = accumulated;
         })
         .catch(noop)
         .then(() => {

@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as utils from '../utils';
 import * as _ from 'lodash';
 import config from '../config';
-import { PARTNER_STATUS } from '../references';
+import { PARTNER_STATUS, PARTNERS } from '../references';
 import parse from '../middleware/parse';
 
 export function context(
@@ -28,27 +28,26 @@ export function context(
     };
 
     utils
-        .getNetworkorEmployerPartners(true)
+        .getPartnersOfType(
+            [PARTNER_STATUS.NETWORK, PARTNER_STATUS.EMPLOYER],
+            true,
+        )
         .then((partners) => {
             req.context.main = Object.assign(
                 {},
                 req.context.main,
                 partners.reduce(
-                    (acc, curr) => {
-                        if (curr.name.toLowerCase() === 'generation') {
-                            curr.logo = `/static/img/logos/${curr.logo}`;
-                        } else {
-                            curr.logo = `/static/img/logos/company-logos/${
-                                curr.logo
-                            }`;
+                    (acc, partner) => {
+                        partner.__logoPath = `/static/img/logos/${
+                            partner.logo
+                        }`;
+
+                        if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
+                            acc.networkPartners.push(partner);
                         }
 
-                        if (curr.status.includes(PARTNER_STATUS.NETWORK)) {
-                            acc.networkPartners.push(curr);
-                        }
-
-                        if (curr.status.includes(PARTNER_STATUS.EMPLOYER)) {
-                            acc.employerPartners.push(curr);
+                        if (partner.status.includes(PARTNER_STATUS.EMPLOYER)) {
+                            acc.employerPartners.push(partner);
                         }
 
                         return acc;
