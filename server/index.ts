@@ -1,3 +1,4 @@
+require('dotenv').config();
 import * as express from 'express';
 import * as url from 'url';
 import * as _ from 'lodash';

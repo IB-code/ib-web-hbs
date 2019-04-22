@@ -1,0 +1,31 @@
+
+
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Testimonials</h1>
+            <h3 class="lead">Learn. Evolve. Succeed.</h3>
+        </div>
+    </div>
+</header>
+<section class="section-padding bg-light">
+    <div class="container text-center">
+        {{#each main.testimonials}}
+        <div id="less-1" class="section-card-container card row index-{{@index}}">
+            <div class="image-container col-md-6">
+                <img class="headshot" src="{{img}}" alt="">
+                <h4 class="display-5">{{student}}</h4>
+                <h5 class="display-7">{{role}}</h5>
+            </div>
+            <div id="more-1" class="message-container col-md-6">
+                <p class="textArea">{{message}}</p>
+                <a id="toggleButton" onclick="toggleText();" href="javascript:void(0);">See More</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href0="/public/css/JoshHurn.css">
+<!-- /Remove Style -->

@@ -1,0 +1,94 @@
+@import 'layouts/main'; 
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.397), rgba(11, 26, 66, 0.397)),
+      url('/static/img/testimonials/hero.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+  }
+}
+
+// media queries //
+@media screen and (max-width: 770px) {
+  .section-card-container {
+    flex-direction: column !important;
+
+    .image-container {
+      margin: 3% !important;
+
+      img {
+        max-width: 110px !important;
+        padding: 0;
+      }
+    }
+
+    .message-container {
+      margin: 0.45em !important;
+      padding-left: 0;
+    }
+  }
+}
+
+// general css //
+.main-container {
+  padding: 1% 0;
+}
+
+.section-card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 3% auto;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-around;
+
+  .image-container {
+    margin: 1.5em;
+    padding: 0;
+
+    img {
+      padding: 5%;
+      width: 200px;
+      max-width: 200px;
+    }
+  }
+}
+
+.message-container {
+  margin: 1.5em;
+  padding: 0;
+
+  .message-actual {
+    white-space: pre-wrap;
+    margin: 1em;
+  }
+}
+
+// reversing layout on every other card with some additional styling for centering. //
+.section-card-container:nth-child(odd) {
+  .image-container {
+    margin-left: 4em;
+  }
+
+  .message-container {
+    margin-right: 4em;
+    padding-left: 0;
+  }
+}
+
+.section-card-container:nth-child(even) {
+  flex-direction: row-reverse;
+
+  .image-container {
+    margin-right: 4em;
+  }
+
+  .message-container {
+    margin-left: 4em;
+    padding-right: 0;
+  }
+}

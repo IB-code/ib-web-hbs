@@ -64,7 +64,7 @@ export function context(
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-hands-helping',
-                    headline: 'Professonal Services',
+                    headline: 'Professional Services',
                     description:
                         "We know taking ~3 months to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course.",
                 },

@@ -18,7 +18,9 @@ header {
 .section {
     &-companies {
         .logo {
-            height: 7em;
+            height: 5em;
+            max-height: 5em;
+            min-width: 5em;
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

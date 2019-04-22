@@ -81,7 +81,8 @@
                     <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
                         {{#each children}}
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
+                            <div class="card-header d-flex justify-content-between align-items-center"
+                                id="heading-{{id}}">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}"
                                         aria-expanded="true" aria-controls="#collapse-{{id}}">
@@ -90,7 +91,8 @@
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion-nested-{{../id}}">
+                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}"
+                                data-parent="#accordion-nested-{{../id}}">
                                 <div class="card-body">
                                     {{description}}
                                 </div>

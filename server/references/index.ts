@@ -276,12 +276,18 @@ export const PARTNERS: Array<IPartner> = [
         logo: 'innovation-depot.jpeg',
         url: 'https://innovationdepot.org/',
         status: [PARTNER_STATUS.NETWORK],
-    },
+    }, 
     {
         name: 'Jefferson County',
         logo: 'jefferson-county.jpg',
         url: 'https://www.jccal.org/',
         status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: 'Keysys',
+        logo: 'keysys_sm.png',
+        url: 'https://www.keysys.io/',
+        status: [PARTNER_STATUS.EMPLOYER, PARTNER_STATUS.HIRED],
     },
     {
         name: 'Mayer Electric Supply',
