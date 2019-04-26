@@ -8,7 +8,7 @@
     "private": true,
     "engines": {
         "node": "10.15.1",
-        "npm": ">=5.3.0"
+        "npm": ">=6.9.0"
     },
     "dependencies": {
         "@types/autoprefixer": "^6.7.3",
@@ -19,10 +19,8 @@
         "@types/express-handlebars": "^0.0.29",
         "@types/fs-extra": "^4.0.2",
         "@types/glob": "^5.0.32",
-        "@types/handlebars": "^4.0.36",
         "@types/html-minifier": "^1.1.30",
         "@types/htmlparser2": "^3.7.31",
-        "@types/lodash": "^4.14.74",
         "@types/memory-cache": "^0.0.31",
         "@types/moment-timezone": "^0.2.35",
         "@types/morgan": "^1.7.33",
@@ -67,7 +65,7 @@
         "sendgrid": "^5.2.3",
         "stable": "^0.1.6",
         "tether": "^1.4.0",
-        "typescript": "^2.5.2",
+        "typescript": "3.4.1",
         "uglify-js": "^3.1.1",
         "uuid": "^3.3.2",
         "vary": "^1.1.1"

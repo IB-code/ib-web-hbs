@@ -95,7 +95,7 @@ export function context(
             headline: '901 Exam',
             timeline: 'Weeks 6 - 7',
             description:
-                'Students will prepare for to take the CompTIA+ 901 exam.',
+                ['Students will prepare for to take the CompTIA+ 901 exam.'],
         },
         {
             icon: 'fab fa-windows',
@@ -146,7 +146,7 @@ export function context(
             headline: '902 Exam & Career Prep and Interviewing',
             timeline: 'Weeks 11 - 12',
             description:
-                'Students will prepare for to take the CompTIA+ 902 exam.',
+                ['Students will prepare for to take the CompTIA+ 902 exam.'],
         },
     ];
 
@@ -162,7 +162,7 @@ export function context(
 
             temp += `</ul>`;
 
-            s.description = temp;
+            s.description = [temp];
         }
 
         return s;

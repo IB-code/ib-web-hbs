@@ -2,7 +2,7 @@ export interface ICurriculumSection {
     icon?: string;
     headline: string;
     timeline?: string;
-    description?: string | Array<string>;
+    description?: Array<string>;
     children?: Array<{
         icon: string;
         headline: string;

@@ -86,7 +86,7 @@ export function context(
             headline: 'Projects',
             timeline: 'Weeks 12 - 14',
             description:
-                "Students spend the final three weeks of the course working on a group project that will showcase and enforce the skills they've learned the past eleven weeks.",
+                ["Students spend the final three weeks of the course working on a group project that will showcase and enforce the skills they've learned the past eleven weeks."],
         },
     ];
 
@@ -102,7 +102,7 @@ export function context(
 
             temp += `</ul>`;
 
-            s.description = temp;
+            s.description = [temp];
         }
 
         return s;

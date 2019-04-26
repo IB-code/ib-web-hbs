@@ -5,7 +5,8 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": false,
-        "lib": ["esnext", "dom"]
+        "lib": ["esnext", "dom"],
+        "types": ["handlebars"],
     },
     "include": ["server/**/*"],
     "exclude": ["node_modules"]
