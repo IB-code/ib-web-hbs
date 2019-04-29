@@ -38,9 +38,7 @@ export function context(
                 req.context.main,
                 partners.reduce(
                     (acc, partner) => {
-                        partner.__logoPath = `/static/img/logos/${
-                            partner.logo
-                        }`;
+                        partner.__logoPath = `/static/img/logos/${partner.logo}`;
 
                         if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
                             acc.networkPartners.push(partner);
