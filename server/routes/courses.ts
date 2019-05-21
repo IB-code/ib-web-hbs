@@ -39,7 +39,7 @@ export function context(
                     headline: 'Data Analytics Bootcamp',
                     subline: {
                         icon: 'clock',
-                        text: '12 Weeks / 9am - 3pm',
+                        text: '12 Weeks / 9am - 5pm',
                     },
                     description:
                         'With our partner ThinkData Solutions, we use the leading tools on the market we teach you the fundamentals you need to know to become an entry level Data Analyst and help businesses translate data into informed decisions and valuable knowledge.',

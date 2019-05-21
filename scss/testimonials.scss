@@ -4,7 +4,7 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.2), rgba(11, 26, 66, 0.2)),
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
       url('/static/img/testimonials/hero.jpg');
     background-size: cover;
     background-position: center 40%;
