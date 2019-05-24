@@ -22,14 +22,26 @@ export function getPartnersOfType(
         }
 
         return partners.reduce((ret: Array<IPartner>, partner: IPartner) => {
-            types.forEach((type: number) => {
-                if (partner.status.includes(type)) {
-                    ret.push(partner);
-                }
+            const includesType = types.some((type: number) => {
+                return partner.status.includes(type);
             });
+
+            if (includesType) {
+                ret.push(partner);
+            }
 
             return ret;
         }, []);
+
+        // return partners.reduce((ret: Array<IPartner>, partner: IPartner) => {
+        //     types.forEach((type: number) => {
+        //         if (partner.status.includes(type)) {
+        //             ret.push(partner);
+        //         }
+        //     });
+
+        //     return ret;
+        // }, []);
     });
 }
 

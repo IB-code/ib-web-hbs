@@ -5,6 +5,7 @@ import * as _ from 'lodash';
 import config from '../config';
 import { PARTNER_STATUS, PARTNERS } from '../references';
 import parse from '../middleware/parse';
+import { networkInterfaces } from 'os';
 
 export function context(
     req: express.Request,
@@ -24,7 +25,10 @@ export function context(
                 ],
             },
         },
-        main: {},
+        main: {
+            networkPartners: [],
+            employerPartners: []
+        }
     };
 
     utils
@@ -33,30 +37,20 @@ export function context(
             true,
         )
         .then((partners) => {
-            req.context.main = Object.assign(
-                {},
-                req.context.main,
-                partners.reduce(
-                    (acc, partner) => {
-                        partner.__logoPath = `/static/img/logos/${partner.logo}`;
+            partners.filter(partner => {
+                partner.__logoPath = `/static/img/logos/${partner.logo}`;
 
-                        if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
-                            acc.networkPartners.push(partner);
-                        }
+                if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
+                    req.context.main.networkPartners.push(partner);
+                }
 
-                        if (partner.status.includes(PARTNER_STATUS.EMPLOYER)) {
-                            acc.employerPartners.push(partner);
-                        }
-
-                        return acc;
-                    },
-                    {
-                        employerPartners: [],
-                        networkPartners: [],
-                    },
-                ),
-            );
-
+                if (partner.status.includes(PARTNER_STATUS.EMPLOYER)) {
+                    req.context.main.employerPartners.push(partner);
+                }
+            })
+            // req.context.main.employerPartners.forEach(element => {
+        
+            // });
             next();
         })
         .catch(() => {
@@ -80,3 +74,25 @@ export function render(
         );
     });
 }
+
+
+
+                // partners.reduce(
+                //     (acc, partner) => {
+                //         partner.__logoPath = `/static/img/logos/${partner.logo}`;
+
+                //         if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
+                //             acc.networkPartners.push(partner);
+                //         }
+
+                //         if (partner.status.includes(PARTNER_STATUS.EMPLOYER)) {
+                //             acc.employerPartners.push(partner);
+                //         }
+
+                //         return acc;
+                //     },
+                //     {
+                //         employerPartners: [],
+                //         networkPartners: [],
+                //     },
+                // ),
