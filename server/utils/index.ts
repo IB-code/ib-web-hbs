@@ -32,16 +32,6 @@ export function getPartnersOfType(
 
             return ret;
         }, []);
-
-        // return partners.reduce((ret: Array<IPartner>, partner: IPartner) => {
-        //     types.forEach((type: number) => {
-        //         if (partner.status.includes(type)) {
-        //             ret.push(partner);
-        //         }
-        //     });
-
-        //     return ret;
-        // }, []);
     });
 }
 

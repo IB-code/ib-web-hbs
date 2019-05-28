@@ -48,9 +48,6 @@ export function context(
                     req.context.main.employerPartners.push(partner);
                 }
             })
-            // req.context.main.employerPartners.forEach(element => {
-        
-            // });
             next();
         })
         .catch(() => {
@@ -74,25 +71,3 @@ export function render(
         );
     });
 }
-
-
-
-                // partners.reduce(
-                //     (acc, partner) => {
-                //         partner.__logoPath = `/static/img/logos/${partner.logo}`;
-
-                //         if (partner.status.includes(PARTNER_STATUS.NETWORK)) {
-                //             acc.networkPartners.push(partner);
-                //         }
-
-                //         if (partner.status.includes(PARTNER_STATUS.EMPLOYER)) {
-                //             acc.employerPartners.push(partner);
-                //         }
-
-                //         return acc;
-                //     },
-                //     {
-                //         employerPartners: [],
-                //         networkPartners: [],
-                //     },
-                // ),
