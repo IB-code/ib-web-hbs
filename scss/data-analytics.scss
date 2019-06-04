@@ -28,4 +28,12 @@ header {
             }
         }
     }
+    
+    &-curriculum {
+        .accordion {
+            .card-header {
+            cursor: pointer;
+            }
+        }
+    }
 }

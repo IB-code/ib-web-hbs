@@ -44,7 +44,8 @@ header {
 
     &-curriculum {
         .accordion {
-            .card {
+            .card-header{
+                cursor: pointer;
                 border: none;
             }
         }
