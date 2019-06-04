@@ -11,7 +11,7 @@
 </header>
 <section class="section-padding bg-yellow text-center">
     {{!-- <h3 class="text-navy">Next Class Starts Jan 14, 2019</h3> --}}
-    <h3 class="text-navy">Applications due April 26, 2019</h3>
+    <h3 class="text-navy">Applications due August 28, 2019</h3>
 </section>
 <section class="section-padding section-introduction bg-primary">
     <div class="container text-center text-white">
@@ -82,7 +82,8 @@
             {{#each main.curriculum}}
             <div class="card">
                 <div class="card-header d-flex flex-wrap align-items-center" id="heading-{{id}}" data-toggle="collapse"
-                    href="#collapse-{{id}}" data-target="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
+                    href="#collapse-{{id}}" data-target="#collapse-{{id}}" aria-expanded="true"
+                    aria-controls="collapse-{{id}}">
                     <h5 class="mb-0 accordion-title font-weight-400 text-primary">
                         <i class="{{icon}} mr-2"></i>
                         {{headline}}
@@ -93,7 +94,8 @@
                     <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
                         {{#each children}}
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between align-items-center" id="heading-{{id}}">
+                            <div class="card-header d-flex justify-content-between align-items-center"
+                                id="heading-{{id}}">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}"
                                         aria-expanded="true" aria-controls="#collapse-{{id}}">
@@ -102,7 +104,8 @@
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion-nested-{{../id}}">
+                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}"
+                                data-parent="#accordion-nested-{{../id}}">
                                 <div class="card-body">
                                     {{description}}
                                 </div>
