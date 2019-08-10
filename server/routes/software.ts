@@ -52,7 +52,6 @@ export function context(
                 'CSS',
                 'Bootstrap',
                 'Modern JavaScript',
-                'jQuery',
                 'React',
                 'React Native',
             ],

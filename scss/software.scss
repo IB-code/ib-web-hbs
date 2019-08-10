@@ -28,6 +28,10 @@ header {
     }
 
     &-about {
+        .about-description {
+            font-weight: 450;
+        }
+        
         .icon-container {
             i {
                 color: $navy;

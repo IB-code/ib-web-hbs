@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+<nav class="navbar navbar-light bg-white fixed-top">
     <a href="/" class="navbar-brand mr-0 d-flex align-items-center">
         <img class="mr-2" src="/public/img/logos/logo_small.png" alt="Company Logo" class="d-inline-block align-top">
         <span>Innovate Birmingham</span>
@@ -10,9 +10,9 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
         <ul class="navbar-nav pr-xl-5">
-            <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}">
+            {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}">
                 <a class="nav-link" href="/about/">ABOUT</a>
-            </li>
+            </li> --}}
             <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
                 <a class="nav-link" href="/courses/">COURSES</a>
             </li>
@@ -24,6 +24,9 @@
             </li>
             <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/testimonials/"}} active{{/contains}}">
                 <a class="nav-link" href="/testimonials/">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/faq/"}} active{{/contains}}">
+                <a class="nav-link" href="/faq/">FREQUENTLY ASKED QUESTIONS</a>
             </li>
             {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/blog/"}} active{{/contains}}">
                 <a class="nav-link" href="/blog/">BLOG</a>
