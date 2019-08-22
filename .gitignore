@@ -34,3 +34,5 @@ public/lib
 *.map
 
 .vscode
+
+.env

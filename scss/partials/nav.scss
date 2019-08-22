@@ -1,6 +1,12 @@
 .navbar {
     box-shadow: 0 2px 2px 1px rgba(25, 25, 25, 0.2);
 
+    // @include media-breakpoint-up(md) {
+    //     .menu-container {
+    //         max-width: 4em;
+    //     }
+    // }
+
     @include media-breakpoint-down(md) {
         .dropdown-menu {
             border-top: none;
@@ -24,12 +30,12 @@
 }
 
 .navbar-collapse {
-    font-size: 90%;
+    font-size: 85%;
     font-weight: 700;
     text-align: center;
 
     li {
-        margin-bottom: 1em;
+        margin-bottom: 0.33em;
     }
 
     a {

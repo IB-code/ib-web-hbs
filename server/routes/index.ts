@@ -25,7 +25,10 @@ router
     .get('/courses/data-analytics', data.context, meta, data.render)
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
-    .get('/faq', faq.context, meta, faq.render);
+    // .get('/faq', faq.context, meta, faq.render)
+    .get('/survey', (req, res) => {
+        res.redirect('https://www.surveymonkey.com/r/DemoDay_Cohort7?fbclid=IwAR1Y0ZdcZX2YrVc2g6afJRsfgElgqZxvc8tPEMKbla3nWt7Lyi-bCKkmuaY');
+    });
 // .get('/courses/hardware', hardware.context, meta, hardware.render)
 // .get('/blog', blogList.context, meta, blogList.render)
 // .get('/blog/page/:page', blogList.context, meta, blogList.render)
