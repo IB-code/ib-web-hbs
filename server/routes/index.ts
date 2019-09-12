@@ -11,7 +11,6 @@ import * as data from './data-analytics';
 import * as scholarships from './scholarships';
 import * as testimonials from './testimonials';
 import * as faq from './faq';
-import * as mc from './mc';
 
 const router = express.Router();
 
