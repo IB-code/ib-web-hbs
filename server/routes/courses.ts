@@ -28,7 +28,7 @@ export function context(
                         text: '14 Weeks / 9am - 5pm',
                     },
                     description:
-                        'We partner with Covalence, a local Software Bootcamp company, and using their curriculum, facilitated through their online portal, we teach you the skills you need to work as a junior level developer.',
+                        'Learn to code in JavaScript, the native language of the web. In our 14 week software development bootcamp we help you learn and apply the necessary coding skills you need to work as a junior level developer.',
                     action: {
                         href: '/courses/software/',
                         text: 'LEARN MORE',
@@ -39,10 +39,10 @@ export function context(
                     headline: 'Data Analytics Bootcamp',
                     subline: {
                         icon: 'clock',
-                        text: '12 Weeks / 9am - 5pm',
+                        text: '14 Weeks / 9am - 5pm',
                     },
                     description:
-                        'With our partner ThinkData Solutions, we use the leading tools on the market we teach you the fundamentals you need to know to become an entry level Data Analyst and help businesses translate data into informed decisions and valuable knowledge.',
+                        'With our partner ThinkData Solutions, we use the leading tools on the market to teach you the fundamentals you need to know to become an entry level Data Analyst and help businesses translate data into informed decisions and valuable knowledge.',
                     action: {
                         href: '/courses/data-analytics/',
                         text: 'LEARN MORE',
@@ -51,7 +51,7 @@ export function context(
             ],
         },
     };
-
+    
     next();
 }
 

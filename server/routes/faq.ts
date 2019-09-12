@@ -18,6 +18,50 @@ export function context(
                 ],
             },
         },
+        main: {
+            categories: [
+                {
+                    title: "Admissions",
+                    entries: [
+                        {
+
+                        },
+                    ]
+                },
+                {
+                    title: "Employers and Partners",
+                    entries: [
+                        {
+                            
+                        },
+                    ]
+                },
+                {
+                    title: "Software Development Bootcamp",
+                    entries: [
+                        {
+                            
+                        },
+                    ]
+                },
+                {
+                    title: "Data Analytics Bootcamp",
+                    entries: [
+                        {
+                            
+                        },
+                    ]
+                },
+                {
+                    title: "General",
+                    entries: [
+                        {
+                            
+                        },
+                    ]
+                }
+            ]
+        }
     };
 
     next();

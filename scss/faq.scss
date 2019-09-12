@@ -4,8 +4,7 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
-      url('/static/img/faq/ib_logo.png');
+    background: #242135 linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4));
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;

@@ -26,6 +26,12 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'Sigao Studios',
+        logo: 'sigao.png',
+        url: 'https://sigao.io',
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER]
+    },
+    {
         name: 'Shipt',
         logo: 'shipt.png',
         url: 'https://shipt.com',
