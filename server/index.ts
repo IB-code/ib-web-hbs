@@ -4,7 +4,6 @@ import * as url from 'url';
 import * as _ from 'lodash';
 import * as logger from 'morgan';
 import * as bodyParser from 'body-parser';
-import * as fs from 'fs';
 import * as path from 'path';
 import * as handlebars from 'express-handlebars';
 import * as moment from 'moment-timezone';
@@ -108,7 +107,7 @@ app.set('port', config.PORT);
 app.listen(app.get('port'), () => {
     log.info(
         `WebService has started on http://${config.IP}:${
-            config.PORT
+        config.PORT
         } running in ${config.ENV.value} mode`,
     );
 

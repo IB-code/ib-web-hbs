@@ -1,14 +1,8 @@
 @import 'layouts/main'; 
 
-header {
-  color: $white;
-
-  & > .jumbotron {
-    background: #242135 linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4));
-    background-size: cover;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-  }
+.header-container{
+    margin: 1em;
+    text-align: center;
 }
 
 h2 {
@@ -18,6 +12,7 @@ h2 {
     color: #091f2f;
     text-transform: uppercase;
 }
+
 .accordion-section .panel-default > .panel-heading {
     border: 0;
     background: #f4f4f4;
