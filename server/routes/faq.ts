@@ -71,7 +71,7 @@ export function context(
                         {
                             id: 1,
                             question: 'How do I know if I’m eligible?',
-                            answer: ' If you are 17 and older, acquire at least a high school diploma or GED, unemployed or under-employed, and a resident of the six counties of Central Alabama (Blount, Walker, Jefferson, Chilton, St. Clair, and Shelby).'
+                            answer: 'You must be 17 or older, acquire at least a high school diploma or GED, unemployed or under-employed, and a resident of the six counties of Central Alabama (Blount, Walker, Jefferson, Chilton, St. Clair, and Shelby).'
                         },
                         {
                             id: 2,
@@ -131,7 +131,7 @@ export function context(
                         {
                             id: 13,
                             question: 'Can I sponsor an event?',
-                            answer: 'If you or your company is interested in sponsoring an innovate birmingham event, please contact us at info@innovatebham.com.'
+                            answer: 'If you or your company is interested in sponsoring an Innovate Birmingham event, please contact us at info@innovatebham.com.'
                         },
                     ]
                 },
