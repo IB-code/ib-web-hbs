@@ -25,7 +25,7 @@ router
     .get('/courses/data-analytics', data.context, meta, data.render)
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
-    // .get('/faq', faq.context, meta, faq.render)
+    .get('/faq', faq.context, meta, faq.render);
 // .get('/courses/hardware', hardware.context, meta, hardware.render)
 // .get('/blog', blogList.context, meta, blogList.render)
 // .get('/blog/page/:page', blogList.context, meta, blogList.render)

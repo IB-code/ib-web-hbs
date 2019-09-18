@@ -22,7 +22,7 @@ export function context(
             courses: [
                 {
                     icon: 'fas fa-code',
-                    headline: 'Software Engineering Bootcamp',
+                    headline: 'Software Development Bootcamp',
                     subline: {
                         icon: 'clock',
                         text: '14 Weeks / 9am - 5pm',

@@ -1,40 +1,75 @@
-@import 'layouts/main'; 
-
-.header-container{
-    margin: 1em;
-    text-align: center;
-}
+@import 'layouts/main';
 
 h2 {
-    font-family: Arial, Verdana;
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: #091f2f;
-    text-transform: uppercase;
+  margin-left: 1.1em;
+  font-family: Arial, Verdana;
+  font-weight: 800;
+  font-size: 28px;
+  color: #091f2f;
+  text-transform: uppercase;
 }
 
-.accordion-section .panel-default > .panel-heading {
-    border: 0;
-    background: #f4f4f4;
-    padding: 0;
+.header-container {
+  margin: 1em;
+  text-align: center;
 }
-.accordion-section .panel-default .panel-title a {
-    display: block;
-    font-style: italic;
-    font-size: 1.5rem;
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  h2 {
+    font-size: large;
+    align-content: center !important;
+  }
+
+  .main-container {
+    margin: auto 1vw !important;
+    align-content: center !important;
+
+    .section-container {
+      margin: 1em !important;
+
+      .panel-title {
+        margin: 0.3em !important;
+        font-size: 1.2em !important;
+      }
+
+      .panel-body {
+        margin: 0.75em !important;
+      }
+    }
+
+    .section-container:last-child {
+      margin-bottom: 5vh !important;
+    }
+  }
 }
-.accordion-section .panel-default .panel-title a:after {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-size: 3rem;
-    content: "\f106";
-    color: #1f7de2;
-    float: right;
-    margin-top: -12px;
-}
-.accordion-section .panel-default .panel-title a.collapsed:after {
-    content: "\f107";
-}
-.accordion-section .panel-default .panel-body {
-    font-size: 1.2rem;
+
+.main-container {
+  margin: auto 20%;
+  align-content: center;
+
+  .section-container {
+    margin: 1em;
+
+    .entries-container {
+      margin: auto 10%;
+
+      .card-container {
+        background-color: #6c757524;
+
+        .panel-title {
+          margin: 0.5em;
+          font-size: 1.2em;
+        }
+
+        .panel-body {
+          margin: 0.9em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .section-container:last-child {
+    margin-bottom: 7vh;
+  }
 }

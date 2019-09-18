@@ -109,11 +109,6 @@ export function context(
                             answer: 'We are located at Innovation Depot, in downtown Birmingham.'
                         },
                         {
-                            id: 9,
-                            question: 'Where are the classes held?',
-                            answer: 'We are located at Innovation Depot, in downtown Birmingham.'
-                        },
-                        {
                             id: 10,
                             question: 'How long after submitting my application and TABE will it take to be contacted?',
                             answer: 'Please allow 5 business days.'

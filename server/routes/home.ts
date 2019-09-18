@@ -30,7 +30,7 @@ export function context(
                 {
                     href: '/courses/software/',
                     icon: 'fa fa-code',
-                    headline: 'Software Engineering Bootcamp',
+                    headline: 'Software Development Bootcamp',
                     description:
                         'Do you want to learn to code? Come here to learn to build mobile apps, servers, and databases.',
                 },
@@ -66,7 +66,7 @@ export function context(
                     icon: 'fas text-yellow fa-2x fa-hands-helping',
                     headline: 'Professional Services',
                     description:
-                        "We know taking ~3 months to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course.",
+                        "We know taking 14 weeks to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course.",
                 },
                 {
                     icon: 'fa text-yellow fa-2x fa-briefcase',
