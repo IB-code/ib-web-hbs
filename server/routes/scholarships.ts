@@ -24,7 +24,7 @@ export function context(
                 {
                     name: 'Jefferson State Community College',
                     url: 'http://www.jeffersonstate.edu',
-                    __logoPath: '/static/img/scholarships/jeffstate-min.png',
+                    __logoPath: '/static/img/scholarships/JeffState-min.png',
                     requirements: [
                         'AAS Degrees in Computer Programming, Networking, or Web Technologies.', 'Advanced Certificates in Computer Programming, Networking, or Web Technologies.', 
                         'Certificates in Computer Programming, Networking, Swift App Development, or Web Technologies.', 'Fast-Track Programs including Full-stack Software Development, CompTIA A+ Certification, or Java.'
@@ -41,7 +41,7 @@ export function context(
                 {
                     name: 'Lawson State Community College',
                     url: 'http://www.lawsonstate.edu/',
-                    __logoPath: '/static/img/scholarships/lawson-min.png',
+                    __logoPath: '/static/img/scholarships/Lawson-min.png',
                     requirements: [
                         'AAS in Computer Science', 'AS in Computer Science', 'Certificates in Computer Science'
                     ]
