@@ -46,17 +46,21 @@ header {
 
   .section-schools {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 1%;
     text-align: start;
-    
 
-    .logo {
-      margin-left: 5%;
-      margin-bottom: 5%;
-      align-self: center;
-      max-height: 220px;
-      max-width: 220px;
+    .img-container {
+      margin-left: 10vw;
+
+      .logo {
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        align-self: center;
+        max-height: 220px;
+        max-width: 220px;
+      }
     }
 
     .majors-text {
