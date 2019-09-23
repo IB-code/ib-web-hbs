@@ -1,24 +1,78 @@
 @import 'layouts/main';
 
 header {
-    color: $white;
+  color: $white;
 
-    & > .jumbotron {
-        background: linear-gradient(
-                rgba(11, 26, 66, 0.4),
-                rgba(11, 26, 66, 0.4)
-            ),
-            url('/static/img/scholarships/hero.jpg');
-        background-position: center 75%;
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/scholarships/hero.jpg');
+    background-position: center 75%;
 
-        .lead {
-            @include media-breakpoint-down(md) {
-                font-weight: 400;
-            }
-        }
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
     }
+  }
+}
+
+.majors-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @media only screen and (max-width: 600px) {
+    .section-schools {
+      flex-direction: column !important;
+
+      .img-container {
+        text-align: center !important;
+
+        .logo {
+          max-height: 200px !important;
+        }
+
+        // .logo:nth-child(2) {
+        //   margin-bottom: 0 !important;
+        // }
+      }
+
+      .majors-text ul {
+        width: 250px !important;
+      }
+    }
+  }
+
+  .section-schools {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    text-align: start;
+    
+
+    .logo {
+      margin-left: 5%;
+      margin-bottom: 5%;
+      align-self: center;
+      max-height: 220px;
+      max-width: 220px;
+    }
+
+    .majors-text {
+      align-self: center;
+    }
+
+    .majors-text ul {
+      width: 40vw;
+    }
+  }
+
+  .section-schools:first-child {
+    margin-top: 1em;
+  }
 }
 
 .requirements {
-    margin: 0;
+  margin: 0;
 }

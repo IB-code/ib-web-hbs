@@ -26,6 +26,18 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'Alabama Public Television',
+        logo: 'aptv.jpg',
+        url: 'http://aptv.org/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
+        name: 'Shelby County Schools',
+        logo: 'shelby.png',
+        url: 'https://www.shelbyed.k12.al.us/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
         name: 'Sigao Studios',
         logo: 'sigao.png',
         url: 'https://sigao.io',
@@ -282,7 +294,7 @@ export const PARTNERS: Array<IPartner> = [
         logo: 'innovation-depot.jpeg',
         url: 'https://innovationdepot.org/',
         status: [PARTNER_STATUS.NETWORK],
-    }, 
+    },
     {
         name: 'Jefferson County',
         logo: 'jefferson-county.jpg',

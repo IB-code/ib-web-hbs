@@ -100,7 +100,7 @@ export function handleFormSubmission(
                 );
             },
         )
-        .then((response) => {
+        .then((res) => {
             res.redirect('http://innovatebham.com/contact?response=thanks');
         })
         .catch((err) => {

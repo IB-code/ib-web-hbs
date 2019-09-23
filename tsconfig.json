@@ -6,7 +6,7 @@
         "preserveConstEnums": true,
         "sourceMap": false,
         "lib": ["esnext", "dom"],
-        "types": ["handlebars"],
+        "types": ["handlebars"]
     },
     "include": ["server/**/*"],
     "exclude": ["node_modules"]
