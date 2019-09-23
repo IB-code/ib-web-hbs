@@ -26,6 +26,18 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'Goodwill Alabama',
+        logo: 'goodwill-al.png',
+        url: 'http://algoodwill.org/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
+        name: 'Pelham City Schools',
+        logo: 'pelham.png',
+        url: 'https://www.pelhamcityschools.org/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
         name: 'Alabama Public Television',
         logo: 'aptv.jpg',
         url: 'http://aptv.org/',
