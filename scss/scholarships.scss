@@ -46,7 +46,7 @@ header {
 
   .section-schools {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 1%;
     text-align: start;
     
@@ -64,7 +64,7 @@ header {
     }
 
     .majors-text ul {
-      width: 40vw;
+      width: 50vw;
     }
   }
 
