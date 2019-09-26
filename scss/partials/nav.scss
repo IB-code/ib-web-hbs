@@ -1,67 +1,67 @@
 .navbar {
-    box-shadow: 0 2px 2px 1px rgba(25, 25, 25, 0.2);
+  box-shadow: 0 2px 2px 1px rgba(25, 25, 25, 0.2);
 
-    // @include media-breakpoint-up(md) {
-    //     .menu-container {
-    //         max-width: 4em;
-    //     }
-    // }
+  // @include media-breakpoint-up(md) {
+  //     .menu-container {
+  //         max-width: 4em;
+  //     }
+  // }
 
-    @include media-breakpoint-down(md) {
-        .dropdown-menu {
-            border-top: none;
-            border-right: none;
-            border-bottom: none;
-        }
+  @include media-breakpoint-down(md) {
+    .dropdown-menu {
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
     }
+  }
 }
 
 .navbar-nav {
-    line-height: 2em;
+  line-height: 2em;
 
-    .nav-link {
-        padding-bottom: 0;
+  .nav-link {
+    padding-bottom: 0;
 
-        &:hover,
-        &.active {
-            color: inherit !important;
-        }
+    &:hover,
+    &.active {
+      color: inherit !important;
     }
+  }
 }
 
 .navbar-collapse {
-    font-size: 90%;
-    font-weight: 700;
-    text-align: center;
+  font-size: 90%;
+  font-weight: 700;
+  text-align: center;
 
-    li {
-        margin-bottom: 0.33em;
-    }
+  li {
+    margin-bottom: 0.33em;
+  }
 
-    a {
-        letter-spacing: 0.12em;
-    }
+  a {
+    letter-spacing: 0.12em;
+  }
 
-    &:not(.show):not(.collapsing) {
-        .nav-item.active {
-            border-bottom: 3px solid $brand-info;
-        }
+  &:not(.show):not(.collapsing) {
+    .nav-item.active {
+      border-bottom: 3px solid $brand-info;
     }
+  }
 
-    &.show,
-    &.collapsing {
-        .nav-item {
-            padding-left: 1em;
-        }
+  &.show,
+  &.collapsing {
+    .nav-item {
+      padding-left: 1em;
     }
+  }
 }
 
 .navbar-brand > img {
-    height: 2em;
-    max-width: none;
-    max-height: none;
+  height: 2em;
+  max-width: none;
+  max-height: none;
 
-    @include media-breakpoint-up(sm) {
-        height: 2.25em;
-    }
+  @include media-breakpoint-up(sm) {
+    height: 2.25em;
+  }
 }

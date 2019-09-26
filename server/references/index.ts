@@ -26,6 +26,12 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'The Wellhouse',
+        logo: 'wellhouse.png',
+        url: 'http://the-wellhouse.org/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
         name: 'Goodwill Alabama',
         logo: 'goodwill-al.png',
         url: 'http://algoodwill.org/',
@@ -361,12 +367,12 @@ export const PARTNERS: Array<IPartner> = [
         url: 'https://cofense.com/',
         status: [PARTNER_STATUS.EMPLOYER],
     },
-    {
-        name: 'Platypi',
-        logo: 'platypi.jpg',
-        url: 'https://platypi.io',
-        status: [PARTNER_STATUS.EMPLOYER],
-    },
+    // {
+    //     name: 'Platypi',
+    //     logo: 'platypi.jpg',
+    //     url: 'https://platypi.io',
+    //     status: [PARTNER_STATUS.EMPLOYER],
+    // },
     {
         name: 'ProAssurance',
         logo: 'proassurance.jpg',
@@ -425,12 +431,12 @@ export const PARTNERS: Array<IPartner> = [
         url: 'https://www.viperline.com/',
         status: [PARTNER_STATUS.EMPLOYER],
     },
-    {
-        name: 'Covalence',
-        logo: 'covalence.png',
-        url: 'https://covalence.io/',
-        status: [PARTNER_STATUS.NETWORK],
-    },
+    // {
+    //     name: 'Covalence',
+    //     logo: 'covalence.png',
+    //     url: 'https://covalence.io/',
+    //     status: [PARTNER_STATUS.NETWORK],
+    // },
     {
         name: 'Jefferson State Community College',
         logo: 'jeff-state.jpg',
