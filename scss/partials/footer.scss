@@ -56,8 +56,13 @@ footer {
     align-items: center;
     text-align: center;
 
-    .clear {
-      margin-bottom: 1rem;
+    #mce-responses {
+      display: flex;
+      justify-content: center;
+
+      .clear {
+        margin-bottom: 1rem;
+      }
     }
 
     input {
