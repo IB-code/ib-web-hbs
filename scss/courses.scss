@@ -19,6 +19,16 @@ header {
     }
 }
 
+.section {
+    &-help {
+        @media only screen and (max-width: 600px) {
+            #main-help-text {
+                text-align: center;
+            }
+        }
+    }
+}
+
 .courses {
     .icon {
         font-size: 2.5em;
