@@ -19,6 +19,9 @@ header {
 .section {
   &-padding {
     @media only screen and (max-width: 600px) {
+      width: -moz-available;
+      width: -webkit-fill-available;
+      width: fill-available;
       padding-left: 1em;
       padding-right: 1em;
       padding-top: 2em;
