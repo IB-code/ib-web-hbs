@@ -1,14 +1,59 @@
-<nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
+<nav class="navbar navbar-light bg-white fixed-top">
     <a href="/" class="navbar-brand mr-0 d-flex align-items-center">
         <img class="mr-2" src="/public/img/logos/logo_small.png" alt="Company Logo" class="d-inline-block align-top">
         <span>Innovate Birmingham</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+    <div class="expand-container">
+        <button id="mainButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="justify-content-around" id="mainDesktopNavbar" style="display: none;">
+            <div class="button-container text-right mr-2 mt-2">
+                <button id="closeNavButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    {{!-- <span class="navbar-toggler-icon"></span> --}}
+                </button>
+            </div>
+
+            <ul class="navbar-nav mt-0">
+                {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}">
+                <a class="nav-link" href="/about/">ABOUT</a>
+            </li> --}}
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
+                    <a class="nav-link" href="/courses/">COURSES</a>
+                </li>
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/scholarships/"}} active{{/contains}}">
+                    <a class="nav-link" href="/scholarships/">SCHOLARSHIPS</a>
+                </li>
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/partners/"}} active{{/contains}}">
+                    <a class="nav-link" href="/partners/">PARTNERS</a>
+                </li>
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/testimonials/"}} active{{/contains}}">
+                    <a class="nav-link" href="/testimonials/">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/faq/"}} active{{/contains}}">
+                    <a class="nav-link" href="/faq/">FAQ</a>
+                </li>
+                {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/blog/"}} active{{/contains}}">
+                <a class="nav-link" href="/blog/">BLOG</a>
+            </li> --}}
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
+                    <a class="nav-link" href="/contact/">CONTACT</a>
+                </li>
+                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/apply/"}} active{{/contains}}">
+                    <a href="https://innovatebham.formstack.com/forms/application" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="btn btn-primary text-white">APPLY</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainMobileNavbar">
         <ul class="navbar-nav pr-xl-5">
             {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}">
                 <a class="nav-link" href="/about/">ABOUT</a>
@@ -42,5 +87,7 @@
             </li>
         </ul>
     </div>
-
 </nav>
+<!-- Remove Script -->
+<script src="/public/js/nav.js"></script>
+<!-- /Remove Script -->

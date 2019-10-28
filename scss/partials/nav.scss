@@ -1,17 +1,57 @@
 .navbar {
   box-shadow: 0 2px 2px 1px rgba(25, 25, 25, 0.2);
 
-  // @include media-breakpoint-up(md) {
-  //     .menu-container {
-  //         max-width: 4em;
-  //     }
-  // }
-
   @include media-breakpoint-down(md) {
     .dropdown-menu {
       border-top: none;
       border-right: none;
       border-bottom: none;
+    }
+  }
+}
+
+// this is only for the desktop navbar opening. Bootstrap repurpose was not working so I'm doing this manually.
+.expand-container {
+  position: relative;
+
+  #mainDesktopNavbar {
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    min-height: 100%;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0.25rem;
+    z-index: 1033;
+    animation: drawNav 150ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    // animate the opening of the navbar on large screens.
+    @keyframes drawNav {
+      0% {
+        width: 0vw;
+      }
+      100% {
+        width: 19vw;
+      }
+    }
+
+    #closeNavButton {
+      background: url("../../static/img/nav/closeNavButton.png");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      min-height: 1em;
+      border: none;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin: 1em;
     }
   }
 }
