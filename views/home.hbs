@@ -15,8 +15,9 @@
 </header>
 <section class="section-video">
     <div id="video-container">
-        <iframe width="1275" height="717" src="https://www.youtube.com/embed/ivJgkLQLi5U?modestbranding=1&rel=0" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1275" height="717" src="https://www.youtube.com/embed/ivJgkLQLi5U?modestbranding=1&rel=0"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </section>
 {{!-- <section class="section-numbers section-padding">
@@ -63,7 +64,9 @@
             <div class="carousel-item {{isFirstItem @index 'active'}}">
                 <div class="row mt-4">
                     {{#each this}}
-                    <div class="col-md-3 logo mb-4" style="background-image: url('{{__logoPath}}');"></div>
+                        <a class="col-md-3 mb-4" href="{{url}}" target="_blank" rel="noreferrer noopener">
+                           <div class="logo p-3 my-3" style="background-image: url('{{__logoPath}}')"></div>
+                        </a>
                     {{/each}}
                 </div>
             </div>
