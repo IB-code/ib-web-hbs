@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // start the desktop navbar as hidden.
     desktopSlideOut.style.display = 'none';
 
-    // check screen width and set data target of hamburger menu button.
+    // check screen width and set data target of menu button.
     if (screen.availWidth > 1366) {
         button.attributes[4].value = '#mainDesktopNavbar';
     } else {

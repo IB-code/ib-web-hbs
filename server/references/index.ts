@@ -26,6 +26,12 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'United Way',
+        logo: 'United_Way.png',
+        url: 'https://www.unitedway.org/#',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
         name: 'The Wellhouse',
         logo: 'wellhouse.png',
         url: 'http://the-wellhouse.org/',
