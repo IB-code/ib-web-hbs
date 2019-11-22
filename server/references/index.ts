@@ -26,6 +26,12 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'HC3',
+        logo: 'HC3.png',
+        url: 'https://www.hc3.io',
+        status: [PARTNER_STATUS.EMPLOYER]
+    },
+    {
         name: 'United Way',
         logo: 'United_Way.png',
         url: 'https://www.unitedway.org/#',
