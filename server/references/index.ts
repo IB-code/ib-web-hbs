@@ -26,6 +26,12 @@ export const enum PARTNER_STATUS {
 
 export const PARTNERS: Array<IPartner> = [
     {
+        name: 'Syntropy Group',
+        logo: 'syntropygroup.png',
+        url: 'https://syntropygroup.com/',
+        status: [PARTNER_STATUS.EMPLOYER]
+    },
+    {
         name: 'HC3',
         logo: 'HC3.png',
         url: 'https://www.hc3.io',

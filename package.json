@@ -55,7 +55,7 @@
         "moment-timezone": "^0.5.13",
         "morgan": "^1.9.1",
         "node-sass": "^4.12.0",
-        "npm": "^6.10.3",
+        "npm": "^6.13.4",
         "popper.js": "^1.12.5",
         "postcss": "^6.0.11",
         "promise": "^8.0.1",
