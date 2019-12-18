@@ -8,6 +8,7 @@ import * as path from 'path';
 import * as handlebars from 'express-handlebars';
 import * as moment from 'moment-timezone';
 import * as compression from 'compression';
+import * as enforce from 'express-sslify';
 import log from './log';
 import * as cache from './utils/cache';
 
@@ -27,6 +28,7 @@ const publicPath = path.join(config.root, 'public');
 
 logger.token('date', () => moment().format('DD/MMM/YYYY:HH:mm:ss ZZ'));
 
+app.use(enforce.HTTPS());
 app.disable('x-powered-by');
 app.use(logger(':status :method :url \t :date[clf] \t :response-time[1]ms'));
 app.use(bodyParser.json());
