@@ -47,7 +47,7 @@ app.use('/clear-cache', (req, res, next) => {
 });
 
 app.use(compression());
-app.use(requireHTTPS)
+app.use(requireHTTPS);
 app.use(webp(publicPath));
 
 app.use('/static', express.static(publicPath));

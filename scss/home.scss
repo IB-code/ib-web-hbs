@@ -27,13 +27,17 @@ header {
       padding: 2em;
     }
 
+    #video-container iframe {
+      border-radius: 0.25rem;
+    }
+
     @media only screen and (max-width: 600px) {
       #video-container {
         position: relative;
         overflow: hidden;
         padding-top: 56.25%;
       }
-      
+
       #video-container iframe {
         position: absolute;
         top: 0;
