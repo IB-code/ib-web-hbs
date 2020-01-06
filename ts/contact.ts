@@ -25,11 +25,13 @@ let getParams = (url) => {
     let parser = document.createElement('a');
     parser.href = url;
     let query = parser.search.substring(1);
+    console.log("varible query is " + query);
     let s = query.split('&');
+    console.log("variable s is " + s);
     for (let i = 0; i < s.length; i++) {
         let pair = s[i].split('=');
         params[pair[0]] = decodeURIComponent(pair[1]);
     }
-    console.log(params);
+    console.log("varible params is " + params + " at the end of the function");
     return params;
 };
