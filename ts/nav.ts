@@ -3,6 +3,10 @@ window.addEventListener('DOMContentLoaded', () => {
         button = document.getElementById('mainButton'),
         closeNavButton = document.getElementById('closeNavButton');
 
+    window.addEventListener('click', (event) => {
+        console.log(event);
+    });
+
     // start the desktop navbar as hidden.
     desktopSlideOut.style.display = 'none';
 

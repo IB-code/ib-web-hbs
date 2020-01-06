@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log(window.location.href);
     let params: any = getParams(window.location.href);
 
     if (params.response === undefined) {
@@ -29,5 +30,6 @@ let getParams = (url) => {
         let pair = s[i].split('=');
         params[pair[0]] = decodeURIComponent(pair[1]);
     }
+    console.log(params);
     return params;
 };
