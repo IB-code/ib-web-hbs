@@ -101,11 +101,11 @@ export function handleFormSubmission(
             },
         )
         .then((res) => {
-            res.redirect('http://innovatebham.com/contact?response=thanks');
+            res.redirect('https://innovatebham.com/contact?response=thanks');
         })
         .catch((err) => {
             console.log('err', err);
-            res.redirect('http://innovatebham.com/contact?response=whoops');
+            res.redirect('https://innovatebham.com/contact?response=whoops');
         });
 }
 
