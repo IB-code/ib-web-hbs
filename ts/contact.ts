@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log(window.location.href);
     let params: any = getParams(window.location.href);
 
     if (params.response === undefined) {

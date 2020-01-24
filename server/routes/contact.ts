@@ -63,7 +63,7 @@ export function handleFormSubmission(
 
     const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${gCaptcha}&remoteip=${
         req.connection.remoteAddress
-    }`;
+        }`;
 
     return axios(verificationUrl)
         .then(

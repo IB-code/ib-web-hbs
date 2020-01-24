@@ -37,6 +37,10 @@ header {
       padding-top: 0;
     }
 
+    #video-container iframe {
+      border-radius: 0.25rem;
+    }
+
     @media only screen and (max-width: 600px) {
       #video-container {
         position: relative;
