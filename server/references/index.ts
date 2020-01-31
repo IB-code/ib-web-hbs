@@ -25,6 +25,24 @@ export const enum PARTNER_STATUS {
 }
 
 export const PARTNERS: Array<IPartner> = [
+    // {
+    //     name: 'Focus IT',
+    //     logo: 'focusit.png',
+    //     url: 'https://www.focusitinc.com/',
+    //     status: [PARTNER_STATUS.HIRED]
+    // },
+    {
+        name: 'Brooksource',
+        logo: 'brooksource.png',
+        url: 'https://www.brooksource.com/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
+        name: 'Altec Industries',
+        logo: 'altec.png',
+        url: 'https://altec.com/',
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER]
+    },
     {
         name: 'Syntropy Group',
         logo: 'syntropygroup.png',
@@ -86,6 +104,24 @@ export const PARTNERS: Array<IPartner> = [
         status: [PARTNER_STATUS.HIRED],
     },
     {
+        name: 'Sparkhound',
+        logo: 'sparkhound.png',
+        url: 'https://www.sparkhound.com/',
+        status: [PARTNER_STATUS.HIRED]
+    },
+    {
+        name: 'Two Ravens',
+        logo: 'tworavens.png',
+        url: 'https://www.2rvns.com/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
+        name: 'Wyndy',
+        logo: 'wyndy.png',
+        url: 'https://www.wyndy.com/',
+        status: [PARTNER_STATUS.HIRED]
+    },
+    {
         name: 'Apple',
         logo: 'apple.png',
         url: 'https://apple.com',
@@ -139,6 +175,12 @@ export const PARTNERS: Array<IPartner> = [
         url: 'https://cadencebank.com/',
         status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
+    // {
+    //     name: 'Quantalytix',
+    //     logo: '',
+    //     url: 'https://quantalytix.com/',
+    //     status: [PARTNER_STATUS.HIRED],
+    // },
     {
         name: 'RGIS',
         logo: 'rgis.png',
@@ -176,6 +218,12 @@ export const PARTNERS: Array<IPartner> = [
         status: [PARTNER_STATUS.HIRED],
     },
     {
+        name: 'Tek Systems',
+        logo: 'teksystems.jpg',
+        url: 'https://www.teksystems.com/',
+        status: [PARTNER_STATUS.HIRED],
+    },
+    {
         name: 'Whiteboard IT',
         logo: 'whiteboard.png',
         url: 'http://whiteboard-it.com/',
@@ -200,10 +248,22 @@ export const PARTNERS: Array<IPartner> = [
         status: [PARTNER_STATUS.HIRED],
     },
     {
+        name: 'Airship',
+        logo: 'airship.png',
+        url: 'http://teamairship.com',
+        status: [PARTNER_STATUS.HIRED],
+    },
+    {
         name: 'Alabama Power',
         logo: 'alabama-power.jpg',
         url: 'http://alabamapower.com',
         status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
+    },
+    {
+        name: 'Alabama Power Foundation',
+        logo: 'alabama-power-foundation.png',
+        url: 'http://powerofgood.com',
+        status: [PARTNER_STATUS.NETWORK],
     },
     {
         name: 'Alabama Capital Network',
@@ -232,7 +292,7 @@ export const PARTNERS: Array<IPartner> = [
     {
         name: 'BBVA Compass',
         url: 'https://www.bbvacompass.com/',
-        logo: 'bbva.jpg',
+        logo: 'bbva.png',
         status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
@@ -449,12 +509,12 @@ export const PARTNERS: Array<IPartner> = [
         url: 'https://www.viperline.com/',
         status: [PARTNER_STATUS.EMPLOYER],
     },
-    // {
-    //     name: 'Covalence',
-    //     logo: 'covalence.png',
-    //     url: 'https://covalence.io/',
-    //     status: [PARTNER_STATUS.NETWORK],
-    // },
+    {
+        name: 'Covalence',
+        logo: 'covalence.png',
+        url: 'https://covalence.io/',
+        status: [PARTNER_STATUS.NETWORK],
+    },
     {
         name: 'Jefferson State Community College',
         logo: 'jeff-state.jpg',
@@ -490,5 +550,17 @@ export const PARTNERS: Array<IPartner> = [
         logo: 'cash-for-college.jpg',
         url: 'alabamapossible.org/programs/cash-for-college/',
         status: [PARTNER_STATUS.NETWORK],
+    },
+    {
+        name: "ThinkData Solutions",
+        logo: 'think-data.png',
+        url: 'http://www.thinkdatasol.com/',
+        status: [PARTNER_STATUS.NETWORK]
+    },
+    {
+        name: "TEALS",
+        logo: 'teals.png',
+        url: 'http://www.thinkdatasol.com/',
+        status: [PARTNER_STATUS.NETWORK]
     },
 ];

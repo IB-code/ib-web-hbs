@@ -11,23 +11,23 @@
         </button>
 
         <div class="justify-content-around" id="mainDesktopNavbar" style="display: none;">
-            <div class="button-container text-right mr-2 mt-2">
+            <span class="button-container position-absolute">
                 <button id="closeNavButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
                     aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     {{!-- <span class="navbar-toggler-icon"></span> --}}
                 </button>
-            </div>
+            </span>
 
             <ul class="navbar-nav mt-0">
                 {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}">
                 <a class="nav-link" href="/about/">ABOUT</a>
                 </li> --}}
-                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
-                    <a class="nav-link" href="/courses/">COURSES</a>
+                <li class="nav-item mt-1 mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
+                    <a class="nav-link" href="/programs/">PROGRAMS</a>
                 </li>
-                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/scholarships/"}} active{{/contains}}">
+                {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/scholarships/"}} active{{/contains}}">
                     <a class="nav-link" href="/scholarships/">SCHOLARSHIPS</a>
-                </li>
+                </li> --}}
                 <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/partners/"}} active{{/contains}}">
                     <a class="nav-link" href="/partners/">PARTNERS</a>
                 </li>
@@ -40,7 +40,7 @@
                 {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/blog/"}} active{{/contains}}">
                 <a class="nav-link" href="/blog/">BLOG</a>
                 </li> --}}
-                <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
+                <li class="nav-item mb-1 mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
                     <a class="nav-link" href="/contact/">CONTACT</a>
                 </li>
                 <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/apply/"}} active{{/contains}}">
@@ -59,11 +59,11 @@
                 <a class="nav-link" href="/about/">ABOUT</a>
             </li> --}}
             <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
-                <a class="nav-link" href="/courses/">COURSES</a>
+                <a class="nav-link" href="/courses/">PROGRAMS</a>
             </li>
-            <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/scholarships/"}} active{{/contains}}">
+            {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/scholarships/"}} active{{/contains}}">
                 <a class="nav-link" href="/scholarships/">SCHOLARSHIPS</a>
-            </li>
+            </li> --}}
             <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/partners/"}} active{{/contains}}">
                 <a class="nav-link" href="/partners/">PARTNERS</a>
             </li>
@@ -76,7 +76,7 @@
             {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/blog/"}} active{{/contains}}">
                 <a class="nav-link" href="/blog/">BLOG</a>
             </li> --}}
-            <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
+            <li class="nav-item mb-1 mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
                 <a class="nav-link" href="/contact/">CONTACT</a>
             </li>
             <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/apply/"}} active{{/contains}}">
@@ -88,6 +88,7 @@
         </ul>
     </div>
 </nav>
+
 <!-- Remove Script -->
 <script src="/public/js/nav.js"></script>
 <!-- /Remove Script -->

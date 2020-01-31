@@ -26,27 +26,27 @@ export function context(
         main: {
             hired: [],
             blogs: [],
-            courses: [
+            programs: [
                 {
-                    href: '/courses/software/',
-                    icon: 'fa fa-code',
-                    headline: 'Software Development Bootcamp',
+                    // href: '/courses/software/',
+                    icon: 'fa fa-road',
+                    headline: 'Fast Track',
                     description:
-                        'Do you want to learn to code? Come here to learn to build mobile apps, servers, and databases.',
+                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
                 },
                 {
-                    href: '/courses/data-analytics/',
-                    icon: 'fas fa-cogs',
-                    headline: 'Data Analytics Bootcamp',
+                    // href: '/courses/data-analytics/',
+                    icon: 'fas fa-suitcase',
+                    headline: 'Apprenticeship',
                     description:
-                        'Do you want to learn how to glean valuable insights and knowledge from data to help you make informed business decisions?',
+                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
                 },
                 {
-                    href: '/scholarships/',
-                    icon: 'fa fa-school',
-                    headline: 'College Scholarships',
+                    // href: '/scholarships/',
+                    icon: 'fa fa-graduation-cap',
+                    headline: 'Degrees and Certificate Programs',
                     description:
-                        'Are you a technology major at Jefferson State, Lawson State, or UAB? If so, you could be eligible for up to $4,000 in scholarship in money!',
+                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
                 },
             ],
             benefits: [

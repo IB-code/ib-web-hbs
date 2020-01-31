@@ -34,16 +34,21 @@
         width: 0vw;
       }
       100% {
-        width: 19vw;
+        width: 16vw;
       }
     }
 
-    #closeNavButton {
-      background: url("../../static/img/nav/closeNavButton.png");
-      background-size: 20px;
-      background-repeat: no-repeat;
-      min-height: 1em;
-      border: none;
+    .button-container {
+      top: 10px;
+      right: 10px;
+
+      #closeNavButton {
+        background: url("../../static/img/nav/closeNavButton.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        min-height: 1em;
+        border: none;
+      }
     }
 
     .navbar-nav {

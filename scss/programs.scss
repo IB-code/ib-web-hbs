@@ -1,0 +1,79 @@
+@import "layouts/main";
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/courses/hero.jpg");
+    background-position: center 75%;
+
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-help {
+    @media only screen and (max-width: 600px) {
+      #main-help-text {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.programs {
+  .icon {
+    font-size: 4em;
+    color: $black;
+  }
+
+  .card {
+    border: none;
+    min-height: 525px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+
+    .card-body {
+        
+
+      .dropdown {
+        bottom: 2em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        z-index: 2;
+      }
+
+      .card-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        position: relative;
+      }
+
+      .card-text {
+          font-size: 1.2em;
+      }
+
+      .learn-btn {
+        bottom: 2em;
+        left: 32%;
+      }
+    }
+
+    &:hover {
+      transition: box-shadow;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      .card-title {
+        color: $yellow;
+      }
+    }
+  }
+}

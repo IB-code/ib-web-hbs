@@ -4,13 +4,13 @@ import * as index from './home';
 import * as about from './about';
 import * as courses from './courses';
 import * as software from './software';
-// import * as hardware from './hardware';
 import * as partners from './partners';
 import * as contact from './contact';
 import * as data from './data-analytics';
 import * as scholarships from './scholarships';
 import * as testimonials from './testimonials';
 import * as faq from './faq';
+import * as programs from './programs';
 
 const router = express.Router();
 
@@ -25,8 +25,9 @@ router
     .get('/courses/data-analytics', data.context, meta, data.render)
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
-    .get('/faq', faq.context, meta, faq.render);
-// .get('/courses/hardware', hardware.context, meta, hardware.render)
+    .get('/faq', faq.context, meta, faq.render)
+    .get('/programs', programs.context, meta, programs.render);
+
 // .get('/blog', blogList.context, meta, blogList.render)
 // .get('/blog/page/:page', blogList.context, meta, blogList.render)
 // .get('/blog/:title', blog.context, meta, blog.render)
