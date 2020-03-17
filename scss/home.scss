@@ -81,5 +81,15 @@ header {
         animation: slideUp 500ms forwards;
       }
     }
+
+    .learn-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      #learn-more-btn {
+        background-color: #facf32;
+      }
+    }
   }
 }

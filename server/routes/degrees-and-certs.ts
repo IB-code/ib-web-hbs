@@ -8,13 +8,13 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Scholarships | Innovate Birmingham',
+            title: 'Degrees and Certifications | Innovate Birmingham',
             meta: {
                 description:
                     'Offering scholarships to UAB, Jefferson State, and Lawson State.',
                 images: [
                     {
-                        url: '/static/img/home/hero.png',
+                        url: '/static/img/scholarships/hero.jpg',
                     },
                 ],
             },
@@ -58,7 +58,7 @@ export function render(
     res: express.Response,
     next: express.NextFunction,
 ) {
-    res.render('scholarships', req.context, (err, html) => {
+    res.render('degrees-and-certs', req.context, (err, html) => {
         parse(req, req.url, html).then(
             (html) => {
                 res.send(html);

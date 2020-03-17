@@ -1,0 +1,49 @@
+@import "layouts/main";
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: url("/static/img/accelerated/hero.jpg");
+    background-position: center 75%;
+
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6eff5;
+
+    img {
+      max-width: 6em;
+    }
+
+    .icon {
+      width: 1em;
+    }
+
+    .details-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+        border: none !important;
+    }
+
+    .close {
+      align-self: flex-end;
+    }
+  }
+}

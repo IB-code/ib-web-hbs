@@ -1,0 +1,29 @@
+@import "layouts/main";
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: url("/static/img/apprenticeship/hero.jpg");
+    background-position: center 75%;
+
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-whatisit {
+    background-color: #e6eff5;
+  }
+
+  &-experience {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

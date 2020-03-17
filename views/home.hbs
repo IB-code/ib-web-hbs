@@ -13,13 +13,6 @@
         </div>
     </div>
 </header>
-<section class="section-video">
-    <div id="video-container">
-        <iframe width="1275" height="717" src="https://www.youtube.com/embed/ivJgkLQLi5U?modestbranding=1&rel=0"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-</section>
 {{!-- <section class="section-numbers section-padding">
     <div class="row container mx-auto text-center d-flex justify-content-center align-items-center">
         <div class="col-sm m-4">
@@ -36,10 +29,10 @@
         </div>
     </div>
 </section> --}}
-<section class="section-courses section-padding bg-primary">
+<section class="section-courses section-padding bg-white text-black">
     <div class="container">
-        <a href="/courses/">
-            <h3 class="text-center text-white pb-5">Our Programs</h3>
+        <a href="/programs/">
+            <h3 class="text-center pb-3">Our Programs</h3>
         </a>
         <div class="row">
             {{#each main.programs}}
@@ -54,6 +47,18 @@
             </div>
             {{/each}}
         </div>
+        <div class="learn-more mt-4">
+            <a href="/programs">
+                <button type="button" class="btn" id="learn-more-btn">LEARN MORE</button>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="section-video bg-primary">
+    <div id="video-container">
+        <iframe width="1275" height="717" src="https://www.youtube.com/embed/ivJgkLQLi5U?modestbranding=1&rel=0"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </section>
 <section class="section-companies section-padding">

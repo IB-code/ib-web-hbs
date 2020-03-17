@@ -27,7 +27,7 @@ export function context(
                         'Learn to code in JavaScript, the native language of the web. In our 14 week software development bootcamp we help you learn and apply the necessary coding skills you need to work as a junior level developer.',
                     action: {
                         id: 'apprenticeship',
-                        href: '/programs/apprenticeship',
+                        href: '/apprenticeship',
                         text: 'LEARN MORE',
                     }
                 },
@@ -38,7 +38,7 @@ export function context(
                         'Learn to code in JavaScript, the native language of the web. In our 14 week software development bootcamp we help you learn and apply the necessary coding skills you need to work as a junior level developer.',
                     action: {
                         id: 'certs',
-                        href: '/programs/certifications/',
+                        href: '/degrees-and-certifications/',
                         text: 'LEARN MORE',
                     }
                 },
