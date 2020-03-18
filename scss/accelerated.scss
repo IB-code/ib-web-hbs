@@ -5,7 +5,12 @@ header {
 
   & > .jumbotron {
     background: url("/static/img/accelerated/hero.jpg");
-    background-position: center 75%;
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      text-shadow: darken($color: #000000, $amount: 1);
+    }
 
     .lead {
       @include media-breakpoint-down(md) {
@@ -24,8 +29,20 @@ header {
     align-items: center;
     background-color: #e6eff5;
 
-    img {
-      max-width: 6em;
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 6em;
+      }
+    }
+
+    .img-container-modal {
+        img {
+            max-width: 12em;
+        }
     }
 
     .icon {
@@ -39,7 +56,7 @@ header {
     }
 
     .card {
-        border: none !important;
+      border: none !important;
     }
 
     .close {
