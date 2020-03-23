@@ -61,9 +61,7 @@ export function handleFormSubmission(
 
     let secret = process.env.G_RECAPTCHA_SECRET;
 
-    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${gCaptcha}&remoteip=${
-        req.connection.remoteAddress
-        }`;
+    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${gCaptcha}&remoteip=${req.connection.remoteAddress}`;
 
     return axios(verificationUrl)
         .then(
