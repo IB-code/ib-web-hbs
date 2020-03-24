@@ -46,7 +46,7 @@ export function context(
                     icon: 'fa fa-graduation-cap',
                     headline: 'Degrees and Certificate Programs',
                     description:
-                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
+                        'for full-time students at UAB, Jeff State, and Lawson State ',
                 },
             ],
             benefits: [

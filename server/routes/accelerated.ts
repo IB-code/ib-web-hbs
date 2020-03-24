@@ -47,7 +47,7 @@ export function context(
                     id: 3,
                     title: 'Comp TIA A+ Certification Prep',
                     img: '/static/img/accelerated/jeffstate.jpg',
-                    courseLength: 'Tues, Thurs, (21 Weeks)',
+                    courseLength: 'Tues, Thurs (21 Weeks)',
                     courseTime: '6:30 pm - 9:30 pm',
                     courseLocation: 'Jeff State',
                     courseCost: 'N/A',
