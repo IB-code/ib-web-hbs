@@ -4,8 +4,13 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: url("/static/img/home/hero.jpg");
-    background-position: center 65%;
+    background:  linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 30%;
+    background-repeat: repeat-x;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 
     .lead {
       @include media-breakpoint-down(md) {

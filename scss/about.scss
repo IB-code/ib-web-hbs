@@ -1,48 +1,46 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 header {
-    & .jumbotron {
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-            url('/static/img/about/hero.jpg');
-        background-position: center 65%;
-    }
+  & .jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/static/img/about/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .section {
-    // &-padding {
-    //     .numbers {
-    //         font-weight: inherit;
-    //     }
-    // }
-
-    &-plan {
-        .list-group {
-            .active {
-                color: $white;
-            }
-        }
+  &-plan {
+    .list-group {
+      .active {
+        color: $white;
+      }
     }
+  }
 
-    &-big-innovate {
-        .card-bg {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 10em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px;
-            text-align: center;
+  &-big-innovate {
+    .card-bg {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 10em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      text-align: center;
 
-            .bg-text {
-                color: $yellow;
-                font-size: 1em;
+      .bg-text {
+        color: $yellow;
+        font-size: 1em;
 
-                @media (min-width: 767px) {
-                    font-size: 1.5em;
-                }
-            }
+        @media (min-width: 767px) {
+          font-size: 1.5em;
         }
+      }
     }
+  }
 }

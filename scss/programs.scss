@@ -4,8 +4,13 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/courses/hero.jpg");
-    background-position: center 75%;
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/programs/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 
     .lead {
       @include media-breakpoint-down(md) {
@@ -38,8 +43,6 @@ header {
     margin: 0 auto;
 
     .card-body {
-        
-
       .dropdown {
         bottom: 2em;
         left: 50%;
@@ -58,7 +61,7 @@ header {
       }
 
       .card-text {
-          font-size: 1.2em;
+        font-size: 1.2em;
       }
 
       .learn-btn {

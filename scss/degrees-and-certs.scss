@@ -1,12 +1,17 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 // begin general css //
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/scholarships/hero.jpg');
-    background-position: center 75%;
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/scholarships/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 
     .lead {
       @include media-breakpoint-down(md) {

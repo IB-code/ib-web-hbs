@@ -7,14 +7,15 @@ window.addEventListener('DOMContentLoaded', () => {
     desktopSlideOut.style.display = 'none';
 
     // check screen width and set data target of menu button.
-    if (screen.availWidth > 1025) {
+    console.log(screen.availWidth);
+    if (screen.availWidth >= 1024) {
         button.attributes[4].value = '#mainDesktopNavbar';
     } else {
         button.attributes[4].value = '#mainMobileNavbar';
     }
 
     button.addEventListener('click', () => {
-        if (screen.availWidth > 1025) {
+        if (screen.availWidth >= 1024) {
             if (desktopSlideOut.classList.contains('closingNav')) {
                 desktopSlideOut.classList.remove('closingNav');
             }
@@ -25,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     closeNavButton.addEventListener('click', () => {
-        if (screen.availWidth > 1025) {
+        if (screen.availWidth >= 1024) {
             if (desktopSlideOut.classList.contains('openingNav')) {
                 desktopSlideOut.classList.remove('openingNav');
             }

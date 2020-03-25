@@ -1,7 +1,7 @@
 @import "layouts/main";
 
 .modal-backdrop {
-    opacity:0.5 !important;
+  opacity: 0.5 !important;
 }
 
 header {
@@ -9,8 +9,12 @@ header {
 
   & > .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/img/accelerated/hero.jpg");
-    background-position: center;
-    background-size: cover;
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 
     h1 {
       text-shadow: darken($color: #000000, $amount: 1);
