@@ -1,5 +1,25 @@
 @import 'layouts/main';
 
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background:  linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/faq/hero.webp");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
 h2 {
   font-family: Arial, Verdana;
   font-weight: 800;

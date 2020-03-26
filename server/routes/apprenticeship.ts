@@ -22,11 +22,32 @@ export function context(
         main: {
             signee: [
                 {
-                    
+                    name: "Rebekah Llinares",
+                    img: "/static/img/testimonials\Headshot - Rebekah Llinares - IAMBHAM.jpg",
+                    quote: ""
+                },
+                {
+                    name: "Avera Guthrie",
+                    img: "",
+                    quote: ""
+                },
+                {
+                    name: "",
+                    img: "",
+                    quote: ""
+                },
+                {
+                    name: "",
+                    img: "",
+                    quote: ""
                 }
             ]
         }
     };
+
+    req.context.main.signee.sort(() => {
+        return 0.5 - Math.random();
+    });
 
     next();
 }

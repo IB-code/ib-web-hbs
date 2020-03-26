@@ -10,6 +10,12 @@ export interface ICurriculumSection {
     }>;
 }
 
+export interface ITestimonial {
+    name: string, 
+    img: string,
+    quote: string
+}
+
 export interface IPartner {
     name: string;
     logo: string;
@@ -23,6 +29,53 @@ export const enum PARTNER_STATUS {
     NETWORK,
     HIRED,
 }
+
+// export const TESTIMONIALS: Array<ITestimonial> = [
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },
+//     {
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     },{
+//         name: "", 
+//         img: "",
+//         quote: ""
+//     }
+// ]
 
 export const PARTNERS: Array<IPartner> = [
     // {
