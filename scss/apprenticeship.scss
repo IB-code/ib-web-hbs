@@ -4,9 +4,10 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background:  linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/apprenticeship/hero.webp");
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
+      url("/static/img/apprenticeship/hero.webp");
     background-size: cover; /* or contain depending on what you want */
-    background-position: center center;
+    background-position: center 35%;
     background-repeat: no-repeat;
     text-align: center;
     margin: auto;
@@ -26,9 +27,39 @@ header {
   }
 
   &-experience {
-    .container {
+    a {
+      color: white !important;
+    }
+
+    .training-options {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 770px) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+      }
+    }
+  }
+
+  &-carousel {
+    background-color: #e6eff5;
+
+    .carousel-img {
+      margin: auto;
+      max-width: 45%;
+    }
+
+    @media screen and (max-width: 770px) {
+      .carousel-img {
+        max-width: 75% !important;
+      }
     }
   }
 }

@@ -20,32 +20,24 @@ export function context(
             },
         },
         main: {
-            signee: [
+            signees: [
                 {
                     name: "Rebekah Llinares",
-                    img: "/static/img/testimonials\Headshot - Rebekah Llinares - IAMBHAM.jpg",
-                    quote: ""
+                    img: "static/img/apprenticeship/rebekahLlinares.webp"
                 },
                 {
-                    name: "Avera Guthrie",
-                    img: "",
-                    quote: ""
+                    name: "Michael Parker",
+                    img: "static/img/apprenticeship/michaelParker.webp"
                 },
                 {
-                    name: "",
-                    img: "",
-                    quote: ""
-                },
-                {
-                    name: "",
-                    img: "",
-                    quote: ""
+                    name: "Zach Durden",
+                    img: "static/img/apprenticeship/zachDurden.webp"
                 }
             ]
         }
     };
 
-    req.context.main.signee.sort(() => {
+    req.context.main.signees.sort(() => {
         return 0.5 - Math.random();
     });
 

@@ -2,7 +2,7 @@ import * as express from 'express';
 import meta from '../middleware/meta';
 import * as index from './home';
 import * as about from './about';
-import * as courses from './courses';
+// import * as courses from './courses';
 import * as software from './software';
 import * as partners from './partners';
 import * as contact from './contact';
@@ -21,7 +21,7 @@ router
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
     .post('/contact/submit', contact.handleFormSubmission)
-    .get('/courses', courses.context, meta, courses.render)
+    // .get('/courses', courses.context, meta, courses.render)
     .get('/programs', programs.context, meta, programs.render)
     .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
     .get('/apprenticeship', apprenticeship.context, meta, apprenticeship.render)
