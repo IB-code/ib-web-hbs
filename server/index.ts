@@ -25,14 +25,6 @@ const app = express();
 
 const publicPath = path.join(config.root, 'public');
 
-function requireHTTPS(req, res, next) {
-    // The 'x-forwarded-proto' check is for Heroku
-    if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development") {
-        return res.redirect('https://' + req.get('host') + req.url);
-    }
-    next();
-}
-
 logger.token('date', () => moment().format('DD/MMM/YYYY:HH:mm:ss ZZ'));
 
 app.disable('x-powered-by');
@@ -126,3 +118,12 @@ app.listen(app.get('port'), () => {
         );
     }
 });
+
+function requireHTTPS(req, res, next) {
+    console.log(req.url);
+    // The 'x-forwarded-proto' check is for Heroku
+    if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development" && req.url != "/contact/") {
+        return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+}
