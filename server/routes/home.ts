@@ -30,23 +30,23 @@ export function context(
                 {
                     // href: '/courses/software/',
                     icon: 'fa fa-road',
-                    headline: 'Fast Track',
+                    headline: 'Accelerated Programs',
                     description:
-                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
+                        'Fast-track career development programs designed to be completed in less than four months',
                 },
                 {
                     // href: '/courses/data-analytics/',
                     icon: 'fas fa-suitcase',
                     headline: 'Apprenticeship',
                     description:
-                        'Vivamus id pretium justo, sed elementum ante. Ut at viverra risus. Proin at tellus imperdiet, fermentum sapien vel, dapibus augue. Ut purus urna, pretium porttitor.',
+                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
                 },
                 {
                     // href: '/scholarships/',
                     icon: 'fa fa-graduation-cap',
                     headline: 'Degrees and Certificate Programs',
                     description:
-                        'for full-time students at UAB, Jeff State, and Lawson State ',
+                        'For tech-related full-time students at UAB, Jeff State, and Lawson State',
                 },
             ],
             benefits: [

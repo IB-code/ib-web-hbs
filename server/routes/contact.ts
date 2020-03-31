@@ -82,7 +82,7 @@ export function handleFormSubmission(
                         email.unshift('kayla');
                         break;
                     case 'employers':
-                        email.unshift('haleyb');
+                        email.unshift('haleyh');
                         break;
                     case 'general':
                         email.unshift('kellie');
