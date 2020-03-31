@@ -24,7 +24,7 @@ export function context(
                     icon: 'fa fa-suitcase',
                     headline: 'Apprenticeship',
                     description:
-                        'Learn to code in JavaScript, the native language of the web. In our 14 week software development bootcamp we help you learn and apply the necessary coding skills you need to work as a junior level developer.',
+                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
                     action: {
                         id: 'apprenticeship',
                         href: '/apprenticeship',
@@ -35,7 +35,7 @@ export function context(
                     icon: 'fa fa-graduation-cap',
                     headline: 'Degree and Certificate Programs',
                     description:
-                        'Learn to code in JavaScript, the native language of the web. In our 14 week software development bootcamp we help you learn and apply the necessary coding skills you need to work as a junior level developer.',
+                        'For tech-related full-time students at UAB, Jeff State, and Lawson State',
                     action: {
                         id: 'certs',
                         href: '/degrees-and-certifications/',
