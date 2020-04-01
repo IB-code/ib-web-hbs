@@ -23,15 +23,15 @@ export function context(
             signees: [
                 {
                     name: "Rebekah Llinares",
-                    img: "static/img/apprenticeship/rebekahLlinares.webp"
+                    img: "static/img/apprenticeship/rebekahLlinares.png"
                 },
                 {
                     name: "Michael Parker",
-                    img: "static/img/apprenticeship/michaelParker.webp"
+                    img: "static/img/apprenticeship/michaelParker.png"
                 },
                 {
                     name: "Zach Durden",
-                    img: "static/img/apprenticeship/zachDurden.webp"
+                    img: "static/img/apprenticeship/zachDurden.png"
                 }
             ]
         }
