@@ -112,7 +112,29 @@ export function context(
                 //     courseCost: 'N/A',
                 //     courseDescription: 'The Agile Certified Practitioner (ACP) is one of the newest certifications offered by PMI and is expected to become the industry standard certification for Agile over the next few years. In addition to preparing you for the exam, this Agile Project Management course is designed to teach you',
                 //     courseCertifications: 'Agile Certified Practitioner (ACP)'
-                // }
+                // },
+                {
+                    id: 9,
+                    title: 'Full Stack Software Development',
+                    img: '/static/img/logos/iambham.jpg',
+                    courseLength: 'Mon - Fri (14 weeks)',
+                    courseTime: '9 am - 5 pm',
+                    courseLocation: 'Innovation Depot',
+                    courseCost: 'Free',
+                    courseDescription: 'A course provided by Innovate Birmingham in partnership with Covalence, I Am Bham is a 14-week coding bootcamp designed to teach Full Stack Software Engineering through short-term, fast-track, intensive training.',
+                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Software Development'
+                },
+                {
+                    id: 10,
+                    title: 'Data Analytics',
+                    img: '/static/img/logos/think-data.png',
+                    courseLength: 'Mon - Fri (14 weeks)',
+                    courseTime: '9 am - 5 pm',
+                    courseLocation: 'Innovation Depot',
+                    courseCost: 'Free',
+                    courseDescription: 'A course provided by Innovate Birmingham in partnership with ThinkData Solutions, our Data Analytics course is a 14-week tech bootcamp designed to train future technology professionals in the fundamentals of data analysis.',
+                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Data Analytics'
+                },
             ]
         }
     };

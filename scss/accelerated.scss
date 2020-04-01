@@ -50,6 +50,8 @@ header {
     img {
       overflow-y: scroll !important;
       max-width: 12em;
+      max-height: 5em;
+      min-height: 2.2em;
     }
 
     .icon {
