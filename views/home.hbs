@@ -1,7 +1,3 @@
-<!-- Remove Style -->
-<link rel="stylesheet" href="/public/css/home.css">
-<!-- /Remove Style -->
-
 <header class="section-hero">
     <div class="jumbotron mb-0 jumbotron-fluid">
         <div class="container text-center">
@@ -10,6 +6,9 @@
             <a href="https://innovatebham.formstack.com/forms/application" target="_blank" rel="noopener noreferrer">
                 <button type="button" class="shadow btn btn-primary">APPLY NOW</button>
             </a>
+            {{!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#covid-modal">
+                Launch demo modal
+            </button> --}}
         </div>
     </div>
 </header>
@@ -128,3 +127,35 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="covid-modal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Regarding COVID-19...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Innovate Birmingham is committed to protecting the health and safety of its participants, instructors,
+                staff and partners during the COVID-19 crisis. We are also committed to ensuring that our participants
+                and the Alabama tech sector continue to be served. We have transitioned our program to be completely
+                virtual until further notice. Please click here for more questions: <br>
+                <a href="/contact">https://www.innovatebham.com/contact/</a>.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Remove Script -->
+<script src="/public/js/home.js"></script>
+<!-- /Remove Script -->
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/home.css">
+<!-- /Remove Style -->
