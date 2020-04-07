@@ -22,6 +22,52 @@ export function context(
         main: {
             courses: [
                 {
+                    id: 9,
+                    title: 'Full Stack Software Development',
+                    img: '/static/img/logos/iambham.jpg',
+                    courseLength: 'Mon - Fri (14 weeks)',
+                    courseTime: '9 am - 5 pm',
+                    courseLocation: 'Innovation Depot',
+                    courseCost: 'Free',
+                    courseDescription: 'A course provided by Innovate Birmingham in partnership with Covalence, I Am Bham is a 14-week coding bootcamp designed to teach Full Stack Software Engineering through short-term, fast-track, intensive training.',
+                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Software Development'
+                },
+                {
+                    id: 10,
+                    title: 'Data Analytics',
+                    img: '/static/img/logos/think-data.png',
+                    courseLength: 'Mon - Fri (14 weeks)',
+                    courseTime: '9 am - 5 pm',
+                    courseLocation: 'Innovation Depot',
+                    courseCost: 'Free',
+                    courseDescription: 'A course provided by Innovate Birmingham in partnership with ThinkData Solutions, our Data Analytics course is a 14-week tech bootcamp designed to train future technology professionals in the fundamentals of data analysis.',
+                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Data Analytics'
+                },
+                {
+                    id: 8,
+                    title: 'Agile Project Management',
+                    img: '/static/img/accelerated/uab.png',
+                    note: '(Open Enrollment through UAB)',
+                    courseLength: 'Online Offering: April 30 - May 21, 2020 Thursdays, 4pm - 5:30pm \n On-site Fall offering: October 16 and 30, 2020 - 8:30am - 4:00pm',
+                    courseTime: 'On-site 8:30 am - 4:00 pm or Online: Thursdays, 4pm - 5:30pm',
+                    courseLocation: 'UAB Collat School of Business',
+                    courseCost: '$1,200 or $900 if UAB employee/student or company with 3 or more students in the same class.',
+                    courseDescription: 'A project management certificate course provided by the Collat School of Professional Education that combines face-to-face and online instruction totaling the 36 contact hours needed to meet the education requirement to sit for the CAPM and PMP exams.',
+                    courseCertifications: 'Agile Certified Practitioner (ACP)'
+                },
+                {
+                    id: 11,
+                    title: 'Digital Marketing',
+                    note: '(Open Enrollment through UAB)',
+                    img: '/static/img/accelerated/uab.png',
+                    courseLength: 'Online Offering: May 21 - June 11, 2020 Thursdays, 12pm - 2pm || On-site Fall offering: September 11, 18, 25, October 2, 2020',
+                    courseTime: '9:00 am - 4:00 pm',
+                    courseLocation: 'UAB Collat School of Business',
+                    courseCost: '$2,800 or $2,000 if UAB employee/student, veteran or company with 3 or more students.',
+                    courseDescription: 'A program provided by the Collat School of Professional Education to help participants develop a better understanding of the digital marketing landscape in 2020.',
+                    courseCertifications: 'N/A'
+                },
+                {
                     id: 1,
                     title: 'Full Stack Web Development with PHP',
                     img: '/static/img/accelerated/jeffstate.jpg',
@@ -101,40 +147,7 @@ export function context(
                     courseCost: '',
                     courseDescription: 'To provide young entrepreneurs the basis of what the software development process entails. What methodologies and tools are more commonly used and give them enough insight to be able to apply this knowledge towards their entrepreneurial ideas.',
                     courseCertifications: 'None'
-                },
-                // {
-                //     id: 8,
-                //     title: 'Agile',
-                //     img: '/static/img/accelerated/uab.png',
-                //     courseLength: 'N/A',
-                //     courseTime: 'N/A',
-                //     courseLocation: 'UAB',
-                //     courseCost: 'N/A',
-                //     courseDescription: 'The Agile Certified Practitioner (ACP) is one of the newest certifications offered by PMI and is expected to become the industry standard certification for Agile over the next few years. In addition to preparing you for the exam, this Agile Project Management course is designed to teach you',
-                //     courseCertifications: 'Agile Certified Practitioner (ACP)'
-                // },
-                {
-                    id: 9,
-                    title: 'Full Stack Software Development',
-                    img: '/static/img/logos/iambham.jpg',
-                    courseLength: 'Mon - Fri (14 weeks)',
-                    courseTime: '9 am - 5 pm',
-                    courseLocation: 'Innovation Depot',
-                    courseCost: 'Free',
-                    courseDescription: 'A course provided by Innovate Birmingham in partnership with Covalence, I Am Bham is a 14-week coding bootcamp designed to teach Full Stack Software Engineering through short-term, fast-track, intensive training.',
-                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Software Development'
-                },
-                {
-                    id: 10,
-                    title: 'Data Analytics',
-                    img: '/static/img/logos/think-data.png',
-                    courseLength: 'Mon - Fri (14 weeks)',
-                    courseTime: '9 am - 5 pm',
-                    courseLocation: 'Innovation Depot',
-                    courseCost: 'Free',
-                    courseDescription: 'A course provided by Innovate Birmingham in partnership with ThinkData Solutions, our Data Analytics course is a 14-week tech bootcamp designed to train future technology professionals in the fundamentals of data analysis.',
-                    courseCertifications: 'UAB Collat School of Business Certificate of Completion in Data Analytics'
-                },
+                }
             ]
         }
     };

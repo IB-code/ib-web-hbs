@@ -11,6 +11,14 @@ header {
     text-align: center;
     margin: auto;
     padding: 0;
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
   }
 }
 
