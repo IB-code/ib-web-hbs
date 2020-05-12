@@ -8,7 +8,8 @@
 </header>
 <section class="section-padding section-courses">
     {{#each main.courses}}
-    <div class="card m-3 text-center" style="width: 25rem;">
+    <div class="card accelerated-card m-3 text-center" style="width: 25rem;" data-toggle="modal"
+        data-target=".accelerated-courses-{{id}}">
         <div class="img-container">
             <img class="card-img-top mt-2" src="{{img}}" alt="university logo">
         </div>
@@ -29,8 +30,7 @@
                 <img class="icon mr-2" src="/static/img/accelerated/icon_location.png" alt="location pin icon">
                 <p class="card-text">{{courseLocation}}</p>
             </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal"
-                data-target=".accelerated-courses-{{id}}">Learn More</button>
+            <img src="/static/img/accelerated/down-arrow.png" alt="open details image">
         </div>
     </div>
     <div class="modal fade accelerated-courses-{{id}}" data-backdrop="false" tabindex="-1" role="dialog"

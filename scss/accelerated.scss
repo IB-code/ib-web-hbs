@@ -51,9 +51,9 @@ header {
 
     .card-img-top {
       overflow-y: scroll !important;
-      max-width: 12em;
-      max-height: 5em;
-      min-height: 2.2em;
+      object-fit: cover;
+      width: 100%;
+      max-width: 10em;
     }
 
     .icon {
@@ -66,8 +66,17 @@ header {
       align-items: center;
     }
 
-    .card {
+    .accelerated-card {
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      min-height: 210px;
       border: none !important;
+
+      &:hover {
+        transition: box-shadow;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation: slideUp 500ms forwards;
+      }
     }
 
     .close {
