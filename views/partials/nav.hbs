@@ -19,64 +19,70 @@
 
             <div class="btn-group dropleft my-2">
                 <button type="button" id="whoweare-links"
-                    class="dropdown-toggle nav-item btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     WHO WE ARE
                 </button>
                 <div class="dropdown-menu" aria-labelledby="whoweare-links">
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/mission/"}} active{{/contains}}">
-                        <a class="nav-link" href="/mission/">MISSION</a>
+                        <a class="nav-link font-weight-600" href="/mission/">MISSION</a>
                     </li>
-                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/financials/"}} active{{/contains}}">
-                        <a class="nav-link" href="/financials/">FINANCIALS</a>
-                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/financials/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/financials/">FINANCIALS</a>
+                    </li> --}}
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/parnters/"}} active{{/contains}}">
-                        <a class="nav-link" href="/parnters/">PARTNERS</a>
+                        <a class="nav-link font-weight-600" href="/partners/">PARTNERS</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/board/"}} active{{/contains}}">
-                        <a class="nav-link" href="/board/">BOARD</a>
+                        <a class="nav-link font-weight-600" href="/board/">BOARD</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/staff/"}} active{{/contains}}">
-                        <a class="nav-link" href="/staff/">STAFF</a>
+                        <a class="nav-link font-weight-600" href="/staff/">STAFF</a>
                     </li>
                 </div>
             </div>
             <div class="btn-group dropleft my-2">
                 <button type="button" id="whatweare-links"
-                    class="dropdown-toggle nav-item btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     WHAT WE DO
                 </button>
                 <div class="dropdown-menu" aria-labelledby="whatweare-links">
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
-                        <a class="nav-link" href="/programs/">PROGRAMS</a>
+                        <a class="nav-link font-weight-600" href="/programs/">PROGRAMS</a>
                     </li>
-                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/resources/"}} active{{/contains}}">
-                        <a class="nav-link" href="/resources/">STORIES AND RESOURCES</a>
-                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/resources/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/resources/">STORIES AND RESOURCES</a>
+                    </li> --}}
                     <li
                         class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/testimonials/"}} active{{/contains}}">
-                        <a class="nav-link" href="/testimonials/">TESTIMONIALS</a>
+                        <a class="nav-link font-weight-600" href="/testimonials/">TESTIMONIALS</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/faq/"}} active{{/contains}}">
-                        <a class="nav-link" href="/faq/">FAQ</a>
+                        <a class="nav-link font-weight-600" href="/faq/">FAQ</a>
                     </li>
                 </div>
             </div>
             <div class="btn-group dropleft my-2">
                 <button type="button" id="contact-links"
-                    class="dropdown-toggle nav-item btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     CONTACT US
                 </button>
                 <div class="dropdown-menu" aria-labelledby="contact-links">
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/media/"}} active{{/contains}}">
-                        <a class="nav-link" href="/media/">MEDIA</a>
+                        <a class="nav-link font-weight-600" href="/media/">MEDIA</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
-                        <a class="nav-link" href="/contact/">Get in touch!</a>
+                        <a class="nav-link font-weight-600" href="/contact/">GET IN TOUCH!</a>
                     </li>
                 </div>
+            </div>
+            <div class="btn-group my-2">
+                <button type="button" id="contact-links"
+                    class="nav-item font-weight-600 btn mx-md-1 mx-xl-3 mr-3{{#contains main.url "/about/"}} active{{/contains}}"> 
+                    <a class="font-weight-600" href="/donate/">DONATE NOW!</a>
+                </button>
             </div>
         </div>
     </div>
@@ -90,9 +96,9 @@
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/mission/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/mission/">MISSION</a>
                     </li>
-                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/financials/"}} active{{/contains}}">
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/financials/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/financials/">FINANCIALS</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/parnters/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/partners/">PARTNERS</a>
                     </li>
@@ -111,9 +117,9 @@
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/courses/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/programs/">PROGRAMS</a>
                     </li>
-                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/resources/"}} active{{/contains}}">
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/resources/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/resources/">STORIES AND RESOURCES</a>
-                    </li>
+                    </li> --}}
                     <li
                         class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/testimonials/"}} active{{/contains}}">
                         <a class="nav-link text-white" href="/testimonials/">TESTIMONIALS</a>
@@ -131,7 +137,7 @@
                         <a class="nav-link text-white" href="/media/">Media</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url "/contact/"}} active{{/contains}}">
-                        <a class="nav-link text-white" href="/contact/">Get in touch!</a>
+                        <a class="nav-link text-white" href="/contact/">GET IN TOUCH!</a>
                     </li>
                 </div>
             </div>

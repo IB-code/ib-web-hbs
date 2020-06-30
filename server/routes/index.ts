@@ -28,7 +28,7 @@ router
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
     .get('/board', board.context, meta, board.render)
-    .get('/financials', financials.context, meta, financials.render)
+    // .get('/financials', financials.context, meta, financials.render)
     .get('/donate', donate.context, meta, donate.render)
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)

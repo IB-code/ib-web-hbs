@@ -41,7 +41,7 @@ export function context(
                 },
                 {
                     name: "Haley Hoppe",
-                    position: "Directror of Engagement",
+                    position: "Director of Engagement",
                     headshotPath: "static/img/staff/hh.jfif"
                 },
                 {
@@ -78,6 +78,11 @@ export function context(
                     name: "Jake Lovett",
                     position: "Web Development Teaching Assistant",
                     headshotPath: "static/img/staff/jl.jfif"
+                },
+                {
+                    name: "Carlton Lewis",
+                    position: "Professional Development Coach",
+                    headshotPath: "static/img/staff/cl.jfif"
                 }
             ]
         }
