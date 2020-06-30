@@ -17,6 +17,8 @@ import * as media from './media';
 import * as staff from './staff';
 import * as mission from './mission';
 import * as financials from './financials';
+import * as board from './board';
+import * as donate from './donate';
 
 const router = express.Router();
 
@@ -25,7 +27,9 @@ router
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
+    .get('/board', board.context, meta, board.render)
     .get('/financials', financials.context, meta, financials.render)
+    .get('/donate', donate.context, meta, donate.render)
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
     .post('/contact/submit', contact.handleFormSubmission)
