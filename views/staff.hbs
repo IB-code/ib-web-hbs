@@ -1,0 +1,46 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Meet Our Team</h1>
+            <h3 class="lead">Making tech happen</h3>
+        </div>
+    </div>
+</header>
+<section class="section-padding section-team text-center">
+    <div class="d-flex mx-4 my-2">
+        <div id="team-cards">
+            <div class="row">
+                {{#each main.team}}
+                <div class="card col-md-4 mx-2 my-3 bg-primary text-white">
+                    <div class="col-12">
+                        <div class="card-body d-flex flex-row align-items-center justify-content-center">
+                            <div class="details mr-2">
+                                <h5 class="card-title">{{name}}</h5>
+                                <p class="card-text font-weight-500">{{position}}</p>
+                            </div>
+                            <div class="headshot-container">
+                                <img src={{headshotPath}} class="headshot-logo" alt="headshot of staff member">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padding section-contact text-center">
+    <div class="container">
+        <h2 class="font-weight-600">Contact Us</h2>
+        <a href="mailto:info@innovatebham.com">
+            <h5 class="font-weight-500"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                info@innovatebham.com</h5>
+        </a>
+        <h5 class="font-weight-500"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>1500 1st Avenue N, Birmingham,
+            AL, 35203</h5>
+    </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/staff.css">
+<!-- /Remove Style -->

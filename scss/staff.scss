@@ -1,0 +1,51 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.7), rgba(11, 26, 66, 0.7)), url("/static/img/programs/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-team {
+        #team-cards {
+            margin: 0 2em 0 2em;
+
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .card {
+                    max-width: 26em;
+                    border-radius: 1em;
+
+                    .headshot-logo {
+                        border-radius: 50%;
+                        max-width: 5em;
+                    }
+                }
+            }
+        }
+    }
+
+    &-contact {
+        background-color: #E5EFF5;
+    }
+}

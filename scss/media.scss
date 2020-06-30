@@ -1,0 +1,107 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/media/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 30%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-marketing {
+        margin: 0 2em 0 2em;
+        padding-left: 2em;
+
+        #media-newsletter {
+            max-width: 25%;
+            border-right: 1px solid black;
+
+            .media-lead {
+                border-bottom: 1px solid black;
+
+                .lead {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        #marketing-strategist {
+            margin: 3em;
+            text-align: left;
+        }
+    }
+
+    &-socials {
+        background-color: #e5eff5;
+
+        #social-container {
+            .social-logo {
+                max-width: 4em;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        &-marketing {
+            padding-left: 0;
+
+            #media-newsletter {
+                max-width: 100% !important;
+                border-right: none !important;
+    
+                .media-lead {
+                    border-bottom: none !important;
+                }
+
+                #mc-embedded-subscribe {
+                    margin: 0 !important;
+                }
+            }
+
+            #marketing-strategist {
+                margin: 0 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 1.2em !important;
+                }
+            }
+        }
+
+        &-socials {
+            #social-container {
+                .social-logo {
+                    max-width: 2em;
+                }
+            }
+        }
+    }
+}
+
+.btn-brand-yellow {
+    background-color: #ffee58;
+}

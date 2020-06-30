@@ -1,0 +1,63 @@
+#newsletter-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1em;
+    max-height: 15.5em;
+    z-index: 1200;
+
+    .newsletter-desktop {
+        // display: none;
+        width: 24em;
+        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.16), 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+
+        // .card-cap {
+        //     height: 2em;
+        //     background-color: #18102f;
+        // }
+
+        form {
+            padding: 0 !important;
+
+            #mc-embedded-subscribe {
+                margin: 0;
+            }
+
+            .newsletter-popup-btns {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .animate {
+        display: block !important;
+        height: 0%;
+        animation-name: slide-up;
+        animation-duration: 1.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes slide-up {
+        from {
+            height: 0% !important;
+        }
+        to {
+            height: 100% !important;
+        }
+    }
+
+    .button-container {
+        top: 10px;
+        right: 10px;
+
+        #closeNewsletterButton {
+            background: url("../../static/img/nav/closeNavButton.png");
+            background-size: 20px;
+            background-repeat: no-repeat;
+            min-height: 1em;
+            border: none;
+        }
+    }
+}

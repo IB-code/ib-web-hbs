@@ -1,0 +1,64 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 30%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-mission {
+        .mission-main {
+            text-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: row;
+            
+            #vision-lightbulb {
+                max-width: 5em;
+            }
+
+            .statement {
+                max-width: 100px;
+            }
+
+            .fa-users {
+                color: black;
+            }
+
+            p {
+                margin-bottom: 0em;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mission-main {
+                flex-direction: column !important;
+                text-align: center !important;
+            }
+        }
+    }
+}
