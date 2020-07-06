@@ -21,7 +21,7 @@
     right: 0;
     z-index: 3;
     min-height: 100%;
-    max-width: 300px;
+    max-width: 200px;
     background: white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0.25rem;
@@ -32,10 +32,10 @@
     // animate the opening of the navbar on large screens.
     @keyframes drawNav {
       0% {
-        width: 0vw;
+        width: 0em;
       }
       100% {
-        width: 13.5vw;
+        width: 22em;
       }
     }
 

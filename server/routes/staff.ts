@@ -30,14 +30,14 @@ export function context(
                     headshotPath: "static/img/staff/kc.jfif"
                 },
                 {
-                    name: "Haley Kendrick, PhD.",
+                    name: "Haley Medved Kendrick, PhD.",
                     position: "Program Director",
                     headshotPath: "static/img/staff/hmk.jfif"
                 },
                 {
                     name: "Kayla King",
                     position: "Director of Admissions",
-                    headshotPath: "static/img/staff/blank.jfif"
+                    headshotPath: "static/img/staff/kk.jpg"
                 },
                 {
                     name: "Haley Hoppe",
@@ -55,9 +55,14 @@ export function context(
                     headshotPath: "static/img/staff/rs.jfif"
                 },
                 {
+                    name: "Carlton Lewis",
+                    position: "Professional Development Coach",
+                    headshotPath: "static/img/staff/cl.jfif"
+                },
+                {
                     name: "Brandie McGee",
                     position: "Senior Case Manager",
-                    headshotPath: "static/img/staff/blank.jfif"
+                    headshotPath: "static/img/staff/bm.jpg"
                 },
                 {
                     name: "Josh Hurn",
@@ -78,11 +83,6 @@ export function context(
                     name: "Jake Lovett",
                     position: "Web Development Teaching Assistant",
                     headshotPath: "static/img/staff/jl.jfif"
-                },
-                {
-                    name: "Carlton Lewis",
-                    position: "Professional Development Coach",
-                    headshotPath: "static/img/staff/cl.jfif"
                 }
             ]
         }
