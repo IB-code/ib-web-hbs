@@ -19,11 +19,13 @@ import * as mission from './mission';
 import * as financials from './financials';
 import * as board from './board';
 import * as donate from './donate';
+import * as apply from './apply';
 
 const router = express.Router();
 
 router
-    .get('/', index.context, meta, index.render)
+    .get('/', index.context, meta, index.render)    
+    .get('/apply', apply.context, meta, apply.render)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)

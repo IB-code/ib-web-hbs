@@ -88,7 +88,7 @@ export function handleFormSubmission(
                         email.unshift('rachel');
                         break;
                     default:
-                        email.unshift('kellie');
+                        email.unshift('haley');
                 }
 
                 return send(
