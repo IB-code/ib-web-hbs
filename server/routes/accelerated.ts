@@ -45,44 +45,44 @@ export function context(
                     courseCertifications: 'UAB Collat School of Business Certificate of Completion in Data Analytics',
                     redirectURL: "/courses/data-analytics/"
                 },
-                {
-                    id: 12,
-                    title: '#BHM SCRUM Bootcamp Course',
-                    img: '/static/img/logos/sigao.png',
-                    courseLength: 'May 25 – 30, 2020',
-                    courseTime: 'Half-Day',
-                    courseLocation: 'Online',
-                    courseCost: '$2,499.00',
-                    courseDescription: 'This five half-day course will guide participants through the world of Scrum Mastery and Product Ownership. Participants will gain hands-on knowledge and will grow their ability to embrace Scrum and guide their teams to doing twice the work in half the time. At the end of the class, participants will be eligible to sit for the LSM/LSPO certifications, the Scrum-worlds only certifications that are recognized by Scrum co-founder Jeff Sutherland.',
-                    courseCertifications: 'LSM/LSPO Certification',
-                    redirectURL: "https://sigao.io/product/bhm-cohort005/"
-                },
-                {
-                    id: 8,
-                    title: 'Agile Project Management',
-                    img: '/static/img/accelerated/uab.png',
-                    note: '(Open Enrollment through UAB)',
-                    courseLength: 'Oct. 16, 2020 - Oct. 30, 2020',
-                    courseTime: '8:30 am - 4:30 pm, Fridays',
-                    courseLocation: 'UAB Collat School of Business, Online',
-                    courseCost: '$1,200 or $900 if UAB employee/student or company with 3 or more students in the same class.',
-                    courseDescription: 'A project management certificate course provided by the Collat School of Professional Education that combines face-to-face and online instruction totaling the 36 contact hours needed to meet the education requirement to sit for the CAPM and PMP exams.',
-                    courseCertifications: 'Agile Certified Practitioner (ACP)',
-                    redirectURL: "https://prostudies.uab.edu/search/publicCourseSearchDetails.do?method=load&courseId=20531746&selectedProgramAreaId=19004&selectedProgramStreamId="
-                },
-                {
-                    id: 11,
-                    title: 'Digital Marketing',
-                    note: '(Open Enrollment through UAB)',
-                    img: '/static/img/accelerated/uab.png',
-                    courseLength: 'Online Offering: May 21 - June 11, 2020 Thursdays, 12pm - 2pm || On-site Fall offering: September 11, 18, 25, October 2, 2020',
-                    courseTime: '9:00 am - 4:00 pm',
-                    courseLocation: 'UAB Collat School of Business',
-                    courseCost: '$2,800 or $2,000 if UAB employee/student, veteran or company with 3 or more students.',
-                    courseDescription: 'A program provided by the Collat School of Professional Education to help participants develop a better understanding of the digital marketing landscape in 2020.',
-                    courseCertifications: 'N/A',
-                    redirectURL: "https://prostudies.uab.edu/search/publicCourseSearchDetails.do?method=load&courseId=22104708&selectedProgramAreaId=19004&selectedProgramStreamId="
-                },
+                // {
+                //     id: 12,
+                //     title: '#BHM SCRUM Bootcamp Course',
+                //     img: '/static/img/logos/sigao.png',
+                //     courseLength: 'May 25 – 30, 2020',
+                //     courseTime: 'Half-Day',
+                //     courseLocation: 'Online',
+                //     courseCost: '$2,499.00',
+                //     courseDescription: 'This five half-day course will guide participants through the world of Scrum Mastery and Product Ownership. Participants will gain hands-on knowledge and will grow their ability to embrace Scrum and guide their teams to doing twice the work in half the time. At the end of the class, participants will be eligible to sit for the LSM/LSPO certifications, the Scrum-worlds only certifications that are recognized by Scrum co-founder Jeff Sutherland.',
+                //     courseCertifications: 'LSM/LSPO Certification',
+                //     redirectURL: "https://sigao.io/product/bhm-cohort005/"
+                // },
+                // {
+                //     id: 8,
+                //     title: 'Agile Project Management',
+                //     img: '/static/img/accelerated/uab.png',
+                //     note: '(Open Enrollment through UAB)',
+                //     courseLength: 'Oct. 16, 2020 - Oct. 30, 2020',
+                //     courseTime: '8:30 am - 4:30 pm, Fridays',
+                //     courseLocation: 'UAB Collat School of Business, Online',
+                //     courseCost: '$1,200 or $900 if UAB employee/student or company with 3 or more students in the same class.',
+                //     courseDescription: 'A project management certificate course provided by the Collat School of Professional Education that combines face-to-face and online instruction totaling the 36 contact hours needed to meet the education requirement to sit for the CAPM and PMP exams.',
+                //     courseCertifications: 'Agile Certified Practitioner (ACP)',
+                //     redirectURL: "https://prostudies.uab.edu/search/publicCourseSearchDetails.do?method=load&courseId=20531746&selectedProgramAreaId=19004&selectedProgramStreamId="
+                // },
+                // {
+                //     id: 11,
+                //     title: 'Digital Marketing',
+                //     note: '(Open Enrollment through UAB)',
+                //     img: '/static/img/accelerated/uab.png',
+                //     courseLength: 'Online Offering: May 21 - June 11, 2020 Thursdays, 12pm - 2pm || On-site Fall offering: September 11, 18, 25, October 2, 2020',
+                //     courseTime: '9:00 am - 4:00 pm',
+                //     courseLocation: 'UAB Collat School of Business',
+                //     courseCost: '$2,800 or $2,000 if UAB employee/student, veteran or company with 3 or more students.',
+                //     courseDescription: 'A program provided by the Collat School of Professional Education to help participants develop a better understanding of the digital marketing landscape in 2020.',
+                //     courseCertifications: 'N/A',
+                //     redirectURL: "https://prostudies.uab.edu/search/publicCourseSearchDetails.do?method=load&courseId=22104708&selectedProgramAreaId=19004&selectedProgramStreamId="
+                // },
                 {
                     id: 1,
                     title: 'Full Stack Web Development with PHP',
@@ -158,19 +158,19 @@ export function context(
                     courseCertifications: 'N/A',
                     redirectURL: "https://www.jeffersonstate.edu/workforce-education-2/informationtechnologyacademy/?fbclid=IwAR08Lnxz8RGTIO5a7ahxv6lm2PMoRdB1KPlGzmQYFZ5Ubd8awVe-RpeG32Y"
                 },
-                {
-                    id: 7,
-                    title: 'UAB Coding Academy',
-                    note: '(currently enrolled UAB students only)',
-                    img: '/static/img/accelerated/uab.png',
-                    courseLength: 'Mon, Wed (6 Weeks)',
-                    courseTime: '6:30 pm - 9:30 pm',
-                    courseLocation: 'UAB',
-                    courseCost: '',
-                    courseDescription: 'To provide young entrepreneurs the basis of what the software development process entails. What methodologies and tools are more commonly used and give them enough insight to be able to apply this knowledge towards their entrepreneurial ideas.',
-                    courseCertifications: 'None',
-                    redirectURL: "https://www.idtech.com/locations/alabama-summer-camps/the-university-of-alabama-at-birmingham"
-                }
+                // {
+                //     id: 7,
+                //     title: 'UAB Coding Academy',
+                //     note: '(currently enrolled UAB students only)',
+                //     img: '/static/img/accelerated/uab.png',
+                //     courseLength: 'Mon, Wed (6 Weeks)',
+                //     courseTime: '6:30 pm - 9:30 pm',
+                //     courseLocation: 'UAB',
+                //     courseCost: '',
+                //     courseDescription: 'To provide young entrepreneurs the basis of what the software development process entails. What methodologies and tools are more commonly used and give them enough insight to be able to apply this knowledge towards their entrepreneurial ideas.',
+                //     courseCertifications: 'None',
+                //     redirectURL: "https://www.idtech.com/locations/alabama-summer-camps/the-university-of-alabama-at-birmingham"
+                // }
             ]
         }
     };
