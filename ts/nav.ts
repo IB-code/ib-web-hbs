@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const desktopSlideOut = document.getElementById('mainDesktopNavbar'),
         button = document.getElementById('mainButton'),
         closeNavButton = document.getElementById('closeNavButton'),
@@ -7,14 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // start the desktop navbar as hidden.
     desktopSlideOut.style.display = 'none';
 
-    // start donate button as hidden.
-    donateBtn.style.display = "none";
-
     // check screen width and set data target of menu button.show donate on desktop.
      if (screen.availWidth >= 1024) {
         button.attributes[4].value = '#mainDesktopNavbar';
-        donateBtn.style.display = "block";
-
+        donateBtn.style.display = "inline";
     } else {
         button.attributes[4].value = '#mainMobileNavbar';
     }
