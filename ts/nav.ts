@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const desktopSlideOut = document.getElementById('mainDesktopNavbar'),
         button = document.getElementById('mainButton'),
         closeNavButton = document.getElementById('closeNavButton'),
-        donateBtn = document.getElementById("donate-btn-nav");
+        donateBtn = document.getElementById("donate-btn-desktop");
 
     // start the desktop navbar as hidden.
     desktopSlideOut.style.display = 'none';

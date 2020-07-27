@@ -6,9 +6,9 @@
 
     <div id="expand-container">
         <a href="/donate">
-            <button type="button" class="btn mx-3" id="donate-btn-nav">DONATE NOW!</button>
+            <button type="button" class="btn mx-3 donate-btn" id="donate-btn-desktop">DONATE NOW!</button>
         </a>
-        
+
         <button id="mainButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
             aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -139,11 +139,11 @@
                     </li>
                 </div>
             </div>
-            <div class="btn-group">
-                <button type="button" id="contact-links"
-                    class="nav-item font-weight-600 btn mx-md-2{{#contains main.url "/about/"}} active{{/contains}}">
-                    <a class="font-weight-600" href="/donate/">DONATE NOW!</a>
-                </button>
+            
+            <div class="btn-group d-flex justify-content-center">
+                <a href="/donate">
+                    <button type="button" class="btn btn-sm nav-item my-1 mx-md-1 mx-xl-3 donate-btn">DONATE NOW!</button>
+                </a>
             </div>
         </ul>
     </div>

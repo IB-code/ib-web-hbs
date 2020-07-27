@@ -10,12 +10,15 @@
   }
 }
 
-// this is only for the desktop navbar opening. Bootstrap repurpose was not working.
+.donate-btn {
+  background-color: #facf32f1;
+}
+
+// this is only for the desktop navbar opening. Bootstrap re-purpose was not working.
 #expand-container {
   position: relative;
 
-  #donate-btn-nav {
-    background-color: #facf32f1;
+  #donate-btn-desktop {
     display: none;
   }
 
