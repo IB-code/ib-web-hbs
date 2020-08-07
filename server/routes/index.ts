@@ -25,6 +25,7 @@ const router = express.Router();
 
 router
     .get('/', index.context, meta, index.render)    
+    .get('/apply', apply.context, meta, apply.render)
     .post('/apply/mail', apply.handleApplicationEmail)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
