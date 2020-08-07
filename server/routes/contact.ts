@@ -92,6 +92,7 @@ export function handleFormSubmission(
                 }
 
                 return send(
+                    'form@innovatebham.com',
                     email.join(''),
                     `${firstName} ${lastName} - ${senderEmail}`,
                     message,

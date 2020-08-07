@@ -3,6 +3,7 @@ import * as sendgrid from 'sendgrid';
 let helper = sendgrid.mail;
 
 export function send(
+    from: string,
     to: string,
     subject: string,
     message: string,
@@ -23,7 +24,7 @@ export function send(
                 },
             ],
             from: {
-                email: 'form@innovatebham.com',
+                email: from,
             },
             content: [
                 {

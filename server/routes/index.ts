@@ -16,7 +16,7 @@ import * as apprenticeship from './apprenticeship';
 import * as media from './media';
 import * as staff from './staff';
 import * as mission from './mission';
-import * as financials from './financials';
+// import * as financials from './financials';
 import * as board from './board';
 import * as donate from './donate';
 import * as apply from './apply';
@@ -25,12 +25,11 @@ const router = express.Router();
 
 router
     .get('/', index.context, meta, index.render)    
-    .get('/apply', apply.context, meta, apply.render)
+    .post('/apply/mail', apply.handleApplicationEmail)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
-    .get('/board', board.context, meta, board.render)
-    // .get('/financials', financials.context, meta, financials.render)
+    .get('/board', board.context, meta, board.render) 
     .get('/donate', donate.context, meta, donate.render)
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
@@ -44,7 +43,8 @@ router
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
     .get('/faq', faq.context, meta, faq.render);
-    
+
+// .get('/financials', financials.context, meta, financials.render)
 // .get('/courses', courses.context, meta, courses.render)
 // .get('/blog', blogList.context, meta, blogList.render)
 // .get('/blog/page/:page', blogList.context, meta, blogList.render)
