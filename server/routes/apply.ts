@@ -48,6 +48,9 @@ export async function handleApplicationEmail(
     res: express.Response,
     next: express.NextFunction,
 ) {
+    res.removeHeader("Access-Control-Allow-Origin");
+    res.setHeader('Access-Control-Allow-Origin', 'https://innovatebham.agsprime.net');
+
     const { name, email: applicantEmail, county, date_of_birth } = req.body;
     const age = moment().diff(date_of_birth, 'years', false);
 
