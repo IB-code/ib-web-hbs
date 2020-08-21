@@ -5,6 +5,7 @@ const { HTTP_SUCCESS } = HTTP_CODES;
 export default (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
     // CORS headers
     res.header('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Credentials", 'true');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
 
     // Set custom headers for CORS
