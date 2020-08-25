@@ -48,11 +48,12 @@ export async function handleApplicationEmail(
     res: express.Response,
     next: express.NextFunction,
 ) {
+    const { name, email: applicantEmail, county, date_of_birth } = req.body,
+        age = moment().diff(date_of_birth, 'years', false),
+        origin = req.get('origin');
+    
     res.removeHeader("Access-Control-Allow-Origin");
-    res.setHeader('Access-Control-Allow-Origin', 'https://innovatebham.agsprime.net');
-
-    const { name, email: applicantEmail, county, date_of_birth } = req.body;
-    const age = moment().diff(date_of_birth, 'years', false);
+    res.setHeader('Access-Control-Allow-Origin', origin);
 
     if (age >= 17) {
         if (county === "Jefferson" || county === "Shelby" || county === "St. Clair" || county === "Blount" || county === "Walker" || county === "Chilton") {
