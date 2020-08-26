@@ -52,8 +52,8 @@ export async function handleApplicationEmail(
         age = moment().diff(date_of_birth, 'years', false),
         origin = req.get('origin');
 
-    console.log(res.getHeaders());
-    res.setHeader('Access-Control-Allow-Origin', origin);
+        res.setHeader('Access-Control-Allow-Origin', origin);
+        console.log(res.getHeaders());
 
     if (age >= 17) {
         if (county === "Jefferson" || county === "Shelby" || county === "St. Clair" || county === "Blount" || county === "Walker" || county === "Chilton") {
