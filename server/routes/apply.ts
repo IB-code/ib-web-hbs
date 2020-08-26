@@ -51,8 +51,8 @@ export async function handleApplicationEmail(
     const { name, email: applicantEmail, county, date_of_birth } = req.body,
         age = moment().diff(date_of_birth, 'years', false),
         origin = req.get('origin');
-    
-    console.log(origin);
+
+    console.log(res.getHeaders());
     res.setHeader('Access-Control-Allow-Origin', origin);
 
     if (age >= 17) {
