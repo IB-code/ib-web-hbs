@@ -52,7 +52,7 @@ export async function handleApplicationEmail(
         age = moment().diff(date_of_birth, 'years', false),
         origin = req.get('origin');
     
-    res.removeHeader("Access-Control-Allow-Origin");
+    console.log(origin);
     res.setHeader('Access-Control-Allow-Origin', origin);
 
     if (age >= 17) {
