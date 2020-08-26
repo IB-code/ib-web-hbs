@@ -8,32 +8,36 @@ export function send(
     subject: string,
     message: string,
 ): Promise<any> {
-    let sg = sendgrid(process.env.SENDGRID_API_KEY);
-    let request = sg.emptyRequest({
-        method: 'POST',
-        path: '/v3/mail/send',
-        body: {
-            personalizations: [
-                {
-                    to: [
-                        {
-                            email: to,
-                        },
-                    ],
-                    subject,
+    try {
+        let sg = sendgrid(process.env.SENDGRID_API_KEY);
+        let request = sg.emptyRequest({
+            method: 'POST',
+            path: '/v3/mail/send',
+            body: {
+                personalizations: [
+                    {
+                        to: [
+                            {
+                                email: to,
+                            },
+                        ],
+                        subject,
+                    },
+                ],
+                from: {
+                    email: from,
                 },
-            ],
-            from: {
-                email: from,
+                content: [
+                    {
+                        type: 'text/plain',
+                        value: message,
+                    },
+                ],
             },
-            content: [
-                {
-                    type: 'text/plain',
-                    value: message,
-                },
-            ],
-        },
-    });
+        });
 
-    return sg.API(request);
+        return sg.API(request);
+    } catch (err) {
+        console.log(err);
+    }
 }
