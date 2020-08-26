@@ -3,8 +3,14 @@ import { HTTP_CODES } from '../config';
 const { HTTP_SUCCESS } = HTTP_CODES;
 
 export default (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
+    const origin = req.get('origin');
+
     // CORS headers
-    res.header('Access-Control-Allow-Origin', '*');
+    if (origin === "https://innovatebham.agsprime.net") {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    } else {
+        res.header('Access-Control-Allow-Origin', '*');
+    }
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
 
     // Set custom headers for CORS
