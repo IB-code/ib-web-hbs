@@ -7,7 +7,7 @@ export default (err: Error, req: express.Request, res: express.Response, next: e
 
     // CORS headers
     if (origin === "https://innovatebham.agsprime.net") {
-        res.setHeader('Access-Control-Allow-Origin', origin);
+        res.header('Access-Control-Allow-Origin', origin);
     } else {
         res.header('Access-Control-Allow-Origin', '*');
     }
@@ -15,7 +15,7 @@ export default (err: Error, req: express.Request, res: express.Response, next: e
 
     // Set custom headers for CORS
     res.header('Access-Control-Allow-Headers',
-        'Content-type,Accept,X-Access-Token,X-Key');
+        'Content-Type,Accept,X-Access-Token,X-Key');
 
     if (req.method === 'OPTIONS') {
         res.status(HTTP_SUCCESS).end();
