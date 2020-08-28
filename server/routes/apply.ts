@@ -52,14 +52,14 @@ export async function handleApplicationEmail(
         age = moment().diff(date_of_birth, 'years', false);
     
     if (age >= 17) {
-        console.log("age pass", county);
-        if (county === "Jefferson" || county === "Shelby" || county === "St. Clair" || county === "Blount" || county === "Walker" || county === "Chilton") {
+        console.log(county);
+        if (county === "8: Jefferson" || county === "9: Shelby" || county === "10: St. Clair" || county === "11: Blount" || county === "12: Walker" || county === "13: Chilton") {
             try {
                 return send(
                     "Innovate Birmingham <no-reply@innovatebham.com>",
                     applicantEmail,
                     "Thank You For Applying to Innovate Birmingham",
-                    `Dear ${name}, ${os.EOL} ${os.EOL} Thank you for submitting your application for Innovate Birmingham! To continue with the application process, you must complete a video interview <a href=\"https://start.myinterview.com/innovate-birmingham/customer-service-interview\">here</a>. You have 2 weeks from the date of your application to complete the interview. After completing the interview, please complete the questionnaire using this <a href=\"https://uab.co1.qualtrics.com/jfe/form/SV_emopl7uwuzmbFA1\">Survey link</a>. These additional steps are vital to your application.${os.EOL} ${os.EOL} After you successfully complete the video interview, our Admissions team will review your application and follow up within 2 weeks.${os.EOL} ${os.EOL}  Please contact kayla@innovatebham.com if you have any questions during the application process. ${os.EOL} ${os.EOL} Sincerely, The Innovate Bham Team`,
+                    `Dear ${name}, ${os.EOL} ${os.EOL} Thank you for submitting your application for Innovate Birmingham! To continue with the application process, you must complete a video interview here: https://start.myinterview.com/innovate-birmingham/customer-service-interview. You have 2 weeks from the date of your application to complete the interview. After completing the interview, please complete the questionnaire using this Survey link: https://uab.co1.qualtrics.com/jfe/form/SV_emopl7uwuzmbFA1. These additional steps are vital to your application.${os.EOL} ${os.EOL} After you successfully complete the video interview, our Admissions team will review your application and follow up within 2 weeks.${os.EOL} ${os.EOL} Please contact kayla@innovatebham.com if you have any questions during the application process. ${os.EOL} ${os.EOL} Sincerely,${os.EOL}The Innovate Bham Team`,
                 );
             } catch (error) {
                 console.log(error);
