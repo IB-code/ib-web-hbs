@@ -52,6 +52,7 @@ export async function handleApplicationEmail(
         age = moment().diff(date_of_birth, 'years', false);
     
     if (age >= 17) {
+        console.log("age pass", county);
         if (county === "Jefferson" || county === "Shelby" || county === "St. Clair" || county === "Blount" || county === "Walker" || county === "Chilton") {
             try {
                 return send(
