@@ -8,6 +8,7 @@ export function send(
     subject: string,
     message: string,
 ): Promise<any> {
+    console.log(process.env.SENDGRID_API_KEY)
     try {
         let sg = sendgrid(process.env.SENDGRID_API_KEY);
         let request = sg.emptyRequest({
