@@ -8,9 +8,9 @@ export function send(
     subject: string,
     message: string,
 ): Promise<any> {
-    console.log(process.env.SENDGRID_API_KEY)
+    console.log(process.env.SENDGRID_API_KEY);
     try {
-        let sg = sendgrid(process.env.SENDGRID_API_KEY);
+        let sg = sendgrid("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");
         let request = sg.emptyRequest({
             method: 'POST',
             path: '/v3/mail/send',
