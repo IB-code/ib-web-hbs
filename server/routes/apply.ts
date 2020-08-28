@@ -51,8 +51,6 @@ export async function handleApplicationEmail(
     const { name, email: applicantEmail, county, date_of_birth } = req.body,
         age = moment().diff(date_of_birth, 'years', false);
     
-    
-
     if (age >= 17) {
         if (county === "Jefferson" || county === "Shelby" || county === "St. Clair" || county === "Blount" || county === "Walker" || county === "Chilton") {
             try {
