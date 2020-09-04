@@ -25,9 +25,9 @@ export function context(
         main: {
             team: [
                 {
-                    name: "Haley Medved Kendrick, PhD.",
-                    position: "Program Director",
-                    headshotPath: "static/img/staff/hmk.jfif"
+                    name: "Denita Bearden",
+                    position: "Director of Operations",
+                    headshotPath: "static/img/staff/db.jpg"
                 },
                 {
                     name: "Kayla King",
