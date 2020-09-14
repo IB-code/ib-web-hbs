@@ -20,7 +20,7 @@ export function context(
             },
         },
         main: {
-            coreValues: `Inclusive Collaboration${os.EOL}We believe that diverse perspectives make us stronger. ${os.EOL}Each of our students, staff, and partners have expertise to offer, so we want their voices heard. ${os.EOL}We value clear and direct communication that fosters effective collaboration. ${os.EOL}We value honesty- we speak up to address challenges as well as celebrate successes. ${os.EOL}Our word is our bond - we do what we say we will do.${os.EOL}${os.EOL}Students First${os.EOL}We believe in the talent and capability of our students.${os.EOL}We empower our students with opportunities that enable our city to prosper.${os.EOL}We prioritize student needs over other demands.${os.EOL}We are a reliable and robust community of support for our students.${os.EOL}${os.EOL}Be Authentic${os.EOL}We are honest about what we know and what we don’t know. ${os.EOL}We share our ideas and perspectives and take ownership of finding solutions. ${os.EOL}We ask questions when we are uncertain or disagree.${os.EOL}We are transparent with one another and honest when we fail.${os.EOL}${os.EOL}Results Not Rhetoric${os.EOL}We move the needle. ${os.EOL}We take ownership and initiative to use data to identify problems and propose solutions. ${os.EOL}We are realistic about the challenges that arise and are empowered to solve problems. ${os.EOL}We are committed to innovating: we have a fail - fast, fail - safe environment.`,
+            coreValues: ``,
             departments: [
                 {
                     department: "Open Positions",
