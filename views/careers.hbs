@@ -7,6 +7,11 @@
 </header>
 <section class="section-padding section-careers">
     <div class="container">
+        <h5 class="text-center mb-5">Current Openings: We’re searching for the next Executive Director to help us
+            continue providing holistic
+            support and
+            career development for aspiring tech professionals, and producing programs that align with local industry
+            standards.</h5>
         {{#each main.departments}}
         <div class="row">
             <h1 class="department-header py-md-2 w-100 font-weight-600">{{department}}</h1>
@@ -17,14 +22,20 @@
             <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
             <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
             <div class="description-container w-100">
-                <pre class="job-description">{{description}}</pre>
+
             </div>
             <a href={{applicationLink}}>
-                <button class="btn btn-primary ">Apply</button>
+                <button class="btn btn-primary">Apply</button>
             </a>
             {{/each}}
         </div>
         {{/each}}
+    </div>
+</section>
+<section class="section-padding section-values bg-primary ">
+    <div class="row mt-4 justify-content-center text-center">
+        <h2 class="text-white w-100">Our Core Values</h2>
+        <pre class="job-description text-white">{{main.coreValues}}</pre>
     </div>
 </section>
 

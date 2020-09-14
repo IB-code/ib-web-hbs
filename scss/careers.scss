@@ -30,12 +30,14 @@ header {
 
 .section {
   &-careers {
-    .description-container {
-      font-family: Lato;
-    }
-
     .header-rule {
       clear: right;
+    }
+  }
+
+  &-values {
+    .job-description {
+      font-family: sans-serif !important;
     }
 
     @media only screen and (max-width: 576px) {
@@ -43,7 +45,7 @@ header {
         padding: 0 3em;
 
         .job-description {
-          white-space: pre-wrap;
+          white-space: pre-wrap !important;
           width: fit-content !important;
         }
       }
