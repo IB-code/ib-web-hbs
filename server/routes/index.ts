@@ -20,17 +20,19 @@ import * as mission from './mission';
 import * as board from './board';
 import * as donate from './donate';
 import * as apply from './apply';
+import * as careers from './careers';
 
 const router = express.Router();
 
 router
-    .get('/', index.context, meta, index.render)    
+    .get('/', index.context, meta, index.render)
+    .get('/careers', careers.context, meta, careers.render)
     .get('/apply', apply.context, meta, apply.render)
     .post('/apply/mail', apply.handleApplicationEmail)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
-    .get('/board', board.context, meta, board.render) 
+    .get('/board', board.context, meta, board.render)
     .get('/donate', donate.context, meta, donate.render)
     .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)

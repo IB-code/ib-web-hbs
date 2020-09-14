@@ -1,0 +1,31 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Join Our Team</h1>
+        </div>
+    </div>
+</header>
+<section class="section-padding section-careers">
+    <div class="container">
+        {{#each main.departments}}
+        <div class="row">
+            <h1 class="department-header py-md-2 w-100 font-weight-600">{{department}}</h1>
+            <div class="header-rule w-100">
+                <hr class="w-25 mx-md-4">
+            </div> 
+            {{#each openings}}
+            <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
+            <h6 class="mb-3 font-weight-500">{{employmentType}}</h6>
+            <p class="job-description font-weight-400">{{description}}</p>
+            <a href={{applicationLink}}>
+                <button class="btn btn-primary ">Apply</button>
+            </a>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/careers.css">
+<!-- /Remove Style -->
