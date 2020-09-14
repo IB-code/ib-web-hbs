@@ -29,22 +29,24 @@ header {
 }
 
 .section {
-    &-careers {
-        .job-description {
-            text-indent: 40px;
-        }
-        .header-rule {
-            clear: right;
-        }
-
-        @media only screen and (max-width: 576px) {
-            .container {
-                padding: 0 3em;
-
-                .job-description {
-                    text-indent: 20px;
-                }
-            }
-        }
+  &-careers {
+    .description-container {
+      font-family: Lato;
     }
+
+    .header-rule {
+      clear: right;
+    }
+
+    @media only screen and (max-width: 576px) {
+      .container {
+        padding: 0 3em;
+
+        .job-description {
+          white-space: pre-wrap;
+          width: fit-content !important;
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import * as express from 'express';
 import { type } from 'jquery';
 import parse from '../middleware/parse';
+import * as os from 'os';
 
 export function context(
     req: express.Request,
@@ -22,13 +23,13 @@ export function context(
         main: {
             departments: [
                 {
-                    department: "Instruction",
+                    department: "Operations",
                     openings: [
                         {
-                            title: "Director of Education",
-                            employmentType: "Full-Time", 
-                            description: "He’d waited in the Japanese night like live wire voodoo and he’d cry for it, cry in his devotion to esoteric forms of tailor-worship. Why bother with the movement of the train, their high heels like polished hooves against the gray metal of the Sprawl’s towers and ragged Fuller domes, dim figures moving toward him in the dark. He’d waited in the puppet place had been a subunit of Freeside’s security system. That was Wintermute, manipulating the lock the way it had manipulated the drone micro and the corners he’d cut in Night City, and still he’d see the matrix in his capsule in some coffin hotel, his hands clawed into the shadow of the console. A narrow wedge of light from a half-open service hatch at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him. Now this quiet courtyard, Sunday afternoon, this girl with a ritual lack of urgency through the arcs and passes of their dance, point passing point, as the men waited for an opening. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull of the blowers and the amplified breathing of the fighters.",
-                            applicationLink: "https://google.com"
+                            title: "Executive Director",
+                            employmentType: "Full-Time",
+                            description: `Core Values${os.EOL}Inclusive Collaboration${os.EOL}We believe that diverse perspectives make us stronger. ${os.EOL}Each of our students, staff, and partners have expertise to offer, so we want their voices heard. ${os.EOL}We value clear and direct communication that fosters effective collaboration. ${os.EOL}We value honesty- we speak up to address challenges as well as celebrate successes. ${os.EOL}Our word is our bond - we do what we say we will do.${os.EOL}Students First${os.EOL}We believe in the talent and capability of our students.${os.EOL}We empower our students with opportunities that enable our city to prosper.${os.EOL}We prioritize student needs over other demands.${os.EOL}We are a reliable and robust community of support for our students.${os.EOL}Be Authentic${os.EOL}We are honest about what we know and what we don’t know. ${os.EOL}We share our ideas and perspectives and take ownership of finding solutions. ${os.EOL}We ask questions when we are uncertain or disagree.${os.EOL}We are transparent with one another and honest when we fail.${os.EOL}Results Not Rhetoric${os.EOL}We move the needle. ${os.EOL}We take ownership and initiative to use data to identify problems and propose solutions. ${os.EOL}We are realistic about the challenges that arise and are empowered to solve problems. ${os.EOL}We are committed to innovating: we have a fail- fast, fail - safe environment.`,
+                            applicationLink: "https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T178842&lang=en&fbclid=IwAR1Ra-7B4cngBlWoWKahKodtBBCAsq45SzakopVuQzn10hf7Vm-nZWgK0nU"
                         }
                     ]
                 },

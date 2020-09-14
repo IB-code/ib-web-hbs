@@ -12,11 +12,13 @@
             <h1 class="department-header py-md-2 w-100 font-weight-600">{{department}}</h1>
             <div class="header-rule w-100">
                 <hr class="w-25 mx-md-4">
-            </div> 
+            </div>
             {{#each openings}}
             <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
-            <h6 class="mb-3 font-weight-500">{{employmentType}}</h6>
-            <p class="job-description font-weight-400">{{description}}</p>
+            <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
+            <div class="description-container w-100">
+                <pre class="job-description">{{description}}</pre>
+            </div>
             <a href={{applicationLink}}>
                 <button class="btn btn-primary ">Apply</button>
             </a>
