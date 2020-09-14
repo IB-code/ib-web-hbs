@@ -1,5 +1,4 @@
 import * as express from 'express';
-import { type } from 'jquery';
 import parse from '../middleware/parse';
 import * as os from 'os';
 
