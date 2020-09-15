@@ -4,7 +4,7 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.2), rgba(11, 26, 66, 0.2)), url("/static/img/programs/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.3), rgba(11, 26, 66, 0.3)), url("/static/img/programs/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,6 +14,7 @@ header {
 
     .lead {
       font-weight: 500;
+      font-size: 1.15em;
 
       @include media-breakpoint-down(md) {
         font-weight: 400;
