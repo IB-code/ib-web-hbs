@@ -20,7 +20,6 @@ export function context(
             },
         },
         main: {
-            coreValues: ``,
             departments: [
                 {
                     department: "Open Positions",
