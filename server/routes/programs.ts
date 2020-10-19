@@ -23,8 +23,7 @@ export function context(
                 {
                     icon: 'fa fa-suitcase',
                     headline: 'Apprenticeship',
-                    description:
-                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                    description: 'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
                     action: {
                         id: 'apprenticeship',
                         href: '/apprenticeship',
@@ -34,8 +33,7 @@ export function context(
                 {
                     icon: 'fa fa-graduation-cap',
                     headline: 'Degree and Certificate Programs',
-                    description:
-                        'For tech-related full-time students at UAB, Jeff State, and Lawson State',
+                    description: 'For tech-related full-time students at UAB, Jeff State, and Lawson State',
                     action: {
                         id: 'certs',
                         href: '/degrees-and-certifications/',
