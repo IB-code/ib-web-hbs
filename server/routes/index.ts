@@ -21,11 +21,13 @@ import * as board from './board';
 import * as donate from './donate';
 import * as apply from './apply';
 import * as careers from './careers';
+import * as blogList from "./bloglist";
 
 const router = express.Router();
 
 router
     .get('/', index.context, meta, index.render)
+    // .get('/blog', blogList.context, meta, blogList.render)
     .get('/careers', careers.context, meta, careers.render)
     .get('/apply', apply.context, meta, apply.render)
     .post('/apply/mail', apply.handleApplicationEmail)
@@ -45,13 +47,10 @@ router
     .get('/courses/data-analytics', data.context, meta, data.render)
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
-    .get('/faq', faq.context, meta, faq.render);
+    .get('/faq', faq.context, meta, faq.render)
 
 // .get('/financials', financials.context, meta, financials.render)
 // .get('/courses', courses.context, meta, courses.render)
-// .get('/blog', blogList.context, meta, blogList.render)
-// .get('/blog/page/:page', blogList.context, meta, blogList.render)
-// .get('/blog/:title', blog.context, meta, blog.render)
-// .get('/blog/:title/amp', blog.context, meta, blog.render);
+
 
 export default router;
