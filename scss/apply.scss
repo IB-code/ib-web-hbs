@@ -30,6 +30,15 @@
 main {
     height: 0%;
 
+    #spinner-container {
+        height: 80vh;
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
     #apply-iframe {
         width: 100%;
         height: 100vh;

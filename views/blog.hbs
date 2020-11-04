@@ -1,23 +1,17 @@
-<section class="blog">
-    <div class="container py-5">
-        <div class="row">
-            {{#with main.blog}}
-            <article class="p-3 m-auto" style="max-width:900px">
-                <header class="text-gray">
-                    <h1 class="py-3">{{attributes.title}}</h1>
-                    <span>By {{attributes.author}} - </span>
-                    <time datetime="{{moment attributes.created 'YYYY-MM-DD'}}">{{moment attributes.created "MMMM DD, YYYY"}}</time> -
-                    <time class="nowrap font-weight-bold" datetime="{{attributes.readTime}}m">{{attributes.readTime}} minute read</time>
-                    <img class="w-100 mt-2" src="{{attributes.image}}" alt="{{attributes.title}}">
-                </header>
-                <hr>
-                <div class="blog-content">{{md body}}</div>
-            </article>
-            {{/with}}
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Blog</h1>
+        </div>
+    </div>
+</header>
+<section class="section-padding section-blog py-5">
+    <div class="container py-2">
+        <div class="row justify-content-center">
+            
         </div>
     </div>
 </section>
-<hr>
 
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/blog.css">

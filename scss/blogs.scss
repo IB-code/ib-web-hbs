@@ -1,32 +1,41 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 header {
-    color: white;
+    color: $white;
 
-    p {
-        max-width: 550px;
-        margin: 0 auto;
-    }
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.3), rgba(11, 26, 66, 0.3)), url("/static/img/media/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 37.5%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
 
-    img {
-        width: 250px;
-    }
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
 
-    a {
-        border-width: 2px !important;
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
     }
 }
 
-.blogs {
-    .card-columns {
-        column-count: 1;
-
-        @include media-breakpoint-up(lg) {
-            column-count: 3;
+.section {
+    &-blogs {
+        button {
+            background-color: #facf32f1;
         }
-    }
 
-    p {
-        font-size: 1.1em;
+        button:hover {
+            background-color: #f3cc40f1;
+        }
     }
 }
