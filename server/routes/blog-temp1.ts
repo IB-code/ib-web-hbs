@@ -35,7 +35,7 @@ export function render(
     res: express.Response,
     next: express.NextFunction,
 ) {
-    res.render('blogs', req.context, (err, html) => {
+    res.render('blog', req.context, (err, html) => {
         parse(req, req.url, html).then(
             (html) => {
                 res.send(html);

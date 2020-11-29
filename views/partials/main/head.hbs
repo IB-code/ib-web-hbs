@@ -16,14 +16,15 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="fb:app_id" content="327982684338553"> {{!-- Description --}}
 <meta name="description" content="{{default head.meta.description 'Default description of my website/company.'}}">
-<meta property="og:description" content="{{default head.meta.description 'Default description of my website/company.'}}">
+<meta property="og:description"
+  content="{{default head.meta.description 'Default description of my website/company.'}}">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88381551-1"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'UA-88381551-1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-88381551-1');
 </script>
 <!-- /Google Analytics -->
 <!-- Remove Style -->
@@ -33,16 +34,18 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
 {{!-- Organization ld+json --}}
-<script type="application/ld+json" data-sd-snippet="sd">{"@context":"http://schema.org/","@type":"Organization","name":"Innovate Birmingham","url":"https://innovatebham.com/","logo":{"@type": "ImageObject","url": "{{head.meta.baseUrl}}public/img/logos/logo.png","width": 326,"height": 60},"sameAs":["https://www.facebook.com/InnovateBirmingham/","https://www.instagram.com/innovatebhamworks/","https://www.linkedin.com/company/innovatebirmingham/"]}</script>
+<script type="application/ld+json"
+  data-sd-snippet="sd">{"@context":"http://schema.org/","@type":"Organization","name":"Innovate Birmingham","url":"https://innovatebham.com/","logo":{"@type": "ImageObject","url": "{{head.meta.baseUrl}}public/img/logos/logo.png","width": 326,"height": 60},"sameAs":["https://www.facebook.com/InnovateBirmingham/","https://www.instagram.com/innovatebhamworks/","https://www.linkedin.com/company/innovatebirmingham/"]}</script>
 {{!-- /Organization ld+json --}} {{!-- Breadcrumb ld+json --}}
-<script type="application/ld+json" data-sd-snippet="sd">{"@context": "http://schema.org","@type": "BreadcrumbList","itemListElement": [{{#each head.meta.breadcrumbs}}{"@type": "ListItem","position": {{index}},"item": {"@id": "{{url}}","name": "{{name}}"}}{{#unless @last}},{{/unless}}{{/each}}]}</script>
+<script type="application/ld+json"
+  data-sd-snippet="sd">{"@context": "http://schema.org","@type": "BreadcrumbList","itemListElement": [{{#each head.meta.breadcrumbs}}{"@type": "ListItem","position": {{index}},"item": {"@id": "{{url}}","name": "{{name}}"}}{{#unless @last}},{{/unless}}{{/each}}]}</script>
 {{!-- /Breadcrumb ld+json --}}
 <!-- Facebook Pixel Code -->
 <script>
   !function (f, b, e, v, n, t, s) {
     if (f.fbq) return; n = f.fbq = function () {
       n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
     };
     if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
     n.queue = []; t = b.createElement(e); t.async = !0;
@@ -53,6 +56,6 @@
   fbq('init', '209243972939807');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=209243972939807&ev=PageView&noscript=1" /></noscript>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=209243972939807&ev=PageView&noscript=1" /></noscript>
 <!-- End Facebook Pixel Code -->
-

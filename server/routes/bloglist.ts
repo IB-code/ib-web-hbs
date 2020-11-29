@@ -23,17 +23,17 @@ export function context(
                 {
                     title: "This is a test blog title",
                     leadIn: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in venenatis ex. Sed leo ligula, imperdiet ut dignissim vel, efficitur id magna. Nunc blandit faucibus massa, in consectetur diam accumsan faucibus. Vivamus a lacus a lacus vestibulum molestie. Pellentesque ac sollicitudin massa, eget dapibus eros. Nulla efficitur aliquet varius...",
-                    link: "/blog/temp"
+                    link: "/blog/temp1"
                 },
                 {
                     title: "This is a test blog title",
                     leadIn: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in venenatis ex. Sed leo ligula, imperdiet ut dignissim vel, efficitur id magna. Nunc blandit faucibus massa, in consectetur diam accumsan faucibus. Vivamus a lacus a lacus vestibulum molestie. Pellentesque ac sollicitudin massa, eget dapibus eros. Nulla efficitur aliquet varius...",
-                    link: "/blog/temp"
+                    link: "/blog/temp2"
                 },
                 {
                     title: "This is a test blog title",
                     leadIn: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in venenatis ex. Sed leo ligula, imperdiet ut dignissim vel, efficitur id magna. Nunc blandit faucibus massa, in consectetur diam accumsan faucibus. Vivamus a lacus a lacus vestibulum molestie. Pellentesque ac sollicitudin massa, eget dapibus eros. Nulla efficitur aliquet varius...",
-                    link: "/blog/temp"
+                    link: "/blog/temp3"
                 }
             ]
         }

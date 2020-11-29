@@ -22,7 +22,9 @@ import * as donate from './donate';
 import * as apply from './apply';
 import * as careers from './careers';
 import * as blogList from "./bloglist";
-import * as tempBlog from "./blog-temp";
+import * as tempBlog1 from "./blog-temp1";
+import * as tempBlog2 from "./blog-temp2";
+import * as tempBlog3 from "./blog-temp3";
 
 const router = express.Router();
 
@@ -49,7 +51,9 @@ router
     .get('/testimonials', testimonials.context, meta, testimonials.render)
     .get('/faq', faq.context, meta, faq.render)
     .get('/blog', blogList.context, meta, blogList.render)
-    .get('/blog/temp', tempBlog.context, meta, tempBlog.render)
+    .get('/blog/temp1', tempBlog1.context, meta, tempBlog1.render)
+    .get('/blog/temp2', tempBlog2.context, meta, tempBlog2.render)
+    .get('/blog/temp3', tempBlog3.context, meta, tempBlog3.render)
 
 // .get('/financials', financials.context, meta, financials.render)
 // .get('/courses', courses.context, meta, courses.render)

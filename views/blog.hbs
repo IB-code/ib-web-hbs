@@ -1,14 +1,17 @@
 <header class="section-hero">
     <div class="jumbotron mb-0 jumbotron-fluid">
         <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Blog</h1>
+            <h1 class="display-4 font-weight-bold text-white">Blog</h1>
+            <p class="lead">See What We Are Up To!</p>
         </div>
     </div>
 </header>
 <section class="section-padding section-blog py-5">
     <div class="container py-2">
         <div class="row justify-content-center">
-            
+            <h3 class="text-center mb-4">{{main.blog.title}}</h3>
+            <h6 class="text-muted">Author: {{}}</h6>
+            <p id="blog-body" class="text-center px-md-4">{{main.blog.body}}</p>
         </div>
     </div>
 </section>
