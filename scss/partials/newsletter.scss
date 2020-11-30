@@ -1,3 +1,40 @@
+#newsletter-container {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1050;
+    height: 36em;
+    width: 22em;
+    animation-name: newsletter-fadeIn;
+    animation-duration: 3s;
+
+    #newsletter-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url("/static/img/newsletter/hero.png");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: 37% center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        height: 7em;
+
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+    }
+}
+
+@keyframes newsletter-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 // #newsletter-container {
 //     position: fixed;
 //     right: 0;
@@ -61,13 +98,3 @@
 //         }
 //     }
 // }
-
-#newsletter-container {
-    background-color: #facf32f1;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    bottom: 50;
-    right: 50;
-    z-index: 1031;
-}
