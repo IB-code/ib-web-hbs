@@ -8,34 +8,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    #mc_embed_signup {
-      clear: left;
-
-      form {
-        padding: 0;
-
-        #mc-embedded-subscribe {
-          margin: 0;
-        }
-
-        #mce-responses {
-          font-size: 0.85rem;
-          margin: 0;
-          padding: 0;
-        }
-
-        input {
-          max-width: 75%;
-          border: 1px solid transparent;
-          border-color: #3d70a3;
-        }
-
-        input:hover {
-          border-color: #315a83;
-        }
-      }
-    }
   }
 
   .btn-navy {
@@ -44,30 +16,5 @@ footer {
 
   hr {
     width: 60px;
-  }
-}
-
-// media query to center text form Mailchimp. Will not center without!
-@media only screen and (max-width: 767px) {
-  #mc_embed_signup_scroll {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    #mce-responses {
-      display: flex;
-      justify-content: space-around;
-
-      .clear {
-        margin-bottom: 1rem;
-      }
-    }
-
-    input {
-      max-width: 100% !important;
-    }
   }
 }

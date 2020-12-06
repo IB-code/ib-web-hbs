@@ -9,7 +9,6 @@ import * as handlebars from 'express-handlebars';
 import * as moment from 'moment-timezone';
 import * as compression from 'compression';
 import log from './log';
-import { requireHTTPS } from "./utils/";
 import * as cache from './utils/cache';
 
 import config from './config';
@@ -40,9 +39,15 @@ app.use('/clear-cache', (req, res, next) => {
 });
 
 app.use(compression());
-app.use(requireHTTPS);
 app.use(webp(publicPath));
 
+app.use((req, res, next) => {
+    // The 'x-forwarded-proto' check is for Heroku
+    if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development") {
+        return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+});
 app.use('/static', express.static(publicPath));
 
 // Setup cache control for 1 day caching
