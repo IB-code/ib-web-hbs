@@ -1,9 +1,30 @@
-<section class="section-padding section-donate">
+{{!-- <header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Media</h1>
+            <h3 class="lead">Stay up to date with training opportunities, events, and more</h3>
+            <a href="https://innovatebham.com/contact">
+                <button class="btn btn-brand-yellow font-weight-600">Contact Us</button>
+            </a>
+        </div>
+    </div>
+</header> --}}
+<section class="section-donate">
+    <div id="spinner-container" class="container d-flex justify-content-center align-items-center flex-column">
+        <div class="spinner-border" role="status">
+            <span id="spinner" class="sr-only"></span>
+        </div>
+        <h5 class="mt-2 font-weight-500">Loading...</h5>
+    </div>
     <script src="https://app.donorview.com/scripts/shared/iframeResizer/iframeResizer.min.js"></script>
     <iframe src="https://app.donorview.com/AbZLK" frameborder="0" scrolling="no" id="dv-iframe" name="dv-iframe"
         width="100%" style="width: 100%;"></iframe>
     <script>iFrameResize({ checkOrigin: false, inPageLinks: true, heightCalculationMethod: 'taggedElement' }, '#dv-iframe');</script>
 </section>
+
+<!-- Remove Script -->
+<script src="/public/js/donate.js"></script>
+<!-- /Remove Script -->
 
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/donate.css">
