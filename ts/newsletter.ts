@@ -1,5 +1,7 @@
 // Container for newsletter
-const newsletterContainer = document.getElementById("newsletter-container");
+const newsletterContainer = document.querySelector(".newsletter-container");
+// Container for newsletter signup circle
+const newsletterCircle = document.getElementById("newsletter-circle");
 // localStorage value used to track visits for the purpose hiding newsletter on visit schedule
 const newsLetterState = localStorage.getItem('newsletterVisitCount');
 
@@ -12,3 +14,6 @@ if (!newsLetterState) {
 } else {
     visitCount++;
 }
+
+// adding class to trigger newsletter popup
+newsletterCircle.addEventListener("click", () => newsletterContainer.classList.add("animate-newsletter"));

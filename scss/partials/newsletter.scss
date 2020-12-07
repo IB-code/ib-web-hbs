@@ -1,60 +1,80 @@
-#newsletter-container {
-    opacity: 0;
+#newsletter-expand-container {
     position: fixed;
-    bottom: 50px;
+    bottom: 25px;
     right: 25px;
     z-index: 1050;
-    height: 36em;
-    max-height: 36em;
-    width: 22em;
-    animation-name: newsletter-fadeIn;
-    animation-timing-function: (0.19, 1, 0.22, 1);
-    animation-fill-mode: forwards;
-    animation-duration: 1.8s;
-    animation-delay: 6s;
-    -webkit-animation-name: newsletter-fadeIn;
-    -webkit-animation-timing-function: (0.19, 1, 0.22, 1);
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-duration: 1.8s;
-    -webkit-animation-delay: 6s;
 
-    #newsletter-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url("/static/img/newsletter/hero.png");
-        background-size: cover; /* or contain depending on what you want */
-        background-position: 37% center;
-        background-repeat: no-repeat;
-        text-align: center;
-        margin: auto;
-        padding: 0;
-        height: 7em;
-    }
+    .newsletter-container {
+        opacity: 0;
+        height: 36em;
+        max-height: 36em;
+        width: 22em;
 
-    #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-
-        .indicates-required  {
-            font-size: 11.5px;
-        }
-        
-        // inline error was pushing down form. cant match the inline error without.
-        [for=mce-EMAIL].mce_inline_error {
-            display: none !important;
-        }
-        
-        [for=mce-FNAME].mce_inline_error {
-            display: none !important;
+        #newsletter-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),
+                url("/static/img/newsletter/hero.png");
+            background-size: cover; /* or contain depending on what you want */
+            background-position: 37% center;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: auto;
+            padding: 0;
+            height: 7em;
         }
 
-        [for=mce-LNAME].mce_inline_error {
-            display: none !important;
-        }
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
 
-        .interest-checkbox {
-            margin-right: 5px;
+            .indicates-required {
+                font-size: 11.5px;
+            }
+
+            // inline error was pushing down form. cant match the inline error without.
+            [for="mce-EMAIL"].mce_inline_error {
+                display: none !important;
+            }
+
+            [for="mce-FNAME"].mce_inline_error {
+                display: none !important;
+            }
+
+            [for="mce-LNAME"].mce_inline_error {
+                display: none !important;
+            }
+
+            .interest-checkbox {
+                margin-right: 5px;
+            }
         }
     }
+
+    #newsletter-circle {
+        background-color: #facf32f1;
+        border: 2px solid #18102f;
+        height: 60px;
+        width: 60px;
+        -moz-border-radius: 60px;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+
+        i {
+            color: #18102f;
+        }
+    }
+}
+
+.animate-newsletter {
+    opacity: 1 !important;
+    // animation-name: newsletter-fadeIn;
+    // animation-timing-function: (0.19, 1, 0.22, 1);
+    // animation-fill-mode: forwards;
+    // animation-duration: 1.8s;
+    // -webkit-animation-name: newsletter-fadeIn;
+    // -webkit-animation-timing-function: (0.19, 1, 0.22, 1);
+    // -webkit-animation-fill-mode: forwards;
+    // -webkit-animation-duration: 1.8s;
 }
 
 @keyframes newsletter-fadeIn {
