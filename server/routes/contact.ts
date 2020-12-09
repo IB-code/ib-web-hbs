@@ -100,11 +100,11 @@ export function handleFormSubmission(
             },
         )
         .then((res) => {
-            res.redirect('https://innovatebham.com/contact?response=thanks');
+            res.redirect('innovatebham.com/contact?response=thanks');
         })
         .catch((err) => {
             console.log('err', err);
-            res.redirect('https://innovatebham.com/contact?response=whoops');
+            res.redirect('innovatebham.com/contact?response=whoops');
         });
 }
 
