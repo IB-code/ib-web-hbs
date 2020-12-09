@@ -66,15 +66,14 @@
 }
 
 .animate-newsletter {
-    opacity: 1 !important;
-    // animation-name: newsletter-fadeIn;
-    // animation-timing-function: (0.19, 1, 0.22, 1);
-    // animation-fill-mode: forwards;
-    // animation-duration: 1.8s;
-    // -webkit-animation-name: newsletter-fadeIn;
-    // -webkit-animation-timing-function: (0.19, 1, 0.22, 1);
-    // -webkit-animation-fill-mode: forwards;
-    // -webkit-animation-duration: 1.8s;
+    animation-name: newsletter-fadeIn;
+    animation-timing-function: (0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 1.8s;
+    -webkit-animation-name: newsletter-fadeIn;
+    -webkit-animation-timing-function: (0.19, 1, 0.22, 1);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.8s;
 }
 
 @keyframes newsletter-fadeIn {

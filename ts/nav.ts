@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // start the desktop navbar as hidden.
     desktopSlideOut.style.display = 'none';
 
-    // check screen width and set data target of menu button.show donate on desktop.
-     if (screen.availWidth >= 1024) {
+    // check screen width and set data target of menu button. show donate on desktop.
+    if (screen.availWidth >= 1024) {
         button.attributes[4].value = '#mainDesktopNavbar';
         donateBtn.style.display = "inline";
     } else {
@@ -38,4 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
             desktopSlideOut.style.display = 'none';
         }
     });
+
+    // document.addEventListener("click", e => {
+    //     if (e.target !== desktopSlideOut && e.target !== button && desktopSlideOut.classList.contains('openingNav')) {
+    //         desktopSlideOut.className = 'closingNav';
+    //         desktopSlideOut.style.display = 'none';
+    //     }
+    // });
 });
