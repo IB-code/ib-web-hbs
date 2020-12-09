@@ -99,7 +99,7 @@ export function handleFormSubmission(
                 );
             },
         )
-        .then((res) => {
+        .then((axiosResponse) => {
             res.redirect('/contact?response=thanks');
         })
         .catch((err) => {
