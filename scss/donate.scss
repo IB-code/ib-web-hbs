@@ -7,21 +7,12 @@ main {
     color: $white;
 
     & > .jumbotron {
-      background: linear-gradient(rgba(11, 26, 66, 0.7), rgba(11, 26, 66, 0.7)), url("/static/img/donate/hero.png");
-      background-size: 70% 350px;
-      background-position: center;
+      background: linear-gradient(rgba(3, 7, 19, 0.5), rgba(3, 7, 19, 0.5)), url("/static/img/donate/hero.png");
+      background-size: 100% 350px;
       background-repeat: repeat-x;
       text-align: center;
       margin: auto;
       padding: 0;
-
-      .lead {
-        font-weight: 500;
-
-        @include media-breakpoint-down(md) {
-          font-weight: 400;
-        }
-      }
     }
   }
 
@@ -34,11 +25,19 @@ main {
     }
   }
 
-  #apply-iframe {
+  #dv-iframe {
     width: 100%;
 
     header {
       display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    & > .jumbotron {
+      background-size: cover !important;
     }
   }
 }
