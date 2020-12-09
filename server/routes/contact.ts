@@ -99,10 +99,12 @@ export function handleFormSubmission(
                 );
             },
         )
-        .then((res) => res.redirect('innovatebham.com/contact?response=thanks'))
+        .then((axiosResponse) => {
+            res.redirect('/contact?response=thanks');
+        })
         .catch((err) => {
             console.log('err', err);
-            res.redirect('innovatebham.com/contact?response=whoops');
+            res.redirect('/contact?response=whoops');
         });
 }
 
