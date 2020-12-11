@@ -8,8 +8,8 @@ import * as path from 'path';
 import * as handlebars from 'express-handlebars';
 import * as moment from 'moment-timezone';
 import * as compression from 'compression';
+import * as enforce from "express-sslify";
 import log from './log';
-import { requireHTTPS } from "./utils/";
 import * as cache from './utils/cache';
 
 import config from './config';
@@ -40,8 +40,9 @@ app.use('/clear-cache', (req, res, next) => {
 });
 
 app.use(compression());
-app.use(requireHTTPS);
 app.use(webp(publicPath));
+
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.use('/static', express.static(publicPath));
 
@@ -108,8 +109,7 @@ app.use(serverError);
 app.set('port', config.PORT);
 app.listen(app.get('port'), () => {
     log.info(
-        `WebService has started on http://${config.IP}:${
-        config.PORT
+        `WebService has started on http://${config.IP}:${config.PORT
         } running in ${config.ENV.value} mode`,
     );
 
