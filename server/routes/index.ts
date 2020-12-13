@@ -34,7 +34,7 @@ router
     .get('/careers', careers.context, meta, careers.render)
     .get('/apply', apply.context, meta, apply.render)
     .post('/apply/mail', apply.handleApplicationEmail)
-    .post("/interest/mail", interestForm.handleApplicationInterestResp)
+    .post('/interest/mail', interestForm.handleApplicationInterestResp)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
