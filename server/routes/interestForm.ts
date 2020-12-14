@@ -8,6 +8,7 @@ export async function handleApplicationInterestResp(
     next: express.NextFunction,
 ) {
     try {
+        console.log(req.body);
         const { name, email } = req.body;
 
         return send(
