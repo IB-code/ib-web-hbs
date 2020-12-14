@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@googlemaps/google-maps-services-js": "^3.1.4",
+        "@sendgrid/mail": "^7.4.0",
         "@types/autoprefixer": "^6.7.3",
         "@types/body-parser": "^1.16.5",
         "@types/bootstrap": "^3.3.39",
