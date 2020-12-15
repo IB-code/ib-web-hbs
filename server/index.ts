@@ -42,7 +42,9 @@ app.use('/clear-cache', (req, res, next) => {
 app.use(compression());
 app.use(webp(publicPath));
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+if (config.ENV.prod) {
+    app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 app.use('/static', express.static(publicPath));
 

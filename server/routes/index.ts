@@ -20,6 +20,7 @@ import * as mission from './mission';
 import * as board from './board';
 import * as donate from './donate';
 import * as apply from './apply';
+import * as interestForm from "./interestForm";
 import * as careers from './careers';
 import * as blogList from "./bloglist";
 import * as tempBlog1 from "./blog-temp1";
@@ -33,6 +34,7 @@ router
     .get('/careers', careers.context, meta, careers.render)
     .get('/apply', apply.context, meta, apply.render)
     .post('/apply/mail', apply.handleApplicationEmail)
+    .post('/interest/mail', interestForm.handleApplicationInterestResp)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
     .get('/mission', mission.context, meta, mission.render)
