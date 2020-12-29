@@ -18,7 +18,6 @@ if (screen.availWidth < 769) {
     // remove desktop newsletter from document
     desktopNewsletterContainer.parentNode.removeChild(desktopNewsletterContainer);
 
-    const mobileCloseButton = <HTMLDivElement>document.querySelector("#mobile-close-button");
     mobileCloseButton.setAttribute("data-toggle", "modal");
     mobileCloseButton.setAttribute("data-target", "#mobileNewsletter");
 
