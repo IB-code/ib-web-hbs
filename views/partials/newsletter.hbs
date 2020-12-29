@@ -1,12 +1,17 @@
 <div id="newsletter-expand-container">
-    <div class="newsletter-container rounded shadow">
-        <header id="newsletter-header" class="newsletter-header text-white rounded-top d-flex align-items-center">
+    <div id="desktopNewsletter" class="newsletter-container rounded shadow">
+        <header id="desktop-newsletter-header"
+            class="newsletter-header text-white rounded-top d-flex align-items-center">
+            <button type="button" id="close-button" class="close" aria-label="Close">
+                <span class="text-white" aria-hidden="true">&times;</span>
+            </button>
+
             <h4>You can improve someone's life with tech</h4>
         </header>
         <!--
-        Begin Mailchimp Signup Form
-        Styles moved to head per Mailchimp instructions.
-    -->
+            Begin Mailchimp Signup Form
+            Styles moved to head per Mailchimp instructions.
+        -->
         <div id='mc_embed_signup' class='rounded'>
             <form
                 action='https://innovatebham.us18.list-manage.com/subscribe/post?u=0aeb9493b3fec38b23388f11b&amp;id=622210d17b'
@@ -71,14 +76,107 @@
         </div>
         <script type='text/javascript'
             src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script
-            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery));
+        </script>
         <!--End mc_embed_signup-->
     </div>
 
-    <span id="newsletter-circle" class="float-right shadow d-flex justify-content-center align-items-center">
+    <span id="newsletter-circle" class="float-right shadow">
         <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
     </span>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mobileNewsletter" tabindex="-1" role="dialog" aria-labelledby="newsletter-header"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="newsletter-container rounded shadow">
+                <header id="newsletter-header"
+                    class="newsletter-header text-white rounded-top d-flex align-items-center">
+                    <button type="button" id="mobile-close-button" class="close" aria-label="Close">
+                        <span class="text-white" aria-hidden="true">&times;</span>
+                    </button>
+
+                    <h4>You can improve someone's life with tech</h4>
+                </header>
+                <!--
+                            Begin Mailchimp Signup Form
+                            Styles moved to head per Mailchimp instructions.
+                        -->
+                <div id='mc_embed_signup' class='rounded'>
+                    <form
+                        action='https://innovatebham.us18.list-manage.com/subscribe/post?u=0aeb9493b3fec38b23388f11b&amp;id=622210d17b'
+                        method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate'
+                        target='_blank' novalidate>
+                        <div id='mc_embed_signup_scroll'>
+                            <h2 class='text-center'>Connect with Us!</h2>
+                            <div class='indicates-required'><span class='asterisk'>*</span> indicates required</div>
+                            <div class='mc-field-group'>
+                                <label for='mce-EMAIL'>Email Address <span class='asterisk'>*</span>
+                                </label>
+                                <input type='email' value='' name='EMAIL' class='required email' id='mce-EMAIL'>
+                            </div>
+                            <div class='mc-field-group'>
+                                <label for='mce-FNAME'>First Name <span class='asterisk'>*</span>
+                                </label>
+                                <input type='text' value='' name='FNAME' class='required' id='mce-FNAME'>
+                            </div>
+                            <div class='mc-field-group'>
+                                <label for='mce-LNAME'>Last Name <span class='asterisk'>*</span>
+                                </label>
+                                <input type='text' value='' name='LNAME' class='required' id='mce-LNAME'>
+                            </div>
+                            <div class='mc-field-group input-group'>
+                                <strong>What is your interest in IB? </strong>
+                                <ul>
+                                    <li><input type='checkbox' value='1' name='group[5102][1]'
+                                            id='mce-group[5102]-5102-0' class='interest-checkbox'><label
+                                            for='mce-group[5102]-5102-0'>Bootcamp
+                                            Programs</label>
+                                    </li>
+                                    <li><input type='checkbox' value='2' name='group[5102][2]'
+                                            id='mce-group[5102]-5102-1' class='interest-checkbox'><label
+                                            for='mce-group[5102]-5102-1'>Partnership
+                                            Opportunities</label></li>
+                                    <li><input type='checkbox' value='4' name='group[5102][4]'
+                                            id='mce-group[5102]-5102-2' class='interest-checkbox'><label
+                                            for='mce-group[5102]-5102-2'>Events</label></li>
+                                    <li><input type='checkbox' value='8' name='group[5102][8]'
+                                            id='mce-group[5102]-5102-3' class='interest-checkbox'><label
+                                            for='mce-group[5102]-5102-3'>Program News and
+                                            Content</label></li>
+                                </ul>
+                            </div>
+                            <div id='mce-responses' class='clear'>
+                                <div class='response' id='mce-error-response' style='display:none'></div>
+                                <div class='response' id='mce-success-response' style='display:none'></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style='position: absolute; left: -5000px;' aria-hidden='true'><input type='text'
+                                    name='b_0aeb9493b3fec38b23388f11b_622210d17b' tabindex='-1' value=''></div>
+                            <div class='clear d-flex justify-content-center'>
+                                <input type='submit' value='Subscribe' name='subscribe'
+                                    class='btn btn-sm font-weight-600 my-1 mx-1 donate-btn'>
+                                <a href="/donate">
+                                    <button type="button" class="btn btn-sm font-weight-600 my-1 mx-1 donate-btn">Donate
+                                    </button>
+                                </a>
+
+                                {{!-- fixing button on bottom of newsletter form --}}
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript'
+                    src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script
+                    type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Remove Script -->
