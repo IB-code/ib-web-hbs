@@ -2,8 +2,10 @@
 const desktopNewsletterContainer = <HTMLDivElement>document.querySelector("#desktopNewsletter");
 // container for mobile newsletter
 const mobileNewsletterContainer = <HTMLDivElement>document.querySelector("#mobileNewsletter");
-// newsletter close button 
+// desktop newsletter close button 
 const desktopCloseButton = <HTMLButtonElement>document.querySelector("#close-button");
+// mobile newsletter close button
+const mobileCloseButton = <HTMLButtonElement>document.querySelector("#mobile-close-button");
 // container for newsletter signup circle. It's an icon to trigger the newsletter manually
 const newsletterCircle = <HTMLDivElement>document.querySelector("#newsletter-circle");
 // localStorage value used to track visits for the purpose hiding newsletter on visit schedule
@@ -33,13 +35,28 @@ if (screen.availWidth < 769) {
 if (!newsletterLastDisplayTime || currentTime - newsletterLastDisplayTime > 604800000) {
     localStorage.setItem('last-visit', currentTime.toString());
 
-    if (screen.availWidth < 769) {
+    if (screen.availWidth > 769) {
         // adding class to desktop newsletter to trigger animation
-        desktopNewsletterContainer.classList.add("animate-newsletter");
+        desktopNewsletterContainer.style.animationName = "newsletterFadeIn";
+        desktopNewsletterContainer.style.animationTimingFunction = "(0.19, 1, 0.22, 1)";
+        desktopNewsletterContainer.style.animationFillMode = "forwards";
+        desktopNewsletterContainer.style.animationDuration = "1.8s";
+        desktopNewsletterContainer.style.animationDelay = "6s";
+    } else {
+        setTimeout(() => {
+            newsletterCircle.style.display = "none";
+            $("#mobileNewsletter").modal("show");
+
+            mobileCloseButton.addEventListener('click', () => {
+                $("#mobileNewsletter").modal("hide");
+                newsletterCircle.classList.add("d-flex", "justify-content-center", "align-items-center")
+            });
+        }, 6000);
     }
 } else {
     // showing icon on the page if user wishes to trigger newsletter manually. 
     // setting display prop from none to flex
+    desktopNewsletterContainer.style.display = 'none';
     newsletterCircle.classList.add("d-flex", "justify-content-center", "align-items-center");
 }
 
