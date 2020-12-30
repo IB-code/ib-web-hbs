@@ -8,7 +8,7 @@ main {
 
     & > .jumbotron {
       background: linear-gradient(rgba(3, 7, 19, 0.5), rgba(3, 7, 19, 0.5)), url("/static/img/donate/hero.png");
-      background-size: 100% 350px;
+      background-size: 100% cover;
       background-repeat: repeat-x;
       text-align: center;
       margin: auto;
