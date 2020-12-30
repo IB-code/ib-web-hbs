@@ -42,11 +42,11 @@ app.use('/clear-cache', (req, res, next) => {
 app.use(compression());
 app.use(webp(publicPath));
 
+app.use('/static', express.static(publicPath));
+
 if (config.ENV.prod) {
     app.use(enforce.HTTPS({ trustProtoHeader: true }));
 }
-
-app.use('/static', express.static(publicPath));
 
 // Setup cache control for 1 day caching
 app.use((req, res, next) => {
