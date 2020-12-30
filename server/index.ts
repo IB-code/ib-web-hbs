@@ -42,6 +42,7 @@ app.use('/clear-cache', (req, res, next) => {
 app.use(compression());
 app.use(webp(publicPath));
 
+app.use('/public', express.static(publicPath));
 app.use('/static', express.static(publicPath));
 
 if (config.ENV.prod) {

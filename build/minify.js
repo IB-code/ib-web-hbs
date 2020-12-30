@@ -47,4 +47,5 @@ utils
             console.error(err);
             exit(1);
         },
-    );
+);
+    
