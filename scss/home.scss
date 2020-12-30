@@ -48,6 +48,10 @@ header {
     }
 
     @media only screen and (max-width: 600px) {
+      h3 {
+        padding-bottom: 15px;
+      }
+
       #video-container {
         position: relative;
         overflow: hidden;
@@ -58,8 +62,9 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 93.5%;
         height: 100%;
+        margin: 0 14px;
         border: 0;
       }
     }
