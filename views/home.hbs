@@ -6,28 +6,9 @@
             <a href="/apply" rel="noopener noreferrer">
                 <button type="button" class="shadow btn btn-primary">APPLY NOW</button>
             </a>
-            {{!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#covid-modal">
-                Launch demo modal
-            </button> --}}
         </div>
     </div>
 </header>
-{{!-- <section class="section-numbers section-padding">
-    <div class="row container mx-auto text-center d-flex justify-content-center align-items-center">
-        <div class="col-sm m-4">
-            <h4 class="display-4">$5,999,770</h4>
-            <p class="font-weight-400">Awarded to Innovate Birmigham</p>
-        </div>
-        <div class="col-sm m-4">
-            <h4 class="display-4">925</h4>
-            <p class="font-weight-400">Students to be trained</p>
-        </div>
-        <div class="col-sm m-4">
-            <h4 class="display-4">100%</h4>
-            <p class="font-weight-400">Free... Seriously</p>
-        </div>
-    </div>
-</section> --}}
 <section class="section-courses section-padding bg-light text-black">
     <div class="container">
         <a href="/programs/">
@@ -54,7 +35,7 @@
     </div>
 </section>
 <section class="section-video section-padding bg-primary">
-    <h3 class="text-center text-white">What is Innovate Birmingham?</h3>
+    <h4 class="text-center text-white">What is Innovate Birmingham?</h4>
     <div id="video-container">
         <iframe width="1275" height="717" src="https://www.youtube.com/embed/ivJgkLQLi5U?modestbranding=1&rel=0"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -62,7 +43,7 @@
     </div>
 </section>
 <section class="section-companies section-padding">
-    <h3 class="text-center pb-4">See Where Our Graduates Are Being Hired</h3>
+    <h4 class="text-center pb-4">See Where Our Graduates Are Being Hired</h4>
     <div class="carousel slide" data-interval="3000" data-ride="carousel">
         <div class="carousel-inner">
             {{#each main.hired}}
@@ -79,34 +60,6 @@
         </div>
     </div>
 </section>
-{{!-- <section class="section-connect section-padding bg-primary">
-    <div class="container">
-        <h3 class="text-center pb-5 text-white">From the Blog</h3>
-        <div class="card-columns">
-            {{#each main.blogs}}
-            <article class="card mb-3 index-{{@index}}">
-                <a href="/blog/{{attributes.slug}}/">
-                    <img class="card-img-top img-fluid" src="{{attributes.image}}" alt="{{attributes.title}} hero">
-                </a>
-                <div class="card-body">
-                    <header class="text-info">
-                        <h4 class="card-title">
-                            <a href="/blog/{{attributes.slug}}/">{{attributes.title}}</a>
-                        </h4>
-                        <span class="card-subtitle">{{attributes.author}} - </span>
-                        <time class="card-subtitle nowrap font-weight-bold" datetime="{{attributes.readTime}}m">{{attributes.readTime}}
-                            minute read</time>
-                    </header>
-                    <p class="card-text mt-3">{{attributes.description}}</p>
-                    <footer class="text-center">
-                        <a href="/blog/{{attributes.slug}}/" class="btn btn-primary text-white">READ MORE</a>
-                    </footer>
-                </div>
-            </article>
-            {{/each}}
-        </div>
-    </div>
-</section> --}}
 <section class="section-details section-padding bg-light">
     <div class="container">
         <h3 class="text-center pb-5">Why Choose Innovate Bham?</h3>
@@ -127,31 +80,6 @@
         </div>
     </div>
 </section>
-
-
-{{!-- <div class="modal fade" id="covid-modal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Regarding COVID-19...</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Innovate Birmingham is committed to protecting the health and safety of its participants, instructors,
-                staff and partners during the COVID-19 crisis. We are also committed to ensuring that our participants
-                and the Alabama tech sector continue to be served. We have transitioned our program to be completely
-                virtual until further notice. Please click here for more questions: <br>
-                <a href="/contact">https://www.innovatebham.com/contact/</a>.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/home.css">
