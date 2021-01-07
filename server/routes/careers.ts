@@ -25,9 +25,9 @@ export function context(
                     department: "Open Positions",
                     openings: [
                         {
-                            title: "Executive Director",
+                            title: "Program Analyst",
                             employmentType: "Full-Time",
-                            applicationLink: "https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T178842&lang=en&fbclid=IwAR1Ra-7B4cngBlWoWKahKodtBBCAsq45SzakopVuQzn10hf7Vm-nZWgK0nU",
+                            applicationLink: "https://docs.google.com/document/d/1KplAp_c9raLJ30AzGpT9W4nrsAkmlgPR8HKU1IUedHg/edit",
                         }
                     ]
                 },

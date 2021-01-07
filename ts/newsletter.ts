@@ -34,14 +34,7 @@ if (screen.availWidth < 769) {
 if (!newsletterLastDisplayTime || currentTime - newsletterLastDisplayTime > 604800000) {
     localStorage.setItem('last-visit', currentTime.toString());
 
-    if (screen.availWidth > 769) {
-        // adding class to desktop newsletter to trigger animation
-        desktopNewsletterContainer.style.animationName = "newsletterFadeIn";
-        desktopNewsletterContainer.style.animationTimingFunction = "(0.19, 1, 0.22, 1)";
-        desktopNewsletterContainer.style.animationFillMode = "forwards";
-        desktopNewsletterContainer.style.animationDuration = "1.8s";
-        desktopNewsletterContainer.style.animationDelay = "6s";
-    } else {
+    if (screen.availWidth < 769) {
         setTimeout(() => {
             newsletterCircle.style.display = "none";
             $("#mobileNewsletter").modal("show");
@@ -51,6 +44,13 @@ if (!newsletterLastDisplayTime || currentTime - newsletterLastDisplayTime > 6048
                 newsletterCircle.classList.add("d-flex", "justify-content-center", "align-items-center")
             });
         }, 6000);
+    } else {
+        // adding class to desktop newsletter to trigger animation
+        desktopNewsletterContainer.style.animationName = "newsletterFadeIn";
+        desktopNewsletterContainer.style.animationTimingFunction = "(0.19, 1, 0.22, 1)";
+        desktopNewsletterContainer.style.animationFillMode = "forwards";
+        desktopNewsletterContainer.style.animationDuration = "1.8s";
+        desktopNewsletterContainer.style.animationDelay = "6s";
     }
 } else {
     // showing icon on the page if user wishes to trigger newsletter manually. 
