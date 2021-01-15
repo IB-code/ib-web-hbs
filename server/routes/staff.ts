@@ -25,6 +25,11 @@ export function context(
         main: {
             team: [
                 {
+                    name: 'Katherine Zachara',
+                    position: "Executive Director",
+                    headshotPath: 'static/img/staff/KZ.jpg'
+                },
+                {
                     name: "Denita Bearden",
                     position: "Director of Operations",
                     headshotPath: "static/img/staff/db.jpg"
@@ -48,11 +53,6 @@ export function context(
                     name: "Rachel Davis Smith",
                     position: "Operations Coordinator",
                     headshotPath: "static/img/staff/rs.jfif"
-                },
-                {
-                    name: "Carlton Lewis",
-                    position: "Professional Development Coach",
-                    headshotPath: "static/img/staff/cl.jfif"
                 },
                 {
                     name: "Brandie McGee",
