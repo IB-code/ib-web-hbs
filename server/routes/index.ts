@@ -16,7 +16,7 @@ import * as apprenticeship from './apprenticeship';
 import * as media from './media';
 import * as staff from './staff';
 import * as mission from './mission';
-// import * as financials from './financials';
+import * as financials from './financials';
 import * as board from './board';
 import * as donate from './donate';
 import * as apply from './apply';
@@ -40,7 +40,6 @@ router
     .get('/mission', mission.context, meta, mission.render)
     .get('/board', board.context, meta, board.render)
     .get('/donate', donate.context, meta, donate.render)
-    .get('/about', about.context, meta, about.render)
     .get('/contact', contact.context, meta, contact.render)
     .post('/contact/submit', contact.handleFormSubmission)
     .get('/programs', programs.context, meta, programs.render)
@@ -52,12 +51,13 @@ router
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
     .get('/faq', faq.context, meta, faq.render)
-    // .get('/blog', blogList.context, meta, blogList.render)
-    // .get('/blog/temp1', tempBlog1.context, meta, tempBlog1.render)
-    // .get('/blog/temp2', tempBlog2.context, meta, tempBlog2.render)
-    // .get('/blog/temp3', tempBlog3.context, meta, tempBlog3.render)
 
+// .get('/about', about.context, meta, about.render)
 // .get('/financials', financials.context, meta, financials.render)
+// .get('/blog', blogList.context, meta, blogList.render)
+// .get('/blog/temp1', tempBlog1.context, meta, tempBlog1.render)
+// .get('/blog/temp2', tempBlog2.context, meta, tempBlog2.render)
+// .get('/blog/temp3', tempBlog3.context, meta, tempBlog3.render)
 // .get('/courses', courses.context, meta, courses.render)
 
 export default router;
