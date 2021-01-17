@@ -27,7 +27,7 @@ export function context(
                 {
                     name: 'Katherine Zachara',
                     position: "Executive Director",
-                    headshotPath: 'static/img/staff/KZ.jpg'
+                    headshotPath: 'static/img/staff/kz.jpg'
                 },
                 {
                     name: "Denita Bearden",
