@@ -30,7 +30,7 @@ export function context(
                 {
                     // href: '/courses/software/',
                     icon: 'fa fa-road',
-                    headline: 'Accelerated Programs',
+                    headline: 'Accelerated Training',
                     description:
                         'Fast-track career development programs designed to be completed in less than four months',
                 },
