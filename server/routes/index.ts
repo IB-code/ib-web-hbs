@@ -22,6 +22,7 @@ import * as donate from './donate';
 import * as apply from './apply';
 import * as interestForm from "./interestForm";
 import * as careers from './careers';
+import * as PDAndSupport from "./profdev&supportserv";
 import * as blogList from "./bloglist";
 import * as tempBlog1 from "./blog-temp1";
 import * as tempBlog2 from "./blog-temp2";
@@ -51,6 +52,7 @@ router
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
     .get('/faq', faq.context, meta, faq.render)
+    .get('/programs/services', PDAndSupport.context, meta, PDAndSupport.render);
 
 // .get('/about', about.context, meta, about.render)
 // .get('/financials', financials.context, meta, financials.render)

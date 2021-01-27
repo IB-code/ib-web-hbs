@@ -1,0 +1,137 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Professional Development & Supportive Services</h1>
+            <h3 class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ut labore minima est
+                accusamus.</h3>
+            <a href="/apply" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-primary text-white">APPLY</button>
+            </a>
+        </div>
+    </div>
+</header>
+<section class="section-padding section-about bg-light">
+    <div class="container text-center font-weight-500">
+        <p>The Innovate Birmingham Scholarship was established to support undergraduate students who major or minor in
+            tech related fields (see eligible majors below) at The University of Alabama at Birmingham, Lawson State
+            Community College, and Jefferson State Community College. Eligible students will receive $2,000 per
+            semester. That is up to $4,000 for the full academic year if you reapply. As an Innovate Birmingham scholar,
+            you become a part of a larger group of colleagues in the technology industry.</p>
+    </div>
+    <div class="container text-center mt-3 font-weight-500">
+        <h5 class="mb-2">Minimum Eligibility Requirements</h5>
+        <p class="requirements">Resident of the following counties of Central Alabama: Jefferson, Shelby, Blount, St.
+            Clair, Chilton, and
+            Walker.</p>
+        <p class="requirements">Full-time student at The University of Alabama at Birmingham (UAB), Jefferson State
+            Community College,
+            or Lawson State Community College.</p>
+        <p class="requirements">Applicable to majors, minors, and programs listed in the "Qualifying Majors, Minors &
+            Programs"
+            section below.</p>
+    </div>
+</section>
+<section class="section-perks section-padding bg-primary text-white">
+    <div class="container text-center">
+        <h3>The Perks</h3>
+        <p>In addition to scholarship dollars, Innovate Birmingham students are invited to attend professional
+            development events
+            and networking opportunities at the Innovation Depot, one of the largest startup incubators in the country
+            and
+            home to 100+ companies. Awardees will also receive support finding IT/Technology jobs and internships. </p>
+    </div>
+</section>
+<section class="section-padding text-center">
+    <h3 class="mb-4 mx-2">Qualifying Majors, Minors & Programs</h3>
+    <div class="majors-container">
+        {{#each main.schools}}
+        <div class="section-schools">
+            <div class="img-container">
+                <a href="{{url}}" target="_blank" rel="noreferrer noopener">
+                    <img class="logo" src="{{__logoPath}}">
+                </a>
+            </div>
+            <div class="majors-text">
+                <ul>
+                    {{#each requirements}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+<section class="section-padding section-testimonials bg-light">
+    <div class="container mb-3 text-center">
+        <h3>Hear from our scholarship recipients!</h3>
+    </div>
+    <div class="testimonials">
+        <div class="row mx-0">
+            <div class="col-lg-6 col-sm-12">
+                <div class="card mx-2">
+                    <blockquote class="blockquote mb-0">
+                        <p>    Innovate Birmingham (IB) has had a transformative impact on my life. My wife and I found
+                            outwe were having our
+                            firstborn the Saturday before I started the program in January 2019. Withthe skills gained
+                            from the instructor in the
+                            Software Development program at that time, and thevaluable personal development, including
+                            things like resume building
+                            and interview preparationfrom Carlton Lewis, I was able to find employment and entered the
+                            tech space the
+                            Mondayfollowing graduation. IB allowed me the abilities to find a career in a field I enjoy,
+                            and for mywife and I to
+                            start a family without worry. IB’s program is full-time (Monday-Friday) withadditional time
+                            spent learning in the
+                            evenings and on weekends. The supportive services of IBwere a key factor in what allowed me
+                            to finish the program. With
+                            the help of Brandie McGeeMcMillian, the Senior Case Manager of Supportive Services, I was
+                            able to get assistance
+                            withhousing costs while in the program, which allowed me to focus more on my training and
+                            skilldevelopment</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                                <cite title="Source Title">Cam Smith - Cohort 7</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card mx-2 mt-2">
+                    <blockquote class="blockquote mb-0">
+                        <p>    Innovate Birmingham positively impacted my life in that it allowed
+                            me the opportunity to learn
+                            how to become a Web Developer. Acquiring these skills was significant to me because my late
+                            brother, who was a Senior
+                            Level Developer, was very excited about the field and expressed often how well he thought
+                            I’d do if I got into it too.
+                            The 14-week, fulltime coding bootcamp was intense and coupled with grieving it was really
+                            tough, but Supportive Services
+                            helped take someof the edge off to allow me to focus on my class work. The financial
+                            assistance I received from
+                            Supportive Services for my utilities and rent was major in that they helped me keep from
+                            worrying about how certain
+                            expenses would be covered during my time in the bootcamp. Additionally, being able to check
+                            in periodically with Brandie
+                            to talk about how things were goingwas equally as valuable as she understood what I was
+                            going through. I don’t believe I
+                            could have made it through the bootcamp without the financial and emotional support provided
+                            by Supportive Services. I’m
+                            eternally grateful for this program.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                                <cite title="Source Title">Hafeeza Shahid – Cohort 11</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/profdev&supportserv.css">
+<!-- /Remove Style -->

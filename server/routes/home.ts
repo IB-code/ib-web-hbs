@@ -30,62 +30,62 @@ export function context(
                 {
                     // href: '/courses/software/',
                     icon: 'fa fa-road',
-                    headline: 'Accelerated Programs',
+                    headline: 'Accelerated Training',
                     description:
-                        'Fast-track career development programs designed to be completed in less than four months',
+                        'Fast-track career development programs designed to be completed in less than four months'
                 },
                 {
                     // href: '/courses/data-analytics/',
                     icon: 'fas fa-suitcase',
-                    headline: 'Apprenticeship',
+                    headline: 'Apprenticeships & Internships',
                     description:
-                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers'
                 },
-                {
-                    // href: '/scholarships/',
-                    icon: 'fa fa-graduation-cap',
-                    headline: 'Degrees and Certificate Programs',
-                    description:
-                        'For tech-related full-time students at UAB, Jeff State, and Lawson State',
-                },
+                // {
+                //     // href: '/scholarships/',
+                //     icon: 'fas fa-people-carry',
+                //     headline: 'Professional Development & Supportive Services',
+                //     description:
+                //         'Holistic services to strenghten our candidates for the workforce'
+                // }
             ],
             benefits: [
                 {
                     icon: 'fas text-yellow fa-list-ul fa-2x',
                     headline: 'Curriculum Designed By Industry Experts',
                     description:
-                        'Our Software Development and Data Analytics Bootcamps use time-tested curriculums and have helped hundreds of students start new careers.',
+                        'Our Software Development and Data Analytics Bootcamps use time-tested curriculums and have helped hundreds of students start new careers.'
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-chalkboard-teacher',
                     headline: 'Experienced Instructors',
                     description:
-                        'Our instructors have track records as successful software engineers and IT specialists and have worked for some of the best companies in Birmingham.',
+                        'Our instructors have track records as successful software engineers and IT specialists and have worked for some of the best companies in Birmingham.'
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-hands-helping',
                     headline: 'Professional Services',
                     description:
-                        "We know taking 14 weeks to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course.",
+                        "We know taking 14 weeks to learn a new skill isn't an easy ask. So we do our best to help you with any needs that may arise during the course."
                 },
                 {
                     icon: 'fa text-yellow fa-2x fa-briefcase',
                     headline: 'Professional Development Training',
                     description:
-                        "We put you in front of real employers! But before that we make sure you're ready by providing training and counseling on resumes, cover letters, interview preparation, and more!",
+                        "We put you in front of real employers! But before that we make sure you're ready by providing training and counseling on resumes, cover letters, interview preparation, and more!"
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-building',
                     headline: 'Access to a Wide Employer Network',
                     description:
-                        "Innovate Bham partners with 30+ employers around the Magic City. We're doing our homework to find companies that are ready to hire new up and coming tech talent. Who knows? You may meet your next boss during the class!",
+                        "Innovate Bham partners with 30+ employers around the Magic City. We're doing our homework to find companies that are ready to hire new up and coming tech talent. Who knows? You may meet your next boss during the class!"
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-dollar-sign',
                     headline: 'Completely Free',
                     description:
-                        "We are a grant funded nonprofit program that received ~$6 million to train students. We're giving it away, so come get it.",
-                },
+                        "We are a grant funded nonprofit program that received ~$6 million to train students. We're giving it away, so come get it."
+                }
             ],
         },
     };

@@ -22,7 +22,7 @@ export function context(
             courses: [
                 {
                     icon: 'fa fa-suitcase',
-                    headline: 'Apprenticeship',
+                    headline: 'Apprenticeships & Internships',
                     description: 'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
                     action: {
                         id: 'apprenticeship',
@@ -30,16 +30,16 @@ export function context(
                         text: 'LEARN MORE',
                     }
                 },
-                {
-                    icon: 'fa fa-graduation-cap',
-                    headline: 'Degree and Certificate Programs',
-                    description: 'For tech-related full-time students at UAB, Jeff State, and Lawson State',
-                    action: {
-                        id: 'certs',
-                        href: '/degrees-and-certifications/',
-                        text: 'LEARN MORE',
-                    }
-                },
+                // {
+                //     icon: 'fas fa-people-carry',
+                //     headline: 'Professional Development & Supportive Services',
+                //     description: 'Holistic services to strenghten our candidates for the workforce',
+                //     action: {
+                //         id: 'certs',
+                //         href: '/degrees-and-certifications/',
+                //         text: 'LEARN MORE',
+                //     }
+                // },
             ],
         },
     };

@@ -8,7 +8,7 @@ export function context(
 ) {
     req.context = {
         head: {
-            title: 'Degrees and Certifications | Innovate Birmingham',
+            title: 'Professional Development & Supportive Services | Innovate Birmingham',
             meta: {
                 description:
                     'Offering scholarships to UAB, Jefferson State, and Lawson State.',
