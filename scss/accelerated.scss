@@ -32,6 +32,17 @@ header {
 
 .section {
   &-courses {
+    .lead-in {
+      color: #11092c;
+      line-height: 1.4;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,6 +92,13 @@ header {
 
     .close {
       align-self: flex-end;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
     }
   }
 }
