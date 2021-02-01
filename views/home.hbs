@@ -17,13 +17,16 @@
         <div class="row">
             {{#each main.programs}}
             <div class="col-lg-4 my-2">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="{{icon}} mr-2"></i>{{headline}}</div>
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">{{description}}</p>
+                <a href={{url}}>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <i class="{{icon}} mr-2"></i>{{headline}}
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text">{{description}}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             {{/each}}
         </div>

@@ -33,6 +33,7 @@ export function context(
                     headline: 'Accelerated Training',
                     description:
                         'Fast-track career development programs designed to be completed in less than four months',
+                    url: "https://innovatebham.com/programs"
                 },
                 {
                     // href: '/courses/data-analytics/',
@@ -40,6 +41,7 @@ export function context(
                     headline: 'Apprenticeship',
                     description:
                         'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                    url: "https://innovatebham.com/apprenticeship"
                 },
                 {
                     // href: '/scholarships/',
@@ -47,6 +49,7 @@ export function context(
                     headline: 'Degrees and Certificate Programs',
                     description:
                         'For tech-related full-time students at UAB, Jeff State, and Lawson State',
+                    url: "https://innovatebham.com/degrees-and-certifications/"
                 },
             ],
             benefits: [
