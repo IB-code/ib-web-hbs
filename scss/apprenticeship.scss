@@ -30,6 +30,22 @@ header {
 .section {
   &-whatisit {
     background-color: #e6eff5;
+
+    .lead-in {
+      line-height: 1.4;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+      }
+    }
   }
 
   &-experience {

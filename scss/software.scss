@@ -6,7 +6,7 @@ header {
   & > .jumbotron {
     background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/software/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
-    background-position: center center;
+    background-position: center 37.5%;
     background-repeat: no-repeat;
     text-align: center;
     margin: auto;
@@ -28,6 +28,23 @@ header {
       padding-left: 1em;
       padding-right: 1em;
       padding-bottom: 1em;
+    }
+  }
+
+  &-deadlines {
+    .lead-in {
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+      }
     }
   }
 

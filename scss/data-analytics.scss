@@ -4,25 +4,37 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.5), rgba(11, 26, 66, 0.5)), url("/static/img/data-analytics/hero.jpeg");
+    background: linear-gradient(rgba(11, 26, 66, 0.5), rgba(11, 26, 66, 0.5)),
+      url("/static/img/data-analytics/hero.jpeg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
     margin: auto;
     padding: 0;
-
-    .lead {
-      font-weight: 500;
-
-      @include media-breakpoint-down(md) {
-        font-weight: 400;
-      }
-    }
   }
 }
 
 .section {
+  &-deadlines {
+    .lead-in {
+      line-height: 1.4;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+    }
+  }
+
   &-padding {
     @media only screen and (max-width: 600px) {
       padding-left: 1em;
