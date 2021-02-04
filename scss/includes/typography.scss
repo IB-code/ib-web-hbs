@@ -8,15 +8,15 @@
     font-display: fallback;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('/static/fonts/lato/Lato-RegularItalic.WOFF') format('woff'),
-        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-            url('/static/fonts/lato/Lato-RegularItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-    font-weight: 500;
-    font-style: italic;
-    font-display: fallback;
-}
+// @font-face {
+//     font-family: 'Lato';
+//     src: url('/static/fonts/lato/Lato-RegularItalic.WOFF') format('woff'),
+//         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+//             url('/static/fonts/lato/Lato-RegularItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+//     font-weight: 500;
+//     font-style: italic;
+//     font-display: fallback;
+// }
 
 @font-face {
     font-family: 'Lato';
