@@ -35,6 +35,7 @@ header {
   &-programs {
     .lead-in {
       font-size: 1.15em;
+      color: #11092c;
       max-width: 875px;
     }
 
@@ -89,6 +90,13 @@ header {
         .card-title {
           color: $yellow;
         }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
       }
     }
 

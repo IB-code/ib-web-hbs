@@ -44,7 +44,6 @@ router
     .get('/contact', contact.context, meta, contact.render)
     .post('/contact/submit', contact.handleFormSubmission)
     .get('/programs', programs.context, meta, programs.render)
-    .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
     .get('/apprenticeship', apprenticeship.context, meta, apprenticeship.render)
     .get('/degrees-and-certifications', certifications.context, meta, certifications.render)
     .get('/courses/software', software.context, meta, software.render)
@@ -54,6 +53,7 @@ router
     .get('/faq', faq.context, meta, faq.render)
     .get('/programs/services', PDAndSupport.context, meta, PDAndSupport.render);
 
+// .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
 // .get('/about', about.context, meta, about.render)
 // .get('/financials', financials.context, meta, financials.render)
 // .get('/blog', blogList.context, meta, blogList.render)

@@ -17,29 +17,32 @@
         <div class="row">
             {{#each main.programs}}
             <div class="col-lg-4 my-2">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="{{icon}} mr-2"></i>
-                        <span>{{headline}}</span>
+                <a href={{url}}>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <i class="{{icon}} mr-2"></i>{{headline}}
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text">{{description}}</p>
+                        </div>
                     </div>
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">{{description}}</p>
-                    </div>
-                </div>
+                </a>
             </div>
             {{/each}}
             <div class="col-lg-4 my-2">
-                <div class="card text-center">
-                    <div class="card-header d-flex justify-content-center" id="pd-program-card">
-                        <img src="/public/img/profdev&supportserv/profdef&supportserv-icon-yellow.png"
-                            alt="cartoon icon of person ascending to success" id="PD-icon">
-                        <span class="pd-program-card-text">Professional Development & Supportive Services</span>
+                <a href="/programs/services">
+                    <div class="card text-center">
+                        <div class="card-header d-flex justify-content-center" id="pd-program-card">
+                            <img src="/public/img/profdev&supportserv/profdef&supportserv-icon-yellow.png"
+                                alt="cartoon icon of person ascending to success" id="PD-icon">
+                            <span class="pd-program-card-text">Professional Development & Supportive Services</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text">Mentorship, coaching and other supports to prepare participants for
+                                employment</p>
+                        </div>
                     </div>
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">Mentorship, coaching and other supports to prepare participants for
-                            employment</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="learn-more mt-4">

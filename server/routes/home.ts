@@ -32,22 +32,25 @@ export function context(
                     icon: 'fa fa-road',
                     headline: 'Accelerated Training',
                     description:
-                        'Fast-track career development programs designed to be completed in less than four months'
+                        'Fast-track career development programs designed to be completed in less than four months',
+                    url: "https://innovatebham.com/programs"
                 },
                 {
                     // href: '/courses/data-analytics/',
                     icon: 'fas fa-suitcase',
                     headline: 'Apprenticeships & Internships',
                     description:
-                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers'
+                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                    url: "https://innovatebham.com/apprenticeship"
                 },
                 // {
                 //     // href: '/scholarships/',
-                //     icon: 'fas fa-people-carry',
-                //     headline: 'Professional Development & Supportive Services',
+                //     icon: 'fa fa-graduation-cap',
+                //     headline: 'Degrees and Certificate Programs',
                 //     description:
-                //         'Holistic services to strenghten our candidates for the workforce'
-                // }
+                //         'For tech-related full-time students at UAB, Jeff State, and Lawson State',
+                //     url: "https://innovatebham.com/degrees-and-certifications/"
+                // },
             ],
             benefits: [
                 {

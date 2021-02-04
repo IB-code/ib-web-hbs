@@ -16,8 +16,8 @@
             <hr class="mb-5" />
         </div>
         <div class="row justify-content-center">
-            <h4 class="lead-in text-center mb-4">Professional Development</h4>
-            <p>
+            <h3 class="lead-in text-center mb-4">Professional Development</h3>
+            <p class="p-4 pd-description">
                 Innovate Birmingham is committed to preparing participants for employment. Our development curriculum
                 combines the
                 expertise of industry leaders, local employers, and Innovate Birmingham staff. In addition to
@@ -28,63 +28,53 @@
                 partners who
                 provide insight on industry-demanded skills and mindsets.
             </p>
-            <ul class="list-group">
-                <li class="list-group-item">Resume building and interviewing best practices</li>
-                <li class="list-group-item">Professional dress and presentation</li>
-                <li class="list-group-item">Responsibility and time-management</li>
-                <li class="list-group-item">Growth mindset and personal branding</li>
-                <li class="list-group-item">Leadership assessments and coaching</li>
-                <li class="list-group-item">Teamwork and project management skills</li>
-            </ul>
-        </div>
-    </div>
-    <div class="container text-center mt-3 font-weight-500">
-        <h5 class="mb-2">Minimum Eligibility Requirements</h5>
-        <p class="requirements">Resident of the following counties of Central Alabama: Jefferson, Shelby, Blount, St.
-            Clair, Chilton, and
-            Walker.</p>
-        <p class="requirements">Full-time student at The University of Alabama at Birmingham (UAB), Jefferson State
-            Community College,
-            or Lawson State Community College.</p>
-        <p class="requirements">Applicable to majors, minors, and programs listed in the "Qualifying Majors, Minors &
-            Programs"
-            section below.</p>
-    </div>
-</section>
-<section class="section-perks section-padding bg-primary text-white">
-    <div class="container text-center">
-        <h3>The Perks</h3>
-        <p>In addition to scholarship dollars, Innovate Birmingham students are invited to attend professional
-            development events
-            and networking opportunities at the Innovation Depot, one of the largest startup incubators in the country
-            and
-            home to 100+ companies. Awardees will also receive support finding IT/Technology jobs and internships. </p>
-    </div>
-</section>
-<section class="section-padding text-center">
-    <h3 class="mb-4 mx-2">Qualifying Majors, Minors & Programs</h3>
-    <div class="majors-container">
-        {{#each main.schools}}
-        <div class="section-schools">
-            <div class="img-container">
-                <a href="{{url}}" target="_blank" rel="noreferrer noopener">
-                    <img class="logo" src="{{__logoPath}}">
-                </a>
-            </div>
-            <div class="majors-text">
-                <ul>
-                    {{#each requirements}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                </ul>
+            <div class="card ul-card">
+                <div class="card-body">
+                    <ul>
+                        <li>Resume building and interviewing best practices</li>
+                        <li>Professional dress and presentation</li>
+                        <li>Responsibility and time-management</li>
+                        <li>Growth mindset and personal branding</li>
+                        <li>Leadership assessments and coaching</li>
+                        <li>Teamwork and project management skills</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        {{/each}}
+    </div>
+</section>
+<section class="section-padding section-about bg-primary">
+    <div class="container text-center font-weight-500">
+        <div class="row justify-content-center">
+            <h3 class="lead-in text-center mb-4 text-white">Supportive Services</h3>
+            <p class="p-4 pd-description text-white">
+                Recognizing that participants may require supportive services to achieve success during training and
+                throughout the
+                transition into employment, Innovate Birmingham has a full-time Senior Case Manager who provides
+                holistic case
+                management. At the start of the program, participants complete an intake assessment to identify
+                potential barriers. Our
+                Senior Case Manager works with each student to develop a Student Directed Learning Plan (SDLP) to
+                address these
+                barriers.
+            </p>
+            <div class="card ul-card">
+                <div class="card-body">
+                    <ul>
+                        <li>Mentoring</li>
+                        <li>Childcare</li>
+                        <li>Utility or housing payment assistance</li>
+                        <li>Transportation assistance</li>
+                        <li>Mental health service coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="section-padding section-testimonials bg-light">
     <div class="container mb-3 text-center">
-        <h3>Hear from our scholarship recipients!</h3>
+        <h3>Hear from our graduates!</h3>
     </div>
     <div class="testimonials">
         <div class="row mx-0">
