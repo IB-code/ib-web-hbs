@@ -16,10 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Open nav on menu click.
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
+    button.addEventListener('click', () => {
         if (screen.availWidth >= 1024) {
             if (desktopSlideOut.classList.contains('closingNav')) {
                 desktopSlideOut.classList.remove('closingNav');
@@ -42,18 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    document.addEventListener("click", (e) => {
-        const targetElement = <HTMLElement>e.target;
+    // document.addEventListener("click", (e) => {
+    //     const targetElement = <HTMLElement>e.target;
 
-        if (!desktopSlideOut.contains(targetElement)) {
-            if (screen.availWidth >= 1024) {
-                if (desktopSlideOut.classList.contains('openingNav')) {
-                    desktopSlideOut.classList.remove('openingNav');
-                }
+    //     if (!desktopSlideOut.contains(targetElement)) {
+    //         if (screen.availWidth >= 1024) {
+    //             if (desktopSlideOut.classList.contains('openingNav')) {
+    //                 desktopSlideOut.classList.remove('openingNav');
+    //             }
 
-                desktopSlideOut.className = 'closingNav';
-                desktopSlideOut.style.display = 'none';
-            }
-        }
-    });
+    //             desktopSlideOut.className = 'closingNav';
+    //             desktopSlideOut.style.display = 'none';
+    //         }
+    //     }
+    // });
 });
