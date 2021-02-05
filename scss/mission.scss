@@ -38,7 +38,21 @@ header {
             justify-content: start;
             flex-direction: row;
             
-            #vision-lightbulb {
+            .bookImg {
+                margin-bottom: 1px;
+                max-width: 80px;
+                max-height: 80px;
+                margin-top: 7px;
+            }
+
+            #story-book {
+                display: flex;
+                position: relative;
+                bottom: 6em;
+                margin-left: 27px;
+            }
+
+            .vision-lightbulb {
                 max-width: 5em;
             }
 
@@ -60,6 +74,24 @@ header {
                 flex-direction: column !important;
                 text-align: center !important;
             }
+            #story-book {
+                display: flex;
+                flex-direction: column;
+                position: relative ;
+                bottom: .1em !important;
+            }
+        }
+
+        @media only screen and (max-width: 834px) and (min-width: 600px) {
+           
+            #story-book {
+                display: flex;
+                flex-direction: row;
+                position: relative ;
+                bottom: 11em !important;
+            }
         }
     }
 }
+
+
