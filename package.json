@@ -31,7 +31,7 @@
         "@types/request": "^2.0.3",
         "@types/uglify-js": "^2.6.29",
         "autoprefixer": "^7.1.4",
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "body-parser": "^1.18.3",
         "bootstrap": "^4.3.1",
         "browser-sync": "^2.26.12",
