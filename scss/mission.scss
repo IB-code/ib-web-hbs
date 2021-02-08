@@ -40,7 +40,6 @@ header {
 
             .bookImg {
                 margin-bottom: 1px;
-                max-width: 80px;
                 margin-top: 7px;
             }
 
@@ -48,7 +47,7 @@ header {
                 display: flex;
                 position: relative;
                 bottom: 6em;
-                // margin-left: 27px;
+                max-height: 112px;
             }
 
             .vision-lightbulb {
