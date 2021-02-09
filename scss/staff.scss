@@ -24,6 +24,24 @@ header {
 
 .section {
     &-team {
+        .lead-in {
+            font-size: 1.15em;
+            color: #11092c;
+            max-width: 875px;
+        }
+
+        hr {
+            width: 98%;
+            border-top: 2px solid #cccccc;
+        }
+
+        @media screen and (max-width: 576px) {
+            .lead-in {
+                padding: 0 0.9375rem;
+                text-align: start !important;
+            }
+        }
+
         #team-cards {
             margin: 0.5rem 1.5rem;
 
