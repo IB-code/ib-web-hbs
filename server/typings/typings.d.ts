@@ -17,6 +17,10 @@ declare module Express {
             },
             main?: any;
         };
+        botInfo: {
+            isBot: boolean,
+            nameBot?: string
+        };
     }
 }
 
