@@ -34,6 +34,7 @@ app.use(logger(':status :method :url \t :date[clf] \t :response-time[1]ms'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Check for bot requests and send 403 status if so
 app.use(isBot);
 
 // Remove parsed hbs cache

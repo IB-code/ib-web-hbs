@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-export default (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
+export default (req: express.Request, res: express.Response, next: express.NextFunction) => {
     const knownBotsToPattern = new Map([
         ['Headless Chrome', /HeadlessChrome/],
         ['Wget', /[wW]get/],
@@ -26,14 +26,14 @@ export default (err: Error, req: express.Request, res: express.Response, next: e
             isBot: false
         }
     }
-    
+
     // We enrich the incoming request object (req)
     // with information regarding bot detection
     req.botInfo = isKnownBotUserAgent(req.header('User-Agent'));
 
     if (req.botInfo.isBot) {
         res.sendStatus(403);
+    } else {
+        next();
     }
-
-    next();
 }
