@@ -33,7 +33,7 @@ export function context(
                     headline: 'Accelerated Training',
                     description:
                         'Fast-track career development programs designed to be completed in less than four months',
-                    url: "https://innovatebham.com/programs"
+                    url: "https://innovatebham.com/program"
                 },
                 {
                     // href: '/courses/data-analytics/',
