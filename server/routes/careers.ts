@@ -36,7 +36,7 @@ export function context(
     };
 
     next();
-}
+};
 
 export function render(
     req: express.Request,
