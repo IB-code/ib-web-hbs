@@ -1,4 +1,4 @@
-@import "layouts/main";
+@import 'layouts/main';
 
 .modal-body {
   font-size: 1.3em;
@@ -8,7 +8,7 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/home/hero.jpg');
     background-size: cover; /* or contain depending on what you want */
     background-position: center 25%;
     background-repeat: repeat-x;
@@ -67,6 +67,41 @@ header {
         margin: 0 3%;
         border: 0;
       }
+    }
+  }
+
+  &-ncwit {
+    display: flex;
+    align-items: center;
+
+    .col-lg-10 {
+      margin: 0;
+      padding: 0;
+      justify-content: left;
+    }
+
+    div > #ncwit-banner {
+      width: 75%;
+      margin: 0 auto;
+      padding: 0 0;
+    }
+
+    #ncwit-text {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 0 2vw 0 0;
+      text-align: left;
+      width: 20vw
+    }
+
+    #ncwit-perks {
+      padding-top: 2vw;
+      text-align: center;
+      width: 20vw;
+    }
+
+    #ncwit-perks > ul {
+      text-align: center;
     }
   }
 
