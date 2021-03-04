@@ -22,87 +22,105 @@ header {
   }
 }
 
-// media queries //
-@media screen and (max-width: 770px) {
-  .section-card-container {
-    flex-direction: column !important;
+// general css //
+.section {
+  &-testimonials {
+    .lead-in {
+      font-size: 1.5em;
+      color: #11092c;
+      max-width: 875px;
+    }
 
-    .image-container {
-      margin: 3% !important;
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
 
-      img {
-        max-width: 110px !important;
-        padding: 0;
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
       }
     }
 
-    .message-container {
-      margin: 0.45em !important;
-      padding-left: 0;
+    .section-card-container {
+      display: flex;
+      flex-direction: row;
+      margin: 3% auto;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: space-around;
+
+      .image-container {
+        margin: 1em;
+        padding: 0;
+
+        img {
+          padding: 5%;
+          width: 200px;
+          max-width: 200px;
+        }
+      }
+
+      .message-container {
+        margin: 1.5em;
+        padding: 0;
+
+        .message-actual {
+          margin: 1em;
+        }
+
+        .quote {
+          font-size: 1em;
+          margin: 1.2em;
+        }
+      }
     }
-  }
-}
 
-// general css //
-.main-container {
-  padding: 1% 0;
-}
+    // reversing layout on every other card with some additional styling for centering. //
+    .section-card-container:nth-child(odd) {
+      .image-container {
+        margin-left: 4em;
+      }
 
-.section-card-container {
-  display: flex;
-  flex-direction: row;
-  margin: 3% auto;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: space-around;
-
-  .image-container {
-    margin: 1em;
-    padding: 0;
-
-    img {
-      padding: 5%;
-      width: 200px;
-      max-width: 200px;
+      .message-container {
+        margin-right: 4em;
+        padding-left: 0;
+      }
     }
-  }
-}
 
-.message-container {
-  margin: 1.5em;
-  padding: 0;
+    .section-card-container:nth-child(even) {
+      flex-direction: row-reverse;
 
-  .message-actual {
-    margin: 1em;
-  }
+      .image-container {
+        margin-right: 4em;
+      }
 
-  .quote {
-    font-size: 1em;
-    margin: 1.2em;
-  }
-}
+      .message-container {
+        margin-left: 4em;
+        padding-right: 0;
+      }
+    }
 
-// reversing layout on every other card with some additional styling for centering. //
-.section-card-container:nth-child(odd) {
-  .image-container {
-    margin-left: 4em;
-  }
+    // media queries //
+    @media screen and (max-width: 770px) {
+      .section-card-container {
+        flex-direction: column !important;
 
-  .message-container {
-    margin-right: 4em;
-    padding-left: 0;
-  }
-}
+        .image-container {
+          margin: 3% !important;
 
-.section-card-container:nth-child(even) {
-  flex-direction: row-reverse;
+          img {
+            max-width: 110px !important;
+            padding: 0;
+          }
+        }
 
-  .image-container {
-    margin-right: 4em;
-  }
-
-  .message-container {
-    margin-left: 4em;
-    padding-right: 0;
+        .message-container {
+          margin: 0.45em !important;
+          padding-left: 0;
+        }
+      }
+    }
   }
 }

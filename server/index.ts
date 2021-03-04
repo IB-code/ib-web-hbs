@@ -20,6 +20,7 @@ import cors from './middleware/cors';
 import notFound from './middleware/notfound';
 import logError from './middleware/logerror';
 import serverError from './middleware/servererror';
+import isBot from './middleware/isBot';
 import helpers from './helpers';
 
 const app = express();
@@ -32,6 +33,9 @@ app.disable('x-powered-by');
 app.use(logger(':status :method :url \t :date[clf] \t :response-time[1]ms'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// Check for bot requests and send 403 status if so
+app.use(isBot);
 
 // Remove parsed hbs cache
 app.use('/clear-cache', (req, res, next) => {

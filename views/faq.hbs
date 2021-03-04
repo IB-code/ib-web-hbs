@@ -1,36 +1,37 @@
 <header class="section-hero">
-    <div class="jumbotron mb-0 jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Frequently Asked Questions</h1>
-        </div>
-    </div>
+   <div class="jumbotron mb-0 jumbotron-fluid">
+      <div class="container text-center">
+         <h1 class="display-4 font-weight-bold">Frequently Asked Questions</h1>
+      </div>
+   </div>
 </header>
-<div class="main-container">
-   {{#each main.categories}}
-   <div class="section-container">
-      <h2 class="title mt-3 mb-2 text-center">{{title}}</h2>
-      <div class="entries-container">
-         {{#each entries}}
-         <div class="card card-container mt-2">
-            <div class="panel-group" id="accordion{{id}}">
-               <div class="panel panel-default">
-                  <div class="panel-heading">
-                     <h4 class="panel-title">
+<section class="section-faq section-padding">
+   <div class="main-container">
+      {{#each main.categories}}
+      <div class="section-container">
+         <h2 class="title my-4 text-center">{{title}}</h2>
+         <div class="entries-container">
+            {{#each entries}}
+            <div class="card card-container mt-2">
+               <div class="panel-group" id="accordion{{id}}">
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
                         <a data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
-                           {{question}}</a>
-                     </h4>
-                  </div>
-                  <div id="collapse{{id}}" class="panel-collapse collapse in">
-                     <div class="panel-body">{{answer}}</div>
+                           <h4 class="panel-title mb-0">{{question}} </h4>
+                        </a>
+                     </div>
+                     <div id="collapse{{id}}" class="panel-collapse collapse in">
+                        <div class="panel-body">{{answer}}</div>
+                     </div>
                   </div>
                </div>
             </div>
+            {{/each}}
          </div>
-         {{/each}}
       </div>
+      {{/each}}
    </div>
-   {{/each}}
-</div>
+</section>
 
 <!-- Remove Style -->
 <link rel="stylesheet" href="/public/css/faq.css">

@@ -1,10 +1,10 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 header {
   color: $white;
 
   & > .jumbotron {
-    background:  linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/faq/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/faq/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,75 +22,69 @@ header {
   }
 }
 
-h2 {
-  font-family: Arial, Verdana;
-  font-weight: 800;
-  font-size: 28px;
-  color: #091f2f;
-  text-transform: uppercase;
-}
+.section {
+  &-faq {
+    .main-container {
+      align-content: center;
 
-.header-container {
-  margin: 1em;
-  text-align: center;
-}
+      // .title:first-of-type {
+      //   margin-top: 0em !important;
+      // }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  h2 {
-    font-size: large;
-    align-content: center !important;
-  }
-
-  .main-container {
-    margin: auto 1vw !important;
-    align-content: center !important;
-
-    .section-container {
-      margin: 1em !important;
-
-      .panel-title {
-        margin: 0.3em !important;
-        font-size: 1.2em !important;
+      .title {
+        font-family: Arial, Verdana;
+        font-weight: 800;
+        font-size: 28px;
+        color: #091f2f;
+        text-transform: uppercase;
       }
 
-      .panel-body {
-        margin: 0.75em !important;
+      .entries-container {
+        margin: auto 10%;
+
+        .card-container {
+          background-color: #6c757524;
+
+          .panel-title {
+            padding: 0.5em;
+            font-size: 1.2em;
+          }
+
+          .panel-body {
+            margin: 0.9em;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .section-container:last-child {
+        margin-bottom: 7vh;
       }
     }
 
-    .section-container:last-child {
-      margin-bottom: 5vh !important;
-    }
-  }
-}
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+      h2 {
+        font-size: large;
+        align-content: center !important;
+      }
 
-.main-container {
-  margin: auto 20%;
-  align-content: center;
-
-  .section-container {
-    margin: 1em;
-
-    .entries-container {
-      margin: auto 10%;
-
-      .card-container {
-        background-color: #6c757524;
+      .main-container {
+        margin: auto 1vw !important;
+        align-content: center !important;
 
         .panel-title {
-          margin: 0.5em;
-          font-size: 1.2em;
+          margin: 0.3em !important;
+          font-size: 1.2em !important;
         }
 
         .panel-body {
-          margin: 0.9em;
-          font-weight: 500;
+          margin: 0.75em !important;
         }
       }
-    }
-  }
 
-  .section-container:last-child {
-    margin-bottom: 7vh;
+      .section-container:last-child {
+        margin-bottom: 5vh !important;
+      }
+    }
   }
 }

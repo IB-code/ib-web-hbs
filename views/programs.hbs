@@ -1,23 +1,30 @@
 <header class="section-hero">
     <div class="jumbotron mb-0 jumbotron-fluid">
         <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Programs</h1>
-            <h3 class="lead font-weight-500">Innovate Birmingham's programs meet the demand of an IT workforce growing at the
-                second-fastest pace in the country, and harness the potential of under- and unemployed residents of
-                Greater Birmingham by using technical curricula to ensure candidates are certified with
-                industry-recognized credentials, earned via relevant scenario-based training. Our program will continue to take place virtually for the forseeable future.
-            </h3>
+            <h1 class="display-4 font-weight-bold">Our Program</h1>
         </div>
     </div>
 </header>
-<section class="programs section-padding bg-light">
+<section class="section-programs section-padding bg-light">
     <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="lead-in font-weight-500 text-center mb-4">Innovate Birmingham's programs meet the demand of an IT
+                workforce growing
+                at the
+                second-fastest pace in the country, and harness the potential of under- and unemployed residents of
+                Greater Birmingham by using technical curricula to ensure candidates are certified with
+                industry-recognized credentials, earned via relevant scenario-based training. Our program will continue
+                to take
+                place virtually for the forseeable future.
+            </h4>
+            <hr class="mb-5"/>
+        </div>
         <div class="row">
             <div class="col-lg-4 my-2 text-center">
                 <div class="card">
                     <div class="card-body position-relative">
                         <div class="card-top">
-                            <h4 class="card-title">Accelerated Programs</h4>
+                            <h4 class="card-title">Accelerated Training</h4>
                             <i class="fa fa-road mr-2 mb-4 icon" alt="Fast Track"></i>
                             {{!-- <img src="{{icon}}" class="mr-2 mb-4 icon" alt="{{headline}}" /> --}}
                         </div>
@@ -35,7 +42,6 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="/courses/software">Coding Bootcamp</a>
                                 <a class="dropdown-item" href="/courses/data-analytics">Data Analytics Bootcamp</a>
-                                <a class="dropdown-item" href="/programs/accelerated-programs">Accelerated Programs</a>
                             </div>
                         </div>
                     </div>
@@ -59,6 +65,18 @@
                 </div>
             </div>
             {{/each}}
+            <div class="col-lg-4 my-2 text-center">
+                <div class="card">
+                    <div class="card-body position-relative">
+                        <div class="card-top">
+                            <h4 class="card-title">Professional Development & Supportive Services</h4>
+                            <img src="/public/img/profdev&supportserv/profdef&supportserv-icon-bw.png" id="PD-icon" class="mr-2 mb-4 icon" alt="cartoon icon of person ascending to success" />
+                        </div>
+                        <p class="card-text">Holistic services to prepare our candidates for the workforce</p>
+                        <a class="learn-btn btn btn-primary text-white position-absolute" href="/program/services">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

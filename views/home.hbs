@@ -1,35 +1,56 @@
 <header class="section-hero">
     <div class="jumbotron mb-0 jumbotron-fluid">
         <div class="container text-center">
-            <h1 class="display-4 font-weight-bold text-white">Equitable Economic Prosperity in our Tech Ecosystem</h1>
-            <p class="lead">Fueling Tech Talent for Employer Demands in the Heart of the Magic City</p>
+            <h1 class="display-4 font-weight-bold text-white mb-4">Equitable Economic Prosperity in our Tech Ecosystem</h1>
             <a href="/apply" rel="noopener noreferrer">
-                <button type="button" class="shadow btn btn-primary">APPLY NOW</button>
+                <button type="button" class="shadow btn btn-primary mb-2">APPLY NOW</button>
             </a>
         </div>
     </div>
 </header>
 <section class="section-courses section-padding bg-light text-black">
     <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="lead-in font-weight-500 text-center mb-4">Fueling Tech Talent for Employer Demands in the Heart of the Magic City</h4>
+            <hr class="mb-5" />
+        </div>
+
         <a href="/programs/">
-            <h3 class="text-center pb-3">Our Programs</h3>
+            <h3 class="text-center pb-3">Our Program</h3>
         </a>
         <div class="row">
             {{#each main.programs}}
             <div class="col-lg-4 my-2">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="{{icon}} mr-2"></i>{{headline}}
+                <a href={{url}}>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <i class="{{icon}} mr-2"></i>{{headline}}
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text">{{description}}</p>
+                        </div>
                     </div>
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">{{description}}</p>
-                    </div>
-                </div>
+                </a>
             </div>
             {{/each}}
+            <div class="col-lg-4 my-2">
+                <a href="/program/services">
+                    <div class="card text-center">
+                        <div class="card-header d-flex justify-content-center" id="pd-program-card">
+                            <img src="/public/img/profdev&supportserv/profdef&supportserv-icon-yellow.png"
+                                alt="cartoon icon of person ascending to success" id="PD-icon">
+                            <span class="pd-program-card-text">Professional Development & Supportive Services</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text">Mentorship, coaching and other supports to prepare participants for
+                                employment</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="learn-more mt-4">
-            <a href="/programs">
+            <a href="/program">
                 <button type="button" class="shadow btn" id="learn-more-btn">LEARN MORE</button>
             </a>
         </div>

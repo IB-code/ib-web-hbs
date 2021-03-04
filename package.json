@@ -7,7 +7,7 @@
     "main": "server/index.js",
     "private": true,
     "engines": {
-        "node": "10.15.1",
+        "node": "12.x",
         "npm": ">=6.9.0"
     },
     "dependencies": {
@@ -85,7 +85,7 @@
         "build:client": "tsc -p tsconfig.client.json && node build/minify.js",
         "build:server": "tsc",
         "clean": "rimraf public/css && rimraf public/js && rimraf server/**/*.js && rimraf server/**/*.map",
-        "dev": "concurrently -r -k \"npm run watch\" \"npm run dev:server\"",
+        "dev": "concurrently -r -k \"npm run watch\" \"npm run dev:server\" ",
         "dev:server": "nodemon -w server -e js,json --delay 2",
         "dev:sync": "browser-sync start --proxy \"http://localhost:3000\" --reload-delay 2000 --logLevel \"silent\" --no-open --no-notify --no-ui --files \"public/**\" --files \"server/**/*.js\" --files \"server/**/*.md\" --files \"server/**/*.js\" --files \"views/**\"",
         "postinstall": "npm run build",

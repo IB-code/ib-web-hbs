@@ -33,6 +33,26 @@ header {
 }
 
 .section {
+  &-courses {
+    .lead-in {
+      font-size: 1.5em;
+      color: #11092c;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+    }
+  }
+
   &-video {
     #video-container {
       padding: 0.15em;
@@ -125,6 +145,8 @@ header {
       & > .card-header {
         background-color: $navy;
         color: $white;
+        padding: 0.75rem 1.75rem;
+        height: 3.3em;
 
         & > i {
           color: $yellow;
@@ -135,6 +157,10 @@ header {
         transition: box-shadow;
         box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         animation: slideUp 500ms forwards;
+      }
+
+      #pd-program-card {
+        padding: 0rem 1.75rem;
       }
     }
 
@@ -150,6 +176,15 @@ header {
       #learn-more-btn:hover {
         background-color: #ebc230f1;
       }
+    }
+
+    #PD-icon {
+      height: 1.5em;
+      margin: auto 0;
+    }
+
+    .pd-program-card-text {
+      width: 13em;
     }
   }
 }

@@ -37,13 +37,25 @@ header {
             align-items: center;
             justify-content: start;
             flex-direction: row;
-            
-            #vision-lightbulb {
+
+            .bookImg {
+                margin-bottom: 1px;
+                margin-top: 7px;
+            }
+
+            #story-book {
+                display: flex;
+                position: relative;
+                bottom: 6em;
+                max-height: 112px;
+            }
+
+            .vision-lightbulb {
                 max-width: 5em;
             }
 
             .statement {
-                max-width: 100px;
+                width: 100px;
             }
 
             .fa-users {
@@ -59,6 +71,24 @@ header {
             .mission-main {
                 flex-direction: column !important;
                 text-align: center !important;
+            }
+
+            #story-book {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                bottom: 0.1em !important;
+                margin-left: 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 834px) and (min-width: 600px) {
+            #story-book {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                bottom: 11em !important;
+                margin-left: 0 !important;
             }
         }
     }

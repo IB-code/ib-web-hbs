@@ -33,6 +33,24 @@ header {
         margin: 0 2em 0 2em;
         padding-left: 2em;
 
+        .lead-in {
+            font-size: 1.5em;
+            color: #11092c;
+            max-width: 875px;
+        }
+
+        hr {
+            width: 98%;
+            border-top: 2px solid #cccccc;
+        }
+
+        @media screen and (max-width: 576px) {
+            .lead-in {
+                padding: 0 0.9375rem;
+                text-align: start !important;
+            }
+        }
+
         #media-newsletter {
             max-width: 25%;
             border-right: 1px solid black;
@@ -69,7 +87,7 @@ header {
             #media-newsletter {
                 max-width: 100% !important;
                 border-right: none !important;
-    
+
                 .media-lead {
                     border-bottom: none !important;
                 }
