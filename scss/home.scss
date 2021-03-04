@@ -93,45 +93,39 @@ header {
   &-ncwit {
     display: flex;
     align-items: center;
-    padding-left: 0;
 
-    .col-lg-10 {
-      margin: 0;
-      padding: 0;
-      justify-content: left;
+    #ncwit-container {
+      margin: 2vh 0 0 4vw;
     }
 
     #ncwit-row-1 {
-      columns: 2 40vw 20vw;
-      margin-bottom: 2vh
+      margin-bottom: 2vh;
     }
 
-    div > #ncwit-pic {
-      align-self: left;
+    #ncwit-pic {
       width: 30vw;
-      margin: 0; 
+      margin: 0;
       padding: 0;
     }
 
     #ncwit-text {
-      // color: white;
-      font-size: 1.5em;
+      height: auto;
+      font-size: 1.2em;
       font-weight: 400;
-      text-align: left;
-      line-height: 4vh;
-      margin-left:2vw
+      line-height: 3vh;
     }
     
     #ncwit-perks {
+      font-size: .8em;
+      line-height: 2.75vh;
       padding-top: 2vh;
       margin-top: 3vh;
       font-weight: 500;
-      text-align: center;
-      width: 20vw;
+      height: auto;
     }
 
     #ncwit-perks > ul {
-      text-align: center;
+      text-align: center
     }
   }
 
