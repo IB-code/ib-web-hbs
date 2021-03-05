@@ -53,6 +53,133 @@ header {
     }
   }
 
+  &-ncwit {
+    #ncwit-container {
+      margin: 3vh 0;
+    }
+
+    #ncwit-row-1 {
+      margin-bottom: 2vh;
+    }
+
+    #ncwit-pic {
+      height: inherit;
+      padding: 0;
+    }
+
+    #ncwit-text {
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      height: inherit;
+      font-size: 1.2em;
+      font-weight: 400;
+      // line-height: 2.7vh;
+    }
+
+    #ncwit-perks {
+      margin-bottom: 0;
+      padding: 2vh 0;
+      font-size: 0.8em;
+      font-weight: 500;
+      height: auto;
+
+      h6 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    #ncwit-perks > .card-body {
+      text-align: center;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      ul {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      #ncwit-container {
+        margin-top: 2vh;
+      }
+      #ncwit-pic {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          align-self: center;
+          width: 94%;
+          height: 100%;
+          margin: 0 3%;
+        }
+      }
+
+      #ncwit-text {
+        margin-top: 2.7vh;
+        font-size: 1em;
+      }
+
+      #ncwit-perks {
+        margin-bottom: 2vh;
+        padding-bottom: 3vh;
+      }
+
+      #ncwit-perks > .card-body > ul {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0.4vh;
+      }
+
+      #more-ncwit-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (min-width: 678px) and (max-width: 1024px) {
+      #ncwit-container {
+        margin-top: 2vh;
+      }
+      #ncwit-pic {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          align-self: center;
+          width: auto;
+          height: 100%;
+          margin: 0 3%;
+        }
+      }
+
+      #ncwit-text {
+        margin-top: 2.7vh;
+        font-size: 1em;
+      }
+
+      #ncwit-perks {
+        margin-bottom: 2vh;
+        padding-bottom: 3vh;
+      }
+
+      #ncwit-perks > .card-body > ul {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0.4vh;
+      }
+
+      #more-ncwit-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
   &-video {
     #video-container {
       padding: 0.15em;
@@ -87,45 +214,6 @@ header {
         margin: 0 3%;
         border: 0;
       }
-    }
-  }
-
-  &-ncwit {
-    display: flex;
-    align-items: center;
-
-    #ncwit-container {
-      margin: 2vh 0 0 4vw;
-    }
-
-    #ncwit-row-1 {
-      margin-bottom: 2vh;
-    }
-
-    #ncwit-pic {
-      width: 30vw;
-      margin: 0;
-      padding: 0;
-    }
-
-    #ncwit-text {
-      height: auto;
-      font-size: 1.2em;
-      font-weight: 400;
-      line-height: 3vh;
-    }
-    
-    #ncwit-perks {
-      font-size: .8em;
-      line-height: 2.75vh;
-      padding-top: 2vh;
-      margin-top: 3vh;
-      font-weight: 500;
-      height: auto;
-    }
-
-    #ncwit-perks > ul {
-      text-align: center
     }
   }
 
