@@ -57,16 +57,18 @@ header {
     #ncwit-container {
       margin: 3vh 0;
     }
-    
+
     #ncwit-row-1 {
       margin-bottom: 2vh;
       justify-content: space-evenly;
-      align-items: flex-end
+      align-items: flex-end;
+      flex-wrap: wrap;
     }
-    
+
     #ncwit-pic {
       height: inherit;
       padding: 0;
+      min-width: 40vw;
     }
 
     #ncwit-text {
@@ -76,7 +78,7 @@ header {
       height: inherit;
       font-size: 1.2em;
       font-weight: 400;
-      padding-bottom: 0
+      padding-bottom: 0;
       // line-height: 2.7vh;
     }
 
@@ -107,22 +109,21 @@ header {
 
     @media only screen and (max-width: 600px) {
       #ncwit-row-1 {
-        padding-bottom: 0
+        padding-bottom: 0;
       }
 
       #ncwit-pic {
         justify-content: center;
         align-items: center;
-
-        img {
-          align-self: center;
-          width: 94%;
-          min-width: 272px;
-          height: 100%;
-          margin: 0 3%;
-        }
       }
 
+      #ncwit-pig > img {
+        align-self: center;
+        width: 94%;
+        // min-width: 272px;
+        height: 100%;
+        margin: 0 3%;
+      }
       #ncwit-text {
         text-align: center;
         align-content: space-between;
@@ -147,45 +148,50 @@ header {
       }
     }
 
-    @media only screen and (min-width: 678px) and (max-width: 1024px) {
-      #ncwit-row-1 {
-        margin-top: 2vh;
-        justify-content: center;
-        flex-direction: column;
+    @media only screen and (max-width: 1024px) and (min-width: 678px) {
+      .section-ncwit {
+        align-content: flex-end;
       }
+
+      #ncwit-row-1 {
+        padding-bottom: 0;
+      }
+
       #ncwit-pic {
         justify-content: center;
         align-items: center;
-        width: 100%;
-
-        img {
-          align-self: center;
-          width: 100%;
-          // margin: 0 3%;
-          min-width: 352.5px;
-        }
+        max-width: 80vw;
+      }
+      #ncwit-pic > img {
+        align-self: center;
+        width: 94%;
+        // min-width: 272px;
+        height: 100%;
+        margin: 0 3%;
       }
 
       #ncwit-text {
-        margin-top: 2.7vh;
+        text-align: center;
+        align-content: space-between;
+        margin: 2.7vh 1vw 0 1vw;
         font-size: 1em;
-        width: 100vw;
-        min-width: 367px;
-        justify-content: center;
-        align-content: space-between
+        max-width: 40vw;
       }
 
       #ncwit-perks {
-        margin-top: 0;
-        margin-bottom: 2vh;
-        padding: 0 auto;
-        max-width: 532px;
+        margin: 0.7vh 0 0 0;
+        padding: 0.2em 1vw;
       }
 
       #ncwit-perks > .card-body > ul {
-        text-align: left;
         margin-top: 0;
-        padding: 0 0 0 0.4vh;
+        padding-top: 0;
+        padding-bottom: 0.4vh;
+      }
+
+      #more-ncwit-info {
+        justify-content: center;
+        text-align: center;
       }
     }
   }
