@@ -76,7 +76,7 @@ header {
       align-content: space-between;
       // text-align: center !important;
       height: inherit;
-      font-size: 1.2em;
+      font-size: 1.15em;
       font-weight: 400;
       padding-bottom: 0;
       // line-height: 2.7vh;
@@ -165,7 +165,6 @@ header {
       #ncwit-pic > img {
         align-self: center;
         width: 94%;
-        // min-width: 272px;
         height: 100%;
         margin: 0 3%;
       }
@@ -194,6 +193,22 @@ header {
         text-align: center;
       }
     }
+    @media only screen and (min-width: 2000px) {
+      #ncwit-text {
+        text-align: center !important;
+      }
+
+      #ncwit-pic {
+        margin-bottom: 2vh;
+      }
+
+      #ncwit-perks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
   }
 
   &-video {
