@@ -25,9 +25,9 @@ export function context(
                     department: "Open Positions",
                     openings: [
                         {
-                            title: "Program Analyst",
+                            title: "Marketing Manager",
                             employmentType: "Full-Time",
-                            applicationLink: "/static/documents/Program_Analyst_2021.pdf",
+                            applicationLink: "/static/documents/MarketingManager2021.pdf",
                         }
                     ]
                 },
