@@ -87,7 +87,7 @@ export function context(
                     icon: 'fas text-yellow fa-2x fa-dollar-sign',
                     headline: 'Completely Free',
                     description:
-                        "We are a grant funded nonprofit program that received ~$6 million to train students. We're giving it away, so come get it."
+                        "We are a nonprofit organization that provides our services for free, so you can focus on skill building."
                 }
             ],
         },
