@@ -59,7 +59,7 @@ if (!newsletterLastDisplayTime || currentTime - newsletterLastDisplayTime > 6048
     newsletterCircle.classList.add("d-flex", "justify-content-center", "align-items-center");
 }
 
-// close newsletter on click o "X" button and show newsletter icon to reopen
+// close newsletter on click on "X" button and show newsletter icon to reopen
 desktopCloseButton.addEventListener('click', () => {
     desktopNewsletterContainer.style.display = 'none';
     newsletterCircle.classList.add("d-flex", "justify-content-center", "align-items-center")
