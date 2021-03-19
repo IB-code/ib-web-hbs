@@ -58,7 +58,7 @@ export async function handleApplicationEmail(
                     "Innovate Birmingham <admissions@innovatebham.com>", // is this where im supposed to change the email?
                     applicantEmail,
                     "Thank You For Applying to Innovate Birmingham",
-                    `Dear ${name}, ${os.EOL} ${os.EOL} Thank you for submitting your application for Innovate Birmingham! To continue with the application process, you must complete a video interview here: https://start.myinterview.com/innovate-birmingham/customer-service-interview. If your myInterview link is not working, please contact kayla@innovatebham.com You have 2 weeks from the date of your application to complete the interview. After completing the interview, please complete the questionnaire using this Survey link: https://uab.co1.qualtrics.com/jfe/form/SV_emopl7uwuzmbFA1. These additional steps are vital to your application.${os.EOL} ${os.EOL}After you successfully complete the video interview, our Admissions team will review your application and follow up within 2 weeks.${os.EOL} ${os.EOL}Please contact kayla@innovatebham.com if you have any questions during the application process. ${os.EOL} ${os.EOL}Sincerely,${os.EOL}The Innovate Bham Team`,
+                    `Dear ${name},${os.EOL}${os.EOL}Thank you for applying to Innovate Birmingham! Your application is currently under review by the Innovate Birmingham Admissions Team. We will contact you with next steps once we have completed the review of your application.${os.EOL}${os.EOL}Please contact us at admissions@innovatebham.com if you have any questions, and we look forward to speaking with you soon.`,
                 );
             } else {
                 return send(
