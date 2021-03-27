@@ -49,7 +49,7 @@ export async function handleApplicationEmail(
     next: express.NextFunction,
 ) {
     try {
-        const { name, email: applicantEmail } = req.body,
+        const { name, email: applicantEmail } = req.body;
 
         return send(
             "Innovate Birmingham <admissions@innovatebham.com>", // is this where im supposed to change the email?
