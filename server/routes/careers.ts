@@ -28,6 +28,10 @@ export function context(
                             title: "Marketing Manager",
                             employmentType: "Full-Time",
                             applicationLink: "/static/documents/MarketingManager2021.pdf",
+                        }, {
+                            title: "Admissions Manager",
+                            employmentType: "Full-Time",
+                            applicationLink: "/static/documents/AdmissionsManager.pdf"
                         }
                     ]
                 },

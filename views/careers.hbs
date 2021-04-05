@@ -18,14 +18,18 @@
                 <hr class="w-25 mx-md-4">
             </div>
             {{#each openings}}
-            <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
-            <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
-            <div class="description-container w-100">
+            <div class="d-flex flex-row mr-5">
+                <div>
+                    <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
+                    <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
+                    <div class="description-container w-100">
 
+                    </div>
+                    <a href={{applicationLink}} target="_blank">
+                        <button class="btn btn-primary">Learn More</button>
+                    </a>
+                </div>
             </div>
-            <a href={{applicationLink}} target="_blank">
-                <button class="btn btn-primary">Learn More</button>
-            </a>
             {{/each}}
         </div>
         {{/each}}
@@ -34,7 +38,8 @@
 <section class="section-padding section-values bg-primary">
     <div class="values-container d-flex justify-content-center mt-4 text-center">
         <h2 class="text-white w-100 mb-4">Our Core Values</h2>
-        {{!-- <pre class="job-description text-white">{{main.coreValues}}</pre> --}}
+        {{!--
+        <pre class="job-description text-white">{{main.coreValues}}</pre> --}}
         <div class="job-description text-white">
             <h5>Inclusive Collaboration</h5>
             <p>We believe that diverse perspectives make us stronger.</p>
