@@ -18,6 +18,8 @@
                 <hr class="w-25 mx-md-4">
             </div>
             {{#each openings}}
+            <div class="d-flex flex-row mr-5">
+                <div>
             <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
             <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
             <div class="description-container w-100">
@@ -26,6 +28,8 @@
             <a href={{applicationLink}} target="_blank">
                 <button class="btn btn-primary">Learn More</button>
             </a>
+            </div>
+            </div>
             {{/each}}
         </div>
         {{/each}}
