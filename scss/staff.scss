@@ -42,8 +42,16 @@ header {
             }
         }
 
+        .card-text {
+            margin-bottom: .5em
+        }
+
         #team-cards {
             margin: 0.5rem 1.5rem;
+
+            a {
+                text-decoration: none;
+            }
 
             .row {
                 // display: flex;
@@ -51,7 +59,7 @@ header {
                 // justify-content: center;
 
                 .card {
-                    height: 7em;
+                    height: 8.5em;
                     max-width: 26em;
                     border-radius: 1em;
 

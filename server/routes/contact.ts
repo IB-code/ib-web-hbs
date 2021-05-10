@@ -76,16 +76,18 @@ export function handleFormSubmission(
 
                 switch (topic) {
                     case 'bootcamps':
-                        email.unshift('kayla');
+                        email.unshift('admissions');
                         break;
                     case 'scholarships':
-                        email.unshift('kayla');
+                        email.unshift('admissions');
                         break;
                     case 'employers':
                         email.unshift('haleyh');
                         break;
                     case 'general':
                         email.unshift('rachel');
+                    case 'admissions':
+                        email.unshift('admissions');
                         break;
                     default:
                         email.unshift('rachel');

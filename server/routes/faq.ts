@@ -136,11 +136,11 @@ export function context(
                     ]
                 },
                 {
-                    title: "Software Development Bootcamp",
+                    title: "Full Stack Web Development Bootcamp",
                     entries: [
                         {
                             id: 14,
-                            question: 'What do I learn in Software Dev?',
+                            question: 'What do I learn in Full Stack Web Dev?',
                             answer: 'Our full stack web development course includes introductions to HTML, CSS, and JavaScript. We cover the design, implementation, and functionality of a webpage as well as the server that supplies them with information. We also delve into specific frameworks and libraries across this area of software development including ReactJS, Angular, Express and others. On top of full-stack web development we cover database design, implementation and security.'
                         },
                     ]

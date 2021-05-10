@@ -57,7 +57,7 @@ export function context(
                     icon: 'fas text-yellow fa-list-ul fa-2x',
                     headline: 'Curriculum Designed By Industry Experts',
                     description:
-                        'Our Software Development and Data Analytics Bootcamps use time-tested curriculums and have helped hundreds of students start new careers.'
+                        'Our Full Stack Web Development and Data Analytics Bootcamps use time-tested curriculums and have helped hundreds of students start new careers.'
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-chalkboard-teacher',

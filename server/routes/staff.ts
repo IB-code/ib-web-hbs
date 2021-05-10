@@ -27,57 +27,62 @@ export function context(
                 {
                     name: "Katherine Zachara",
                     position: "Executive Director",
-                    headshotPath: "/static/img/staff/katherine.JPG"
+                    headshotPath: "/static/img/staff/kz.jpg",
+                    email: 'Katherine@innovatebham.com'
                 },
                 {
                     name: "Denita Bearden",
                     position: "Director of Operations",
-                    headshotPath: "/static/img/staff/db.jpg"
-                },
-                {
-                    name: "Kayla King",
-                    position: "Director of Admissions",
-                    headshotPath: "/static/img/staff/kk.jpg"
+                    headshotPath: "/static/img/staff/db.jpg",
+                    email: 'Denita@innovatebham.com'
                 },
                 {
                     name: "Haley Hoppe",
                     position: "Director of Engagement",
-                    headshotPath: "/static/img/staff/hh.jfif"
+                    headshotPath: "/static/img/staff/hh.jpg",
+                    email: 'HaleyH@innovatebham.com'
                 },
                 {
                     name: "Deva DeDios",
                     position: "Marketing Strategist",
-                    headshotPath: "/static/img/staff/dd.jfif"
+                    headshotPath: "/static/img/staff/dd.jfif",
+                    email: ' '
                 },
                 {
                     name: "Rachel Davis Smith",
                     position: "Operations Coordinator",
-                    headshotPath: "/static/img/staff/rs.jfif"
+                    headshotPath: "/static/img/staff/rs.jpg",
+                    email: ' '
                 },
                 {
-                    name: "Brandie McGee",
+                    name: "Brandie McMillian",
                     position: "Senior Case Manager",
-                    headshotPath: "/static/img/staff/bm.jpg"
+                    headshotPath: "/static/img/staff/bm.jpg",
+                    email: ' '
                 },
                 {
                     name: "Josh Hurn",
                     position: "Web Development Instructor",
-                    headshotPath: "/static/img/staff/jh.jfif"
+                    headshotPath: "/static/img/staff/jh.jfif",
+                    email: ' '
                 },
                 {
                     name: "Adrian Drane",
                     position: "Data Analytics Teaching Assistant",
-                    headshotPath: "/static/img/staff/ad.jfif"
+                    headshotPath: "/static/img/staff/ad.jpg",
+                    email: ' '
                 },
                 {
                     name: "Garrett Harris",
                     position: "Web Development Teaching Assistant",
-                    headshotPath: "/static/img/staff/gh.jfif"
+                    headshotPath: "/static/img/staff/gh.jfif",
+                    email: ' '
                 },
                 {
                     name: "Jake Lovett",
                     position: "Web Development Teaching Assistant",
-                    headshotPath: "/static/img/staff/jl.jfif"
+                    headshotPath: "/static/img/staff/jl.jpg",
+                    email: ' '
                 }
             ]
         }
