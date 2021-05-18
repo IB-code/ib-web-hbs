@@ -25,7 +25,7 @@ import * as PDAndSupport from "./profdev&supportserv";
 // import * as tempBlog3 from "./blog-temp3";
 // import * as courses from './courses';
 // import * as accelerated from './accelerated';
-// import * as financials from './financials';
+import * as financials from './financials';
 // import * as about from './about';
 
 const router = express.Router();
@@ -51,11 +51,11 @@ router
     .get('/partners', partners.context, meta, partners.render)
     .get('/testimonials', testimonials.context, meta, testimonials.render)
     .get('/faq', faq.context, meta, faq.render)
-    .get('/program/services', PDAndSupport.context, meta, PDAndSupport.render);
+    .get('/program/services', PDAndSupport.context, meta, PDAndSupport.render)
+    .get('/financials', financials.context, meta, financials.render)
 
 // .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
 // .get('/about', about.context, meta, about.render)
-// .get('/financials', financials.context, meta, financials.render)
 // .get('/blog', blogList.context, meta, blogList.render)
 // .get('/blog/temp1', tempBlog1.context, meta, tempBlog1.render)
 // .get('/blog/temp2', tempBlog2.context, meta, tempBlog2.render)
