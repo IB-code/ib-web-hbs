@@ -8,13 +8,16 @@
 <section class='section-padding section-financials'>
   <div class='container'>
     <div class='row'>
-      <p class='font-weight-600 mx-4'>Our commitment to our donors is that we will not sell, share or trade our donors' names or personal information with any other entity, nor
-        send mailings to our donors on behalf of other organizations. This policy applies to all information received by Innovate Birmingham, both online and offline, on any
-        platform, as well as any electronic, written, or oral communications. To the extent any donations are processed through a third-party service provider, our donors’
-        information will only be used for purposes necessary to process the donation.</p>
+      <h4 id='fin-description' class='lead-in font-weight-500 mx-4'>Our commitment to our donors is that we will not sell, share or trade our donors' names or personal information with any other
+        entity, nor send mailings to our donors on behalf of other organizations. This policy applies to all information received by Innovate Birmingham, both online and offline,
+        on any platform, as well as any electronic, written, or oral communications. To the extent any donations are processed through a third-party service provider, our donors’
+        information will only be used for purposes necessary to process the donation.</h4>
     </div>
-    <div class='row'>
-        <button>990</button>
+    <div id='fin-forms-row' class='row justify-content-center'>
+      {{#each main.forms}}
+        <a href={{formLink}} target='_blank' class='btn btn-primary btn-lg active mx-3' id='fin-forms-btn'>{{title}}
+        </a>
+      {{/each}}
     </div>
   </div>
 </section>

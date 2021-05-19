@@ -24,11 +24,12 @@ export function context(
                 {
                     department: "Open Positions",
                     openings: [
+                        // {
+                        //     title: "Marketing Manager",
+                        //     employmentType: "Full-Time",
+                        //     applicationLink: "/static/documents/MarketingManager2021.pdf",
+                        // }, 
                         {
-                            title: "Marketing Manager",
-                            employmentType: "Full-Time",
-                            applicationLink: "/static/documents/MarketingManager2021.pdf",
-                        }, {
                             title: "Admissions Manager",
                             employmentType: "Full-Time",
                             applicationLink: "/static/documents/AdmissionsManager.pdf"
