@@ -22,6 +22,12 @@ header {
   }
 }
 
+.section {
+  &-financials {
+    height: 37.5vh;
+  }
+}
+
 @include media-breakpoint-down(md) {
   #fin-description {
     font-size: 20px
