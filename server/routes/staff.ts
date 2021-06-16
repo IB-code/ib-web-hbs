@@ -43,6 +43,12 @@ export function context(
                     email: 'HaleyH@innovatebham.com'
                 },
                 {
+                    name: "Amy Jones",
+                    position: "Marketing Manager",
+                    headshotPath: "/static/img/staff/aj.jpg",
+                    email: 'amy@innovatebham.com'
+                },
+                {
                     name: "Rachel Davis Smith",
                     position: "Operations Coordinator",
                     headshotPath: "/static/img/staff/rs.jpg",
@@ -82,12 +88,6 @@ export function context(
                     name: "Maggie Thompson",
                     position: "Program Analyst",
                     headshotPath: "/static/img/staff/mt.jpg",
-                    email: ' '
-                },
-                {
-                    name: "Amy Jones",
-                    position: "Marketing Manager",
-                    headshotPath: "/static/img/staff/aj.jpg",
                     email: ' '
                 }
             ]
