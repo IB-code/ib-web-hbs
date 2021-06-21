@@ -1,11 +1,10 @@
-@import "layouts/main";
+@import 'layouts/main';
 
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
-      url("/static/img/apprenticeship/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/apprenticeship/hero.jpg');
     background-size: cover; /* or contain depending on what you want */
     background-position: center 35%;
     background-repeat: no-repeat;
@@ -41,6 +40,7 @@ header {
       border-top: 2px solid #cccccc;
     }
 
+
     @media screen and (max-width: 576px) {
       .lead-in {
         padding: 0 0.9375rem;
@@ -63,6 +63,12 @@ header {
     button {
       font-size: 1.2em;
       background-color: #facf32f1;
+    }
+
+    .container {
+      ul {
+        display: inline-block
+      }
     }
 
     @media screen and (max-width: 770px) {
