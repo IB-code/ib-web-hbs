@@ -1,16 +1,21 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.5), rgba(11, 26, 66, 0.5)), url('/static/img/data-analytics/hero.jpeg');
+    background: linear-gradient(rgba(11, 26, 66, 0.5), rgba(11, 26, 66, 0.5)),
+      url("/static/img/data-analytics/hero.jpeg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
     margin: auto;
     padding: 0;
+  }
+
+  .apply-btn {
+    background-color: #facf32;
   }
 }
 
