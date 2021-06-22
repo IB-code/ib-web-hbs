@@ -68,31 +68,35 @@ header {
             font-size: 1rem;
             margin: 8vw;
           }
+
+          img {
+            width: 80%;
+          }
         }
       }
     }
   }
 
   &-learned {
-    .container {
-      .learned-row {
-        flex-direction: column;
+    @media screen and (max-width: 576px) {
+      .container {
+        .learned-row {
+          flex-direction: column;
 
-        .learned-col {
-          flex-direction: row;
+          .learned-col {
+            flex-direction: row;
+          }
+
+          img {
+            width: 85%;
+            margin-bottom: 2vh;
+          }
         }
       }
     }
   }
 
   &-c6-apply {
-    .training-options {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-
     .lead-in {
       font-size: 1.3em;
     }
@@ -101,13 +105,8 @@ header {
       font-size: 1.2em;
       background-color: #facf32f1;
     }
-
-    .container {
-      ul {
-        display: inline-block;
-      }
-    }
-
+    
+    
     @media screen and (max-width: 770px) {
       .container {
         display: flex;
@@ -116,6 +115,14 @@ header {
         flex-direction: column !important;
       }
     }
+  }
+  
+  &-ib-apply{
+    button {
+      font-size: 1.2em;
+      background-color: #facf32f1;
+    }
+
   }
 
   &-carousel {
