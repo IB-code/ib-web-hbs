@@ -1,10 +1,12 @@
-@import 'layouts/main';
-
+@import "layouts/main";
+body {
+  overflow-x: hidden;
+}
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/apprenticeship/hero.jpg');
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/apprenticeship/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center 35%;
     background-repeat: no-repeat;
@@ -40,15 +42,50 @@ header {
       border-top: 2px solid #cccccc;
     }
 
-
+    .whatisit-row {
+      .whatisit-col > p {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
     @media screen and (max-width: 576px) {
       .lead-in {
         padding: 0 0.9375rem;
       }
+
+      .whatisit-row {
+        display: flex;
+        flex-direction: column;
+
+        .whatisit-col {
+          display: flex;
+          flex-direction: row;
+          // margin: 0;
+          padding: 0;
+          width: 100vw;
+
+          p {
+            font-size: 1rem;
+            margin: 8vw;
+          }
+        }
+      }
     }
   }
 
-  &-experience {
+  &-learned {
+    .container {
+      .learned-row {
+        flex-direction: column;
+
+        .learned-col {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  &-c6-apply {
     .training-options {
       display: flex;
       flex-direction: row;
@@ -67,7 +104,7 @@ header {
 
     .container {
       ul {
-        display: inline-block
+        display: inline-block;
       }
     }
 
