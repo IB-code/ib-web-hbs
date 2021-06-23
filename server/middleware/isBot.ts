@@ -10,7 +10,7 @@ export default (req: express.Request, res: express.Response, next: express.NextF
     ]);
 
     // Detect if an incoming request belongs to a bot using its user agent
-    const isKnownBotUserAgent = (userAgent) => {
+    const isKnownBotUserAgent = (userAgent: string) => {
         for (const [knownBot, pattern] of knownBotsToPattern.entries()) {
             if (userAgent.match(pattern)) {
                 return {

@@ -1,10 +1,10 @@
-@import "layouts/main";
+@import 'layouts/main';
 
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.7), rgba(11, 26, 66, 0.7)), url("/static/img/programs/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.7), rgba(11, 26, 66, 0.7)), url('/static/img/programs/hero.jpg');
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
@@ -18,6 +18,28 @@ header {
       @include media-breakpoint-down(md) {
         font-weight: 400;
       }
+    }
+  }
+}
+
+.section {
+  &-financials {
+    height: 37.5vh;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #fin-description {
+    font-size: 20px
+  };
+  
+  #fin-forms-row {
+    flex-direction: column;
+    justify-content: center;
+    
+    & > #fin-forms-btn {
+      font-size: 20px;
+      margin: 5% 2%;
     }
   }
 }

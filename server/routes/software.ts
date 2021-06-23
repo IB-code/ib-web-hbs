@@ -17,7 +17,7 @@ export function context(
                 description: 'Learn to Code. For Free. Seriously.',
                 images: [
                     {
-                        url: '/static/img/home/hero.png',
+                        url: '/static/img/home/hero.png',   
                     },
                 ],
             },

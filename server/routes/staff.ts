@@ -37,22 +37,16 @@ export function context(
                     email: 'Denita@innovatebham.com'
                 },
                 {
-                    name: "Kayla King",
-                    position: "Director of Admissions",
-                    headshotPath: "/static/img/staff/kk.jpg",
-                    email: 'Kayla@innovatebham.com'
-                },
-                {
                     name: "Haley Hoppe",
                     position: "Director of Engagement",
                     headshotPath: "/static/img/staff/hh.jpg",
                     email: 'HaleyH@innovatebham.com'
                 },
                 {
-                    name: "Deva DeDios",
-                    position: "Marketing Strategist",
-                    headshotPath: "/static/img/staff/dd.jfif",
-                    email: ' '
+                    name: "Amy Jones",
+                    position: "Marketing Manager",
+                    headshotPath: "/static/img/staff/aj.jpg",
+                    email: 'amy@innovatebham.com'
                 },
                 {
                     name: "Rachel Davis Smith",
@@ -88,6 +82,12 @@ export function context(
                     name: "Jake Lovett",
                     position: "Web Development Teaching Assistant",
                     headshotPath: "/static/img/staff/jl.jpg",
+                    email: ' '
+                },
+                {
+                    name: "Maggie Thompson",
+                    position: "Program Analyst",
+                    headshotPath: "/static/img/staff/mt.jpg",
                     email: ' '
                 }
             ]
