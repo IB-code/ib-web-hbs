@@ -266,9 +266,9 @@ export const PARTNERS: Array<IPartner> = [
     },
     {
         name: 'ITAC Solutions',
-        logo: 'itac.png',
+        logo: 'itac.jpg',
         url: 'https://itacsolutions.com/',
-        status: [PARTNER_STATUS.HIRED],
+        status: [PARTNER_STATUS.HIRED, PARTNER_STATUS.EMPLOYER],
     },
     {
         name: 'Tek Systems',
