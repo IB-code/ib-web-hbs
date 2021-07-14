@@ -24,13 +24,13 @@ header {
 
 .section {
   &-financials {
-    height: 37.5vh;
+    // height: 37.5vh;
   }
 }
 
 @include media-breakpoint-down(md) {
   #fin-description {
-    font-size: 20px
+    font-size: 1.2em
   };
   
   #fin-forms-row {
@@ -38,8 +38,8 @@ header {
     justify-content: center;
     
     & > #fin-forms-btn {
-      font-size: 20px;
-      margin: 5% 2%;
+      font-size: 18px;
+      margin: 2% 2%;
     }
   }
 }
