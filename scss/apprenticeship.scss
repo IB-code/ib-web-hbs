@@ -1,117 +1,135 @@
-// @import 'layouts/main';
+@import "layouts/main";
+body {
+  overflow-x: hidden;
+}
+header {
+  color: $white;
 
-// header {
-//   color: $white;
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/apprenticeship/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 
-//   & > .jumbotron {
-//     background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/apprenticeship/hero.jpg');
-//     background-size: cover; /* or contain depending on what you want */
-//     background-position: center 35%;
-//     background-repeat: no-repeat;
-//     text-align: center;
-//     margin: auto;
-//     padding: 0;
+    h1 {
+      font-size: 3rem;
+    }
 
-//     h1 {
-//       font-size: 3rem;
-//     }
+    .lead {
+      font-weight: 500;
 
-//     .lead {
-//       font-weight: 500;
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
 
-//       @include media-breakpoint-down(md) {
-//         font-weight: 400;
-//       }
-//     }
-//   }
-// }
+.section {
+  &-whatisit {
+    background-color: #e6eff5;
 
-// .section {
-//   &-whatisit {
-//     background-color: #e6eff5;
+    .lead-in {
+      line-height: 1.4;
+      max-width: 875px;
+    }
 
-//     .lead-in {
-//       line-height: 1.4;
-//       max-width: 875px;
-//     }
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
 
-//     hr {
-//       width: 98%;
-//       border-top: 2px solid #cccccc;
-//     }
+    .whatisit-row {
+      .whatisit-col > p {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+      }
 
-//     @media screen and (max-width: 576px) {
-//       .lead-in {
-//         padding: 0 0.9375rem;
-//       }
-//       #whatisit-row {
-//         display: flex;
-//         flex-direction: column;
+      .whatisit-row {
+        display: flex;
+        flex-direction: column;
 
-//         .whatisit-col {
-//           display: flex;
-//           flex-direction: row;
-//         }
-//       }
-//     }
-//     @media screen and (min-width: 700px) {
-//       #whatisit-row {
-//         display: inline;
+        .whatisit-col {
+          display: flex;
+          flex-direction: row;
+          // margin: 0;
+          padding: 0;
+          width: 100vw;
 
-//       }
-//      #whatisit-row > #whatisit-col {
-//         display: flex;
-//         flex-direction: column;
-//         width: 40vw;
-//       }
-//     }
-//   }
+          p {
+            font-size: 1rem;
+            margin: 8vw;
+          }
+        }
+      }
+    }
+  }
 
-//   &-experience {
-//     .training-options {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: center;
-//       align-items: center;
-//     }
+  &-learned {
+    .container {
+      .learned-row {
+        flex-direction: column;
 
-//     .lead-in {
-//       font-size: 1.3em;
-//     }
+        .learned-col {
+          flex-direction: row;
+        }
+      }
+    }
+  }
 
-//     button {
-//       font-size: 1.2em;
-//       background-color: #facf32f1;
-//     }
+  &-c6-apply {
+    .training-options {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
-//     .container {
-//       ul {
-//         display: inline-block;
-//       }
-//     }
+    .lead-in {
+      font-size: 1.3em;
+    }
 
-//     @media screen and (max-width: 770px) {
-//       .container {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         flex-direction: column !important;
-//       }
-//     }
-//   }
+    button {
+      font-size: 1.2em;
+      background-color: #facf32f1;
+    }
 
-//   &-carousel {
-//     background-color: #e6eff5;
+    .container {
+      ul {
+        display: inline-block;
+      }
+    }
 
-//     .carousel-img {
-//       margin: auto;
-//       max-width: 45%;
-//     }
+    @media screen and (max-width: 770px) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+      }
+    }
+  }
 
-//     @media screen and (max-width: 770px) {
-//       .carousel-img {
-//         max-width: 75% !important;
-//       }
-//     }
-//   }
-// }
+  &-carousel {
+    background-color: #e6eff5;
+
+    .carousel-img {
+      margin: auto;
+      max-width: 45%;
+    }
+
+    @media screen and (max-width: 770px) {
+      .carousel-img {
+        max-width: 75% !important;
+      }
+    }
+  }
+}
