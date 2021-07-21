@@ -1,4 +1,5 @@
 @import "layouts/main";
+
 body {
   overflow-x: hidden;
 }
@@ -21,15 +22,15 @@ header {
     .lead {
       font-weight: 500;
 
-      @include media-breakpoint-down(md) {
-        font-weight: 400;
-      }
+      // @include media-breakpoint-down(md) {
+      //   font-weight: 400;
+      // }
     }
   }
 }
 
 .section {
-  &-whatisit {
+  &-awards {
     background-color: #e6eff5;
 
     .lead-in {
@@ -42,94 +43,119 @@ header {
       border-top: 2px solid #cccccc;
     }
 
-    .whatisit-row {
-      .whatisit-col > p {
+    .awards-row {
+      > p {
         font-size: 1.2rem;
         font-weight: 400;
       }
-    }
-    @media screen and (max-width: 576px) {
-      .lead-in {
-        padding: 0 0.9375rem;
+
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        > .awards-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center;
+          margin: auto;
+          width: 100vw;
+        }
+
+        > #awards-pics {
+          > img {
+            width: 40vw;
+            height: auto;
+          }
+
+          > #WBL-seal {
+            margin-bottom: 30px;
+          }
+        }
       }
 
-      .whatisit-row {
-        display: flex;
-        flex-direction: column;
+      @media screen and (min-width: 576px) {
+        > .awards-col {
+          flex-direction: column;
+        }
 
-        .whatisit-col {
-          display: flex;
-          flex-direction: row;
-          // margin: 0;
-          padding: 0;
-          width: 100vw;
+        > #awards-pics {
+          justify-content: center;
+          align-items: center;
 
-          p {
-            font-size: 1rem;
-            margin: 8vw;
+          > img {
+            width: 60%;
+          }
+          > #WBL-seal {
+            width: 40%;
           }
         }
       }
     }
   }
 
-  &-learned {
-    .container {
-      .learned-row {
+  &-apprenticeships {
+    .apprenticeships-row {
+      @media screen and (max-width: 576px) {
+        width: 100vw;
         flex-direction: column;
+        flex-wrap: wrap;
 
-        .learned-col {
-          flex-direction: row;
+        > .apprenticeships-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center;
+          margin: auto;
+          width: 100vw;
+        }
+
+        .apprent-imgs {
+          width: 64%;
+          margin: 4% auto;
+        }
+      }
+      @media screen and (min-width: 576px) {
+        > .apprenticeships-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+        }
+
+        .apprent-imgs {
+          width: 47%;
+          justify-content: center;
+        }
+
+        .apprent-text-2 {
+          text-align: left;
         }
       }
     }
-  }
 
-  &-c6-apply {
-    .training-options {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .lead-in {
-      font-size: 1.3em;
-    }
-
-    button {
-      font-size: 1.2em;
-      background-color: #facf32f1;
-    }
-
-    .container {
-      ul {
-        display: inline-block;
-      }
-    }
-
-    @media screen and (max-width: 770px) {
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column !important;
-      }
-    }
-  }
-
-  &-carousel {
-    background-color: #e6eff5;
-
-    .carousel-img {
-      margin: auto;
-      max-width: 45%;
-    }
-
-    @media screen and (max-width: 770px) {
-      .carousel-img {
-        max-width: 75% !important;
+    .app-row-2 {
+      @media screen and (max-width: 576px) {
+        flex-direction: column-reverse;
       }
     }
   }
 }
+
+// &-carousel {
+//   background-color: #e6eff5;
+
+//   .carousel-img {
+//     margin: auto;
+//     max-width: 45%;
+//   }
+
+//   @media screen and (max-width: 770px) {
+//     .carousel-img {
+//       max-width: 75% !important;
+//     }
+//   }
+// }
