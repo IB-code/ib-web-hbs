@@ -17,6 +17,10 @@ header {
 
     h1 {
       font-size: 3rem;
+
+      @media screen and (max-width: 576px) {
+        font-size: 1.2rem;
+      }
     }
 
     .lead {
@@ -54,17 +58,21 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
 
+        .awards-intro {
+          text-align: center;
+          padding: 4vw;
+        }
+
         > .awards-col {
           flex-direction: column;
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
-          text-align: center;
           margin: auto;
           width: 100vw;
         }
 
-        > #awards-pics {
+        > .awards-pics {
           > img {
             width: 40vw;
             height: auto;
@@ -77,16 +85,19 @@ header {
       }
 
       @media screen and (min-width: 576px) {
-        > .awards-col {
+        > .awards-text {
           flex-direction: column;
+          width: 65vw;
         }
 
-        > #awards-pics {
+        > .awards-pics {
           justify-content: center;
           align-items: center;
+          display: flex;
+          flex-direction: column;
 
           > img {
-            width: 60%;
+            width: 30%;
           }
           > #WBL-seal {
             width: 40%;
@@ -143,6 +154,35 @@ header {
       }
     }
   }
+
+  &-apply {
+    .apply-btn {
+      background-color: #facf32f1;
+    }
+  }
+
+  &-intern {
+    background-color: #e9ecef;
+
+    .col {
+      width: 100vw;
+    }
+
+    .quote-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin: 4vh auto;
+      width: 40vw;
+      
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+      }
+    }
+  }
+
 }
 
 // &-carousel {
