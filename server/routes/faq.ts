@@ -101,7 +101,7 @@ export function context(
                         {
                             id: 7,
                             question: 'The program is a full commitment. Am I required to quit my job to participate?',
-                            answer: 'No, but it is highly recommended as this is a full-time bootcamp.'
+                            answer: 'Please keep in mind that participating in an Innovate Birmingham bootcamp is a full-time commitment. You are expected to attend class Monday-Friday, 9 a.m.-5 p.m. There will also be additional studying and classwork to complete. When considering whether you can commit to our program, it’s helpful to think of your participation in Innovate Birmingham in the same way you would think about a full-time job. However, we understand that emergencies and funding needs arise. We offer supportive services to help meet those needs.When you are accepted into the program, you will undergo a barrier assessment with our senior case manager, who will then develop a support plan. If you are already in the program when needs arise, we ask that you contact us immediately to let us know how we can assist you.'
                         },
                         {
                             id: 8,
