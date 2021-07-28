@@ -169,19 +169,19 @@ header {
       width: 100vw;
     }
 
-    .quote-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      margin: 4vh auto;
-      width: 40vw;
+    // .quote-container {
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: center;
+    //   align-items: center;
+    //   height: auto;
+    //   margin: 4vh auto;
+    //   width: 40vw;
       
-      @media screen and (max-width: 576px) {
-        width: 100vw;
-      }
-    }
+    //   @media screen and (max-width: 576px) {
+    //     width: 100vw;
+    //   }
+    // }
   }
 
 }
