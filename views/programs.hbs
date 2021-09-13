@@ -1,110 +1,147 @@
 <header class="section-hero">
-    <div class="jumbotron mb-0 jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Our Program</h1>
-        </div>
+  <div class="jumbotron mb-0 jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold">Our Program</h1>
     </div>
+  </div>
 </header>
 <section class="section-programs section-padding bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <h4 class="lead-in font-weight-500 text-center mb-4">Innovate Birmingham's programs meet the demand of an IT
-                workforce growing
-                at the
-                second-fastest pace in the country, and harness the potential of under- and unemployed residents of
-                Greater Birmingham by using technical curricula to ensure candidates are certified with
-                industry-recognized credentials, earned via relevant scenario-based training. Our program will continue
-                to take
-                place virtually for the forseeable future.
-            </h4>
-            <hr class="mb-5" />
-            {{!-- <div class="d-flex flex-row mb-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h4 class="lead-in font-weight-500 text-center mb-4">Innovate
+        Birmingham's programs meet the demand of an IT workforce
+        growing at the second-fastest pace in the country, and harness
+        the potential of under- and unemployed residents in Alabama’s
+        Central Six counties by using technical curricula to ensure
+        candidates are certified with industry-recognized credentials,
+        earned via relevant scenario-based training. Our program will
+        continue to take place virtually for the foreseeable future.
+      </h4>
+      <hr class="mb-5" />
+      {{! <div class="d-flex flex-row mb-4">
                 <p class="mr-2">&#8226;</p>
                 <h4>We are now accepting applications for our Cohort 16 Data Analytics and Full-Stack Web Development Bootcamps, which will begin in January 2022.</h4>
                 <p class="ml-2">&#8226;</p>
-            </div> --}}
-            <div class="d-flex flex-row mb-4 text-center">
-                <p class="mr-2">&#8226;</p>
-                <h4>We are now accepting applications for our Cohort 16 Data Analytics and Full-Stack Web Development Bootcamps, which will begin in January 2022.</h4>
-                <p class="ml-2">&#8226;</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 my-2 text-center">
-                <div class="card">
-                    <div class="card-body position-relative">
-                        <div class="card-top">
-                            <h4 class="card-title">Accelerated Training</h4>
-                            <i class="fa fa-road mr-2 mb-4 icon" alt="Fast Track"></i>
-                            {{!-- <img src="{{icon}}" class="mr-2 mb-4 icon" alt="{{headline}}" /> --}}
-                        </div>
-                        <p class="card-text">Fast-track career development programs designed to be completed in less
-                            than four months</p>
-                        {{!-- <a class="btn btn-primary text-white position-absolute" id="{{ id }}"
-                            href="{{action.href}}">{{action.text}}</a> --}}
-
-                        <div class="dropdown show position-absolute">
-                            <a class="btn btn-primary text-white dropdown-toggle" id="fast-track" href="#" role="button"
-                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                LEARN MORE
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/courses/software">Coding Bootcamp</a>
-                                <a class="dropdown-item" href="/courses/data-analytics">Data Analytics Bootcamp</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{#each main.courses}}
-            <div class="col-lg-4 my-2 text-center">
-                <div class="card">
-                    <div class="card-body position-relative">
-                        <div class="card-top">
-                            <h4 class="card-title">{{headline}}</h4>
-                            <i class="{{ icon }} mr-2 mb-4 icon" alt="{{headline}}"></i>
-                            {{!-- <img src="{{icon}}" class="mr-2 mb-4 icon" alt="{{headline}}" /> --}}
-                        </div>
-                        <p class="card-text">{{description}}</p>
-                        {{!-- <a class="btn btn-primary text-white position-absolute" id="{{ id }}"
-                            href="{{action.href}}">{{action.text}}</a> --}}
-                        <a class="learn-btn btn btn-primary text-white position-absolute"
-                            href="{{action.href}}">{{action.text}}</a>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            <div class="col-lg-4 my-2 text-center">
-                <div class="card">
-                    <div class="card-body position-relative">
-                        <div class="card-top">
-                            <h4 class="card-title">Professional Development & Supportive Services</h4>
-                            <img src="/public/img/profdev&supportserv/profdef&supportserv-icon-bw.png" id="PD-icon"
-                                class="mr-2 mb-4 icon" alt="cartoon icon of person ascending to success" />
-                        </div>
-                        <p class="card-text">Holistic services to prepare our candidates for the workforce</p>
-                        <a class="learn-btn btn btn-primary text-white position-absolute" href="/program/services">LEARN
-                            MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div> }}
+      <div class="d-flex flex-row mb-4 text-center">
+        <p class="mr-2">&#8226;</p>
+        <h4>We are now accepting applications for our Cohort 16 Data
+          Analytics and Full-Stack Web Development Bootcamps, which
+          will begin in January 2022.</h4>
+        <p class="ml-2">&#8226;</p>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-lg-4 my-2 text-center">
+        <div class="card">
+          <div class="card-body position-relative">
+            <div class="card-top">
+              <h4 class="card-title">Accelerated Training</h4>
+              <i
+                class="fa fa-road mr-2 mb-4 icon"
+                alt="Fast Track"
+              ></i>
+              {{!-- <img src="{{icon}}" class="mr-2 mb-4 icon" alt="{{headline}}" /> --}}
+            </div>
+            <p class="card-text">Fast-track career development
+              programs designed to be completed in less than four
+              months</p>
+            {{!-- <a class="btn btn-primary text-white position-absolute" id="{{ id }}"
+                            href="{{action.href}}">{{action.text}}</a> --}}
+
+            <div class="dropdown show position-absolute">
+              <a
+                class="btn btn-primary text-white dropdown-toggle"
+                id="fast-track"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                LEARN MORE
+              </a>
+
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item"
+                  href="/courses/software"
+                >Coding Bootcamp</a>
+                <a
+                  class="dropdown-item"
+                  href="/courses/data-analytics"
+                >Data Analytics Bootcamp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{#each main.courses}}
+        <div class="col-lg-4 my-2 text-center">
+          <div class="card">
+            <div class="card-body position-relative">
+              <div class="card-top">
+                <h4 class="card-title">{{headline}}</h4>
+                <i
+                  class="{{icon}} mr-2 mb-4 icon"
+                  alt="{{headline}}"
+                ></i>
+                {{!-- <img src="{{icon}}" class="mr-2 mb-4 icon" alt="{{headline}}" /> --}}
+              </div>
+              <p class="card-text">{{description}}</p>
+              {{!-- <a class="btn btn-primary text-white position-absolute" id="{{ id }}"
+                            href="{{action.href}}">{{action.text}}</a> --}}
+              <a
+                class="learn-btn btn btn-primary text-white position-absolute"
+                href="{{action.href}}"
+              >{{action.text}}</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+      <div class="col-lg-4 my-2 text-center">
+        <div class="card">
+          <div class="card-body position-relative">
+            <div class="card-top">
+              <h4 class="card-title">Professional Development &
+                Supportive Services</h4>
+              <img
+                src="/public/img/profdev&supportserv/profdef&supportserv-icon-bw.png"
+                id="PD-icon"
+                class="mr-2 mb-4 icon"
+                alt="cartoon icon of person ascending to success"
+              />
+            </div>
+            <p class="card-text">Holistic services to help candidates
+              excel in our program and prepare for the workforce</p>
+            <a
+              class="learn-btn btn btn-primary text-white position-absolute"
+              href="/program/services"
+            >LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="section-help section-padding bg-primary">
-    <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-                <h4 id="main-help-text" class="text-white">Can't decide which course is right for you? Drop us a line.
-                    We're here to help!</h4>
-            </div>
-            <div class="col-md-6 text-center">
-                <a href="/contact/" class="btn text-white btn-secondary">HELP ME PLEASE!</a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <h4 id="main-help-text" class="text-white">Can't decide which
+          course is right for you? Drop us a line. We're here to help!</h4>
+      </div>
+      <div class="col-md-6 text-center">
+        <a href="/contact/" class="btn text-white btn-secondary">HELP
+          ME PLEASE!</a>
+      </div>
     </div>
+  </div>
 </section>
 <!-- Remove Style -->
-<link rel="stylesheet" href="/public/css/programs.css">
+<link rel="stylesheet" href="/public/css/programs.css" />
 <!-- /Remove Style -->
