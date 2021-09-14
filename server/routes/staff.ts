@@ -37,12 +37,6 @@ export function context(
                     email: 'Denita@innovatebham.com'
                 },
                 {
-                    name: "Haley Hoppe",
-                    position: "Director of Engagement",
-                    headshotPath: "/static/img/staff/hh.jpg",
-                    email: 'HaleyH@innovatebham.com'
-                },
-                {
                     name: "Amy Jones",
                     position: "Marketing Manager",
                     headshotPath: "/static/img/staff/aj.jpg",
