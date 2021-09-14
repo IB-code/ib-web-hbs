@@ -23,7 +23,7 @@ export function context(
                 {
                     icon: 'fa fa-suitcase',
                     headline: 'Apprenticeships & Internships',
-                    description: 'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                    description: 'Information for companies interested in partnering with us on apprenticeships or internships',
                     action: {
                         id: 'apprenticeship',
                         href: '/apprenticeship',
