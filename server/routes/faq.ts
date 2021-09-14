@@ -46,7 +46,7 @@ export function context(
                         {
                             id: 20,
                             question: 'What is the expected response time for application inquiries or concerns?',
-                            answer: 'Due to the high volume of applications we receive on a rolling basis, please allow 7 business days for a response. The best way to contact us? Connect on Facebook Messenger.'
+                            answer: 'The best way to contact us? Email us at info@innovatebham.com. You may also connect with us via Facebook Messenger or Instagram direct messages, but we cannot guarantee an immediate response.'
                         },
                         {
                             id: 21,
@@ -56,7 +56,7 @@ export function context(
                         {
                             id: 22,
                             question: 'How much does the course cost?',
-                            answer: 'Innovate Birmingham is fully funded by the U.S. Department of Labor.'
+                            answer: 'Innovate Birmingham is funded through donations, grants and corporate partnerships. This is a no-cost program for participants.'
                         },
                         {
                             id: 23,
@@ -71,23 +71,23 @@ export function context(
                         {
                             id: 1,
                             question: 'How do I know if I’m eligible?',
-                            answer: 'You must be 17 or older, acquire at least a high school diploma or GED, unemployed or under-employed, and a resident of the six counties of Central Alabama (Blount, Walker, Jefferson, Chilton, St. Clair, and Shelby).'
+                            answer: 'You must be 17 or older, acquire at least a high school diploma or GED, be unemployed or under-employed, and a resident of the six counties of Central Alabama (Blount, Walker, Jefferson, Chilton, St. Clair, and Shelby).'
                         },
                         {
                             id: 2,
                             question: 'After submitting the application, what’s next?',
-                            answer: 'You will complete the TABE, a competency test of basic math and reading skills. You will then be sent the pre-work for your selected course to complete and return to our instructional team to review.'
+                            answer: 'You will complete a virtual interview. Once the interview has been reviewed and approved by our admissions team, you will be sent the pre-work for your selected course to complete and submit to our instructional team for review.'
                         },
-                        {
-                            id: 3,
-                            question: 'How will I know if I passed the TABE?',
-                            answer: 'You will receive an email from our Admissions Director to schedule a phone screening.'
-                        },
-                        {
-                            id: 4,
-                            question: 'Is there a limit on TABE attempts?',
-                            answer: 'Yes, you receive 3 attempts.'
-                        },
+                        // {
+                        //     id: 3,
+                        //     question: 'How will I know if I passed the TABE?',
+                        //     answer: 'You will receive an email from our Admissions Director to schedule a phone screening.'
+                        // },
+                        // {
+                        //     id: 4,
+                        //     question: 'Is there a limit on TABE attempts?',
+                        //     answer: 'Yes, you receive 3 attempts.'
+                        // },
                         {
                             id: 5,
                             question: 'Can I apply for/participate in more than one program?',
@@ -96,7 +96,7 @@ export function context(
                         {
                             id: 6,
                             question: 'Will my application still be accepted if submitted after the upcoming deadline?',
-                            answer: 'Yes, we accept applications on a rolling basis.'
+                            answer: 'Yes, we accept applications on a rolling basis. However, if the bootcamp you apply for is full, you may be waitlisted and referred to a future session of that bootcamp.'
                         },
                         {
                             id: 7,
@@ -106,17 +106,17 @@ export function context(
                         {
                             id: 8,
                             question: 'Where are the classes held?',
-                            answer: 'We are located at Innovation Depot, in downtown Birmingham.'
+                            answer: 'Currently, classes are held virtually. Any in--person events will be held at Innovation Depot, in downtown Birmingham.'
                         },
                         {
                             id: 10,
-                            question: 'How long after submitting my application and TABE will it take to be contacted?',
-                            answer: 'Please allow 5 business days.'
+                            question: 'How long after submitting my application will it take to be contacted?',
+                            answer: 'Please allow 7 business days.'
                         },
                         {
                             id: 11,
                             question: 'How can I ace the phone and in-person interview?',
-                            answer: 'Be honest. We recognize that people with all different types of experiences can be excellent IT professionals. We want to know more about you, so let yourself shine through. Trying to bend the truth or have your mom help you answer questions isn’t going to help you, actually, it’ll do the opposite.'
+                            answer: 'Be honest and be yourself. We recognize that people with all different types of backgrounds and experiences can be excellent IT professionals. We want to know more about YOU, so let yourself shine through. Trying to bend the truth or act like someone you’re not won’t help you. Truthfully, it’ll do the exact opposite.'
                         }
                     ]
                 },
@@ -126,7 +126,7 @@ export function context(
                         {
                             id: 12,
                             question: 'How do I become a partner?',
-                            answer: 'Head to the contact page and select the “employers and partnerships” as the reason you’re reaching out.'
+                            answer: 'Head to the contact page and select “Employers or Partnerships” as the reason you’re reaching out. You can also email katherine@innovatebham.com directly!'
                         },
                         {
                             id: 13,
@@ -136,12 +136,12 @@ export function context(
                     ]
                 },
                 {
-                    title: "Full Stack Web Development Bootcamp",
+                    title: "Full-Stack Web Development Bootcamp",
                     entries: [
                         {
                             id: 14,
-                            question: 'What do I learn in Full Stack Web Dev?',
-                            answer: 'Our full stack web development course includes introductions to HTML, CSS, and JavaScript. We cover the design, implementation, and functionality of a webpage as well as the server that supplies them with information. We also delve into specific frameworks and libraries across this area of software development including ReactJS, Angular, Express and others. On top of full-stack web development we cover database design, implementation and security.'
+                            question: 'What do I learn in the Full-Stack Web Development Bootcamp?',
+                            answer: 'Our full stack web development course includes introductions to HTML, CSS, and JavaScript. We cover the design, implementation, and functionality of a webpage as well as the server that supplies them with information. We also delve into specific frameworks and libraries across this area of software development including ReactJS, Angular, Express and others. On top of full-stack web development we cover database design, implementation and security. We realize this may sound intimidating at first glance, but our bootcamp is designed specifically for someone who has no coding experience. In 14 weeks, these terms and programs will all become familiar to you!'
                         },
                     ]
                 },
@@ -150,18 +150,18 @@ export function context(
                     entries: [
                         {
                             id: 15,
-                            question: 'What do I learn in Data Analytics?',
-                            answer: 'Our data curriculum includes but is not limited to: SQL, Microsoft Access, Microsoft Excel, Tableau, and PowerBI. You will learn how to use these tools to understand data and communicate insights to inform business decisions.'
+                            question: 'What do I learn in the Data Analytics Bootcamp?',
+                            answer: 'Our data curriculum includes but is not limited to: SQL, Microsoft Access, Microsoft Excel, Tableau, and PowerBI. You will learn how to use these tools to gather data, pinpoint the important information, figure out the story the data tells and present the data so stakeholders can make informed business decisions. If you’ve never heard of these programs before, don’t worry — our bootcamp is designed for someone learning about data analysis from the ground up! In 14 weeks, you’ll become comfortable with all these terms and programs!'
                         },
                     ]
                 },
                 {
-                    title: 'Innovate Birmingham Scholarships',
+                    title: 'NCWIT Scholarships',
                     entries: [
                         {
                             id: 24,
-                            question: 'Once accepted for the scholarship, will I receive my funds in time for the semester needed?',
-                            answer: 'Due to the scholarship application having a rolling admission, it all depends on when you apply. If you complete the process and are accepted prior to your student billing due date, we do our best to ensure that your funds are deposited by the time your student balance is due.'
+                            question: 'How do I apply for The National Center for Women & Information Technology (NCWIT) scholarship?',
+                            answer: 'We have partnered with The National Center for Women & Information Technology (NCWIT) to offer fully-funded scholarships for women in Central Alabama to pursue a tech career. To inquire about applying, please email admissions@innovatebham.com'
                         }
                     ]
                 }
