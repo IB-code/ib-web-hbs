@@ -32,7 +32,7 @@ export function context(
                     icon: 'fa fa-road',
                     headline: 'Accelerated Training',
                     description:
-                        'Information for companies interested in partnering with us on apprenticeships or internships',
+                        'Fast-track career development programs designed to be completed in less than four months',
                     url: "https://innovatebham.com/program"
                 },
                 {
@@ -40,7 +40,7 @@ export function context(
                     icon: 'fas fa-suitcase',
                     headline: 'Apprenticeships & Internships',
                     description:
-                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                        'Information for companies interested in partnering with us on apprenticeships or internships',
                     url: "https://innovatebham.com/apprenticeship"
                 },
                 // {
