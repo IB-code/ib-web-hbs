@@ -25,6 +25,11 @@ header {
 .section {
   &-faq {
     .main-container {
+      .lead-in {
+        margin: 0 auto;
+        max-width: 55vw;
+      }
+
       align-content: center;
 
       // .title:first-of-type {
@@ -40,7 +45,7 @@ header {
       }
 
       .entries-container {
-        margin: auto 10%;
+        margin: auto;
 
         .card-container {
           background-color: #6c757524;
@@ -71,6 +76,10 @@ header {
       .main-container {
         margin: auto 1vw !important;
         align-content: center !important;
+
+        .lead-in {
+          max-width: 100% !important;
+        }
 
         .panel-title {
           margin: 0.3em !important;

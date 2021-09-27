@@ -1,50 +1,64 @@
 <header class="section-hero">
-    <div class="jumbotron mb-0 jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Meet Our Team</h1>
-        </div>
+  <div class="jumbotron mb-0 jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold">Meet Our Team</h1>
     </div>
+  </div>
 </header>
 <section class="section-padding section-team text-center">
-    <div class="container">
-        <div class="row justify-content-center">
-            <h4 class="lead-in font-weight-500 text-center mb-4">Making tech happen</h4>
-            <hr class="mb-5" />
-        </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <h4 class="lead-in font-weight-500 text-center mb-4">A team of
+        like-minded, innovative individuals focused on partnering with and
+        investing in local communities to bring generational change to
+        Birmingham.</h4>
+      <hr class="mb-5" />
     </div>
-    <div id="team-cards">
-        <div class="row align-items-center justify-content-center mx-md-5 px-md-5">
-            {{#each main.team}}
-            <div class="card col-md-4 mx-2 my-3 bg-primary text-white">
-                <div class="col-12">
-                    <div class="card-body px-0 d-flex flex-row align-items-center justify-content-center">
-                        <div class="details mr-2">
-                            <h5 class="card-title">{{name}}</h5>
-                            <p class="card-text font-weight-500">{{position}}</p>
-                            <a href='mailto:{{email}}'>{{email}}</a>
-                        </div>
-                        <div class="headshot-container">
-                            <img src={{headshotPath}} class="headshot-logo" alt="headshot of {{name}}">
-                        </div>
-                    </div>
-                </div>
+  </div>
+  <div id="team-cards">
+    <div class="row align-items-center justify-content-center mx-md-5 px-md-5">
+      {{#each main.team}}
+        <div class="card col-md-4 mx-2 my-3 bg-primary text-white">
+          <div class="col-12">
+            <div
+              class="card-body px-0 d-flex flex-row align-items-center justify-content-center"
+            >
+              <div class="details mr-2">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text font-weight-500">{{position}}</p>
+                <a href="mailto:{{email}}">{{email}}</a>
+              </div>
+              <div class="headshot-container">
+                <img
+                  src={{headshotPath}}
+                  class="headshot-logo"
+                  alt="headshot of {{name}}"
+                />
+              </div>
             </div>
-            {{/each}}
+          </div>
         </div>
+      {{/each}}
     </div>
+  </div>
 </section>
 <section class="section-padding section-contact text-center">
-    <div class="container">
-        <h2 class="font-weight-600">Contact Us</h2>
-        <a href="mailto:info@innovatebham.com">
-            <h5 class="font-weight-500"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-                info@innovatebham.com</h5>
-        </a>
-        <h5 class="font-weight-500"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>1500 1st Avenue N,
-            Birmingham, AL, 35203</h5>
-    </div>
+  <div class="container">
+    <h2 class="font-weight-600">Contact Us</h2>
+    <a href="mailto:info@innovatebham.com">
+      <h5 class="font-weight-500"><i
+          class="fa fa-envelope fa-lg"
+          aria-hidden="true"
+        ></i>
+        info@innovatebham.com</h5>
+    </a>
+    <h5 class="font-weight-500"><i
+        class="fa fa-map-marker fa-lg"
+        aria-hidden="true"
+      ></i>1500 1st Avenue N, Birmingham, AL, 35203</h5>
+  </div>
 </section>
 
 <!-- Remove Style -->
-<link rel="stylesheet" href="/public/css/staff.css">
+<link rel="stylesheet" href="/public/css/staff.css" />
 <!-- /Remove Style -->

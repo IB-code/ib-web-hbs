@@ -40,7 +40,7 @@ export function context(
                     icon: 'fas fa-suitcase',
                     headline: 'Apprenticeships & Internships',
                     description:
-                        'Pre-Apprenticeship training program to prepare for apprenticeship-to-hire careers',
+                        'Information for companies interested in partnering with us on apprenticeships or internships',
                     url: "https://innovatebham.com/apprenticeship"
                 },
                 // {
@@ -81,7 +81,7 @@ export function context(
                     icon: 'fas text-yellow fa-2x fa-building',
                     headline: 'Access to a Wide Employer Network',
                     description:
-                        "Innovate Bham partners with 30+ employers around the Magic City. We're doing our homework to find companies that are ready to hire new up and coming tech talent. Who knows? You may meet your next boss during the class!"
+                        "Innovate Bham partners with 30+ employers around the Magic City. We're doing our homework to find companies that are ready to hire new up-and-coming tech talent. Who knows? You may meet your next boss during the class!"
                 },
                 {
                     icon: 'fas text-yellow fa-2x fa-dollar-sign',
