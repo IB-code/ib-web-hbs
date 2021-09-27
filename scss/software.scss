@@ -64,13 +64,12 @@ header {
       width: 100vw;
       height: 56.25vw;
 
-      @media screen and (min-width: $lg){
+      @media screen and (min-width: $lg) {
         width: 80vw;
         height: 45vw;
-        margin: auto
+        margin: auto;
       }
     }
-    
   }
 
   &-ncwit {

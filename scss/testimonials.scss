@@ -4,7 +4,11 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/testimonials/hero.jpg");
+    background: linear-gradient(
+        rgba(11, 26, 66, 0.4),
+        rgba(11, 26, 66, 0.4)
+      ),
+      url("/static/img/testimonials/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center 35%;
     background-repeat: no-repeat;
@@ -40,6 +44,21 @@ header {
       .lead-in {
         padding: 0 0.9375rem;
         text-align: start !important;
+      }
+    }
+
+    &-video {
+      padding: 0.75em;
+
+      #video-container {
+        width: 100vw;
+        height: 56.25vw;
+
+        @media screen and (min-width: $lg) {
+          width: 80vw;
+          height: 45vw;
+          margin: auto;
+        }
       }
     }
 
