@@ -4,7 +4,11 @@ header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.3), rgba(11, 26, 66, 0.3)), url("/static/img/programs/hero.jpg");
+    background: linear-gradient(
+        rgba(11, 26, 66, 0.3),
+        rgba(11, 26, 66, 0.3)
+      ),
+      url("/static/img/programs/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
@@ -16,7 +20,7 @@ header {
       font-weight: 500;
       font-size: 1.15em;
 
-      @include media-breakpoint-down(md) {
+      @media (max-width: 900px) {
         font-weight: 400;
       }
     }
@@ -52,7 +56,8 @@ header {
     .card {
       border: none;
       min-height: 483px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 3px 10px 0 rgba(0, 0, 0, 0.19);
       margin: 0 auto;
 
       .card-body {
@@ -85,7 +90,8 @@ header {
 
       &:hover {
         transition: box-shadow;
-        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         .card-title {
           color: $yellow;
