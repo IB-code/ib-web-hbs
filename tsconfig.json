@@ -9,6 +9,6 @@
         "lib": ["esnext", "dom"],
         "types": ["handlebars"]
     },
-    "include": ["server/**/*"],
+    "include": ["server/**/*", "software.js"],
     "exclude": ["node_modules"]
 }
