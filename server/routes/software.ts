@@ -3,6 +3,7 @@ import * as uuid from 'uuid/v4';
 import parse from '../middleware/parse';
 import { ICurriculumSection } from '../references';
 import * as _ from 'lodash';
+import { title } from 'process';
 
 export function context(
     req: express.Request,
@@ -11,16 +12,16 @@ export function context(
 ) {
     req.context = {
         head: {
-            headline:
-                'Full Stack Software Engineering | IamBham Software Development',
+            title: "Full-Stack Web Development | Innovate Birmingham",
+            headline: 'Full Stack Software Engineering | IamBham Software Development',
             meta: {
                 description: 'Learn to Code. For Free. Seriously.',
                 images: [
                     {
-                        url: '/static/img/home/hero.png',   
+                        url: '/static/img/home/hero.png',
                     },
                 ],
-            },
+            }
         },
         main: {
             curriculum: [],
