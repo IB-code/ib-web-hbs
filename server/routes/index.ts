@@ -20,6 +20,7 @@ import * as interestForm from './interestForm';
 import * as careers from './careers';
 import * as PDAndSupport from './profdev&supportserv';
 import * as financials from './financials';
+import * as impact from './impact';
 // import * as blogList from "./bloglist";
 // import * as tempBlog1 from "./blog-temp1";
 // import * as tempBlog2 from "./blog-temp2";
@@ -53,6 +54,7 @@ router
     .get('/faq', faq.context, meta, faq.render)
     .get('/program/services', PDAndSupport.context, meta, PDAndSupport.render)
     .get('/financials', financials.context, meta, financials.render)
+    .get('/impact', impact.context, meta, impact.render);
 
 // .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
 // .get('/about', about.context, meta, about.render)
