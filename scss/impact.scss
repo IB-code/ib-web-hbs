@@ -30,16 +30,22 @@ header {
 
 .section {
     &-cards {
-        svg {
-            // font-size: 6em;
-            color: #ffd000;
+        .svg-container {
+            height: 80px;
+
+            svg {
+                color: #ffd000;
+            }
         }
     }
 
     &-students {
-        svg {
-            // font-size: 5.5em;
-            color: #18102f;
+        .svg-container {
+            height: 80px;
+
+            svg {
+                color: #18102f;
+            }
         }
 
         a {

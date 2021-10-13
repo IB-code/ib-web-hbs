@@ -7,6 +7,10 @@
 @import "partials/footer";
 @import "partials/newsletter";
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   position: relative;
 
@@ -29,7 +33,7 @@ header {
 }
 
 body::-webkit-scrollbar {
-  width: 0.75em;
+  width: 0.6em;
 }
 
 body::-webkit-scrollbar-track {
