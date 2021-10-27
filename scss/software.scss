@@ -55,20 +55,19 @@ header {
 
   &-video {
     padding: 0.75em;
-    background-color: #3D70A3;
     color: white;
 
     #video-container {
-      width: 100vw;
-      height: 56.25vw;
+        width: 100vw;
+        height: 56.25vw;
 
-      @media screen and (min-width: 1200px) {
-        width: 80vw;
-        height: 45vw;
-        margin: auto;
-      }
+        @media screen and (min-width: 1200px) {
+            width: 80vw;
+            height: 45vw;
+            margin: auto;
+        }
     }
-  }
+}
 
   &-ncwit {
     #ncwit-container {
