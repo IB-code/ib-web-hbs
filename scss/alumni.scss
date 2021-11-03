@@ -1,0 +1,65 @@
+@import "layouts/main";
+
+.modal-body {
+    font-size: 1.3em;
+}
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(96, 109, 144, 0.34), rgba(11, 26, 66, 0.34)), url("/static/img/home/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 25%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-intro {
+        .lead-in {
+            line-height: 1.75em;
+            font-size: 1.5em;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        hr {
+            width: 98%;
+            border-top: 2 px solid #ccc;
+        }
+
+        @media screen and (max-width: 576px) {
+            .lead-in {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+    }
+
+    &-alumni {
+        min-height: 420px;
+
+        h3,
+        h4 {
+            line-height: 1.75em;
+        }
+    }
+}

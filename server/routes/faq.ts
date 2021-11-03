@@ -58,11 +58,11 @@ export function context(
                             question: 'How much does the course cost?',
                             answer: 'Innovate Birmingham is funded through donations, grants and corporate partnerships. This is a no-cost program for participants.'
                         },
-                        {
-                            id: 23,
-                            question: 'Why the six county region?',
-                            answer: 'We work with the Alabama Career Centers and Workforce Councils, which operate regionally. We serve workforce region 4, or the “Central Six counties.”'
-                        }
+                        // {
+                        //     id: 23,
+                        //     question: 'Why the six county region?',
+                        //     answer: 'We work with the Alabama Career Centers and Workforce Councils, which operate regionally. We serve workforce region 4, or the “Central Six counties.”'
+                        // }
                     ]
                 },
                 {
@@ -71,7 +71,7 @@ export function context(
                         {
                             id: 1,
                             question: 'How do I know if I’m eligible?',
-                            answer: 'You must be 17 or older, acquire at least a high school diploma or GED, be unemployed or under-employed, and a resident of the six counties of Central Alabama (Blount, Walker, Jefferson, Chilton, St. Clair, and Shelby).'
+                            answer: 'You must be 17 or older, acquire at least a high school diploma or GED, be unemployed or under-employed, and an Alabama resident.'
                         },
                         {
                             id: 2,
