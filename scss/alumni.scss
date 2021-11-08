@@ -60,6 +60,99 @@ header {
         h3,
         h4 {
             line-height: 1.75em;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        h4 > a {
+            color: cadetblue;
+        }
+    }
+
+    &-newsletter-sign-up {
+        h2 {
+            font-size: 2.5em !important;
+        }
+
+        .form-container {
+            #mc_embed_signup {
+                width: 796px;
+            }
+
+            .form-text {
+                width: 75%;
+            }
+
+            .check-container {
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .form-container {
+                #mc_embed_signup {
+                    width: 100%;
+                }
+
+                .form-text {
+                    width: 100%;
+                }
+
+                .check-container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-prev-newsletters {
+        #iframe-container {
+            iframe {
+                width: 39em;
+                height: 80em;
+                border: none;
+                border-radius: 0 10px 10px 10px;
+            }
+
+            // iframe > body::-webkit-scrollbar {
+            //     width: 0.6em;
+            // }
+
+            // iframe > body::-webkit-scrollbar-track {
+            //     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            // }
+
+            // iframe > body::-webkit-scrollbar-thumb {
+            //     border-radius: 25px;
+            //     background-color: rgb(182, 181, 181);
+            // }
+        }
+
+        #newsletter-helper {
+            width: 39em;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            font-size: 1.1em;
+            padding: 0.7 rem 1.25 rem;
+        }
+
+        .list-group-item:hover {
+            background: #ecebeb;
+        }
+
+        .list-group-item:focus {
+            background: #afaeae;
+        }
+
+        @media screen and (max-width: 576px) {
+            #iframe-container {
+                iframe {
+                    width: 100% !important;
+                    height: 80em;
+                }
+            }
         }
     }
 }
