@@ -50,6 +50,43 @@ header {
         overflow: hidden;
         padding-top: 56.25%;
       }
+    
+
+      #video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      #video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+    
+
+      #video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      #video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+    
 
       #video-container iframe {
         position: absolute;
@@ -61,6 +98,20 @@ header {
       }
     }
   }
+//   &-video {
+//     padding: 0.75em;
+
+//     #video-container {
+//         width: 100vw;
+//         height: 56.25vw;
+      
+//         @media screen and (min-width: 1200px) {
+//             width: 90vw;
+//             height: 45vw;
+//             margin: auto;
+//         }
+//     }
+// }
 
   &-testimonials {
     .lead-in {

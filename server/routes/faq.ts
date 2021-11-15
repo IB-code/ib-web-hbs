@@ -155,16 +155,16 @@ export function context(
                         },
                     ]
                 },
-                {
-                    title: 'NCWIT Scholarships',
-                    entries: [
-                        {
-                            id: 24,
-                            question: 'How do I apply for The National Center for Women & Information Technology (NCWIT) scholarship?',
-                            answer: 'We have partnered with The National Center for Women & Information Technology (NCWIT) to offer fully-funded scholarships for women in Central Alabama to pursue a tech career. To inquire about applying, please email admissions@innovatebham.com'
-                        }
-                    ]
-                }
+                // {
+                //     title: 'NCWIT Scholarships',
+                //     entries: [
+                //         {
+                //             id: 24,
+                //             question: 'How do I apply for The National Center for Women & Information Technology (NCWIT) scholarship?',
+                //             answer: 'We have partnered with The National Center for Women & Information Technology (NCWIT) to offer fully-funded scholarships for women in Central Alabama to pursue a tech career. To inquire about applying, please email admissions@innovatebham.com'
+                //         }
+                //     ]
+                // }
             ]
         }
     };

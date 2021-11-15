@@ -4,6 +4,8 @@
   font-size: 1.3em;
 }
 
+
+
 header {
   color: $white;
 
@@ -38,6 +40,7 @@ header {
       font-size: 1.5em;
       color: #11092c;
       max-width: 875px;
+
     }
 
     hr {
@@ -220,6 +223,7 @@ header {
   }
 
   &-video {
+    color: white;
     #video-container {
       padding: 0.15em;
       display: flex;

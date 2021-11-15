@@ -73,12 +73,6 @@ export function context(
                     email: ' '
                 },
                 {
-                    name: "Jake Lovett",
-                    position: "Web Development Teaching Assistant",
-                    headshotPath: "/static/img/staff/jl.jpg",
-                    email: ' '
-                },
-                {
                     name: "Maggie Thompson",
                     position: "Program Analyst",
                     headshotPath: "/static/img/staff/mt.jpg",
