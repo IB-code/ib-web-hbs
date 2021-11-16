@@ -57,6 +57,10 @@ header {
     &-alumni {
         min-height: 420px;
 
+        img {
+            width: 24em;
+        }
+
         h3,
         h4 {
             line-height: 1.75em;
@@ -106,6 +110,25 @@ header {
     }
 
     &-prev-newsletters {
+        min-height: 540px;
+
+        .btn-group.dropright > button {
+            background-color: transparent;
+            font-size: 1.5em;
+            font-weight: 500;
+            color: rgb(58, 58, 58);
+            border: none;
+
+            &:hover {
+                background-color: transparent;
+                color: cadetblue;
+            }
+
+            .dropdown-menu {
+                padding: 0 !important;
+            }
+        }
+
         #iframe-container {
             iframe {
                 width: 39em;
@@ -136,21 +159,33 @@ header {
             cursor: pointer;
             font-size: 1.1em;
             padding: 0.7 rem 1.25 rem;
+
+            &:hover {
+                background: #ecebeb;
+            }
+
+            &:focus {
+                background: #afaeae;
+            }
         }
 
-        .list-group-item:hover {
-            background: #ecebeb;
-        }
-
-        .list-group-item:focus {
-            background: #afaeae;
+        #mobile-newsletter-options {
+            margin: 0 auto;
         }
 
         @media screen and (max-width: 576px) {
             #iframe-container {
+                width: 100% !important;
+
                 iframe {
                     width: 100% !important;
                     height: 80em;
+                }
+            }
+
+            #mobile-newsletter-options {
+                .btn-group.dropright > button {
+                    font-size: 1em;
                 }
             }
         }

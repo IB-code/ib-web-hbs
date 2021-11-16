@@ -15,15 +15,24 @@
 </section>
 <section class="section-padding section-alumni bg-light text-center">
     <div class="container">
-        <h3 class="lead-in font-weight-500 text-center mb-4">Alumni Council</h3>
-        <hr class="mb-5" />
-        <div class="row px-md-5 justify-content-center">
-            <h4 class="mb-3">The IB Alumni Council’s mission is to bring alumni together to connect, give back, upskill,
-                socialize,
-                foster the growth
-                of our local tech community, and celebrate the spirit of Innovate Birmingham.</h4>
-            <h4 class="text-center">Want to get involved? Email <a href="mailto:IBalumcouncil@gmail.com"
-                    class="link-primary">IBalumcouncil@gmail.com</a> to find out how!</h4>
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center">
+                <img class="img-fluid img-thumbnail" src="/static/img/alumni/alumnicouncil1.jpg"
+                    alt="Alumni of Innovate Birmingham posing for a selfie looking over Baron's stadium from the convention area">
+            </div>
+            <div class="col-sm-9">
+                <h3 class="lead-in font-weight-500 text-center my-4">Alumni Council</h3>
+                <hr class="mb-5" />
+                <div class="row px-md-5 justify-content-center">
+                    <h4 class="mb-3">The IB Alumni Council’s mission is to bring alumni together to connect, give back,
+                        upskill,
+                        socialize,
+                        foster the growth
+                        of our local tech community, and celebrate the spirit of Innovate Birmingham.</h4>
+                    <h4 class="text-center">Want to get involved? Email <a href="mailto:IBalumcouncil@gmail.com"
+                            class="link-primary">IBalumcouncil@gmail.com</a> to find out how!</h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -127,17 +136,66 @@
         <h3 class="lead-in font-weight-500 text-center mb-4">See Our Previous Newsletters</h3>
         <hr class="mb-5" />
         <div class="row px-md-5 justify-content-md-center">
-            <ul id="desktop-newsletter-options" class="list-group list-group-flush mr-2">
-                {{#each main.newsletters}}
-                <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">{{dateReleased}}
-                </li>
+            <ul id="desktop-newsletter-options" class="list-group list-group-flush mr-5">
+                {{#each main.newsletterYears}}
+                <div class="btn-group dropright">
+                    <button type="button" class="btn btn-secondary dropdown-toggle text-black" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        {{@key}}
+                    </button>
+                    <div class="dropdown-menu">
+                        <!-- Dropdown menu links -->
+                        {{!-- this is each newsletter --}}
+                        {{#each this}}
+                        <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
+                            {{dateReleased}}
+                        </li>
+                        {{/each}}
+                    </div>
+                </div>
                 {{/each}}
             </ul>
 
-            {{!-- I set this in js --}}
-            <div id="mobile-newsletter-options"></div>
+            {{!-- I set this in alumni.ts --}}
+            <div id="mobile-newsletter-options">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Select
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        {{#each main.newsletterYears}}
+                    
+                            {{!-- <button type="button" class="btn btn-secondary dropdown-toggle text-black"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{@key}}
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                this is each newsletter
+                                {{#each this}}
+                                <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
+                                    {{dateReleased}}
+                                </li>
+                                {{/each}}
+                            </div> --}}
+              
 
-            <div id="newsletter-helper">
+                     
+                            <!-- Dropdown menu links -->
+                            {{!-- this is each newsletter --}}
+                            {{#each this}}
+                            <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
+                                {{dateReleased}}
+                            </li>
+                            {{/each}}
+                      
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+
+            <div id="newsletter-helper" class="m-3">
                 <div class="m-5">
                     <i class="fa-solid fa-folder-open fa-5x"></i>
                     <h4>Select from the list</h4>
@@ -145,7 +203,7 @@
             </div>
 
             <div id="iframe-container">
-                {{!-- filled with iframe in setIframeContainer --}}
+                {{!-- filled with iframe in setIframeContainer > alumni.ts --}}
             </div>
         </div>
     </div>

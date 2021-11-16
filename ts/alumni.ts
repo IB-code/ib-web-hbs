@@ -1,6 +1,3 @@
-
-
-
 const setIframeContainer = (link: string) => {
     const iframeContainer = <HTMLIFrameElement>document.querySelector('#iframe-container'),
         newsletterHelper = <HTMLDivElement>document.querySelector('#newsletter-helper');
@@ -15,24 +12,31 @@ const setIframeContainer = (link: string) => {
     console.log(this);
 };
 
-// const renderMobileNewsletterOptions = () => {
-//     const mobileNewsletterOptions = document.querySelector('#mobile-newsletter-options');
+const renderMobileNewsletter = () => {
+    const mobileNewsletterOptions = document.querySelector('#mobile-newsletter-options');
+    const desktopNewsletterOptions = document.querySelector('#desktop-newsletter-options');
 
-//     if (screen.availWidth <= 576) {
-//         document.querySelector('#desktop-newsletter-options').remove();
-//         mobileNewsletterOptions.innerHTML = `
-//             <div class="dropdown">
-//                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-//                     Dropdown button
-//                 </button>
-//                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-//                     <a class="dropdown-item" href="#">Action</a>
-//                     <a class="dropdown-item" href="#">Another action</a>
-//                     <a class="dropdown-item" href="#">Something else here</a>
-//                 </div>
-//             </div>
-//         `;
-//     }
-// }
+    if (screen.availWidth <= 576) {
+        // remove desktop newsletter options
+        desktopNewsletterOptions.remove();
 
-// renderMobileNewsletterOptions();
+        // add mobile newsletter options
+        // mobileNewsletterOptions.innerHTML = `
+        //     <div class="dropdown">
+        //         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        //             Dropdown button
+        //         </button>
+        //         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        //             ${
+
+        //             }
+        //         </div>
+        //     </div>
+        // `;
+    } else {
+        // remove mobile newsletter options
+        mobileNewsletterOptions.remove();
+    }
+}
+
+renderMobileNewsletter();
