@@ -56,6 +56,15 @@ header {
     }
   }
 
+  &-impact {
+    .svg-container {
+      // i becomes svg from 
+      svg {
+        color: #74747494;
+      }
+    }
+  }
+
   &-ncwit {
     #ncwit-container {
       margin: 3vh 0;
