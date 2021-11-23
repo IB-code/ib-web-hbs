@@ -113,19 +113,6 @@ header {
                 border: none;
                 border-radius: 0 10px 10px 10px;
             }
-
-            // iframe > body::-webkit-scrollbar {
-            //     width: 0.6em;
-            // }
-
-            // iframe > body::-webkit-scrollbar-track {
-            //     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            // }
-
-            // iframe > body::-webkit-scrollbar-thumb {
-            //     border-radius: 25px;
-            //     background-color: rgb(182, 181, 181);
-            // }
         }
 
         #newsletter-helper {
@@ -151,6 +138,14 @@ header {
                 iframe {
                     width: 100% !important;
                     height: 80em;
+                }
+            }
+
+            #mobile-newsletter-options {
+                margin: 0 auto;
+
+                button {
+                    background-color: #4D5964;
                 }
             }
         }

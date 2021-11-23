@@ -129,6 +129,7 @@
         <div class="row px-md-5 justify-content-md-center">
             <ul id="desktop-newsletter-options" class="list-group list-group-flush mr-2">
                 {{#each main.newsletters}}
+                {{!-- iframe src is set here --}}
                 <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">{{dateReleased}}
                 </li>
                 {{/each}}
