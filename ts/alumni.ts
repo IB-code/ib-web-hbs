@@ -1,15 +1,19 @@
 const setIframeContainer = (link: string) => {
     const iframeContainer = <HTMLIFrameElement>document.querySelector('#iframe-container'),
-        newsletterHelper = <HTMLDivElement>document.querySelector('#newsletter-helper');
+        currentIframe = <HTMLIFrameElement>document.querySelector('#iframe-container iframe'),
+        newsletterHelper = <HTMLDivElement>document.querySelector('#newsletter-helper'),
+        loadingSpinner = document.createElement('div');
 
-    newsletterHelper.style.display = 'none';
+    if(currentIframe) iframeContainer.removeChild(currentIframe);
+    
+    newsletterHelper.remove();
+    loadingSpinner.style.display = 'block';
 
     const iframe = document.createElement('iframe');
+    iframe.onload = () => loadingSpinner.remove();
     iframe.setAttribute('src', link);
     iframeContainer.innerHTML = '';
     iframeContainer.appendChild(iframe);
-
-    console.log(this);
 };
 
 const renderMobileNewsletter = () => {
