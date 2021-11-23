@@ -8,9 +8,9 @@ header {
     color: $white;
 
     & > .jumbotron {
-        background: linear-gradient(rgba(96, 109, 144, 0.34), rgba(11, 26, 66, 0.34)), url("/static/img/home/hero.jpg");
+        background: linear-gradient(rgba(96, 109, 144, 0.34), rgba(11, 26, 66, 0.34)), url("/static/img/alumni/hero.jpg");
         background-size: cover; /* or contain depending on what you want */
-        background-position: center 25%;
+        background-position: center 55%;
         background-repeat: repeat-x;
         text-align: center;
         margin: auto;
