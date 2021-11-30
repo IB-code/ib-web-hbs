@@ -1,0 +1,13 @@
+#facebook-container {
+    width: 80px;
+
+    .fb-like > span {
+        display: flex;
+        align-items: center;
+
+        iframe {
+            width: 80px !important;
+            height: 22px !important;
+        }
+    }
+}
