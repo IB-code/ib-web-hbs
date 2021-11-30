@@ -8,8 +8,6 @@ const setIframeContainer = (link: string) => {
     iframe.setAttribute('src', link);
     iframeContainer.innerHTML = '';
     iframeContainer.appendChild(iframe);
-
-    console.log(this);
 };
 
 const renderMobileNewsletter = () => {
