@@ -165,31 +165,31 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         {{#each main.newsletterYears}}
-                    
-                            {{!-- <button type="button" class="btn btn-secondary dropdown-toggle text-black"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{@key}}
-                            </button>
-                            <div class="dropdown-menu">
-                                <!-- Dropdown menu links -->
-                                this is each newsletter
-                                {{#each this}}
-                                <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
-                                    {{dateReleased}}
-                                </li>
-                                {{/each}}
-                            </div> --}}
-              
 
-                     
+                        {{!-- <button type="button" class="btn btn-secondary dropdown-toggle text-black"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{@key}}
+                        </button>
+                        <div class="dropdown-menu">
                             <!-- Dropdown menu links -->
-                            {{!-- this is each newsletter --}}
+                            this is each newsletter
                             {{#each this}}
                             <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
                                 {{dateReleased}}
                             </li>
                             {{/each}}
-                      
+                        </div> --}}
+
+
+
+                        <!-- Dropdown menu links -->
+                        {{!-- this is each newsletter --}}
+                        {{#each this}}
+                        <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
+                            {{dateReleased}}
+                        </li>
+                        {{/each}}
+
                         {{/each}}
                     </div>
                 </div>
