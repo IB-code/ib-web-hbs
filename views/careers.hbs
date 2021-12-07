@@ -7,22 +7,19 @@
 </header>
 <section class="section-padding section-careers d-flex align-items-center">
     <div class="container">
-        <h2 class="text-center mb-3 font-weight-600">No Positions Available at This Time</h2>
-        <h5 class="text-center">Thank you for your interest in employment with Innovate Birmingham.
-            Unfortunately,
-            we do
-            not have any open positions at
-            this time.
-        </h5>
-
-        {{!-- {{#each main.departments}}
-        <div class="row mx-3">
+        {{#if main.departments.length}}
+        {{#each main.departments}}
+        <div class="row justfy-content-between mx-3">
             <h1 class="department-header py-md-2 w-100 font-weight-600">{{department}}</h1>
+        </div>
+        <div class="row justfy-content-between mx-3">
             <div class="header-rule w-100">
                 <hr class="w-25 mx-md-4">
             </div>
+        </div>
+        <div class="row justify-content-between mx-3">
             {{#each openings}}
-            <div class="d-flex flex-row mr-5">
+            <div class="d-flex flex-row mr-5 mb-4">
                 <div>
                     <h3 class="pt-md-2 w-100 font-weight-500">{{title}}</h3>
                     <h6 class="mb-3 w-100 font-weight-500">{{employmentType}}</h6>
@@ -36,7 +33,17 @@
             </div>
             {{/each}}
         </div>
-        {{/each}} --}}
+        {{/each}}
+
+        {{else}}
+        <h2 class="text-center mb-3 font-weight-600">No Positions Available at This Time</h2>
+        <h5 class="text-center">Thank you for your interest in employment with Innovate Birmingham.
+            Unfortunately,
+            we do
+            not have any open positions at
+            this time.
+        </h5>
+        {{/if}}
     </div>
 </section>
 <section class="section-padding section-values bg-primary">
