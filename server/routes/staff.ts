@@ -46,37 +46,43 @@ export function context(
                     name: "Rachel Davis Smith",
                     position: "Operations Coordinator",
                     headshotPath: "/static/img/staff/rs.jpg",
-                    email: ' '
+                    email: ''
                 },
                 {
                     name: "Brandie McMillian",
                     position: "Senior Case Manager",
                     headshotPath: "/static/img/staff/bm.jpg",
-                    email: ' '
+                    email: ''
                 },
                 {
                     name: "Josh Hurn",
                     position: "Web Development Instructor",
                     headshotPath: "/static/img/staff/jh.jfif",
-                    email: ' '
+                    email: ''
                 },
                 {
                     name: "Adrian Drane",
                     position: "Data Analytics Teaching Assistant",
                     headshotPath: "/static/img/staff/ad.jpg",
-                    email: ' '
+                    email: ''
                 },
                 {
                     name: "Garrett Harris",
                     position: "Web Development Teaching Assistant",
                     headshotPath: "/static/img/staff/gh.jfif",
-                    email: ' '
+                    email: ''
+                },
+                {
+                    name: "Haylee Hunter",
+                    position: "Web Development Teaching Assistant",
+                    headshotPath: "/static/img/staff/hh.jpg",
+                    email: ''
                 },
                 {
                     name: "Maggie Thompson",
                     position: "Program Analyst",
                     headshotPath: "/static/img/staff/mt.jpg",
-                    email: ' '
+                    email: ''
                 }
             ]
         }
