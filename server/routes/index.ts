@@ -15,13 +15,13 @@ import * as staff from './staff';
 import * as mission from './mission';
 import * as board from './board';
 import * as donate from './donate';
-import * as apply from './apply';
 import * as interestForm from './interestForm';
 import * as careers from './careers';
 import * as PDAndSupport from './profdev&supportserv';
 import * as financials from './financials';
 import * as impact from './impact';
 import * as alumni from './alumni';
+// import * as apply from './apply';
 // import * as blogList from "./bloglist";
 // import * as tempBlog1 from "./blog-temp1";
 // import * as tempBlog2 from "./blog-temp2";
@@ -35,8 +35,6 @@ const router = express.Router();
 router
     .get('/', index.context, meta, index.render)
     .get('/careers', careers.context, meta, careers.render)
-    .get('/apply', apply.context, meta, apply.render)
-    .post('/apply/mail', apply.handleApplicationEmail)
     .post('/interest/mail', interestForm.handleApplicationInterestResp)
     .get('/media', media.context, meta, media.render)
     .get('/staff', staff.context, meta, staff.render)
@@ -58,6 +56,8 @@ router
     .get('/impact', impact.context, meta, impact.render)
     .get('/alumni', alumni.context, meta, alumni.render);
 
+// .get('/apply', apply.context, meta, apply.render)
+// .post('/apply/mail', apply.handleApplicationEmail)
 // .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
 // .get('/about', about.context, meta, about.render)
 // .get('/blog', blogList.context, meta, blogList.render)
