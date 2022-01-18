@@ -36,7 +36,7 @@
         </div>
     </div>
 </section>
-<section class="section-padding section-newsletter-sign-up bg-white text-center">
+ {{!-- <section class="section-padding section-newsletter-sign-up bg-white text-center">
     <div class="container">
         <h3 class="lead-in font-weight-500 text-center mb-4">Connect with Us!</h3>
         <hr class="mb-5" />
@@ -113,11 +113,11 @@
                                         <button type="button"
                                             class="btn btn-sm font-weight-600 my-1 mx-2 mx-xl-3 donate-btn">Donate
                                         </button>
-                                    </a>
+                                    </a> --}}
 
                                     {{!-- fixing button on bottom of newsletter form --}}
 
-                                </div>
+                                {{!-- </div>
                             </div>
                         </div>
                     </div>
@@ -130,86 +130,8 @@
             <!--End mc_embed_signup-->
         </div>
     </div>
-</section>
-<section class="section-padding section-prev-newsletters bg-light text-center">
-    <div class="container">
-        <h3 class="lead-in font-weight-500 text-center mb-4">See Our Previous Newsletters</h3>
-        <hr class="mb-5" />
-        <div class="row px-md-5 justify-content-md-center">
-            <ul id="desktop-newsletter-options" class="list-group list-group-flush mr-5">
-                {{#each main.newsletterYears}}
-                <div class="btn-group dropright">
-                    <button type="button" class="btn btn-secondary dropdown-toggle text-black" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        {{@key}}
-                    </button>
-                    <div class="dropdown-menu">
-                        <!-- Dropdown menu links -->
-                        {{!-- this is each newsletter --}}
-                        {{#each this}}
-                        <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
-                            {{dateReleased}}
-                        </li>
-                        {{/each}}
-                    </div>
-                </div>
-                {{/each}}
-            </ul>
+</section>  --}}
 
-            {{!-- I set this in alumni.ts --}}
-            <div id="mobile-newsletter-options">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-expanded="false">
-                        Select
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        {{#each main.newsletterYears}}
-
-                        {{!-- <button type="button" class="btn btn-secondary dropdown-toggle text-black"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{@key}}
-                        </button>
-                        <div class="dropdown-menu">
-                            <!-- Dropdown menu links -->
-                            this is each newsletter
-                            {{#each this}}
-                            <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
-                                {{dateReleased}}
-                            </li>
-                            {{/each}}
-                        </div> --}}
-
-
-
-                        <!-- Dropdown menu links -->
-                        {{!-- this is each newsletter --}}
-                        {{#each this}}
-                        <li class="list-group-item font-weight-500" onclick="setIframeContainer('{{link}}')">
-                            {{dateReleased}}
-                        </li>
-                        {{/each}}
-
-                        {{/each}}
-                    </div>
-                </div>
-            </div>
-
-            <div id="newsletter-helper" class="m-3">
-                <div class="m-5">
-                    <i class="fa-solid fa-folder-open fa-5x"></i>
-                    <h4>Select from the list</h4>
-                </div>
-            </div>
-
-            <div class='loader'>Loading...</div>
-
-            <div id="iframe-container">
-                {{!-- filled with iframe in setIframeContainer > alumni.ts --}}
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Remove Script -->
 <script src="/public/js/alumni.js"></script>
