@@ -43,9 +43,21 @@ header {
       border-top: 2px solid #cccccc;
     }
 
+    h4 > a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #3b2979;
+      }
+    }
+
     @media screen and (max-width: 576px) {
       .lead-in {
         padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+
+      h4 {
         text-align: start !important;
       }
     }

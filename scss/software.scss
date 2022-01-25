@@ -1,15 +1,10 @@
 @import "layouts/main";
 
-
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(
-        rgba(11, 26, 66, 0.4),
-        rgba(11, 26, 66, 0.4)
-      ),
-      url("/static/img/software/hero.jpg");
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/software/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center 37.5%;
     background-repeat: no-repeat;
@@ -46,9 +41,22 @@ header {
       border-top: 2px solid #cccccc;
     }
 
+    h4 > a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #3b2979;
+      }
+    }
+
     @media screen and (max-width: 576px) {
       .lead-in {
+        text-align: start !important;
         padding: 0 0.9375rem;
+      }
+
+      h4 {
+        text-align: start !important;
       }
     }
   }
@@ -58,16 +66,16 @@ header {
     color: white;
 
     #video-container {
-        width: 100vw;
-        height: 56.25vw;
+      width: 100vw;
+      height: 56.25vw;
 
-        @media screen and (min-width: 1200px) {
-            width: 80vw;
-            height: 45vw;
-            margin: auto;
-        }
+      @media screen and (min-width: 1200px) {
+        width: 80vw;
+        height: 45vw;
+        margin: auto;
+      }
     }
-}
+  }
 
   &-ncwit {
     #ncwit-container {

@@ -22,10 +22,6 @@ import * as financials from './financials';
 import * as impact from './impact';
 import * as alumni from './alumni';
 // import * as apply from './apply';
-// import * as blogList from "./bloglist";
-// import * as tempBlog1 from "./blog-temp1";
-// import * as tempBlog2 from "./blog-temp2";
-// import * as tempBlog3 from "./blog-temp3";
 // import * as courses from './courses';
 // import * as accelerated from './accelerated';
 // import * as about from './about';
@@ -60,10 +56,6 @@ router
 // .post('/apply/mail', apply.handleApplicationEmail)
 // .get('/programs/accelerated-programs', accelerated.context, meta, accelerated.render)
 // .get('/about', about.context, meta, about.render)
-// .get('/blog', blogList.context, meta, blogList.render)
-// .get('/blog/temp1', tempBlog1.context, meta, tempBlog1.render)
-// .get('/blog/temp2', tempBlog2.context, meta, tempBlog2.render)
-// .get('/blog/temp3', tempBlog3.context, meta, tempBlog3.render)
 // .get('/courses', courses.context, meta, courses.render)
 
 export default router;

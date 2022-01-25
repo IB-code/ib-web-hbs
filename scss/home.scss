@@ -1,16 +1,14 @@
-@import 'layouts/main';
+@import "layouts/main";
 
 .modal-body {
   font-size: 1.3em;
 }
 
-
-
 header {
   color: $white;
 
   & > .jumbotron {
-    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url('/static/img/home/hero.jpg');
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center 25%;
     background-repeat: repeat-x;
@@ -40,7 +38,6 @@ header {
       font-size: 1.5em;
       color: #11092c;
       max-width: 875px;
-
     }
 
     hr {
@@ -48,9 +45,23 @@ header {
       border-top: 2px solid #cccccc;
     }
 
+    h4 {
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          color: #3b2979;
+        }
+      }
+    }
+
     @media screen and (max-width: 576px) {
       .lead-in {
         padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+
+      h4 {
         text-align: start !important;
       }
     }
@@ -58,7 +69,7 @@ header {
 
   &-impact {
     .svg-container {
-      // i becomes svg from 
+      // i becomes svg from
       svg {
         color: #74747494;
       }
@@ -205,6 +216,7 @@ header {
         text-align: center;
       }
     }
+
     @media only screen and (max-width: 1024px) and (min-width: 2000px) {
       #ncwit-text {
         text-align: center !important;
