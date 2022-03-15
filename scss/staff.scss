@@ -1,0 +1,84 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.2), rgba(11, 26, 66, 0.2)), url("/static/img/programs/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-team {
+        .lead-in {
+            font-size: 1.5em;
+            color: #11092c;
+            max-width: 875px;
+        }
+
+        hr {
+            width: 98%;
+            border-top: 2px solid #cccccc;
+        }
+
+        @media screen and (max-width: 576px) {
+            .lead-in {
+                padding: 0 0.9375rem;
+                text-align: start !important;
+            }
+        }
+
+        .card-text {
+            margin-bottom: .5em
+        }
+
+        #team-cards {
+            margin: 0.5rem 1.5rem;
+
+            a {
+                text-decoration: none;
+            }
+
+            .row {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+
+                .card {
+                    height: 8.5em;
+                    max-width: 26em;
+                    border-radius: 1em;
+
+                    .headshot-logo {
+                        border-radius: 50%;
+                        max-width: 5em;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 2400px) {
+            #team-cards {
+                margin: 0.5rem 15%;
+            }
+        }
+    }
+
+    &-contact {
+        background-color: #e5eff5;
+    }
+}

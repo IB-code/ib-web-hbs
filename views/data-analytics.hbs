@@ -1,0 +1,248 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Data Analytics</h1>
+            <h4 class="lead-in font-weight-500 text-center mb-4">Data is everywhere, and people who can gather,
+                interpret and present it are valuable employees — especially in a tech landscape increasingly reliant on
+                data!</h4>
+            {{!-- <a href="/apply" target="_blank" rel="noopener noreferrer">
+                <button class="btn apply-btn font-weight-600">APPLY NOW</button>
+            </a> --}}
+        </div>
+    </div>
+</header>
+<section class="section-deadlines section-padding bg-white text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="lead-in font-weight-500 text-center mb-4">In our Data Analytics Bootcamp, you’ll learn how to
+                gather data, pinpoint the important information, figure out the story the data tells, and present the
+                data so stakeholders can make informed decisions.</h4>
+            <hr class="mb-5" />
+        </div>
+
+        <div>
+            <h4 class="font-weight-600 mb-4 w-100">In order to continue offering high quality
+                instruction and support services that are free to participants, Innovate
+                Birmingham will be focusing on restructuring our programing for even greater impact this spring.
+                This means we will not be offering the May 2022 training class as we focus on refining our business
+                model and planning for the future.
+            </h4>
+            <h4 class="font-weight-600 mb-4 w-100">Updates on new training dates will be provided here
+                on the Innovate Birmingham website and through our mailing list. To join our mailing list to receive
+                email updates regarding upcoming training, please click <a href="/contact">here</a> and ask about
+                "bootcamps".</h4>
+        </div>
+
+        {{!-- <h4 class="text-black">Applications for the Data Analytics course will be open until April 20, 2021.</h4>
+        <h4 class="text-black">Pre-work Due April 26, 2021</h4>
+        <h5 class="text-black">Start of Cohort 14: May 3, 2021</h5> --}}
+    </div>
+</section>
+<section class="section-video mb-0 bg-light">
+    <h3 class="m-4 text-center">See how Innovate Birmingham helps develop local tech talent</h3>
+    <div id="video-container" class="d-flex col align-items-center justify-content-center mb-0">
+        <iframe id="give-day-vid"
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbhamnow%2Fvideos%2F2994095120859409%2F&show_text=false&t=0"
+            style="border:none;overflow:hidden;width:90%;height:100%;margin:auto auto 0 auto;" scrolling="no"
+            frameborder="0" allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</section>
+<section class="section-padding section-introduction bg-primary ">
+    <div class="container text-center text-white">
+        <h3 class="mb-5">Using Data to Answer the Why</h3>
+        <p class="font-weight-500">Data Analysis isn't just about math and statistics and nice looking graphs and
+            charts. At the heart of Data
+            Analysis is the question of Why? With tons of data
+            occupying servers around the world, being able to make sense of it all to make informed decisions isn't a
+            choice anymore. It's a necessity.
+            Learning how to
+            visualize, cleanse, interpet, and interact with data through tools like Power BI, Tableau, Access, and
+            Excel is a key step to translating all those 1s and 0s into valuable business decisions.</p>
+    </div>
+</section>
+<section class="section-padding section-curriculum bg-light">
+    <div class="container">
+        <h3 class="text-primary text-center mb-4">What Will You Learn?</h3>
+        <h6 class="text-center text-primary mb-5">These are just some of the technologies you will learn in the course.
+            Don't let it intimidate you!
+            <strong>No experience is required.</strong> This course was specifically designed to take someone with zero
+            experience
+            and teach them what they need to know to
+            <strong>actually work</strong> as a junior-level IT Professional. We are here for you every step of the
+            way!
+        </h6>
+        <div id="accordion" class="accordion hardware-accordion">
+            {{#each main.curriculum}}
+            <div class="card">
+                <div class="card-header d-flex flex-wrap align-items-center" id="heading-{{id}}" data-toggle="collapse"
+                    href="#collapse-{{id}}" data-target="#collapse-{{id}}" aria-expanded="true"
+                    aria-controls="collapse-{{id}}">
+                    <h5 class="mb-0 accordion-title font-weight-400 text-primary">
+                        <i class="{{icon}} mr-2"></i>
+                        {{headline}}
+                    </h5>
+                </div>
+                <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}" data-parent="#accordion">
+                    {{#if children}}
+                    <div id="accordion-nested-{{id}}" class="accordion accordion-nested-{{id}}">
+                        {{#each children}}
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center"
+                                id="heading-{{id}}">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{id}}"
+                                        aria-expanded="true" aria-controls="#collapse-{{id}}">
+                                        <i class="{{icon}} mr-2"></i>
+                                        {{headline}}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse-{{id}}" class="collapse" aria-labelledby="heading-{{id}}"
+                                data-parent="#accordion-nested-{{../id}}">
+                                <div class="card-body">
+                                    {{description}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{else}}
+                    <div>
+                        <p class="my-4 px-4">{{{ description }}}</p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+<section class="section-padding section-covalence">
+    <div class="container text-center text-black">
+        <a href="http://www.thinkdatasol.com/" target="_blank">
+            <img id="thinkdata" class="mb-4" src="/static/img/logos/thinkdata_logo.png" alt="ThinkData Solutions">
+        </a>
+        <p class="font-weight-500">Our currciulum partner ThinkData Solutions, Inc (@ThinkDataSol) was founded by Robin
+            Hunt and Daniel Bishop.
+            Their custom built
+            curriculum teaches how to get started in the path of data analytics and is a great starting point for a
+            career
+            in data science. ThinkData has been educating people on data technologies and actively practicing data
+            analysis
+            for over two decades. Learn how to wrangle data into meaningful data sets by just getting started with the
+            basics. Solving problems by working with data is one of the most valuable skills a person can have.
+            ThinkDataSol helps you learn to see the data everywhere it exists and turn it into meaningful insight. If
+            you are critical thinker, love to solve problems, and enjoy helping people see the big picture, then data
+            analysis is a natural next step.</p>
+    </div>
+</section>
+<section class="section-padding section-about bg-yellow font-weight-500  pb-3">
+    <div class="container row justify-content-between mx-auto">
+        <div class="col-md-3 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-database"></i>
+
+            </div>
+            <p>Our Data Analytics course is a 14-week tech bootcamp designed to train future technology professionals in
+                the fundamentals of data analysis.</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <a href="https://goo.gl/maps/cxhEG3Z12vs" target="_blank" rel="noopener noreferrer">
+                <p>Currently, bootcamps are virtual. Any in-person events will be held at the Innovation Depot, 1500 1st
+                    Ave N, Birmingham, AL 35203</p>
+            </a>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-clock"></i>
+            </div>
+            <p>9am - 5pm, M - F</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="icon-container mb-4">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <p class="about-description">Send us your questions at <a
+                    href="mailto:admissions@innovatebham.com">admissions@innovatebham.com</a></p>
+        </div>
+    </div>
+</section>
+<section class="section-eligibility section-padding bg-white">
+    <div class="container d-flex flex-column align-items-center">
+        <h4 class="mb-4">Minimum Eligibility Requirements</h4>
+        <ul>
+            <li class="font-weight-500">Resident of the following counties of Central Alabama: Jefferson, Shelby,
+                Blount, St.
+                Clair, Chilton, and
+                Walker.</li>
+            <li class="font-weight-500 pb-1">Age 17 or older</li>
+            <li class="font-weight-500 pb-1">Under or Unemployed</li>
+            <li class="font-weight-500 pb-1">Must have a GED or High School Diploma</li>
+            <li class="font-weight-500 pb-1">Must NOT be enrolled in any other training program or higher level
+                institution
+                </p>
+                <p class="font-weight-500 pb-1">Please keep in mind that participating in an Innovate Birmingham
+                    bootcamp
+                    is a full-time commitment. You are expected to attend class Monday-Friday, 9 a.m.-5 p.m. There will
+                    also
+                    be additional studying and classwork to complete. When considering whether you can commit to our
+                    program, it’s helpful to think of your participation in Innovate Birmingham in the same way you
+                    would
+                    think about a full-time job.
+
+                    However, we understand that emergencies and funding needs arise. We offer supportive services to
+                    help
+                    meet those needs. When you are accepted into the program, you will undergo a barrier assessment with
+                    our
+                    senior case manager, who will then develop a support plan. If you are already in the program when
+                    needs
+                    arise, we ask that you contact us immediately to let us know how we can assist you.
+                </p>
+        </ul>
+    </div>
+</section>
+{{!-- <section class="section-ncwit d-flex bg-primary justify-content-center mx-0">
+    <div id="ncwit-container" class="container">
+        <div id="ncwit-row-1" class="row">
+
+            <div id="ncwit-pic" class="col-lg">
+                <img class="img-fluid rounded shadow" src="../public/img/home/ncwit-banner.png" alt="" />
+            </div>
+            <div id="ncwit-text" class="col-lg ">
+                <p class="text-white">Are you looking to enter the tech workforce? We have partnered with The National
+                    Center for Women & Information Technology (NCWIT) to offer fully-funded scholarships for women in
+                    Central Alabama to pursue a tech career. Once you become a member of NCWIT, there are additional
+                    benefits, such as: </p>
+
+                <div id="ncwit-perks" class="card ul-card bg-light shadow align-items-center">
+                    <h6 class="card-title pb-0 mb-0">NCWIT Perks</h6>
+                    <div class="card-body text-black">
+                        <ul>
+                            <li>Connecting with women in your chosen career path across Alabama and the United States.
+                            </li>
+                            <li>Professional development opportunities</li>
+                            <li>Networking events</li>
+                            <li>And more!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="more-ncwit-info" class="row text-white mt-2 justify-content-center mt-4">
+            <h6>For more information on how to apply, email
+                <a href="mailto:admissions@innovatebham.com">admissions@innovatebham.com</a>
+        </div>
+        </h6>
+    </div>
+</section> --}}
+
+
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/data-analytics.css">
+<!-- /Remove Style -->

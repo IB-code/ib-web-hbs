@@ -1,0 +1,202 @@
+@import "layouts/main";
+
+body {
+  overflow-x: hidden;
+}
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/apprenticeship/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    h1 {
+      font-size: 3rem;
+
+      @media screen and (max-width: 576px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .lead {
+      font-weight: 500;
+
+      // @include media-breakpoint-down(md) {
+      //   font-weight: 400;
+      // }
+    }
+  }
+}
+
+.section {
+  &-awards {
+    background-color: #e6eff5;
+
+    .lead-in {
+      line-height: 1.4;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    .awards-row {
+      > p {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .awards-intro {
+          text-align: center;
+          padding: 4vw;
+        }
+
+        > .awards-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: auto;
+          width: 100vw;
+        }
+
+        > .awards-pics {
+          > img {
+            width: 40vw;
+            height: auto;
+          }
+
+          > #WBL-seal {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      @media screen and (min-width: 576px) {
+        > .awards-text {
+          flex-direction: column;
+          width: 65vw;
+        }
+
+        > .awards-pics {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+          > img {
+            width: 30%;
+          }
+          > #WBL-seal {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  &-apprenticeships {
+    .apprenticeships-row {
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        > .apprenticeships-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center;
+          margin: auto;
+          width: 100vw;
+        }
+
+        .apprent-imgs {
+          width: 64%;
+          margin: 4% auto;
+        }
+      }
+      @media screen and (min-width: 576px) {
+        > .apprenticeships-col {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+        }
+
+        .apprent-imgs {
+          width: 47%;
+          justify-content: center;
+        }
+
+        .apprent-text-2 {
+          text-align: left;
+        }
+      }
+    }
+
+    .app-row-2 {
+      @media screen and (max-width: 576px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &-apply {
+    .apply-btn {
+      font-size: 1.4rem;
+      background-color: #facf32f1;
+    }
+  }
+
+  &-intern {
+    background-color: #e9ecef;
+
+    .col {
+      width: 100vw;
+    }
+
+    .quote-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin: 4vh auto;
+      width: 40vw;
+      
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+      }
+    }
+  }
+
+}
+
+// &-carousel {
+//   background-color: #e6eff5;
+
+//   .carousel-img {
+//     margin: auto;
+//     max-width: 45%;
+//   }
+
+//   @media screen and (max-width: 770px) {
+//     .carousel-img {
+//       max-width: 75% !important;
+//     }
+//   }
+// }

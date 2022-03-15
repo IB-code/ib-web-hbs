@@ -1,0 +1,34 @@
+@import "layouts/main";
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.3), rgba(11, 26, 66, 0.3)), url("/static/img/hardware/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-about {
+    .icon-container {
+      i {
+        color: $navy;
+        font-size: 3.5em;
+      }
+    }
+  }
+}

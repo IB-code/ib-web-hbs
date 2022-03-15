@@ -1,0 +1,85 @@
+// @import "layouts/main";
+
+// header {
+//   color: $white;
+
+//   & > .jumbotron {
+//     background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/courses/hero.jpg");
+//     background-size: cover; /* or contain depending on what you want */
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     text-align: center;
+//     margin: auto;
+//     padding: 0;
+
+//     .lead {
+//       font-weight: 500;
+
+//       @include media-breakpoint-down(md) {
+//         font-weight: 400;
+//       }
+//     }
+//   }
+// }
+
+// .section {
+//   &-.courses {
+//     .icon {
+//       font-size: 2.5em;
+//       color: $yellow;
+//     }
+
+//     .card {
+//       border: none;
+//       min-height: 525px;
+//       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+//       width: 80%;
+//       margin: 0 auto;
+
+//       .card-body {
+//         .btn {
+//           bottom: 2em;
+//           left: 50%;
+//           transform: translateX(-50%);
+//           width: 50%;
+//         }
+
+//         .card-top {
+//           height: 200px;
+//           position: relative;
+
+//           .time {
+//             position: absolute;
+//             bottom: 10px;
+//             left: 0;
+//             right: 0;
+//           }
+//         }
+//       }
+
+//       &:hover {
+//         transition: box-shadow;
+//         box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+//         .card-title {
+//           color: $yellow;
+//         }
+//       }
+//     }
+
+//     @media screen and (max-width: 576px) {
+//       .lead-in {
+//         padding: 0 0.9375rem;
+//         text-align: start !important;
+//       }
+//     }
+//   }
+
+//   &-help {
+//     @media only screen and (max-width: 600px) {
+//       #main-help-text {
+//         text-align: center;
+//       }
+//     }
+//   }
+// }

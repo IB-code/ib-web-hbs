@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "lib": ["esnext", "dom"],
+        "types": ["handlebars"]
+    },
+    "include": ["server/**/*", "software.js"],
+    "exclude": ["node_modules"]
+}

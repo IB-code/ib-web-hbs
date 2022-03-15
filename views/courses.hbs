@@ -1,0 +1,63 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Our Courses</h1>
+        </div>
+    </div>
+</header>
+<section class="section-courses section-padding bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="lead-in font-weight-500 text-center mb-4">Choose your path to a new career</h4>
+            <hr class="mb-5" />
+        </div>
+        <div class="row">
+            {{#each main.courses}}
+            <div class="col-lg-6 col-md-6 my-2 text-center">
+                <div class="card px-2">
+                    <div class="card-body position-relative">
+                        <div class="card-top">
+                            <i class="{{ icon }} mr-2 mb-4 icon" alt="{{headline}}"></i>
+                            <h4 class="card-title">{{headline}}</h4>
+                            <div class="time d-flex justify-content-center align-items-center mb-2">
+                                <i class="fa fa-{{subline.icon}} mr-2 subline-icon"></i>
+                                <p class="text-grey mb-0">{{subline.text}}</p>
+                            </div>
+                        </div>
+                        <p class="card-text">{{description}}</p>
+                        <a class="btn btn-primary text-white position-absolute"
+                            href="{{action.href}}">{{action.text}}</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+<section class="section-eligibility section-padding bg-white">
+    <div class="container text-center">
+        <h4 class="mb-4">Minimum Eligibility Requirements</h4>
+        <p>Resident of the following counties of Central Alabama: Jefferson, Shelby, Blount, St. Clair, Chilton, and
+            Walker.</p>
+        <p>Age 17 or older</p>
+        <p>Under or Unemployed</p>
+        <p>Must have a GED or High School Diploma</p>
+        <p>Must NOT be enrolled in any other training program or higher level institution</p>
+    </div>
+</section>
+<section class="section-help section-padding bg-primary">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <h4 id="main-help-text" class="text-white">Can't decide which course is right for you? Drop us a line.
+                    We're here to help!</h4>
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="/contact/" class="btn text-white btn-secondary">HELP ME PLEASE!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/courses.css">
+<!-- /Remove Style -->

@@ -1,0 +1,47 @@
+@import "_functions";
+@import "_variables";
+@import "mixins/_breakpoints";
+@import "includes/_variables";
+@import "includes/_bootstrap-overrides";
+@import "partials/nav";
+@import "partials/footer";
+@import "partials/newsletter";
+@import "partials/social";
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+
+  > *:first-child {
+    padding-top: 4em;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 4.5em;
+    }
+  }
+}
+
+header {
+  & > .jumbotron {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: rgb(182, 181, 181);
+}

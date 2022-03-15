@@ -1,0 +1,54 @@
+@import "layouts/main";
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.3), rgba(11, 26, 66, 0.3)), url("/static/img/careers/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 25%;
+    background-repeat: repeat-x;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-careers {
+    .header-rule {
+      clear: right;
+    }
+  }
+
+  &-values {
+    .job-description {
+      font-family: sans-serif !important;
+      line-height: 10px;
+    }
+
+    .values-container {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 576px) {
+      .job-description {
+        line-height: 15px !important;
+      }
+    }
+  }
+}

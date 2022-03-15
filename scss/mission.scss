@@ -1,0 +1,105 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 25%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-mission {
+        .mission-main {
+            font-size: 1.3em;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: row;
+
+            .bookImg {
+                margin-bottom: 1px;
+                margin-top: 7px;
+            }
+
+            #story-book {
+                display: flex;
+                position: relative;
+                bottom: 6em;
+                max-height: 112px;
+            }
+
+            .vision-lightbulb {
+                max-width: 5em;
+            }
+
+            .statement {
+                width: 100px;
+            }
+
+            .fa-users {
+                color: black;
+            }
+
+            p {
+                margin-bottom: 0em;
+            }
+
+            // .circle {
+            //     border-radius: 5px;
+            //     height: 1vh;
+            //     width: 1vh;
+            // }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mission-main {
+                flex-direction: column !important;
+                text-align: center !important;
+            }
+
+            #story-book {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                bottom: 0.1em !important;
+                margin-left: 0 !important;
+            }
+
+            #mission-main-text {
+                margin-top: 5.5rem !important;
+            }
+        }
+
+        @media only screen and (max-width: 834px) and (min-width: 600px) {
+            #story-book {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                bottom: 11em !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}

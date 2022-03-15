@@ -1,0 +1,336 @@
+@import "layouts/main";
+
+.modal-body {
+  font-size: 1.3em;
+}
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 25%;
+    background-repeat: repeat-x;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-courses {
+    .lead-in {
+      font-size: 1.5em;
+      color: #11092c;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    h4 {
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          color: #3b2979;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+
+      h4 {
+        text-align: start !important;
+      }
+    }
+  }
+
+  &-impact {
+    .svg-container {
+      // i becomes svg from
+      svg {
+        color: #74747494;
+      }
+    }
+  }
+
+  &-ncwit {
+    #ncwit-container {
+      margin: 3vh 0;
+    }
+
+    #ncwit-row-1 {
+      margin-bottom: 2vh;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    #ncwit-pic {
+      height: inherit;
+      padding: 0;
+      min-width: 40vw;
+    }
+
+    #ncwit-text {
+      justify-content: center !important;
+      align-content: space-between;
+      // text-align: center !important;
+      height: inherit;
+      font-size: 1.15em;
+      font-weight: 400;
+      padding-bottom: 0;
+      // line-height: 2.7vh;
+    }
+
+    #ncwit-perks {
+      margin-bottom: 0;
+      padding: 1vh 0;
+      font-size: 0.8em;
+      font-weight: 500;
+      height: auto;
+      max-width: 520px;
+
+      h6 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    #ncwit-perks > .card-body {
+      text-align: left;
+      margin-bottom: 0;
+      padding: 0.2em 1vw;
+
+      ul {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      #ncwit-row-1 {
+        padding-bottom: 0;
+      }
+
+      #ncwit-pic {
+        justify-content: center;
+        align-items: center;
+      }
+
+      #ncwit-pig > img {
+        align-self: center;
+        width: 94%;
+        // min-width: 272px;
+        height: 100%;
+        margin: 0 3%;
+      }
+      #ncwit-text {
+        text-align: center;
+        align-content: space-between;
+        margin: 2.7vh 1vw;
+        font-size: 1em;
+      }
+
+      #ncwit-perks {
+        margin: 0.7vh 0 0 0;
+        padding: 0.2em 1vw;
+      }
+
+      #ncwit-perks > .card-body > ul {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0.4vh;
+      }
+
+      #more-ncwit-info {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 678px) {
+      .section-ncwit {
+        align-content: flex-end;
+      }
+
+      #ncwit-row-1 {
+        padding-bottom: 0;
+      }
+
+      #ncwit-pic {
+        justify-content: center;
+        align-items: center;
+        max-width: 80vw;
+      }
+      #ncwit-pic > img {
+        align-self: center;
+        width: 94%;
+        height: 100%;
+        margin: 0 3%;
+      }
+
+      #ncwit-text {
+        text-align: center;
+        align-content: space-between;
+        margin: 2.7vh 1vw 0 1vw;
+        font-size: 1em;
+        max-width: 40vw;
+      }
+
+      #ncwit-perks {
+        margin: 0.7vh 0 0 0;
+        padding: 0.2em 1vw;
+      }
+
+      #ncwit-perks > .card-body > ul {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0.4vh;
+      }
+
+      #more-ncwit-info {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 2000px) {
+      #ncwit-text {
+        text-align: center !important;
+      }
+
+      #ncwit-pic {
+        margin-bottom: 2vh;
+      }
+
+      #ncwit-perks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &-video {
+    #video-container {
+      padding: 0.15em;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+    }
+
+    #video-container iframe {
+      border-radius: 0.25rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h4 {
+        padding-bottom: 15px;
+      }
+
+      #video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+
+      #video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 94%;
+        height: 100%;
+        margin: 0 3%;
+        border: 0;
+      }
+    }
+  }
+
+  &-companies {
+    .logo {
+      height: 5em;
+      max-height: 5em;
+      min-width: 5em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &-courses {
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      min-height: 210px;
+
+      & > .card-header {
+        background-color: $navy;
+        color: $white;
+        padding: 0.75rem 1.75rem;
+        height: 3.3em;
+
+        & > svg {
+          color: $yellow;
+        }
+      }
+
+      &:hover {
+        transition: box-shadow;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation: slideUp 500ms forwards;
+      }
+
+      #pd-program-card {
+        padding: 0rem 1.75rem;
+      }
+    }
+
+    .learn-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      #learn-more-btn {
+        background-color: #facf32f1;
+      }
+
+      #learn-more-btn:hover {
+        background-color: #ebc230f1;
+      }
+    }
+
+    #PD-icon {
+      height: 1.5em;
+      margin: auto 0;
+    }
+
+    .pd-program-card-text {
+      width: 13em;
+    }
+  }
+}

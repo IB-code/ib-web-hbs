@@ -1,0 +1,43 @@
+footer {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-navy {
+    background-color: $navy !important;
+  }
+
+  hr {
+    width: 60px;
+  }
+}
+
+#GuidestarEmblem {
+  max-width: 5em;
+  margin-left: 1em;
+}
+#Guidestar-container {
+  // max-width: 5em;
+  margin-left: 1em;
+  width: 5em;
+  margin-right: 1em;
+}
+
+#Amazon-Smile-Logo {
+max-width: 10em;
+}
+
+#footer-images {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: inherit;
+  margin: 1em;
+}

@@ -1,0 +1,58 @@
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/about.css">
+<!-- /Remove Style -->
+
+<header>
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="font-weight-bold display-4 text-white">What is Innovate Birmingham</h1>
+        </div>
+    </div>
+</header>
+<section class="section-padding bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">The Problem</h2>
+        <div class="row ">
+            <div class="col-md-6">
+                <h4 class="display-4 numbers">5,300</h4>
+                <p>IT jobs posted in Birmingham in 2015</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="display-4 numbers">26,000</h4>
+                <p>Disconnected Young Adults in Birmingham</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padding bg-primary">
+    <div class="container text-center text-white">
+        <h2 class="pb-4">The Plan & The History</h2>
+        <p class=" text-center ">In 2017, Birmingham was awarded Obama's America's Promise Grant for ~$6 million dollars from the U.S. Department of Labor to equip underemployed and unemployed young adults in the Greater Birmingham region with resources they need to advance into Information Technology (IT) jobs.</p>
+        <p class="text-center">There's a mismatch of supply & demand in the Birmingham Tech Scene. We have more jobs to fill than we have qualified and trained applicants. Innovate Birmingham Workforce Department is part of the solution. We provide education in software development and data analytics, as well as offer scholarships to UAB, Jeff State, and Lawson state. The goal of our program is to provide opportunity, free of charge, and create a pipeline between talented people and employers in Birmingham.</p>
+    </div>
+</section>
+<section class="section-big-innovate section-padding">
+    <div class="container">
+        <h2 class="text-center">Evaluating the Tech Ecosystem</h2>
+        <p class="text-center">Along with Innovate Birmingham Workforce there was another branch of Innovate Birmingham (or how we lovingly referred to it: "Big Innovate") which was responsible for evaluating and researching the tech ecosystem in Birmingham. Throughout their year and a half long tenure, Big Innovate produced a number of reports that reveal the gaps and issues found in the Birmingham tech scene.</p>
+        <div class="card-columns mt-4">
+            {{#each main.reports}}
+            <div>
+                <div class="card index-{{@index}}">
+                    <div class="card-bg" style="background-image: url('/static/img/about/{{img}}');"><span class="bg-text">{{ title }}</span></div>
+                    <div class="card-body text-center">
+                        <div>
+                            <p class="card-text mb-2">
+                                {{description}}
+                            </p>
+                        </div>
+                        <a href="{{link}}" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-primary">READ MORE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

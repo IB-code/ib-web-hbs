@@ -1,0 +1,70 @@
+@import "layouts/main";
+
+header {
+    color: $white;
+
+    & > .jumbotron {
+        background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)), url("/static/img/home/hero.jpg");
+        background-size: cover; /* or contain depending on what you want */
+        background-position: center 25%;
+        background-repeat: repeat-x;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .lead {
+            font-weight: 500;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section {
+    &-cards {
+        .svg-container {
+            height: 80px;
+
+            svg {
+                color: #ffd000;
+            }
+        }
+    }
+
+    &-students {
+        .svg-container {
+            height: 80px;
+
+            svg {
+                color: #18102f;
+            }
+        }
+
+        a {
+            color: #37b6e7;
+        }
+    }
+
+    &-video {
+        padding: 0.75em;
+
+        #video-container {
+            width: 100vw;
+            height: 56.25vw;
+
+            @media screen and (min-width: 1200px) {
+                width: 80vw;
+                height: 45vw;
+                margin: auto;
+            }
+        }
+    }
+}

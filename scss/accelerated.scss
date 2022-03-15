@@ -1,0 +1,104 @@
+@import "layouts/main";
+
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/img/accelerated/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 36%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    h1 {
+      text-shadow: darken($color: #000000, $amount: 1);
+    }
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-courses {
+    .lead-in {
+      color: #11092c;
+      line-height: 1.4;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6eff5;
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 6em;
+      }
+    }
+
+    .card-img-top {
+      overflow-y: scroll !important;
+      object-fit: cover;
+      width: 100%;
+      max-width: 10em;
+    }
+
+    .icon {
+      width: 1em;
+    }
+
+    .details-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .accelerated-card {
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      min-height: 210px;
+      border: none !important;
+
+      &:hover {
+        transition: box-shadow;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation: slideUp 500ms forwards;
+      }
+    }
+
+    .close {
+      align-self: flex-end;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+    }
+  }
+}

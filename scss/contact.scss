@@ -1,0 +1,35 @@
+@import 'layouts/main';
+
+header {
+    p {
+        font-size: 1.25em;
+    }
+}
+
+.section {
+    &-contact {
+        & > .container {
+            min-height: 29vh;
+        }
+
+        p {
+            font-size: 1.25em;
+        }
+
+        a {
+            color: blue;
+            border-bottom: 1px solid blue;
+
+            &:hover {
+                color: $navy;
+            }
+        }
+
+        .form-group {
+            textarea,
+            select {
+                display: block;
+            }
+        }
+    }
+}

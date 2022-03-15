@@ -1,0 +1,49 @@
+@import "layouts/main";
+
+// header {
+//     color: $white;
+
+//     & > .jumbotron {
+//         background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
+//             url("/static/img/apprenticeship/hero.jpg");
+//         background-size: cover; /* or contain depending on what you want */
+//         background-position: center 35%;
+//         background-repeat: no-repeat;
+//         text-align: center;
+//         margin: auto;
+//         padding: 0;
+
+//         h1 {
+//             font-size: 3rem;
+//         }
+
+//         .lead {
+//             font-weight: 500;
+
+//             @include media-breakpoint-down(md) {
+//                 font-weight: 400;
+//             }
+//         }
+//     }
+// }
+
+main {
+    height: 0%;
+
+    #spinner-container {
+        height: 90vh;
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    #apply-iframe {
+        width: 100%;
+
+        header {
+            display: none;
+        }
+    }
+}

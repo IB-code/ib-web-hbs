@@ -1,0 +1,73 @@
+<header class="section-hero">
+  <div class="jumbotron mb-0 jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold text-white">Work With Us</h1>
+      <a href="/contact">
+        <button type="button" class="btn btn-primary">CONTACT US</button>
+      </a>
+    </div>
+  </div>
+</header>
+<section class="section-about section-padding text-center bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h4 class="lead-in text-center mb-4">Partnering with Innovate Birmingham
+        can happen in many different ways! Whether it be through hiring our
+        graduates, providing internships, mentoring, joining our career fairs or
+        participating in our mock interviews, we’re always looking to connect
+        you with up-and-coming tech talent!
+      </h4>
+      <hr class="mb-5" />
+    </div>
+    <h2>What Does it Mean to Be a Partner?</h2>
+    <p class="partner-description text-center mb-2">The short answer is:
+      Anything! Partnering with Innovate Birmingham is only bound by your
+      imagination. We are open to all ideas and will work as a thought partner
+      with you to figure out what sort of relationship works best for all of us.
+      Whether that be hiring our graduates, providing internships, mentoring,
+      mock interviewing, or just coming to say hey to our students, we're
+      looking for any way we can connect new tech talent with you!</p>
+  </div>
+</section>
+<section class="section-employer-partners section-padding">
+  <div class="container">
+    <h2 class="text-center mb-3">Our Employer Partners</h2>
+    <h4 class="lead text-center mb-2 font-weight-400">Our employer partners are
+      not only hiring talent from Innovate Birmingham — they are partners in
+      developing that talent! They engage with participants year-round by
+      hosting professional development workshops, attending career fairs, and
+      engaging in candidate interview sessions.
+    </h4>
+    <div class="row">
+      {{#each main.employerPartners}}
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a href="{{url}}" target="_blank" rel="noreferrer noopener">
+          <div class="logo p-3 my-3" style="background-image: url('{{__logoPath}}')"></div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+<section class="section-network-partners section-padding">
+  <div class="container">
+    <h2 class="text-center mb-3">Our Network Partners</h2>
+    <h4 class="lead text-center mb-3 font-weight-400">Our network partners are
+      uniquely positioned to support local youth and under- or unemployed adults in Alabama as they receive training for
+      high-paying, high-demand jobs in the tech sector.
+    </h4>
+    <div class="row">
+      {{#each main.networkPartners}}
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a href="{{url}}" target="_blank" rel="noreferrer noopener">
+          <div class="logo p-3 my-3" style="background-image: url('{{__logoPath}}')"></div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/partners.css" />
+<!-- /Remove Style -->

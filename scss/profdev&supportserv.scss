@@ -1,0 +1,159 @@
+@import "layouts/main";
+
+// begin general css //
+header {
+  color: $white;
+
+  & > .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.4), rgba(11, 26, 66, 0.4)),
+      url("/static/img/profdev&supportserv/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    @media screen and (max-width: 720px) {
+      .display-4 {
+        font-size: 2.75rem;
+      }
+    }
+
+    .lead {
+      font-weight: 500;
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.section {
+  &-about {
+    .lead-in {
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    .pd-description {
+      font-size: 1.25em;
+    }
+
+    .ul-card {
+      width: 75%;
+
+      ul {
+        columns: 2;
+
+        li {
+          text-align: start;
+          line-height: 2;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .ul-card {
+        width: 90%;
+
+        ul {
+          columns: 1;
+        }
+      }
+    }
+  }
+}
+
+.majors-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .section-schools {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    text-align: start;
+
+    .img-container {
+      margin-left: 10vw;
+
+      .logo {
+        align-self: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        max-height: 220px;
+        max-width: 220px;
+      }
+    }
+
+    .majors-text {
+      align-self: center;
+    }
+
+    .majors-text ul {
+      width: 50vw;
+    }
+  }
+
+  .section-schools:first-child {
+    margin-top: 1em;
+  }
+}
+
+.testimonials {
+  p {
+    text-indent: 1em;
+    margin: 3%;
+    font-size: 0.8em;
+  }
+
+  .blockquote-footer {
+    margin: 3%;
+    text-align: end;
+  }
+}
+
+.requirements {
+  margin: 0;
+}
+// end general css //
+
+// begin media queries //
+@media screen and (max-width: 600px) {
+  .section-schools {
+    flex-direction: column !important;
+
+    .img-container {
+      text-align: center !important;
+      margin-left: 0 !important;
+
+      .logo {
+        max-height: 200px !important;
+      }
+
+      .logo:nth-child(2) {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    .majors-text ul {
+      width: 250px !important;
+    }
+  }
+}

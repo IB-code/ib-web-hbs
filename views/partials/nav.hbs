@@ -1,0 +1,230 @@
+<nav id="navbar" class="navbar navbar-light bg-white fixed-top">
+    <a href="/" class="navbar-brand mr-0 d-flex align-items-center">
+        <img class="mr-2" src="/public/img/logos/logo_small.png" alt="Company Logo" class="d-inline-block align-top">
+        <span>Innovate Birmingham</span>
+    </a>
+
+    <div id="expand-container">
+        <a href="/donate">
+            <button type="button" class="btn mx-3 donate-btn" id="donate-btn-desktop">DONATE NOW!</button>
+        </a>
+
+        <button id="mainButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="justify-content-around navbar-nav" id="mainDesktopNavbar" style="display: none;">
+            <span class="button-container position-absolute">
+                <button id="closeNavButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+            </span>
+
+            <div class="btn-group dropleft my-2">
+                <button type="button" id="whoweare-links"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-2 mr-3{{#contains main.url " /about/"}}
+                    active{{/contains}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    WHO WE ARE
+                </button>
+                <div class="dropdown-menu" aria-labelledby="whoweare-links">
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /mission/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/mission/">MISSION</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /impact/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/impact/">OUR IMPACT</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /financials/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/financials/">FINANCIALS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /parnters/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/partners/">PARTNERS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /board/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/board/">BOARD</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /staff/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/staff/">STAFF</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /careers/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/careers/">CAREERS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /alumni/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/alumni/">IB ALUMNI</a>
+                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mr-3{{#contains main.url " /blogs/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/blog/">BLOG</a>
+                    </li> --}}
+                </div>
+            </div>
+            <div class="btn-group dropleft my-2">
+                <button type="button" id="whatweare-links"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-2 mr-3{{#contains main.url " /about/"}}
+                    active{{/contains}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    WHAT WE DO
+                </button>
+                <div class="dropdown-menu" aria-labelledby="whatweare-links">
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /courses/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/program/">PROGRAM OVERVIEW</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /courses/data-analytics/"}}
+                        active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/courses/data-analytics/">DATA ANALYTICS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /courses/software/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/courses/software/">WEB DEVELOPMENT</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /courses/services/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/program/services/">SUPPORTIVE SERVICES</a>
+                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mr-3{{#contains main.url " /resources/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/resources/">STORIES AND RESOURCES</a>
+                    </li> --}}
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /testimonials/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/testimonials/">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /faq/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/faq/">FAQ</a>
+                    </li>
+                </div>
+            </div>
+            <div class="btn-group dropleft my-2">
+                <button type="button" id="partnership-links"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-2 mr-3{{#contains main.url " /about/"}}
+                    active{{/contains}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PARTNERSHIPS
+                </button>
+                <div class="dropdown-menu" aria-labelledby="partnership-links">
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /partners/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/partners/">PARTNER WITH US</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /apprenticeship/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/apprenticeship/">HIRE APPRENTICES</a>
+                    </li>
+                </div>
+            </div>
+            <div class="btn-group dropleft my-2">
+                <button type="button" id="contact-links"
+                    class="dropdown-toggle nav-item font-weight-600 btn mx-md-2 mr-3{{#contains main.url " /about/"}}
+                    active{{/contains}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CONTACT US
+                </button>
+                <div class="dropdown-menu" aria-labelledby="contact-links">
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /media/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/media/">MEDIA</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mr-3{{#contains main.url " /contact/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/contact/">GET IN TOUCH!</a>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainMobileNavbar">
+        <ul class="navbar-nav pr-xl-5">
+            <div class="nav-link" data-toggle="collapse" href="#whoweare-toggle" aria-expanded="false"
+                aria-controls="whoweare-toggle">
+                WHO WE ARE
+                <div class="collapse sub-nav-collapse" id="whoweare-toggle">
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /mission/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/mission/">MISSION</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /impact/"}} active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/impact/">OUR IMPACT</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /financials/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/financials/">FINANCIALS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /parnters/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/partners/">PARTNERS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /board/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/board/">BOARD</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /staff/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/staff/">STAFF</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /careers/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/careers/">CAREERS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /staff/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/alumni/">ALUMNI</a>
+                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /blogs/"}}
+                        active{{/contains}}">
+                        <a class="nav-link font-weight-600" href="/blog/">BLOG</a>
+                    </li> --}}
+                </div>
+            </div>
+            <div class="nav-link" data-toggle="collapse" href="#whatwedo-toggle" aria-expanded="false"
+                aria-controls="whatwedo-toggle">
+                WHAT WE DO
+                <div class="collapse sub-nav-collapse" id="whatwedo-toggle">
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /courses/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/program/">PROGRAM OVERVIEW</a>
+                    </li>
+                    {{!-- <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /resources/"}}
+                        active{{/contains}}">
+                        <a class="nav-link text-white" href="/resources/">STORIES AND RESOURCES</a>
+                    </li> --}}
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /courses/data-analytics"}}
+                        active{{/contains}}">
+                        <a class="nav-link text-white" href="/courses/data-analytics">DATA ANALYTICS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /courses/software"}}
+                        active{{/contains}}">
+                        <a class="nav-link text-white" href="/courses/software">WEB DEVELOPMENT</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /courses/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/program/services">SUPPORTIVE SERVICES</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /testimonials/"}}
+                        active{{/contains}}">
+                        <a class="nav-link text-white" href="/testimonials/">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /faq/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/faq/">FAQ</a>
+                    </li>
+                </div>
+            </div>
+            <div class="nav-link" data-toggle="collapse" href="#partnerships-toggle" aria-expanded="false"
+                aria-controls="partnerships-toggle">
+                PARTNERSHIPS
+                <div class="collapse sub-nav-collapse" id="partnerships-toggle">
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /partners/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/partners/">PARTNER WITH US</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /apprenticeship/"}}
+                        active{{/contains}}">
+                        <a class="nav-link text-white" href="/apprenticeship/">HIRE APPRENTICES</a>
+                    </li>
+                </div>
+            </div>
+            <div class="nav-link" data-toggle="collapse" href="#contact-toggle" aria-expanded="false"
+                aria-controls="contact-toggle">
+                CONTACT US
+                <div class="collapse sub-nav-collapse" id="contact-toggle">
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /media/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/media/">MEDIA</a>
+                    </li>
+                    <li class="nav-item mx-md-1 mx-xl-3 mr-3{{#contains main.url " /contact/"}} active{{/contains}}">
+                        <a class="nav-link text-white" href="/contact/">GET IN TOUCH!</a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="btn-group d-flex justify-content-center">
+                <a href="/donate">
+                    <button type="button"
+                        class="btn btn-sm font-weight-600 nav-item my-1 mx-md-1 mx-xl-3 donate-btn">DONATE NOW!</button>
+                </a>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<!-- Remove Script -->
+<script src="/public/js/nav.js"></script>
+<!-- /Remove Script -->

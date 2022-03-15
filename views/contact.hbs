@@ -1,0 +1,43 @@
+<section class="section-padding section-contact bg-primary text-white">
+    <div class="container" id="formContainer">
+        <h1 class="font-weight-bold my-5">Want More Info?</h1>
+        <h5 class="mb-4">Fill out this form and we'll get back to you ASAP.</h5>
+        <h5 class="mb-4">If you prefer, you may contact us by phone at (205) 649-0496.</h5>
+        <form action="/contact/submit/" method="POST">
+            <div class="form-group">
+                <input class="form-control" name="firstName" type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="lastName" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" aria-describedby="Email" placeholder="Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="topic">Select What You're Asking About</label>
+                <select name="topic">
+                    <option value="bootcamps">Bootcamps</option>
+                    <option value="scholarships">Scholarships</option>
+                    <option value="employers">Employers or Partnerships</option>
+                    <option value="general">General</option>
+                    <option value="admissions">Admissions</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" rows="10" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LfYRXIUAAAAANmPK3YgTl5mnK5LzDgiuBqEU75N"></div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+    </div>
+</section>
+<!-- Remove Script -->
+<script src="/public/js/contact.js"></script>
+<!-- /Remove Script -->
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/contact.css">
+<!-- /Remove Style -->

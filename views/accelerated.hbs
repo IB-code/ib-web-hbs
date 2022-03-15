@@ -1,0 +1,96 @@
+<header class="section-hero">
+    <div class="jumbotron mb-0 jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Accelerated Career Development Programs</h1>
+        </div>
+    </div>
+</header>
+<section class="section-padding section-courses">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="lead-in font-weight-500 text-center mb-4 col-12">Similiar Fast-Track Programs Provided by
+                Higher-Learning Institutions
+            </h4>
+            <hr class="mb-5" />
+        </div>
+        <div class="row justify-content-center mx-md-5">
+            {{#each main.courses}}
+            <div class="card accelerated-card m-3 text-center" style="width: 25rem;" data-toggle="modal"
+                data-target=".accelerated-courses-{{id}}">
+                <div class="img-container">
+                    <img class="card-img-top mt-2" src="{{img}}" alt="university logo">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    {{#if note}}
+                    <p class="card-text"><small>{{note}}</small></p>
+                    {{/if}}
+                    <div class="details-container font-weight-500 m-3">
+                        <img class="icon mr-2" src="/static/img/accelerated/icon_calendar.png" alt="calendar icon">
+                        <p class="card-text">{{courseLength}}</p>
+                    </div>
+                    <div class="details-container font-weight-500 m-3">
+                        <img class="icon mr-2" src="/static/img/accelerated/icon_clock.png" alt="old style clock icon">
+                        <p class="card-text">{{courseTime}}</p>
+                    </div>
+                    <div class="details-container font-weight-500 m-3">
+                        <img class="icon mr-2" src="/static/img/accelerated/icon_location.png" alt="location pin icon">
+                        <p class="card-text">{{courseLocation}}</p>
+                    </div>
+                    <img src="/static/img/accelerated/down-arrow.png" alt="open details image">
+                </div>
+            </div>
+            {{!-- Modal for each card --}}
+            <div class="modal fade accelerated-courses-{{id}}" data-backdrop="false" tabindex="-1" role="dialog"
+                aria-labelledby="accelerated-courses-{{id}}" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content text-center">
+                        <div class="card m-1 text-center">
+                            <button type="button" class="close mt-1 mr-2" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                            <div class="img-container-modal">
+                                <img class="card-img-top" src="{{img}}" alt="university logo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{title}}</h5>
+                                {{#if note}}
+                                <p class="card-text"><small>{{note}}</small></p>
+                                {{/if}}
+                                <div class="details-container font-weight-500 m-3">
+                                    <img class="icon mr-2" src="/static/img/accelerated/icon_calendar.png" alt="calendar icon">
+                                    <p class="card-text">{{courseLength}}</p>
+                                </div>
+                                <div class="details-container font-weight-500 m-3">
+                                    <img class="icon mr-2" src="/static/img/accelerated/icon_clock.png"
+                                        alt="old style clock icon">
+                                    <p class="card-text">{{courseTime}}</p>
+                                </div>
+                                <div class="details-container font-weight-500 m-3">
+                                    <img class="icon mr-2" src="/static/img/accelerated/icon_location.png"
+                                        alt="location pin icon">
+                                    <p class="card-text">{{courseLocation}}</p>
+                                </div>
+                                <div class="details-container font-weight-500 m-3">
+                                    <img class="icon mr-2" src="/static/img/accelerated/icon_certificate.png"
+                                        alt="certificate icon">
+                                    <p class="card-text">{{courseCertifications}}</p>
+                                </div>
+                                <p class="font-weight-500">{{courseDescription}}</p>
+                                <a href="{{redirectURL}}">
+                                    <button type="button" class="btn btn-primary shadow" id="learn-more-btn">LEARN
+                                        MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Remove Style -->
+<link rel="stylesheet" href="/public/css/accelerated.css">
+<!-- /Remove Style -->

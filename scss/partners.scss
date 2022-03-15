@@ -1,0 +1,58 @@
+@import "layouts/main";
+
+header {
+  & .jumbotron {
+    background: linear-gradient(rgba(11, 26, 66, 0.5), rgba(5, 34, 116, 0.2)), url("/static/img/partners/hero.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    .lead {
+      @include media-breakpoint-down(md) {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.section {
+  &-about {
+    .lead-in {
+      font-size: 1.5em;
+      color: #11092c;
+      max-width: 875px;
+    }
+
+    hr {
+      width: 98%;
+      border-top: 2px solid #cccccc;
+    }
+
+    .partner-description {
+      font-size: 1.1em;
+      color: #11092c;
+    }
+
+    @media screen and (max-width: 576px) {
+      .lead-in {
+        padding: 0 0.9375rem;
+        text-align: start !important;
+      }
+    }
+  }
+
+  &-employer-partners,
+  &-network-partners {
+    .logo {
+      margin: 0 auto;
+      height: 8em;
+      width: 8em;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
