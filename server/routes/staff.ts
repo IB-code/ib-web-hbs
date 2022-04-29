@@ -28,53 +28,23 @@ export function context(
                     name: "Katherine Zachara",
                     position: "Executive Director",
                     headshotPath: "/static/img/staff/kz.jpg",
-                    email: 'Katherine@innovatebham.com'
+                    email: 'katherine@innovatebham.com'
                 },
                 {
                     name: "Denita Bearden",
                     position: "Director of Operations",
                     headshotPath: "/static/img/staff/db.jpg",
-                    email: 'Denita@innovatebham.com'
+                    email: 'denita@innovatebham.com'
                 },
                 {
                     name: "Rachel Davis Smith",
-                    position: "Operations Coordinator",
+                    position: "Program Manager",
                     headshotPath: "/static/img/staff/rs.jpg",
                     email: ''
                 },
                 {
-                    name: "Brandie McMillian",
-                    position: "Senior Case Manager",
-                    headshotPath: "/static/img/staff/bm.jpg",
-                    email: ''
-                },
-                {
-                    name: "Josh Hurn",
-                    position: "Web Development Instructor",
-                    headshotPath: "/static/img/staff/jh.jfif",
-                    email: ''
-                },
-                {
-                    name: "Adrian Drane",
-                    position: "Data Analytics Teaching Assistant",
-                    headshotPath: "/static/img/staff/ad.jpg",
-                    email: ''
-                },
-                {
-                    name: "Garrett Harris",
-                    position: "Web Development Teaching Assistant",
-                    headshotPath: "/static/img/staff/gh.jfif",
-                    email: ''
-                },
-                {
-                    name: "Haylee Hunter",
-                    position: "Web Development Teaching Assistant",
-                    headshotPath: "/static/img/staff/hh.jpg",
-                    email: ''
-                },
-                {
                     name: "Maggie Thompson",
-                    position: "Program Analyst",
+                    position: "Communications Manager",
                     headshotPath: "/static/img/staff/mt.jpg",
                     email: ''
                 }

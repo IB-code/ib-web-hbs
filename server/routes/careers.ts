@@ -20,23 +20,24 @@ export function context(
             },
         },
         main: {
-            departments: [
-                {
-                    department: "Open Positions",
-                    openings: [
-                        {
-                            title: "Data Analytics Teaching Assistant",
-                            employmentType: "Full-Time",
-                            applicationLink: "..\\static\\documents\\DataAnalyticsTeachingDecemberJobDescriptionAugust2021.pdf"
-                        },
-                        {
-                            title: "Web Development Teaching Assistant",
-                            employmentType: "Full-Time",
-                            applicationLink: "..\\static\\documents\\WebDevTeachingAssistantJobDescriptionAugust2021.pdf"
-                        }
-                    ]
-                },
-            ]
+            // departments: [
+            //     {
+            //         department: "Open Positions",
+                    // openings: [
+                        // use these as examples!
+                        // {
+                        //     title: "Data Analytics Teaching Assistant",
+                        //     employmentType: "Full-Time",
+                        //     applicationLink: "..\\static\\documents\\DataAnalyticsTeachingDecemberJobDescriptionAugust2021.pdf"
+                        // },
+                        // {
+                        //     title: "Web Development Teaching Assistant",
+                        //     employmentType: "Full-Time",
+                        //     applicationLink: "..\\static\\documents\\WebDevTeachingAssistantJobDescriptionAugust2021.pdf"
+                        // }
+                    // ]
+                // },
+            // ]
         },
     };
 
