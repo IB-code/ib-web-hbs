@@ -26,7 +26,6 @@ utils
                 );
             })
             .then((output) => {
-                console.log(file, output)
                 return new Promise((resolve, reject) => {
                     fs.writeFile(file, output, (err) => {
                         if (!!err) {
