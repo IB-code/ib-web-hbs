@@ -50,7 +50,7 @@
         "html-minifier": "^3.5.5",
         "htmlparser2": "^3.9.2",
         "jquery": "^3.5.1",
-        "jquery-validation": "^1.19.3",
+        "jquery-validation": "^1.19.4",
         "lodash": "^4.17.21",
         "memory-cache": "^0.2.0",
         "mkdirp": "^0.5.1",
