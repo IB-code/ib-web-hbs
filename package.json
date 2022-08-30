@@ -55,7 +55,7 @@
         "memory-cache": "^0.2.0",
         "mkdirp": "^0.5.1",
         "moment": "^2.27.0",
-        "moment-timezone": "^0.5.13",
+        "moment-timezone": "^0.5.35",
         "morgan": "^1.9.1",
         "node-sass": "^6.0.1",
         "npm": "^6.14.7",
