@@ -40,13 +40,13 @@ export function context(
                     name: "Rachel Davis Smith",
                     position: "Program Manager",
                     headshotPath: "/static/img/staff/rs.jpg",
-                    email: ''
+                    email: 'rachel@innovatebham.com'
                 },
                 {
                     name: "Maggie Thompson",
                     position: "Communications Manager",
                     headshotPath: "/static/img/staff/mt.jpg",
-                    email: ''
+                    email: 'maggie@innovatebham.com'
                 }
             ]
         }
