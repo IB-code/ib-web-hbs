@@ -1,6 +1,5 @@
 import * as express from 'express';
 import parse from '../middleware/parse';
-import * as os from 'os';
 
 export function context(
     req: express.Request,
@@ -20,24 +19,23 @@ export function context(
             },
         },
         main: {
-            // departments: [
-            //     {
-            //         department: "Open Positions",
-                    // openings: [
-                        // use these as examples!
-                        // {
-                        //     title: "Data Analytics Teaching Assistant",
-                        //     employmentType: "Full-Time",
-                        //     applicationLink: "..\\static\\documents\\DataAnalyticsTeachingDecemberJobDescriptionAugust2021.pdf"
-                        // },
-                        // {
-                        //     title: "Web Development Teaching Assistant",
-                        //     employmentType: "Full-Time",
-                        //     applicationLink: "..\\static\\documents\\WebDevTeachingAssistantJobDescriptionAugust2021.pdf"
-                        // }
-                    // ]
-                // },
-            // ]
+            departments: [
+                {
+                    department: "Open Positions",
+                    openings: [
+                        {
+                            title: "Program Director/Cluster Manager",
+                            employmentType: "Full-Time",
+                            applicationLink: "..\\static\\documents\\ProgramDirector_ClusterManagerOctober2022.pdf"
+                        },
+                        {
+                            title: "Career Pathways Coordinator",
+                            employmentType: "Full-Time",
+                            applicationLink: "..\\static\\documents\\CareerPathsCoordinatorJobDescriptionNov2022.pdf"
+                        },
+                    ]
+                },
+            ]
         },
     };
 
