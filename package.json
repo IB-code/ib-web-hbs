@@ -40,7 +40,7 @@
         "console-stamp": "^0.2.5",
         "dotenv": "^7.0.0",
         "exit": "^0.1.2",
-        "express": "^4.16.4",
+        "express": "^4.17.3",
         "express-handlebars": "^3.0.2",
         "express-sslify": "^1.2.0",
         "front-matter": "^2.2.0",
